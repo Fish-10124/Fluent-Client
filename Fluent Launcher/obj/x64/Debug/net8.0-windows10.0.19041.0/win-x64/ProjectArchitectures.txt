@@ -1,0 +1,1 @@
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Fluent Launcher.csproj;x64

@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\assets\\pages\\download\\page_instancesoption.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\assets\\pages\\download\\page_instancesoption.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\assets\\pages\\download\\page_instancesoption.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\assets\\pages\\download\\page_instancesoption.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\assets\\class\\globalvar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\assets\\class\\globalvar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\assets\\pages\\download\\page_instanceslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\assets\\pages\\download\\page_instanceslist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|d:\\fish_work\\csprojects\\fluent launcher\\fluent launcher\\assets\\pages\\download\\page_instanceslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DBDC1-F9B8-4F29-9C1C-D39A77E6B76B}|Fluent Launcher\\Fluent Launcher.csproj|solutionrelative:fluent launcher\\assets\\pages\\download\\page_instanceslist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalVar.cs",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Class\\GlobalVar.cs",
+              "RelativeDocumentMoniker": "Fluent Launcher\\Assets\\Class\\GlobalVar.cs",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Class\\GlobalVar.cs",
+              "RelativeToolTip": "Fluent Launcher\\Assets\\Class\\GlobalVar.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAABIvRQAAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T07:27:25.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Fluent Launcher\\MainWindow.xaml",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\MainWindow.xaml",
+              "RelativeToolTip": "Fluent Launcher\\MainWindow.xaml",
+              "ViewState": "AgIAABQAAADA//////8pwBsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-30T07:21:26.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Fluent Launcher\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Fluent Launcher\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAQAAAAAswCwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T07:19:30.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\App.xaml",
+              "RelativeDocumentMoniker": "Fluent Launcher\\App.xaml",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\App.xaml",
+              "RelativeToolTip": "Fluent Launcher\\App.xaml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAMwBUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-30T01:20:42.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Page_InstancesList.xaml.cs",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml.cs",
+              "RelativeDocumentMoniker": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml.cs",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml.cs",
+              "RelativeToolTip": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml.cs",
+              "ViewState": "AgIAAIcAAAAQAAAAAIAywJgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T05:23:10.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Page_InstancesList.xaml",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml",
+              "RelativeDocumentMoniker": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml",
+              "RelativeToolTip": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesList.xaml",
+              "ViewState": "AgIAADgAAADAAAAAAAAswDMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-29T09:11:45.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page_InstancesOption.xaml.cs",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml.cs",
+              "RelativeDocumentMoniker": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml.cs",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml.cs",
+              "RelativeToolTip": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml.cs",
+              "ViewState": "AgIAAG4AAACA//////8XwJsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T08:44:38.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Page_InstancesOption.xaml",
+              "DocumentMoniker": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml",
+              "RelativeDocumentMoniker": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml",
+              "ToolTip": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml",
+              "RelativeToolTip": "Fluent Launcher\\Assets\\Pages\\Download\\Page_InstancesOption.xaml",
+              "ViewState": "AgIAAHcAAACA//////8bwIAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-29T08:44:38.17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
