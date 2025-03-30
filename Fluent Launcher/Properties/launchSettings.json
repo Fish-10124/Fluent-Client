@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Fluent Launcher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Fluent Launcher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
