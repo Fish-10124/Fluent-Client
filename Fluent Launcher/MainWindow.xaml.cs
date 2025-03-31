@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.IO;
+using System.Text.Json;
 using Fluent_Launcher.Assets.Class;
 using Fluent_Launcher.Assets.Pages;
 using Fluent_Launcher.Assets.Pages.Download;
@@ -24,6 +26,8 @@ namespace Fluent_Launcher
     public sealed partial class MainWindow : Window
     {
 
+        private static readonly string OptionsFile = Path.Join(GlobalVar.OptionsFolder, GlobalVar.OptionsFile);
+
         public MainWindow()
         {
             this.InitializeComponent();
@@ -42,7 +46,23 @@ namespace Fluent_Launcher
             NavigationView.SelectedItem = NavigationView.MenuItems[0];
             Frame_Content.Navigate(typeof(Page_Home));
 
-            // var cfApiClient = new CurseForge.APIClient.ApiClient();
+            // 读配置文件
+            FileInfo fileInfo = new(OptionsFile);
+            GlobalVar.Options = !File.Exists(OptionsFile) || fileInfo.Length == 0 ?
+                new Options(GlobalVar.RootPath[GlobalVar.CurrentRootPathIndex]) :
+                JsonSerializer.Deserialize<Options>(File.ReadAllText(OptionsFile));
+        }
+
+        private static void CreateDefaultOptionsFile()
+        {
+            var option = new Options(GlobalVar.RootPath[GlobalVar.CurrentRootPathIndex]);
+            string optionJson = JsonSerializer.Serialize(option, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+
+            File.WriteAllText(OptionsFile, optionJson);
+            
         }
 
         private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
@@ -91,6 +111,22 @@ namespace Fluent_Launcher
         {
             var bounds = this.Bounds;
             SaveWindowState((int)bounds.Width, (int)bounds.Height);
+
+            // 如果没有OptionsFile，创建一个
+            if (File.Exists(OptionsFile))
+            {
+                // 写配置文件
+            } 
+            else
+            {
+                if (!Directory.Exists(GlobalVar.OptionsFolder))
+                {
+                    Directory.CreateDirectory(GlobalVar.OptionsFolder);
+                }
+                CreateDefaultOptionsFile();
+            }
+
+
         }
 
         private void Frame_Content_Navigated(object sender, Microsoft.UI.Xaml.Navigation.NavigationEventArgs e)

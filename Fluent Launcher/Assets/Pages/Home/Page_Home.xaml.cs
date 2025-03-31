@@ -1,3 +1,5 @@
+using Fluent_Launcher.Assets.Class;
+using Fluent_Launcher.Assets.Pages.Home;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -38,11 +40,11 @@ namespace Fluent_Launcher.Assets.Pages
         private void myButton_Click(object sender, RoutedEventArgs e)
         {
 
-            launch();
+            Launch();
 
         }
 
-        public async void launch()
+        public async void Launch()
         {
             var minecraftParser = new MinecraftParser("D:\\Download\\PCL\\.minecraft");
 
@@ -74,6 +76,13 @@ namespace Fluent_Launcher.Assets.Pages
             {
                 Debug.WriteLine(args.Data);
             };
+        }
+
+        private void Button_SelectInstance_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalVar.BreadcrumbItems.Clear();
+            GlobalVar.BreadcrumbItems.Add(new("SelectInstance", "Select Instance"));
+            Frame.Navigate(typeof(Page_SelectInstance));
         }
     }
 }

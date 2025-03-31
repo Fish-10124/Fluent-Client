@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Fluent Launcher.csproj": {}
+    "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\Fluent Launcher.csproj": {}
   },
   "projects": {
-    "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Fluent Launcher.csproj": {
+    "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\Fluent Launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Fluent Launcher.csproj",
+        "projectUniqueName": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\Fluent Launcher.csproj",
         "projectName": "Fluent Launcher",
-        "projectPath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\Fluent Launcher.csproj",
+        "projectPath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\Fluent Launcher.csproj",
         "packagesPath": "C:\\Users\\yukou\\.nuget\\packages\\",
-        "outputPath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent Launcher\\obj\\",
+        "outputPath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,10 +54,6 @@
             "CommunityToolkit.WinUI.Controls.SettingsControls": {
               "target": "Package",
               "version": "[8.0.240109, )"
-            },
-            "CurseForge.APIClient": {
-              "target": "Package",
-              "version": "[4.2.0, )"
             },
             "Microsoft.Windows.SDK.BuildTools": {
               "target": "Package",

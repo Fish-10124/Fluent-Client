@@ -21,4 +21,9 @@ namespace Fluent_Launcher.Assets.Class
         public object? parameter { get; set; } // 自定义参数
     }
 
+    public class Options(string rootPath)
+    {
+        public string RootPath { get; set; } = rootPath;
+    }
+
 }

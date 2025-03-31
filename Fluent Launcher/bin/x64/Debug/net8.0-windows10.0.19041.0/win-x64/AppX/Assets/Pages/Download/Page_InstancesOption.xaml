@@ -18,6 +18,9 @@
             <Grid Margin="50, 0, 10, 0" MaxWidth="{StaticResource PageMaxWidth}">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
@@ -68,7 +71,9 @@
 
                 </Grid>
 
-                <Grid Grid.Row="1">
+                <TextBlock Grid.Row="1" Text="Loaders" Margin="0, 10, 0, 10" Style="{StaticResource SettingsCardHeaderTextStyle}" VerticalAlignment="Bottom"/>
+
+                <Grid Grid.Row="2">
                     <ItemsView x:Name="ItemView_Modloaders" SelectionMode="Multiple">
                         <ItemsView.Layout>
                             <UniformGridLayout ItemsStretch="Fill" MinRowSpacing="5" MinColumnSpacing="5" MinItemWidth="200"/>
@@ -118,6 +123,57 @@
                     </ItemsView>
                 </Grid>
 
+                <TextBlock Grid.Row="3" Text="Pre-Install Mods" Margin="0, 10, 0, 10" Style="{StaticResource SettingsCardHeaderTextStyle}" VerticalAlignment="Bottom"/>
+
+                <Grid Grid.Row="4">
+                    <ItemsView x:Name="ItemView_PreinstallMods" SelectionMode="Multiple">
+                        <ItemsView.Layout>
+                            <UniformGridLayout ItemsStretch="Fill" MinRowSpacing="5" MinColumnSpacing="5" MinItemWidth="200"/>
+                        </ItemsView.Layout>
+
+                        <ItemsView.ItemTemplate>
+                            <DataTemplate>
+                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding parameter}">
+                                    <Border Style="{StaticResource BaseBorderImageStyle}" Background="{StaticResource DefaultElementBackgroundColor}" BorderThickness="1" Padding="{StaticResource SettingsCardPadding}">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+
+                                            <Grid Grid.Row="0" HorizontalAlignment="Left">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Border Grid.Column="0" Style="{StaticResource SmallBorderImageStyle}">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding HeaderIcon}"/>
+                                                    </Border.Background>
+                                                </Border>
+
+                                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Grid.Row="0" Text="{Binding Header}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                                                </Grid>
+
+                                            </Grid>
+
+                                            <StackPanel Grid.Row="1" VerticalAlignment="Top">
+                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding parameter, Converter={StaticResource VisibilityConverter}}"/>
+                                                <TextBlock Text="{Binding Description}" Style="{StaticResource SettingsCardDescriptionTextStyle}" TextWrapping="{Binding parameter, Converter={StaticResource TextWrappingConverter}}"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </ItemContainer>
+                            </DataTemplate>
+                        </ItemsView.ItemTemplate>
+                    </ItemsView>
+                </Grid>
             </Grid>
         </ScrollView>
 

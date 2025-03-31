@@ -11,6 +11,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Navigation;
 using MinecraftLaunch.Base.Models.Network;
 using MinecraftLaunch.Components.Installer;
+using MinecraftLaunch.Components.Installer.Modpack;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -39,35 +40,53 @@ namespace Fluent_Launcher.Assets.Pages.Download
                 Description = "Mod loader, a branch of Forge.",
                 HeaderIcon = Icons.NeoForge_Icon,
                 parameter = false
-            },
+            }, // NeoForge
             new()
             {
                 Header = "Forge",
                 Description = "Mod loader, used to load Forge mods.",
                 HeaderIcon = Icons.Forge_Icon,
                 parameter = false
-            },
+            }, // Forge
             new()
             {
                 Header = "Optifine",
                 Description = "HD fix, installed as a mod when installed with other loaders.",
                 HeaderIcon = Icons.OptiFine_Icon,
                 parameter = false
-            },
+            }, // Optifine
             new()
             {
                 Header = "Fabric",
                 Description = "Mod loader, used to load Fabric mods.",
                 HeaderIcon = Icons.Fabric_Icon,
                 parameter = false
-            },
+            }, // Fabric
             new()
             {
                 Header = "Quilt",
                 Description = "Mod loader, a branch of Fabric.",
                 HeaderIcon = Icons.Quilt_Icon,
                 parameter = false
-            }
+            } // Quilt
+        ];
+        private IList<SettingsCardListShow> PreinstallModViews = [
+            new()
+            {
+                Header = "Fabric API"
+            }, // Fabric API
+            new()
+            {
+                Header = "Quilted Fabric API (QFAPI)"
+            }, // QFAPI
+            new()
+            {
+                Header = "Sodium"
+            }, // Sodium
+            new()
+            {
+                Header = "Iris Shaders"
+            } // Iris
         ];
 
         private IList<ForgeInstallEntry> NeoforgeVersions = [];
@@ -134,7 +153,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                     {
                         ModloaderViews[4].parameter = true;
                     }
-                }) // 获取Quilt版本
+                }), // 获取Quilt版本
             };
 
             // 等待所有任务完成

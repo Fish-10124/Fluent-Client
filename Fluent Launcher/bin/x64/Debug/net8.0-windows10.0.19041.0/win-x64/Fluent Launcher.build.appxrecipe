@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>71f9edb3-5404-4e76-80b3-0aaa580c7a15</PackageIdentityName>
     <PackageIdentityPublisher>CN=Fish</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>D:\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
+    <LayoutDir>D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.runtimeconfig.json">
       <PackagePath>Fluent Launcher.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.dll">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.dll">
       <PackagePath>Fluent Launcher.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Fluent Launcher.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yukou\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.13\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
@@ -700,7 +700,7 @@
     <AppxPackagedFile Include="C:\Users\yukou\.nuget\packages\microsoft.web.webview2\1.0.2903.40\lib_manual\net8.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.deps.json">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.deps.json">
       <PackagePath>Fluent Launcher.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yukou\.nuget\packages\communitytoolkit.winui.controls.settingscontrols\8.0.240109\lib\net7.0-windows10.0.19041\CommunityToolkit.WinUI.Controls.SettingsControls.pri">
@@ -715,70 +715,76 @@
     <AppxPackagedFile Include="C:\Users\yukou\.nuget\packages\communitytoolkit.winui.triggers\8.0.240109\lib\net7.0-windows10.0.19041\CommunityToolkit.WinUI.Triggers.pri">
       <PackagePath>CommunityToolkit.WinUI.Triggers.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml">
       <PackagePath>Assets\Pages\Download\Page_InstancesList.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml.cs">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml.cs">
       <PackagePath>Assets\Pages\Download\Page_InstancesList.xaml.cs</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml">
       <PackagePath>Assets\Pages\Download\Page_InstancesOption.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml.cs">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml.cs">
       <PackagePath>Assets\Pages\Download\Page_InstancesOption.xaml.cs</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\crafting_table_front.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_Home.xaml">
+      <PackagePath>Assets\Pages\Home\Page_Home.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_Home.xaml.cs">
+      <PackagePath>Assets\Pages\Home\Page_Home.xaml.cs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\crafting_table_front.png">
       <PackagePath>Assets\Resources\Icons\crafting_table_front.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\dirt_path_side.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\dirt_path_side.png">
       <PackagePath>Assets\Resources\Icons\dirt_path_side.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\FabricIcon.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\FabricIcon.png">
       <PackagePath>Assets\Resources\Icons\FabricIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\ForgeIcon.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\ForgeIcon.png">
       <PackagePath>Assets\Resources\Icons\ForgeIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\furnace_front.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\furnace_front.png">
       <PackagePath>Assets\Resources\Icons\furnace_front.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\grass_block_side.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\grass_block_side.png">
       <PackagePath>Assets\Resources\Icons\grass_block_side.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\NeoForgeIcon.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\NeoForgeIcon.png">
       <PackagePath>Assets\Resources\Icons\NeoForgeIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\OptiFabricIcon.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\OptiFabricIcon.png">
       <PackagePath>Assets\Resources\Icons\OptiFabricIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\OptiFineIcon.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\OptiFineIcon.png">
       <PackagePath>Assets\Resources\Icons\OptiFineIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\QuiltIcon.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\QuiltIcon.png">
       <PackagePath>Assets\Resources\Icons\QuiltIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Resources\Icons\steve.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\steve.png">
       <PackagePath>Assets\Resources\Icons\steve.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent Launcher\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
