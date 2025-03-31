@@ -12,7 +12,12 @@ namespace Fluent_Launcher.Assets.Class
     {
     }
 
-    public class SettingsCardListShow
+    public class SettingsCardTagDescriptionInfos : SettingsCardInfos
+    {
+        public new IList<string>? Description { get; set; }
+    }
+
+    public class SettingsCardInfos
     {
         public string? Header { get; set; }
         public string? Description { get; set; }

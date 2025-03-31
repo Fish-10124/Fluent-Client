@@ -760,6 +760,9 @@
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\grass_block_side.png">
       <PackagePath>Assets\Resources\Icons\grass_block_side.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\LiteLoaderIcon.png">
+      <PackagePath>Assets\Resources\Icons\LiteLoaderIcon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\NeoForgeIcon.png">
       <PackagePath>Assets\Resources\Icons\NeoForgeIcon.png</PackagePath>
     </AppxPackagedFile>

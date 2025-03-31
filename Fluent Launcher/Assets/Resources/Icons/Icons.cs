@@ -17,6 +17,7 @@ namespace Fluent_Launcher.Assets.Resources.Icons
                                            OptiFabric_Icon = new(new Uri(Icon_Path + "OptiFabricIcon.png")),
                                            OptiFine_Icon = new(new Uri(Icon_Path + "OptiFineIcon.png")),
                                            Quilt_Icon = new(new Uri(Icon_Path + "QuiltIcon.png")),
+                                           LiteLoader_Icon = new(new Uri(Icon_Path + "LiteLoaderIcon.png")),
                                            Steve = new(new Uri(Icon_Path + "steve.png"));
 
     }

@@ -32,7 +32,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
     public sealed partial class Page_InstanceOption : Page
     {
         // parameter属性表示是否有这个加载器
-        private IList<SettingsCardListShow> ModloaderViews =
+        private IList<SettingsCardInfos> ModloaderViews =
         [
             new()
             {
@@ -70,7 +70,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                 parameter = false
             } // Quilt
         ];
-        private IList<SettingsCardListShow> PreinstallModViews = [
+        private IList<SettingsCardInfos> PreinstallModViews = [
             new()
             {
                 Header = "Fabric API"
@@ -175,7 +175,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
             TextBox_InstanceId.Text = TextBlock_InstanceInfoTitle.Text;
 
             // 获取动画对象并保存
-            var pendingAnimation = ConnectedAnimationService.GetForCurrentView().GetAnimation("ForwardConnectedAnimation");
+            var pendingAnimation = ConnectedAnimationService.GetForCurrentView().GetAnimation("InstancesListToOptionAnimation");
 
             // 使用延迟启动动画
             Grid_InstanceDetail.Loaded += async (s, args) =>

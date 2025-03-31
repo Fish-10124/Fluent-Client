@@ -23,7 +23,7 @@ namespace Fluent_Launcher.Assets.Class
 
         public static IList<VersionManifestEntry> Instances { get; set; } = [];
 
-        public static IList<SettingsCardListShow> InstanceListToShow { get; set; } = [];
+        public static IList<SettingsCardInfos> InstanceListToShow { get; set; } = [];
 
         public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [new("Home", "Home")];
 

@@ -7,6 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:CommunityToolkit.WinUI.Controls" 
+    xmlns:class="using:Fluent_Launcher.Assets.Class"
     mc:Ignorable="d"
     Background="Transparent">
 
@@ -32,14 +33,50 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Expander Grid.Column="1" Header="All Instances" MinWidth="500" VerticalAlignment="Top" HorizontalAlignment="Stretch" IsExpanded="True">
-                <ListBox x:Name="ListBox_AllInstance" ItemsSource="{x:Bind Instances}" Background="Transparent" SelectionMode="Single" SelectionChanged="ListBox_AllInstance_SelectionChanged">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Id}"/>
+            <Expander Grid.Column="1" Header="All Instances" MinWidth="500" VerticalAlignment="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" IsExpanded="True">
+                <ListView x:Name="ListView_AllInstance" ItemsSource="{x:Bind InstanceDetails}" Background="Transparent" SelectionMode="Single" SelectionChanged="ListView_AllInstance_SelectionChanged">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="class:SettingsCardTagDescriptionInfos">
+                            <Grid x:Name="Grid_InstanceDetails" HorizontalAlignment="Left" Padding="0, 5, 0, 5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border Grid.Column="0" Style="{StaticResource MediumBorderImageStyle}">
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="{x:Bind HeaderIcon}"/>
+                                    </Border.Background>
+                                </Border>
+
+                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Grid.Row="0" Text="{x:Bind Header}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                                    <ItemsView Grid.Row="1" SelectionMode="None" IsEnabled="False" ItemsSource="{x:Bind Description}">
+                                        <ItemsView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ItemContainer>
+                                                    <Border Style="{StaticResource BorderTagStyle}" Padding="5, 1, 5, 1">
+                                                        <TextBlock Grid.Row="1" Text="{Binding}" Foreground="Black" FontSize="12"/>
+                                                    </Border>
+                                                </ItemContainer>
+                                            </DataTemplate>
+                                        </ItemsView.ItemTemplate>
+
+                                        <ItemsView.Layout>
+                                            <LinedFlowLayout ItemsStretch="Fill" MinItemSpacing="5"/>
+                                        </ItemsView.Layout>
+
+                                    </ItemsView>
+                                </Grid>
+                            </Grid>
                         </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                    </ListView.ItemTemplate>
+                </ListView>
             </Expander>
         </Grid>
     </Grid>
