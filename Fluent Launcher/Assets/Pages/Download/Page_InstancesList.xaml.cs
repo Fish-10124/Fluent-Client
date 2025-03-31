@@ -26,7 +26,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
     /// </summary>
     public sealed partial class Page_InstancesList : Page
     {
-        private static IList<SettingsCardListShow> FilteredInstances = [];
+        private static IList<SettingsCardInfos> FilteredInstances = [];
         
         public Page_InstancesList()
         {
@@ -59,7 +59,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                     _ => throw new NotImplementedException()
                 };
 
-                GlobalVar.InstanceListToShow.Add(new SettingsCardListShow
+                GlobalVar.InstanceListToShow.Add(new SettingsCardInfos
                 {
                     Header = item.Id,
                     Description = $"{instanceType}  {item.ReleaseTime.ToString("d", CultureInfo.CurrentCulture)} {item.ReleaseTime.ToString("t", CultureInfo.CurrentCulture)}",
@@ -77,7 +77,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
 
             }
 
-            FilteredInstances = GlobalVar.InstanceListToShow.Select(item => new SettingsCardListShow
+            FilteredInstances = GlobalVar.InstanceListToShow.Select(item => new SettingsCardInfos
             {
                 Header = item.Header,
                 Description = item.Description,
@@ -145,9 +145,9 @@ namespace Fluent_Launcher.Assets.Pages.Download
             var animationElement = clickedCard?.FindName("Grid_InstanceDetail") as Grid;
             if (animationElement != null)
             {
-                var animation = ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("ForwardConnectedAnimation", animationElement);
+                var animation = ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("InstancesListToOptionAnimation", animationElement);
                 animation.Configuration = new DirectConnectedAnimationConfiguration();
-                if (clickedCard?.DataContext is SettingsCardListShow targetItem)
+                if (clickedCard?.DataContext is SettingsCardInfos targetItem)
                 {
                     GlobalVar.BreadcrumbItems.Add(new(GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header ?? "", GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header ?? ""));
                     Frame.Navigate(typeof(Page_InstanceOption), targetItem, new SlideNavigationTransitionInfo() { Effect = SlideNavigationTransitionEffect.FromRight });
