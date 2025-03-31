@@ -5,13 +5,16 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Assets\Pages\Home\Page_InstanceOption.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Assets\Pages\Home\Page_SelectInstance.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Assets\Pages\Download\Page_DownloadMod.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Assets\Pages\Download\Page_InstancesOption.xaml">
+    <Page Update="Assets\Pages\Download\Page_InstanceOption.xaml">
       <SubType>Designer</SubType>
     </Page>
     <None Update="MainWindow.xaml">

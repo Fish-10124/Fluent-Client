@@ -48,14 +48,21 @@ namespace Fluent_Launcher
 
             // ∂¡≈‰÷√Œƒº˛
             FileInfo fileInfo = new(OptionsFile);
-            GlobalVar.Options = !File.Exists(OptionsFile) || fileInfo.Length == 0 ?
-                new Options(GlobalVar.RootPath[GlobalVar.CurrentRootPathIndex]) :
-                JsonSerializer.Deserialize<Options>(File.ReadAllText(OptionsFile));
+            if (!File.Exists(OptionsFile) || fileInfo.Length == 0)
+            {
+                GlobalVar.Options = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex);
+            }
+            else
+            {
+                var optionsContent = File.ReadAllText(OptionsFile);
+                GlobalVar.Options = JsonSerializer.Deserialize<Options>(optionsContent);
+            }
+                
         }
 
         private static void CreateDefaultOptionsFile()
         {
-            var option = new Options(GlobalVar.RootPath[GlobalVar.CurrentRootPathIndex]);
+            var option = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex);
             string optionJson = JsonSerializer.Serialize(option, new JsonSerializerOptions
             {
                 WriteIndented = true
