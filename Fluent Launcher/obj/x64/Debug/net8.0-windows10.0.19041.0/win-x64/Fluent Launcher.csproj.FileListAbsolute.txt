@@ -289,7 +289,6 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\De
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_DownloadMod.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesList.xbf
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesOption.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_Home.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.deps.json
@@ -526,8 +525,6 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\De
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_DownloadMod.g.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesList.g.i.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesList.g.cs
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesOption.g.i.cs
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesOption.g.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.i.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_Home.g.i.cs
@@ -536,13 +533,11 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\De
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xaml
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_DownloadMod.xaml
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesList.xaml
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesOption.xaml
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_Home.xaml
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xaml
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_DownloadMod.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesList.xbf
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstancesOption.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_Home.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XamlSaveStateFile.xml
@@ -578,3 +573,13 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\De
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_SelectInstance.g.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_SelectInstance.xaml
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_SelectInstance.xbf
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstanceOption.xbf
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_InstanceOption.xbf
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstanceOption.g.i.cs
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstanceOption.g.cs
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_InstanceOption.g.i.cs
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_InstanceOption.g.cs
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_InstanceOption.xaml
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstanceOption.xaml
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Home\Page_InstanceOption.xbf
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Pages\Download\Page_InstanceOption.xbf

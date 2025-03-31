@@ -6,17 +6,17 @@
     xmlns:local="using:Fluent_Launcher.Assets.Pages.Home"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls" 
     mc:Ignorable="d"
     Background="Transparent">
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
-        <ListView Grid.Column="0">
+
+        <ListView Grid.Column="0" ItemsSource="{x:Bind RootPaths}" SelectedIndex="0">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid Padding="0, 10, 16, 10">
@@ -31,14 +31,14 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <NavigationView Grid.Column="1" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" IsSettingsVisible="False">
-            <NavigationView.MenuItemTemplate>
-                <DataTemplate>
-                    <controls:SettingsCard>
-                        
-                    </controls:SettingsCard>
-                </DataTemplate>
-            </NavigationView.MenuItemTemplate>
-        </NavigationView>
+        <Expander Grid.Column="1" Header="All Instances" MinWidth="500" VerticalAlignment="Top" Margin="0, 0, 10, 0" HorizontalAlignment="Stretch" IsExpanded="True">
+            <ListBox x:Name="ListBox_AllInstance" ItemsSource="{x:Bind Instances}" Background="Transparent" SelectionMode="Single" SelectionChanged="ListBox_AllInstance_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Id}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Expander>
     </Grid>
 </Page>

@@ -6,9 +6,11 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using MinecraftLaunch.Base.Models.Game;
 using MinecraftLaunch.Components.Parser;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,11 +27,34 @@ namespace Fluent_Launcher.Assets.Pages.Home
     /// </summary>
     public sealed partial class Page_SelectInstance : Page
     {
+        private ObservableCollection<RootPathListShow> RootPaths = [];
+        private List<MinecraftEntry> Instances = [];
+
         public Page_SelectInstance()
         {
             this.InitializeComponent();
 
-            // MinecraftParser mcParser = new()
+            foreach (var item in GlobalVar.RootPaths)
+            {
+                RootPaths.Add(new()
+                {
+                    FolderName = Path.GetFileName(item) ?? item,
+                    FolderPath = item
+                });
+            }
+
+            MinecraftParser mcParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+            Instances = mcParser.GetMinecrafts();
+        }
+
+        private void ListBox_AllInstance_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var listBox = sender as ListBox;
+            if (listBox == null)
+            {
+                return;
+            }
+            // Instances[listBox.SelectedIndex]
         }
     }
 }

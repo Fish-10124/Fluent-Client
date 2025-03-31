@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-03-31T01:54:56.842</Modified>
+      <Modified>2025-03-31T03:58:13.738</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-03-31T00:58:06.278</Modified>
+      <Modified>2025-03-31T03:58:13.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.runtimeconfig.json">
       <PackagePath>Fluent Launcher.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.dll">
       <PackagePath>Fluent Launcher.dll</PackagePath>
-      <Modified>2025-03-31T01:54:56.292</Modified>
+      <Modified>2025-03-31T03:58:12.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Fluent Launcher.exe</PackagePath>
-      <Modified>2025-03-31T01:54:56.452</Modified>
+      <Modified>2025-03-31T03:58:12.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yukou\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.13\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -935,7 +935,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.deps.json">
       <PackagePath>Fluent Launcher.deps.json</PackagePath>
-      <Modified>2025-03-30T11:50:37.806</Modified>
+      <Modified>2025-03-31T03:56:10.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yukou\.nuget\packages\communitytoolkit.winui.controls.settingscontrols\8.0.240109\lib\net7.0-windows10.0.19041\CommunityToolkit.WinUI.Controls.SettingsControls.pri">
       <PackagePath>CommunityToolkit.WinUI.Controls.SettingsControls.pri</PackagePath>
@@ -957,6 +957,14 @@
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2025-01-11T11:54:29.291</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstanceOption.xaml">
+      <PackagePath>Assets\Pages\Download\Page_InstanceOption.xaml</PackagePath>
+      <Modified>2025-03-31T03:55:37.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstanceOption.xaml.cs">
+      <PackagePath>Assets\Pages\Download\Page_InstanceOption.xaml.cs</PackagePath>
+      <Modified>2025-03-30T08:59:45.788</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml">
       <PackagePath>Assets\Pages\Download\Page_InstancesList.xaml</PackagePath>
       <Modified>2025-03-30T05:24:37.969</Modified>
@@ -965,14 +973,6 @@
       <PackagePath>Assets\Pages\Download\Page_InstancesList.xaml.cs</PackagePath>
       <Modified>2025-03-30T11:55:18.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml">
-      <PackagePath>Assets\Pages\Download\Page_InstancesOption.xaml</PackagePath>
-      <Modified>2025-03-30T08:29:43.676</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml.cs">
-      <PackagePath>Assets\Pages\Download\Page_InstancesOption.xaml.cs</PackagePath>
-      <Modified>2025-03-30T08:59:45.788</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_Home.xaml">
       <PackagePath>Assets\Pages\Home\Page_Home.xaml</PackagePath>
       <Modified>2025-03-30T11:51:49.328</Modified>
@@ -980,6 +980,14 @@
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_Home.xaml.cs">
       <PackagePath>Assets\Pages\Home\Page_Home.xaml.cs</PackagePath>
       <Modified>2025-03-30T11:57:45.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_InstanceOption.xaml">
+      <PackagePath>Assets\Pages\Home\Page_InstanceOption.xaml</PackagePath>
+      <Modified>2025-03-31T03:55:19.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_InstanceOption.xaml.cs">
+      <PackagePath>Assets\Pages\Home\Page_InstanceOption.xaml.cs</PackagePath>
+      <Modified>2025-03-31T03:55:14.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\crafting_table_front.png">
       <PackagePath>Assets\Resources\Icons\crafting_table_front.png</PackagePath>

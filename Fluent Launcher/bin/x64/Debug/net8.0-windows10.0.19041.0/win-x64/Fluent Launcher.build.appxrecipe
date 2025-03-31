@@ -718,23 +718,29 @@
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstanceOption.xaml">
+      <PackagePath>Assets\Pages\Download\Page_InstanceOption.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstanceOption.xaml.cs">
+      <PackagePath>Assets\Pages\Download\Page_InstanceOption.xaml.cs</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml">
       <PackagePath>Assets\Pages\Download\Page_InstancesList.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesList.xaml.cs">
       <PackagePath>Assets\Pages\Download\Page_InstancesList.xaml.cs</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml">
-      <PackagePath>Assets\Pages\Download\Page_InstancesOption.xaml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Download\Page_InstancesOption.xaml.cs">
-      <PackagePath>Assets\Pages\Download\Page_InstancesOption.xaml.cs</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_Home.xaml">
       <PackagePath>Assets\Pages\Home\Page_Home.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_Home.xaml.cs">
       <PackagePath>Assets\Pages\Home\Page_Home.xaml.cs</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_InstanceOption.xaml">
+      <PackagePath>Assets\Pages\Home\Page_InstanceOption.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Pages\Home\Page_InstanceOption.xaml.cs">
+      <PackagePath>Assets\Pages\Home\Page_InstanceOption.xaml.cs</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\Assets\Resources\Icons\crafting_table_front.png">
       <PackagePath>Assets\Resources\Icons\crafting_table_front.png</PackagePath>

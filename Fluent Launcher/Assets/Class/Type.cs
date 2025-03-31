@@ -21,9 +21,30 @@ namespace Fluent_Launcher.Assets.Class
         public object? parameter { get; set; } // 自定义参数
     }
 
-    public class Options(string rootPath)
+    public class Options
     {
-        public string RootPath { get; set; } = rootPath;
+        public IList<string> RootPath { get; set; }
+        public int CurrentRootPathIndex { get; set; }
+
+        // 参数化构造函数
+        public Options(IList<string> rootPaths, int currentRootPathIndex)
+        {
+            RootPath = rootPaths;
+            CurrentRootPathIndex = currentRootPathIndex;
+        }
+
+        // 默认构造函数
+        public Options()
+        {
+            RootPath = [];
+            CurrentRootPathIndex = 0;
+        }
+    }
+
+    public class RootPathListShow
+    {
+        public required string FolderName { get; set; }
+        public required string FolderPath { get; set; }
     }
 
 }
