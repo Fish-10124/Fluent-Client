@@ -11,34 +11,36 @@
     Background="Transparent">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        <Grid Margin="40, 50, 10, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-        <ListView Grid.Column="0" ItemsSource="{x:Bind RootPaths}" SelectedIndex="0">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="0, 10, 16, 10">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Text="{Binding FolderName}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
-                        <TextBlock Grid.Row="1" Text="{Binding FolderPath}" Style="{StaticResource SettingsCardDescriptionTextStyle}"/>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-        <Expander Grid.Column="1" Header="All Instances" MinWidth="500" VerticalAlignment="Top" Margin="0, 0, 10, 0" HorizontalAlignment="Stretch" IsExpanded="True">
-            <ListBox x:Name="ListBox_AllInstance" ItemsSource="{x:Bind Instances}" Background="Transparent" SelectionMode="Single" SelectionChanged="ListBox_AllInstance_SelectionChanged">
-                <ListBox.ItemTemplate>
+            <ListView Grid.Column="0" ItemsSource="{x:Bind RootPaths}" SelectedIndex="0">
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Id}"/>
+                        <Grid Padding="0, 10, 16, 10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Text="{Binding FolderName}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                            <TextBlock Grid.Row="1" Text="{Binding FolderPath}" Style="{StaticResource SettingsCardDescriptionTextStyle}"/>
+                        </Grid>
                     </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-        </Expander>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Expander Grid.Column="1" Header="All Instances" MinWidth="500" VerticalAlignment="Top" HorizontalAlignment="Stretch" IsExpanded="True">
+                <ListBox x:Name="ListBox_AllInstance" ItemsSource="{x:Bind Instances}" Background="Transparent" SelectionMode="Single" SelectionChanged="ListBox_AllInstance_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Id}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Expander>
+        </Grid>
     </Grid>
 </Page>
