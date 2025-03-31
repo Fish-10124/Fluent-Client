@@ -3,6 +3,8 @@ Assets\Pages\Download\Page_InstancesList.xaml
 Assets\Pages\Download\Page_InstancesList.xaml.cs
 Assets\Pages\Download\Page_InstancesOption.xaml
 Assets\Pages\Download\Page_InstancesOption.xaml.cs
+Assets\Pages\Home\Page_Home.xaml
+Assets\Pages\Home\Page_Home.xaml.cs
 Assets\Resources\Icons\crafting_table_front.png
 Assets\Resources\Icons\dirt_path_side.png
 Assets\Resources\Icons\FabricIcon.png

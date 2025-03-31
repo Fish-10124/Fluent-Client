@@ -2,5 +2,6 @@ App.xbf
 Assets\Pages\Download\Page_DownloadMod.xbf
 Assets\Pages\Download\Page_InstancesList.xbf
 Assets\Pages\Download\Page_InstancesOption.xbf
-Assets\Pages\Page_Home.xbf
+Assets\Pages\Home\Page_Home.xbf
+Assets\Pages\Home\Page_SelectInstance.xbf
 MainWindow.xbf

@@ -20,6 +20,8 @@
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml.cs" />
+    <Content Remove="Assets\Pages\Home\Page_SelectInstance.xaml" />
+    <Content Remove="Assets\Pages\Home\Page_SelectInstance.xaml.cs" />
     <Content Remove="Assets\Pages\Page_Download.xaml.cs" />
     <Content Remove="Assets\Pages\Page_DownloadCore.xaml" />
     <Content Remove="Assets\Pages\Page_DownloadCore.xaml.cs" />
@@ -32,6 +34,7 @@
   <ItemGroup>
     <None Remove="Assets\Pages\Download\Page_CoreOption.xaml" />
     <None Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />
+    <None Remove="Assets\Pages\Home\Page_SelectInstance.xaml" />
     <None Remove="Assets\Pages\Page_DownloadCore.xaml" />
     <None Remove="Assets\Pages\Page_DownloadMod.xaml" />
     <None Remove="Assets\Pages\Page_Home.xaml" />
@@ -87,6 +90,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Assets\Pages\Download\Page_CoreOption.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Pages\Home\Page_SelectInstance.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

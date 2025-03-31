@@ -149,7 +149,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                 animation.Configuration = new DirectConnectedAnimationConfiguration();
                 if (clickedCard?.DataContext is SettingsCardListShow targetItem)
                 {
-                    GlobalVar.BreadcrumbItems.Add(new(GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header, GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header));
+                    GlobalVar.BreadcrumbItems.Add(new(GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header ?? "", GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header ?? ""));
                     Frame.Navigate(typeof(Page_InstanceOption), targetItem, new SlideNavigationTransitionInfo() { Effect = SlideNavigationTransitionEffect.FromRight });
                 }
             }
