@@ -34,7 +34,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
     {
         private ObservableCollection<RootPathListShow> RootPaths = [];
         private IList<ModifiedMinecraftEntry?> Instances = [];
-        public ObservableCollection<SettingsCardTagDescriptionInfos?> InstanceDetails = [];
+        public ObservableCollection<InstancesDeatils> InstancesDetails = [ new() { Type = InstanceType.Normal}, new() { Type = InstanceType.Modified} ];
 
         public Page_SelectInstance()
         {
@@ -42,11 +42,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
 
             foreach (var item in GlobalVar.RootPaths)
             {
-                RootPaths.Add(new()
-                {
-                    FolderName = Path.GetFileName(item) ?? item,
-                    FolderPath = item
-                });
+                RootPaths.Add(new(Path.GetFileName(item) ?? item, item));
             }
 
             MinecraftParser mcParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
@@ -55,6 +51,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
             {
                 IList<string> descriptions = [item.Version.VersionId, item.Version.Type.ToString()];
                 BitmapImage headerIcon;
+                int modifyIndex;
 
                 // 如果是原版
                 if (item.IsVanilla)
@@ -69,6 +66,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
                         MinecraftVersionType.Unknown => Icons.Furnace,
                         _ => throw new NotImplementedException()
                     };
+                    modifyIndex = 0;
                 }
                 else
                 {
@@ -96,18 +94,23 @@ namespace Fluent_Launcher.Assets.Pages.Home
                         ModLoaderType.Unknown => Icons.Furnace,
                         _ => throw new NotImplementedException()
                     };
+                    modifyIndex = 1;
                 }
 
-                InstanceDetails.Add(new()
+                var instanceDetails = new SettingsCardTagDescriptionInfos()
                 {
                     Header = item?.Id,
                     Description = descriptions,
-                    HeaderIcon = headerIcon
-                });
+                    HeaderIcon = headerIcon,
+                    Tag = modifyIndex.ToString()
+                };
+
+                InstancesDetails[modifyIndex].SettingsCardInfos?.Add(instanceDetails);
+
             }
         }
 
-        private void ListView_AllInstance_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ListView_Instances_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listView = sender as ListView;
             if (listView == null)
@@ -115,9 +118,19 @@ namespace Fluent_Launcher.Assets.Pages.Home
                 return;
             }
 
-            GlobalVar.BreadcrumbItems.Clear();
-            GlobalVar.BreadcrumbItems.Add(new("InstanceOptions", "Instance Options"));
-            Frame.Navigate(typeof(Page_InstanceOption), InstanceDetails[listView.SelectedIndex]);
+            var instancesDetails = listView.SelectedItem as SettingsCardTagDescriptionInfos;
+
+            var animationElement = (listView.ContainerFromIndex(listView.SelectedIndex) as ListViewItem)?.ContentTemplateRoot as Grid;
+            if (animationElement != null)
+            {
+                var animation = ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("SelectInstanceToOptionAnimation", animationElement);
+                animation.Configuration = new DirectConnectedAnimationConfiguration();
+
+                GlobalVar.BreadcrumbItems.Clear();
+                GlobalVar.BreadcrumbItems.Add(new("InstanceOptions", "Instance Options"));
+
+                Frame.Navigate(typeof(Page_InstanceOption), InstancesDetails[System.Convert.ToInt32(instancesDetails?.Tag)]?.SettingsCardInfos?[listView.SelectedIndex]);
+            }
         }
     }
 }

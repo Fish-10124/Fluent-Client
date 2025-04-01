@@ -15,6 +15,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 using MinecraftLaunch.Utilities;
 using Convert = System.Convert;
 using Microsoft.UI.Xaml.Navigation;
+using MinecraftLaunch.Base.Models.Network;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -27,7 +28,11 @@ namespace Fluent_Launcher.Assets.Pages.Download
     public sealed partial class Page_InstancesList : Page
     {
         private static IList<SettingsCardInfos> FilteredInstances = [];
-        
+
+        private int SelectedInstanceIndex;
+        private IList<VersionManifestEntry> Instances = [];
+        private IList<SettingsCardInfos> InstanceListToShow = [];
+
         public Page_InstancesList()
         {
             this.InitializeComponent();
@@ -44,9 +49,9 @@ namespace Fluent_Launcher.Assets.Pages.Download
 
         private async Task GetInstancesAsync()
         {
-            GlobalVar.Instances = await VanillaInstaller.EnumerableMinecraftAsync().ToListAsync();
+            Instances = await VanillaInstaller.EnumerableMinecraftAsync().ToListAsync();
 
-            foreach (var (item, i) in GlobalVar.Instances.Select((item, i) => (item, i)))
+            foreach (var (item, i) in Instances.Select((item, i) => (item, i)))
             {
 
                 // 转换版本类型
@@ -59,7 +64,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                     _ => throw new NotImplementedException()
                 };
 
-                GlobalVar.InstanceListToShow.Add(new SettingsCardInfos
+                InstanceListToShow.Add(new SettingsCardInfos
                 {
                     Header = item.Id,
                     Description = $"{instanceType}  {item.ReleaseTime.ToString("d", CultureInfo.CurrentCulture)} {item.ReleaseTime.ToString("t", CultureInfo.CurrentCulture)}",
@@ -77,7 +82,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
 
             }
 
-            FilteredInstances = GlobalVar.InstanceListToShow.Select(item => new SettingsCardInfos
+            FilteredInstances = InstanceListToShow.Select(item => new SettingsCardInfos
             {
                 Header = item.Header,
                 Description = item.Description,
@@ -110,22 +115,22 @@ namespace Fluent_Launcher.Assets.Pages.Download
             if (comboBox?.SelectedIndex == 0)
             {
                 ListView_Instances.ItemsSource = null;
-                ListView_Instances.ItemsSource = GlobalVar.InstanceListToShow;
+                ListView_Instances.ItemsSource = InstanceListToShow;
                 return;
             }
 
             var filteredInstances = comboBox?.SelectedIndex switch
             {
-                1 => GlobalVar.Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "release").Select(pair => pair.index).ToList(),
-                2 => GlobalVar.Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "snapshot").Select(pair => pair.index).ToList(),
-                3 => GlobalVar.Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "old_alpha").Select(pair => pair.index).ToList(),
-                4 => GlobalVar.Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "old_beta").Select(pair => pair.index).ToList(),
-                5 => GlobalVar.Instances.Select((item, index) => (item, index)).Where(pair => pair.item.ReleaseTime.Month == 4 && pair.item.ReleaseTime.Day == 1).Select(pair => pair.index).ToList(),
+                1 => Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "release").Select(pair => pair.index).ToList(),
+                2 => Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "snapshot").Select(pair => pair.index).ToList(),
+                3 => Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "old_alpha").Select(pair => pair.index).ToList(),
+                4 => Instances.Select((item, index) => (item, index)).Where(pair => pair.item.Type == "old_beta").Select(pair => pair.index).ToList(),
+                5 => Instances.Select((item, index) => (item, index)).Where(pair => pair.item.ReleaseTime.Month == 4 && pair.item.ReleaseTime.Day == 1).Select(pair => pair.index).ToList(),
                 _ => throw new NotImplementedException()
             };
             foreach (var (item, i) in filteredInstances.Select((item, i) => (item, i)))
             {
-                FilteredInstances.Add(GlobalVar.InstanceListToShow[filteredInstances[i]]);
+                FilteredInstances.Add(InstanceListToShow[filteredInstances[i]]);
             }
 
             if (FilteredInstances.Any())
@@ -139,7 +144,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
         {
             // clickedCard.Tag代表了列表的索引
             var clickedCard = sender as SettingsCard;
-            GlobalVar.SelectedInstanceIndex = Convert.ToInt32(clickedCard?.Tag);
+            SelectedInstanceIndex = Convert.ToInt32(clickedCard?.Tag);
 
             // 准备动画
             var animationElement = clickedCard?.FindName("Grid_InstanceDetail") as Grid;
@@ -147,11 +152,11 @@ namespace Fluent_Launcher.Assets.Pages.Download
             {
                 var animation = ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("InstancesListToOptionAnimation", animationElement);
                 animation.Configuration = new DirectConnectedAnimationConfiguration();
-                if (clickedCard?.DataContext is SettingsCardInfos targetItem)
-                {
-                    GlobalVar.BreadcrumbItems.Add(new(GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header ?? "", GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex].Header ?? ""));
-                    Frame.Navigate(typeof(Page_InstanceOption), targetItem, new SlideNavigationTransitionInfo() { Effect = SlideNavigationTransitionEffect.FromRight });
-                }
+                
+                IList<object> navigateParameter = [InstanceListToShow[SelectedInstanceIndex], Instances[SelectedInstanceIndex]];
+
+                GlobalVar.BreadcrumbItems.Add(new(InstanceListToShow[SelectedInstanceIndex].Header ?? "", InstanceListToShow[SelectedInstanceIndex].Header ?? ""));
+                Frame.Navigate(typeof(Page_InstanceOption), navigateParameter, new SlideNavigationTransitionInfo() { Effect = SlideNavigationTransitionEffect.FromRight });
             }
         }
 
