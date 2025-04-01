@@ -14,6 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Remove="Assets\Class\Convert.cs" />
+    <Content Remove="Assets\Class\Enums.cs" />
     <Content Remove="Assets\Class\GlobalVar.cs" />
     <Content Remove="Assets\Class\Type.cs" />
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml" />

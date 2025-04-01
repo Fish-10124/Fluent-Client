@@ -14,6 +14,7 @@ using MinecraftLaunch.Components.Installer;
 using MinecraftLaunch.Components.Installer.Modpack;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -26,6 +27,7 @@ using Windows.Foundation.Collections;
 
 namespace Fluent_Launcher.Assets.Pages.Download
 {
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -94,8 +96,8 @@ namespace Fluent_Launcher.Assets.Pages.Download
         private IList<OptifineInstallEntry> OptifineVersions = [];
         private IList<FabricInstallEntry> FabricVersions = [];
         private IList<QuiltInstallEntry> QuiltVersions = [];
-
-        private readonly VersionManifestEntry CurrentInstanceVersion = GlobalVar.Instances[GlobalVar.SelectedInstanceIndex];
+        [NotNull]
+        private VersionManifestEntry CurrentInstanceVersion;
 
         public Page_InstanceOption()
         {
@@ -167,8 +169,12 @@ namespace Fluent_Launcher.Assets.Pages.Download
         {
             base.OnNavigatedTo(e);
 
+            var parameters = e.Parameter as IList<object> ?? throw new NullReferenceException("parameter was null!");
+
+            CurrentInstanceVersion = parameters[1] as VersionManifestEntry ?? throw new Exception("parameter parse faild!");
+
             // 获取并显示版本信息
-            var selectedInstance = GlobalVar.InstanceListToShow[GlobalVar.SelectedInstanceIndex];
+            var selectedInstance = parameters[0] as SettingsCardInfos ?? throw new Exception("parameter parse faild!");
             ImageBrush_InstanceIcon.ImageSource = selectedInstance.HeaderIcon;
             TextBlock_InstanceInfoTitle.Text = selectedInstance.Header;
             TextBlock_InstanceInfoDescription.Text = selectedInstance.Description;

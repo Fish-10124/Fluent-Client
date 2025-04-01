@@ -1,18 +1,24 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using Fluent_Launcher.Assets.Class;
 using Fluent_Launcher.Assets.Pages;
 using Fluent_Launcher.Assets.Pages.Download;
 using Flurl.Util;
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.UI.ViewManagement;
+using WinRT;
 using Type = System.Type;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -148,5 +154,6 @@ namespace Fluent_Launcher
                 NavigateFrame(typeof(Page_InstancesList), new("Instances", "Instances"));
             }
         }
+
     }
 }

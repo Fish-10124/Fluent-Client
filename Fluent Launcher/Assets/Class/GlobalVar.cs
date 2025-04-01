@@ -19,12 +19,6 @@ namespace Fluent_Launcher.Assets.Class
         public static readonly string DefaultRootPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft");
 
 
-        public static int SelectedInstanceIndex { get; set; }
-
-        public static IList<VersionManifestEntry> Instances { get; set; } = [];
-
-        public static IList<SettingsCardInfos> InstanceListToShow { get; set; } = [];
-
         public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [new("Home", "Home")];
 
         private static Options? _options = new()

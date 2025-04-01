@@ -46,10 +46,16 @@ namespace Fluent_Launcher.Assets.Class
         }
     }
 
-    public class RootPathListShow
+    public class RootPathListShow(string folderName, string folderPath)
     {
-        public required string FolderName { get; set; }
-        public required string FolderPath { get; set; }
+        public string FolderName { get; set; } = folderName;
+        public string FolderPath { get; set; } = folderPath;
+    }
+
+    public class InstancesDeatils
+    {
+        public IList<SettingsCardTagDescriptionInfos>? SettingsCardInfos { get; set; } = [];
+        public InstanceType Type { get; set; }
     }
 
 }
