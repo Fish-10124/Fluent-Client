@@ -169,6 +169,9 @@ namespace Fluent_Launcher.Assets.Pages.Download
         {
             base.OnNavigatedTo(e);
 
+            // 获取动画对象并保存
+            var pendingAnimation = ConnectedAnimationService.GetForCurrentView().GetAnimation("InstancesListToOptionAnimation");
+
             var parameters = e.Parameter as IList<object> ?? throw new NullReferenceException("parameter was null!");
 
             CurrentInstanceVersion = parameters[1] as VersionManifestEntry ?? throw new Exception("parameter parse faild!");
@@ -180,13 +183,10 @@ namespace Fluent_Launcher.Assets.Pages.Download
             TextBlock_InstanceInfoDescription.Text = selectedInstance.Description;
             TextBox_InstanceId.Text = TextBlock_InstanceInfoTitle.Text;
 
-            // 获取动画对象并保存
-            var pendingAnimation = ConnectedAnimationService.GetForCurrentView().GetAnimation("InstancesListToOptionAnimation");
-
             // 使用延迟启动动画
             Grid_InstanceDetail.Loaded += async (s, args) =>
             {
-                await Task.Delay(50); // 延迟 50 毫秒
+                await Task.Delay(GlobalVar.AnimationDelay);
                 pendingAnimation?.TryStart(Grid_InstanceDetail);
             };
 

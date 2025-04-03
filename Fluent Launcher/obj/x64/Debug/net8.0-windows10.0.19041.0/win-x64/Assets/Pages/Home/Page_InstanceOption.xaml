@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page x:ConnectionId='1'
+    x:Class="Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent_Launcher.Assets.Pages.Home"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls" 
+    xmlns:class="using:Fluent_Launcher.Assets.Class"
+    xmlns:ui="using:CommunityToolkit.WinUI"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <ScrollView>
+            <Grid MaxWidth="{StaticResource PageMaxWidth}">
+                <StackPanel VerticalAlignment="Center">
+                    <controls:SettingsExpander IsExpanded="True" Padding="{StaticResource SettingsCardPadding}" Margin="{StaticResource StackLayoutMargin}">
+
+                        <controls:SettingsExpander.Header>
+                            <Grid x:ConnectionId='2' x:Name="Grid_InstanceDetails">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border Grid.Column="0" Style="{StaticResource LargeBorderImageStyle}">
+                                    <Border.Background>
+                                        <ImageBrush x:ConnectionId='6'                                                  />
+                                    </Border.Background>
+                                </Border>
+
+                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock x:ConnectionId='3' Grid.Row="0"                                        Style="{StaticResource SettingsCardHeaderTextStyle}" Margin="0, 0, 0, 2"/>
+
+                                    <ItemsView x:ConnectionId='4' Grid.Row="1" SelectionMode="None" IsEnabled="False"                                                   >
+                                        <ItemsView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ItemContainer>
+                                                    <Border Style="{StaticResource BorderTagStyle}" Padding="5, 1, 5, 1">
+                                                        <TextBlock Grid.Row="1" Text="{Binding}" Foreground="Black" FontSize="12"/>
+                                                    </Border>
+                                                </ItemContainer>
+                                            </DataTemplate>
+                                        </ItemsView.ItemTemplate>
+
+                                        <ItemsView.Layout>
+                                            <LinedFlowLayout ItemsStretch="Fill" MinItemSpacing="5"/>
+                                        </ItemsView.Layout>
+
+                                    </ItemsView>
+                                </Grid>
+                            </Grid>
+                        </controls:SettingsExpander.Header>
+
+                        <controls:SettingsExpander.Items>
+                            <controls:SettingsCard Header="Version ID" HeaderIcon="{ui:FontIcon Glyph=&#xE8AC;}">
+                                <TextBox x:ConnectionId='7'                                                   MinWidth="300"/>
+                            </controls:SettingsCard>
+
+                            <controls:SettingsCard Header="Version Description" HeaderIcon="{ui:FontIcon Glyph=&#xE946;}">
+                                <TextBox PlaceholderText="Default" MinWidth="300"/>
+                            </controls:SettingsCard>
+                        </controls:SettingsExpander.Items>
+
+                    </controls:SettingsExpander>
+
+                    <controls:SettingsExpander Header="Start Options" HeaderIcon="{ui:FontIcon Glyph=&#xE945;}" IsExpanded="True" Margin="{StaticResource StackLayoutMargin}">
+                        <controls:SettingsExpander.Items>
+
+                            <controls:SettingsCard Header="Independent"/>
+
+                            <controls:SettingsCard Header="Window title"/>
+
+                            <controls:SettingsCard Header="Custom information"/>
+
+                            <controls:SettingsCard Header="Game java"/>
+
+                        </controls:SettingsExpander.Items>
+                    </controls:SettingsExpander>
+
+                    <controls:SettingsExpander Header="Memory" HeaderIcon="{ui:FontIcon Glyph=&#xE950;}" IsExpanded="True" Margin="{StaticResource StackLayoutMargin}">
+                        <controls:SettingsExpander.Items>
+                            <controls:SettingsCard ContentAlignment="Left" HorizontalAlignment="Stretch">
+                                <Grid Background="Red">
+
+                                    <RadioButtons SelectedIndex="0">
+                                        <RadioButton Content="Follow global"/>
+                                        <RadioButton Content="Auto"/>
+                                        <RadioButton>
+                                            <Grid Margin="0, -5, 0, 0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="Customize" Margin="0, 0, 10, 0"/>
+                                                <Slider Grid.Column="1"/>
+                                            </Grid>
+                                        </RadioButton>
+
+                                    </RadioButtons>
+
+                                </Grid>
+
+                            </controls:SettingsCard>
+                        </controls:SettingsExpander.Items>
+                    </controls:SettingsExpander>
+
+                    <controls:SettingsExpander Header="Resources" HeaderIcon="{ui:FontIcon Glyph=&#xE8A9;}" IsExpanded="True" Margin="{StaticResource StackLayoutMargin}">
+                        <controls:SettingsExpander.Items>
+
+                            <controls:SettingsCard HeaderIcon="{ui:FontIcon Glyph=&#xE74E;}" IsClickEnabled="True" Header="Saves"/>
+
+                            <controls:SettingsCard HeaderIcon="{ui:FontIcon Glyph=&#xF406;}" IsClickEnabled="True" Header="Screenshots"/>
+
+                            <controls:SettingsCard HeaderIcon="{ui:FontIcon Glyph=&#xEA86;}" IsClickEnabled="True" Header="Mods"/>
+
+                            <controls:SettingsCard HeaderIcon="{ui:FontIcon Glyph=&#xE81E;}" IsClickEnabled="True" Header="Resourcepacks"/>
+
+                            <controls:SettingsCard HeaderIcon="{ui:FontIcon Glyph=&#xF08C;}" IsClickEnabled="True" Header="Shaderpacks"/>
+
+                        </controls:SettingsExpander.Items>
+                    </controls:SettingsExpander>
+                </StackPanel>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</Page>
+
