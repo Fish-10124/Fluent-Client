@@ -45,15 +45,15 @@ namespace Fluent_Launcher.Assets.Pages.Home
         {
             base.OnNavigatedTo(e);
 
-            InstanceDetails = e.Parameter as SettingsCardTagDescriptionInfos ?? throw new NullReferenceException("Instance was null!");
-
             // 获取动画对象并保存
             var pendingAnimation = ConnectedAnimationService.GetForCurrentView().GetAnimation("SelectInstanceToOptionAnimation");
+
+            InstanceDetails = e.Parameter as SettingsCardTagDescriptionInfos ?? throw new NullReferenceException("Instance was null!");
 
             // 使用延迟启动动画
             Grid_InstanceDetails.Loaded += async (s, args) =>
             {
-                await Task.Delay(50); // 延迟 50 毫秒
+                await Task.Delay(GlobalVar.AnimationDelay);
                 pendingAnimation?.TryStart(Grid_InstanceDetails);
             };
         }

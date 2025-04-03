@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="Fluent_Launcher.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent_Launcher" 
+    xmlns:icon="using:Fluent_Launcher.Assets.Resources.Icons"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls" 
+    xmlns:class="using:Fluent_Launcher.Assets.Class">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="Border" x:Key="BaseBorderImageStyle">
+                <Setter Property="BorderBrush" Value="LightGray"/>
+                <Setter Property="BorderThickness" Value="2"/>
+                <Setter Property="CornerRadius" Value="4"/>
+            </Style>
+            <Style TargetType="Border" x:Key="SmallBorderImageStyle" BasedOn="{StaticResource BaseBorderImageStyle}">
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Width" Value="25"/>
+                <Setter Property="Height" Value="25"/>
+            </Style>
+            <Style TargetType="Border" x:Key="MediumBorderImageStyle" BasedOn="{StaticResource BaseBorderImageStyle}">
+                <Setter Property="Width" Value="35"/>
+                <Setter Property="Height" Value="35"/>
+            </Style>
+            <Style TargetType="Border" x:Key="LargeBorderImageStyle" BasedOn="{StaticResource BaseBorderImageStyle}">
+                <Setter Property="Width" Value="40"/>
+                <Setter Property="Height" Value="40"/>
+            </Style>
+            <Style TargetType="Border" x:Key="BorderTagStyle">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <SolidColorBrush Color="LightSkyBlue"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="CornerRadius" Value="3"/>
+            </Style>
+
+            <Thickness x:Key="SettingsCardPadding">16, 0, 16, 0</Thickness>
+            <Thickness x:Key="StackLayoutMargin">0, 0, 0, 10</Thickness>
+            <x:Double x:Key="PageMaxWidth">1000</x:Double>
+            <x:Double x:Key="BorderModloaderMinHeight">100</x:Double>
+            <Color x:Key="DefaultElementBackgroundColor">White</Color>
+
+            <Style TargetType="Grid" x:Key="SettingsCardHeaderGridStyle">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="10, 0, 0, 0"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="SettingsCardHeaderTextStyle">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontWeight" Value="SemiBold"/>
+            </Style>
+            <Style TargetType="TextBlock" x:Key="SettingsCardDescriptionTextStyle">
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="Foreground" Value="Gray"/>
+            </Style>
+
+            <class:VisibilityConverter x:Key="VisibilityConverter"/>
+            <class:TextWrappingConverter x:Key="TextWrappingConverter"/>
+
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>
+

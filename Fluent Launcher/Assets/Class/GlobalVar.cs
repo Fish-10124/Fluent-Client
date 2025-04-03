@@ -16,6 +16,7 @@ namespace Fluent_Launcher.Assets.Class
     {
         public const string OptionsFile = "FLOptions.json";
         public const int DefaultCurrentRootPathIndex = 0;
+        public const int AnimationDelay = 100;
         public static readonly string DefaultRootPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft");
 
 
