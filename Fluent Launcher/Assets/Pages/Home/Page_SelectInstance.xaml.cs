@@ -34,80 +34,108 @@ namespace Fluent_Launcher.Assets.Pages.Home
     {
         private ObservableCollection<RootPathListShow> RootPaths = [];
         private IList<ModifiedMinecraftEntry?> Instances = [];
-        public ObservableCollection<InstancesDeatils> InstancesDetails = [ new() { Type = InstanceType.Normal}, new() { Type = InstanceType.Modified} ];
+        public ObservableCollection<InstancesDeatils> InstancesDetails = [];
 
         public Page_SelectInstance()
         {
             this.InitializeComponent();
 
-            foreach (var item in GlobalVar.RootPaths)
+            // 初始化 RootPaths
+            foreach (var path in GlobalVar.RootPaths)
             {
-                RootPaths.Add(new(Path.GetFileName(item) ?? item, item));
+                RootPaths.Add(new(Path.GetFileName(path) ?? path, path));
             }
 
-            MinecraftParser mcParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+            // 解析 Minecraft 实例
+            var mcParser = new MinecraftParser(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
             var instances = mcParser.GetMinecrafts();
-            foreach (var item in instances)
-            {
-                IList<string> descriptions = [item.Version.VersionId, item.Version.Type.ToString()];
-                BitmapImage headerIcon;
-                int modifyIndex;
 
-                // 如果是原版
-                if (item.IsVanilla)
+            // 遍历 Minecraft 实例
+            foreach (var instance in instances)
+            {
+                IList<string> descriptions = new List<string> { instance.Version.VersionId, instance.Version.Type.ToString() };
+                BitmapImage headerIcon;
+                InstanceType type;
+
+                if (instance.IsVanilla)
                 {
-                    headerIcon = item.Version.Type switch
-                    {
-                        MinecraftVersionType.Release => Icons.Grass_Block,
-                        MinecraftVersionType.PreRelease => Icons.Crafting_Table,
-                        MinecraftVersionType.Snapshot => Icons.Crafting_Table,
-                        MinecraftVersionType.OldBeta => Icons.Dirt_Path,
-                        MinecraftVersionType.OldAlpha => Icons.Dirt_Path,
-                        MinecraftVersionType.Unknown => Icons.Furnace,
-                        _ => throw new NotImplementedException()
-                    };
-                    modifyIndex = 0;
+                    // 原版 Minecraft 图标和类型
+                    headerIcon = GetVanillaIcon(instance.Version.Type);
+                    type = InstanceType.Normal;
                 }
                 else
                 {
-                    var instance = item as ModifiedMinecraftEntry ?? throw new Exception("Instance parse faild!");
+                    // 模组 Minecraft 图标和类型
+                    var modInstance = instance as ModifiedMinecraftEntry ?? throw new Exception("Instance parse failed!");
+                    IList<ModLoaderInfo> modLoaders = modInstance.ModLoaders.ToList();
 
-                    // 获取模组加载器的类型和版本
-                    IList<ModLoaderInfo> modLoaders = [];
-                    foreach (var modloader in instance.ModLoaders)
+                    foreach (var modLoader in modLoaders)
                     {
-                        descriptions.Add($"{modloader.Type} {modloader.Version}");
-                        modLoaders.Add(modloader);
+                        descriptions.Add($"{modLoader.Type} {modLoader.Version}");
                     }
 
-                    // 设置图标
-                    headerIcon = modLoaders[0].Type switch
-                    {
-                        ModLoaderType.Any => Icons.Furnace,
-                        ModLoaderType.Forge => Icons.Forge_Icon,
-                        ModLoaderType.Cauldron => Icons.Furnace,
-                        ModLoaderType.LiteLoader => Icons.LiteLoader_Icon,
-                        ModLoaderType.Fabric => Icons.Fabric_Icon,
-                        ModLoaderType.Quilt => Icons.Quilt_Icon,
-                        ModLoaderType.NeoForge => Icons.NeoForge_Icon,
-                        ModLoaderType.OptiFine => Icons.OptiFine_Icon,
-                        ModLoaderType.Unknown => Icons.Furnace,
-                        _ => throw new NotImplementedException()
-                    };
-                    modifyIndex = 1;
+                    headerIcon = GetModLoaderIcon(modLoaders.First().Type);
+                    type = InstanceType.Modified;
                 }
 
-                var instanceDetails = new SettingsCardTagDescriptionInfos()
+                // 检查该类型的 InstancesDetails 是否已存在
+                var existingDetails = InstancesDetails.FirstOrDefault(item => item.Type == type);
+
+                if (existingDetails == null)
                 {
-                    Header = item?.Id,
+                    // 如果不存在该类型，则创建并添加新实例
+                    var newDetails = new InstancesDeatils
+                    {
+                        Type = type,
+                        SettingsCardInfos = new ObservableCollection<SettingsCardTagDescriptionInfos>()
+                    };
+
+                    InstancesDetails.Add(newDetails);
+                    existingDetails = newDetails; // 更新引用以便后续操作
+                }
+
+                // 获取实例的索引
+                var index = InstancesDetails.IndexOf(existingDetails);
+
+                // 往 SettingsCardInfos 中添加内容
+                var instanceDetails = new SettingsCardTagDescriptionInfos
+                {
+                    Header = instance.Id,
                     Description = descriptions,
                     HeaderIcon = headerIcon,
-                    Tag = modifyIndex.ToString()
+                    Tag = index.ToString() // 将索引值设置为 Tag
+                };
+                existingDetails.SettingsCardInfos?.Add(instanceDetails);
+            }
+
+            // 获取原版 Minecraft 图标
+            BitmapImage GetVanillaIcon(MinecraftVersionType type) =>
+                type switch
+                {
+                    MinecraftVersionType.Release => Icons.Grass_Block,
+                    MinecraftVersionType.PreRelease => Icons.Crafting_Table,
+                    MinecraftVersionType.Snapshot => Icons.Crafting_Table,
+                    MinecraftVersionType.OldBeta => Icons.Dirt_Path,
+                    MinecraftVersionType.OldAlpha => Icons.Dirt_Path,
+                    MinecraftVersionType.Unknown => Icons.Furnace,
+                    _ => throw new NotImplementedException()
                 };
 
-                InstancesDetails[modifyIndex].SettingsCardInfos?.Add(instanceDetails);
-
-            }
+            // 获取模组加载器图标
+            BitmapImage GetModLoaderIcon(ModLoaderType type) =>
+                type switch
+                {
+                    ModLoaderType.Any => Icons.Furnace,
+                    ModLoaderType.Forge => Icons.Forge_Icon,
+                    ModLoaderType.Cauldron => Icons.Furnace,
+                    ModLoaderType.LiteLoader => Icons.LiteLoader_Icon,
+                    ModLoaderType.Fabric => Icons.Fabric_Icon,
+                    ModLoaderType.Quilt => Icons.Quilt_Icon,
+                    ModLoaderType.NeoForge => Icons.NeoForge_Icon,
+                    ModLoaderType.OptiFine => Icons.OptiFine_Icon,
+                    ModLoaderType.Unknown => Icons.Furnace,
+                    _ => throw new NotImplementedException()
+                };
         }
 
         private void ListView_Instances_SelectionChanged(object sender, SelectionChangedEventArgs e)

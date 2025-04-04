@@ -1,5 +1,6 @@
 using Fluent_Launcher.Assets.Class;
 using Fluent_Launcher.Assets.Pages.Home;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -19,6 +20,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -35,6 +37,21 @@ namespace Fluent_Launcher.Assets.Pages
         public Page_Home()
         {
             this.InitializeComponent();
+
+            this.Loaded += async (s, args) =>
+            {
+                await SetupAsync();
+            };
+            
+        }
+        private async Task SetupAsync()
+        {
+            if (!GlobalVar.Javas.Any())
+            {
+                GlobalVar.Javas = await JavaUtil.EnumerableJavaAsync().ToListAsync();
+            }
+
+            ProgressBar.Visibility = Visibility.Collapsed;
         }
 
         private void myButton_Click(object sender, RoutedEventArgs e)
