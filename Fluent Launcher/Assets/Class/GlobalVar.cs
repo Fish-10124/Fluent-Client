@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.WinUI.Controls;
 using Microsoft.UI.Xaml.Media.Imaging;
+using MinecraftLaunch.Base.Models.Game;
 using MinecraftLaunch.Base.Models.Network;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,8 @@ namespace Fluent_Launcher.Assets.Class
         public static IList<string> RootPaths { get; set; } = Options?.RootPath ?? [];
         public static int CurrentRootPathIndex { get; set; } = Options?.CurrentRootPathIndex ?? DefaultCurrentRootPathIndex;
         public static string OptionsFolder { get; set; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FluentLauncherOptions");
-        
+
+
+        public static IList<JavaEntry> Javas { get; set; } = [];
     }
 }

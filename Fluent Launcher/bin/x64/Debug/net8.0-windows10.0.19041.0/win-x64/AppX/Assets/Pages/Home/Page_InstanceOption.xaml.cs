@@ -53,7 +53,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
             //  π”√—”≥Ÿ∆Ù∂Ø∂Øª≠
             Grid_InstanceDetails.Loaded += async (s, args) =>
             {
-                await Task.Delay(100); // —”≥Ÿ 100 ∫¡√Î
+                await Task.Delay(GlobalVar.AnimationDelay);
                 pendingAnimation?.TryStart(Grid_InstanceDetails);
             };
         }

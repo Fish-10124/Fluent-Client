@@ -10,21 +10,29 @@
     Background="Transparent">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        
-        <Button Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton" Click="myButton_Click" Content="Launch"/>
-        
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance" Click="Button_SelectInstance_Click"/>
-            <Button Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton" Click="myButton_Click" Content="Launch"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance" Click="Button_SelectInstance_Click"/>
+                <Button Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"/>
+            </Grid>
+
+
         </Grid>
+
+        <ProgressBar x:Name="ProgressBar" IsIndeterminate="True" VerticalAlignment="Bottom" />
     </Grid>
+    
 </Page>

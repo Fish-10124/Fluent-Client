@@ -186,7 +186,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
             //  π”√—”≥Ÿ∆Ù∂Ø∂Øª≠
             Grid_InstanceDetail.Loaded += async (s, args) =>
             {
-                await Task.Delay(50); // —”≥Ÿ 50 ∫¡√Î
+                await Task.Delay(GlobalVar.AnimationDelay);
                 pendingAnimation?.TryStart(Grid_InstanceDetail);
             };
 

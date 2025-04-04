@@ -39,11 +39,10 @@ namespace Fluent_Launcher.Assets.Pages.Download
 
             HttpUtil.Initialize();
 
-            DispatcherQueue.GetForCurrentThread().TryEnqueue(async () =>
+            this.Loaded += async (s, args) =>
             {
-                await Task.Delay(100); // ÑÓ³ÙÒì²½²Ù×÷
                 await GetInstancesAsync();
-            });
+            };
 
         }
 

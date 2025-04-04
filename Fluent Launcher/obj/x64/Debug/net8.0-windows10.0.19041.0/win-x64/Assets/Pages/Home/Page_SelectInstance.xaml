@@ -12,7 +12,7 @@
     Background="Transparent">
 
     <Grid>
-        <Grid Margin="40, 50, 10, 0" MaxWidth="{StaticResource PageMaxWidth}">
+        <Grid Margin="{StaticResource PageGridMargin}" MaxWidth="{StaticResource PageMaxWidth}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>

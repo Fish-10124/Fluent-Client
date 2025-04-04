@@ -14,7 +14,7 @@
 
     <Grid>
         <ScrollView>
-            <Grid MaxWidth="{StaticResource PageMaxWidth}">
+            <Grid Margin="{StaticResource PageGridMargin}" MaxWidth="{StaticResource PageMaxWidth}">
                 <StackPanel VerticalAlignment="Center">
                     <controls:SettingsExpander IsExpanded="True" Padding="{StaticResource SettingsCardPadding}" Margin="{StaticResource StackLayoutMargin}">
 
@@ -74,26 +74,34 @@
                     <controls:SettingsExpander Header="Start Options" HeaderIcon="{ui:FontIcon Glyph=&#xE945;}" IsExpanded="True" Margin="{StaticResource StackLayoutMargin}">
                         <controls:SettingsExpander.Items>
 
-                            <controls:SettingsCard Header="Independent"/>
+                            <controls:SettingsCard Header="Independent" HeaderIcon="{ui:FontIcon Glyph=&#xF3B1;}">
+                                <ToggleSwitch/>
+                            </controls:SettingsCard>
 
-                            <controls:SettingsCard Header="Window title"/>
+                            <controls:SettingsCard Header="Window title" HeaderIcon="{ui:FontIcon Glyph=&#xE8AC;}">
+                                <TextBox PlaceholderText="Follow global settings" MinWidth="300"/>
+                            </controls:SettingsCard>
 
-                            <controls:SettingsCard Header="Custom information"/>
+                            <controls:SettingsCard Header="Custom information" HeaderIcon="{ui:FontIcon Glyph=&#xE946;}">
+                                <TextBox PlaceholderText="Follow global settings" MinWidth="300"/>
+                            </controls:SettingsCard>
 
-                            <controls:SettingsCard Header="Game java"/>
+                            <controls:SettingsCard Header="Game java" HeaderIcon="{ui:FontIcon Glyph=&#xEC32;}">
+                                <ComboBox MinWidth="300"/>
+                            </controls:SettingsCard>
 
                         </controls:SettingsExpander.Items>
                     </controls:SettingsExpander>
 
                     <controls:SettingsExpander Header="Memory" HeaderIcon="{ui:FontIcon Glyph=&#xE950;}" IsExpanded="True" Margin="{StaticResource StackLayoutMargin}">
                         <controls:SettingsExpander.Items>
-                            <controls:SettingsCard ContentAlignment="Left" HorizontalAlignment="Stretch">
-                                <Grid Background="Red">
+                            <controls:SettingsCard ContentAlignment="Left">
+                                <Grid>
 
                                     <RadioButtons SelectedIndex="0">
                                         <RadioButton Content="Follow global"/>
                                         <RadioButton Content="Auto"/>
-                                        <RadioButton>
+                                        <RadioButton x:Name="RadioButton_CustomMemory">
                                             <Grid Margin="0, -5, 0, 0">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition/>
@@ -101,14 +109,13 @@
                                                 </Grid.ColumnDefinitions>
 
                                                 <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="Customize" Margin="0, 0, 10, 0"/>
-                                                <Slider Grid.Column="1"/>
+                                                <Slider Grid.Column="1" StepFrequency="0.5" IsEnabled="{Binding ElementName=RadioButton_CustomMemory, Path=IsChecked}"/>
                                             </Grid>
                                         </RadioButton>
 
                                     </RadioButtons>
 
                                 </Grid>
-
                             </controls:SettingsCard>
                         </controls:SettingsExpander.Items>
                     </controls:SettingsExpander>
