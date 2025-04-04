@@ -41,43 +41,52 @@
                                 <ListView x:ConnectionId='7' x:Name="ListView_Instances"                                          Background="Transparent" SelectionMode="Single"                                                       >
                                     <ListView.ItemTemplate>
                                         <DataTemplate                                                   >
-                                            <Grid x:ConnectionId='9' x:Name="Grid_InstanceDetails" HorizontalAlignment="Left" Padding="0, 5, 0, 5"                   >
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition/>
-                                                    <ColumnDefinition/>
-                                                </Grid.ColumnDefinitions>
+                                            <ListViewItem x:ConnectionId='9'>
+                                                <Grid x:ConnectionId='10' x:Name="Grid_InstanceDetails" Padding="0, 5, 0, 5"                   >
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition MaxWidth="{StaticResource MediumBorderSize}"/>
+                                                        <ColumnDefinition/>
+                                                        <ColumnDefinition/>
+                                                    </Grid.ColumnDefinitions>
 
-                                                <Border Grid.Column="0" Style="{StaticResource MediumBorderImageStyle}">
-                                                    <Border.Background>
-                                                        <ImageBrush x:ConnectionId='13'                                  />
-                                                    </Border.Background>
-                                                </Border>
+                                                    <Border Grid.Column="0" HorizontalAlignment="Left" Style="{StaticResource MediumBorderImageStyle}">
+                                                        <Border.Background>
+                                                            <ImageBrush x:ConnectionId='15'                                  />
+                                                        </Border.Background>
+                                                    </Border>
 
-                                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
-                                                    <Grid.RowDefinitions>
-                                                        <RowDefinition/>
-                                                        <RowDefinition/>
-                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
 
-                                                    <TextBlock x:ConnectionId='10' Grid.Row="0"                        Style="{StaticResource SettingsCardHeaderTextStyle}"/>
-                                                    <ItemsView x:ConnectionId='11' Grid.Row="1" SelectionMode="None" IsEnabled="False"                                   >
-                                                        <ItemsView.ItemTemplate>
-                                                            <DataTemplate>
-                                                                <ItemContainer>
-                                                                    <Border Style="{StaticResource BorderTagStyle}" Padding="5, 1, 5, 1">
-                                                                        <TextBlock Grid.Row="1" Text="{Binding}" Foreground="Black" FontSize="12"/>
-                                                                    </Border>
-                                                                </ItemContainer>
-                                                            </DataTemplate>
-                                                        </ItemsView.ItemTemplate>
+                                                        <TextBlock x:ConnectionId='12' Grid.Row="0"                        Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                                                        <ItemsView x:ConnectionId='13' Grid.Row="1" SelectionMode="None" IsEnabled="False"                                   >
+                                                            <ItemsView.ItemTemplate>
+                                                                <DataTemplate>
+                                                                    <ItemContainer>
+                                                                        <Border Style="{StaticResource BorderTagStyle}" Padding="5, 1, 5, 1">
+                                                                            <TextBlock Grid.Row="1" Text="{Binding}" Foreground="Black" FontSize="12"/>
+                                                                        </Border>
+                                                                    </ItemContainer>
+                                                                </DataTemplate>
+                                                            </ItemsView.ItemTemplate>
 
-                                                        <ItemsView.Layout>
-                                                            <LinedFlowLayout ItemsStretch="Fill" MinItemSpacing="5"/>
-                                                        </ItemsView.Layout>
+                                                            <ItemsView.Layout>
+                                                                <LinedFlowLayout ItemsStretch="Fill" MinItemSpacing="5"/>
+                                                            </ItemsView.Layout>
 
-                                                    </ItemsView>
+                                                        </ItemsView>
+                                                    </Grid>
+
+                                                    <Grid Grid.Column="2" HorizontalAlignment="Right">
+                                                        <HyperlinkButton x:ConnectionId='11' x:Name="HyperlinkButton_Settings"                                        >
+                                                            <FontIcon Glyph="&#xE713;" FontSize="16"/>
+                                                        </HyperlinkButton>
+                                                    </Grid>
                                                 </Grid>
-                                            </Grid>
+                                            </ListViewItem>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
                                 </ListView>

@@ -12,6 +12,7 @@ using MinecraftLaunch.Base.Models.Authentication;
 using MinecraftLaunch.Base.Models.Game;
 using MinecraftLaunch.Components.Authenticator;
 using MinecraftLaunch.Components.Parser;
+using MinecraftLaunch.Extensions;
 using MinecraftLaunch.Launch;
 using MinecraftLaunch.Utilities;
 using System;
@@ -63,19 +64,15 @@ namespace Fluent_Launcher.Assets.Pages
 
         public async void Launch()
         {
-            var minecraftParser = new MinecraftParser("D:\\Download\\PCL\\.minecraft");
+            var minecraftParser = new MinecraftParser(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
 
             var account = new OfflineAuthenticator().Authenticate("Player");
-            var minecraft = minecraftParser.GetMinecraft("tacz-1.20.1-Forge_47.4.0");
+            var minecraft = minecraftParser.GetMinecraft(GlobalVar.CurrentInstanceId);
             MinecraftRunner runner = new(new LaunchConfig
             {
                 Account = account,
                 IsEnableIndependency = true,
-                JavaPath = new JavaEntry()
-                {
-                    Is64bit = true,
-                    JavaPath = "D:\\java\\jdk-22\\bin\\javaw.exe"
-                },
+                JavaPath = minecraft.GetAppropriateJava(GlobalVar.Javas),
                 MinMemorySize = 1024,
                 MaxMemorySize = 6188
             }, minecraftParser);

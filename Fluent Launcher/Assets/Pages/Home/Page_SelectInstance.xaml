@@ -41,43 +41,52 @@
                                 <ListView x:Name="ListView_Instances" ItemsSource="{x:Bind SettingsCardInfos}" Background="Transparent" SelectionMode="Single" SelectionChanged="ListView_Instances_SelectionChanged">
                                     <ListView.ItemTemplate>
                                         <DataTemplate x:DataType="class:SettingsCardTagDescriptionInfos">
-                                            <Grid x:Name="Grid_InstanceDetails" HorizontalAlignment="Left" Padding="0, 5, 0, 5" Tag="{x:Bind Tag}">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition/>
-                                                    <ColumnDefinition/>
-                                                </Grid.ColumnDefinitions>
+                                            <ListViewItem>
+                                                <Grid x:Name="Grid_InstanceDetails" Padding="0, 5, 0, 5" Tag="{x:Bind Tag}">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition MaxWidth="{StaticResource MediumBorderSize}"/>
+                                                        <ColumnDefinition/>
+                                                        <ColumnDefinition/>
+                                                    </Grid.ColumnDefinitions>
 
-                                                <Border Grid.Column="0" Style="{StaticResource MediumBorderImageStyle}">
-                                                    <Border.Background>
-                                                        <ImageBrush ImageSource="{x:Bind HeaderIcon}"/>
-                                                    </Border.Background>
-                                                </Border>
+                                                    <Border Grid.Column="0" HorizontalAlignment="Left" Style="{StaticResource MediumBorderImageStyle}">
+                                                        <Border.Background>
+                                                            <ImageBrush ImageSource="{x:Bind HeaderIcon}"/>
+                                                        </Border.Background>
+                                                    </Border>
 
-                                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
-                                                    <Grid.RowDefinitions>
-                                                        <RowDefinition/>
-                                                        <RowDefinition/>
-                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
 
-                                                    <TextBlock Grid.Row="0" Text="{x:Bind Header}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
-                                                    <ItemsView Grid.Row="1" SelectionMode="None" IsEnabled="False" ItemsSource="{x:Bind Description}">
-                                                        <ItemsView.ItemTemplate>
-                                                            <DataTemplate>
-                                                                <ItemContainer>
-                                                                    <Border Style="{StaticResource BorderTagStyle}" Padding="5, 1, 5, 1">
-                                                                        <TextBlock Grid.Row="1" Text="{Binding}" Foreground="Black" FontSize="12"/>
-                                                                    </Border>
-                                                                </ItemContainer>
-                                                            </DataTemplate>
-                                                        </ItemsView.ItemTemplate>
+                                                        <TextBlock Grid.Row="0" Text="{x:Bind Header}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                                                        <ItemsView Grid.Row="1" SelectionMode="None" IsEnabled="False" ItemsSource="{x:Bind Description}">
+                                                            <ItemsView.ItemTemplate>
+                                                                <DataTemplate>
+                                                                    <ItemContainer>
+                                                                        <Border Style="{StaticResource BorderTagStyle}" Padding="5, 1, 5, 1">
+                                                                            <TextBlock Grid.Row="1" Text="{Binding}" Foreground="Black" FontSize="12"/>
+                                                                        </Border>
+                                                                    </ItemContainer>
+                                                                </DataTemplate>
+                                                            </ItemsView.ItemTemplate>
 
-                                                        <ItemsView.Layout>
-                                                            <LinedFlowLayout ItemsStretch="Fill" MinItemSpacing="5"/>
-                                                        </ItemsView.Layout>
+                                                            <ItemsView.Layout>
+                                                                <LinedFlowLayout ItemsStretch="Fill" MinItemSpacing="5"/>
+                                                            </ItemsView.Layout>
 
-                                                    </ItemsView>
+                                                        </ItemsView>
+                                                    </Grid>
+
+                                                    <Grid Grid.Column="2" HorizontalAlignment="Right">
+                                                        <HyperlinkButton x:Name="HyperlinkButton_Settings" Click="HyperlinkButton_Settings_Click" >
+                                                            <FontIcon Glyph="&#xE713;" FontSize="16"/>
+                                                        </HyperlinkButton>
+                                                    </Grid>
                                                 </Grid>
-                                            </Grid>
+                                            </ListViewItem>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
                                 </ListView>

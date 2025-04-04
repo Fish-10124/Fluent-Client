@@ -30,12 +30,14 @@ namespace Fluent_Launcher.Assets.Class
     {
         public IList<string> RootPath { get; set; }
         public int CurrentRootPathIndex { get; set; }
+        public string CurrentInstanceId { get; set; }
 
         // 参数化构造函数
-        public Options(IList<string> rootPaths, int currentRootPathIndex)
+        public Options(IList<string> rootPaths, int currentRootPathIndex, string currentInstanceId)
         {
             RootPath = rootPaths;
             CurrentRootPathIndex = currentRootPathIndex;
+            CurrentInstanceId = currentInstanceId;
         }
 
         // 默认构造函数
@@ -43,6 +45,7 @@ namespace Fluent_Launcher.Assets.Class
         {
             RootPath = [];
             CurrentRootPathIndex = 0;
+            CurrentInstanceId = "";
         }
     }
 

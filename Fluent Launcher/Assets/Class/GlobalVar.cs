@@ -23,11 +23,10 @@ namespace Fluent_Launcher.Assets.Class
 
         public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [new("Home", "Home")];
 
-        private static Options? _options = new()
-        {
-            RootPath = [DefaultRootPath],
-            CurrentRootPathIndex = DefaultCurrentRootPathIndex
-        };
+        // 当前选择用于启动的实例
+        public static string CurrentInstanceId { get; set; } = "None instance here!";
+
+        private static Options? _options = new([DefaultRootPath], DefaultCurrentRootPathIndex, CurrentInstanceId);
         public static Options? Options
         {
             get => _options;
@@ -38,6 +37,7 @@ namespace Fluent_Launcher.Assets.Class
                 {
                     RootPaths = _options.RootPath;
                     CurrentRootPathIndex = _options.CurrentRootPathIndex;
+                    CurrentInstanceId = _options.CurrentInstanceId;
                 }
             }
         }

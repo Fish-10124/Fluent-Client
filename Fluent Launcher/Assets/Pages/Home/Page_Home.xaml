@@ -6,18 +6,28 @@
     xmlns:local="using:Fluent_Launcher.Assets.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:class="using:Fluent_Launcher.Assets.Class"
     mc:Ignorable="d"
     Background="Transparent">
 
     <Grid>
 
-        <Grid>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 50, 50">
             <Grid.RowDefinitions>
-                <RowDefinition/>
+                <RowDefinition Height="80"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton" Click="myButton_Click" Content="Launch"/>
+            <Button Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton" Click="myButton_Click" Width="250" Height="60" Style="{StaticResource AccentButtonStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="0" Text="Launch" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="{x:Bind class:GlobalVar.CurrentInstanceId}" Style="{StaticResource SettingsCardDescriptionTextStyle}" Foreground="White"/>
+                </Grid>
+            </Button>
 
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>

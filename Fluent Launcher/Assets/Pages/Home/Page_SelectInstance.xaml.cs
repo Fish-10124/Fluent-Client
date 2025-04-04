@@ -33,7 +33,6 @@ namespace Fluent_Launcher.Assets.Pages.Home
     public sealed partial class Page_SelectInstance : Page
     {
         private ObservableCollection<RootPathListShow> RootPaths = [];
-        private IList<ModifiedMinecraftEntry?> Instances = [];
         public ObservableCollection<InstancesDeatils> InstancesDetails = [];
 
         public Page_SelectInstance()
@@ -53,7 +52,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
             // ±éÀú Minecraft ÊµÀý
             foreach (var instance in instances)
             {
-                IList<string> descriptions = new List<string> { instance.Version.VersionId, instance.Version.Type.ToString() };
+                List<string> descriptions = [instance.Version.VersionId, instance.Version.Type.ToString()];
                 BitmapImage headerIcon;
                 InstanceType type;
 
@@ -141,14 +140,21 @@ namespace Fluent_Launcher.Assets.Pages.Home
         private void ListView_Instances_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listView = sender as ListView;
-            if (listView == null)
+            GlobalVar.CurrentInstanceId = (listView?.SelectedItem as SettingsCardTagDescriptionInfos)?.Header ?? throw new NullReferenceException("InstanceId was null!");
+            Frame.Navigate(typeof(Page_Home));
+        }
+
+        private void HyperlinkButton_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedElement = ((sender as HyperlinkButton)?.Parent as Grid)?.Parent as Grid;
+            if (selectedElement == null)
             {
                 return;
             }
 
-            var instancesDetails = listView.SelectedItem as SettingsCardTagDescriptionInfos;
+            var instancesDetails = selectedElement.DataContext as SettingsCardTagDescriptionInfos;
 
-            var animationElement = (listView.ContainerFromIndex(listView.SelectedIndex) as ListViewItem)?.ContentTemplateRoot as Grid;
+            var animationElement = selectedElement;
             if (animationElement != null)
             {
                 var animation = ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("SelectInstanceToOptionAnimation", animationElement);
@@ -157,8 +163,10 @@ namespace Fluent_Launcher.Assets.Pages.Home
                 GlobalVar.BreadcrumbItems.Clear();
                 GlobalVar.BreadcrumbItems.Add(new("InstanceOptions", "Instance Options"));
 
-                Frame.Navigate(typeof(Page_InstanceOption), InstancesDetails[System.Convert.ToInt32(instancesDetails?.Tag)]?.SettingsCardInfos?[listView.SelectedIndex]);
+                Frame.Navigate(typeof(Page_InstanceOption), instancesDetails);
             }
+
         }
+
     }
 }

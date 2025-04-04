@@ -59,7 +59,8 @@ namespace Fluent_Launcher
             FileInfo fileInfo = new(OptionsFile);
             if (!File.Exists(OptionsFile) || fileInfo.Length == 0)
             {
-                GlobalVar.Options = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex);
+                // 如果没有配置文件
+                GlobalVar.Options = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex, GlobalVar.CurrentInstanceId);
             }
             else
             {
@@ -71,7 +72,7 @@ namespace Fluent_Launcher
 
         private static void CreateDefaultOptionsFile()
         {
-            var option = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex);
+            var option = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex, GlobalVar.CurrentInstanceId);
             string optionJson = JsonSerializer.Serialize(option, new JsonSerializerOptions
             {
                 WriteIndented = true
@@ -129,19 +130,15 @@ namespace Fluent_Launcher
             SaveWindowState((int)bounds.Width, (int)bounds.Height);
 
             // 如果没有OptionsFile，创建一个
-            if (File.Exists(OptionsFile))
-            {
-                // 写配置文件
-            } 
-            else
+            if (!File.Exists(OptionsFile))
             {
                 if (!Directory.Exists(GlobalVar.OptionsFolder))
                 {
                     Directory.CreateDirectory(GlobalVar.OptionsFolder);
                 }
-                CreateDefaultOptionsFile();
             }
 
+            CreateDefaultOptionsFile();
 
         }
 
