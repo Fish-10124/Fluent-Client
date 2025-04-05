@@ -21,7 +21,7 @@ namespace Fluent_Launcher.Assets.Class
         public static readonly string DefaultRootPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft");
 
 
-        public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [new("Home", "Home")];
+        public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [];
 
         // 当前选择用于启动的实例
         public static string CurrentInstanceId { get; set; } = "None instance here!";

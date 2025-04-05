@@ -2452,8 +2452,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dotnet/CommunityToolkit/_packaging/communityToolkit-Labs/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows10.0.19041": {
@@ -2569,13 +2568,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "获取包漏洞数据时出错: 响应状态代码不指示成功: 401 (Unauthorized)。"
-    }
-  ]
+  }
 }

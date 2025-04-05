@@ -100,7 +100,9 @@ namespace Fluent_Launcher
                     "Instances" => typeof(Page_InstancesList),
                     "Mod" => typeof(Page_DownloadMod),
                     _ => typeof(Page_Home)
-                }, new(invokedItem.Tag.ToString() ?? "", invokedItem.Content.ToString() ?? ""));
+                }, new(invokedItem.Tag.ToString() ?? "",
+                invokedItem.Content.ToString() == "Home" ? // 如果在主页，就不显示标题
+                "" : invokedItem.Content.ToString() ?? ""));
             }
         }
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8XLqPAkeHK8=",
+  "dgSpecHash": "5thKVuZiaZY=",
   "success": true,
   "projectFilePath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\Fluent Launcher.csproj",
   "expectedPackageFiles": [
@@ -30,12 +30,5 @@
     "C:\\Users\\yukou\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.13\\microsoft.netcore.app.runtime.win-x64.8.0.13.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.13\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.13.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "获取包漏洞数据时出错: 响应状态代码不指示成功: 401 (Unauthorized)。"
-    }
-  ]
+  "logs": []
 }
