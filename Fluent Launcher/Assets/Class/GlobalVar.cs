@@ -24,7 +24,7 @@ namespace Fluent_Launcher.Assets.Class
         public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [];
 
         // 当前选择用于启动的实例
-        public static string CurrentInstanceId { get; set; } = "None instance here!";
+        public static string CurrentInstanceId { get; set; } = "";
 
         private static Options? _options = new([DefaultRootPath], DefaultCurrentRootPathIndex, CurrentInstanceId);
         public static Options? Options
@@ -44,6 +44,8 @@ namespace Fluent_Launcher.Assets.Class
         public static IList<string> RootPaths { get; set; } = Options?.RootPath ?? [];
         public static int CurrentRootPathIndex { get; set; } = Options?.CurrentRootPathIndex ?? DefaultCurrentRootPathIndex;
         public static string OptionsFolder { get; set; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FluentLauncherOptions");
+
+        public static ObservableCollection<InstancesDeatils> InstancesDetails { get; set; } = [];
 
         // 检测设备中的Java
         public static IList<JavaEntry> Javas { get; set; } = [];

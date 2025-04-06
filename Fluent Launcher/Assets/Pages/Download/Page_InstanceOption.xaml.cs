@@ -96,8 +96,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
         private IList<OptifineInstallEntry> OptifineVersions = [];
         private IList<FabricInstallEntry> FabricVersions = [];
         private IList<QuiltInstallEntry> QuiltVersions = [];
-        [NotNull]
-        private VersionManifestEntry CurrentInstanceVersion;
+        private VersionManifestEntry? CurrentInstanceVersion;
 
         public Page_InstanceOption()
         {
@@ -118,7 +117,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
             {
                 Task.Run(async () =>
                 {
-                    NeoforgeVersions = await ForgeInstaller.EnumerableForgeAsync(CurrentInstanceVersion.Id, true).ToListAsync();
+                    NeoforgeVersions = await ForgeInstaller.EnumerableForgeAsync(CurrentInstanceVersion?.Id, true).ToListAsync();
                     if (NeoforgeVersions.Any())
                     {
                         ModloaderViews[0].parameter = true;
@@ -126,7 +125,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                 }), // 获取NeoForge版本
                 Task.Run(async () =>
                 {
-                    ForgeVersions = await ForgeInstaller.EnumerableForgeAsync(CurrentInstanceVersion.Id, false).ToListAsync();
+                    ForgeVersions = await ForgeInstaller.EnumerableForgeAsync(CurrentInstanceVersion?.Id, false).ToListAsync();
                     if (ForgeVersions.Any())
                     {
                         ModloaderViews[1].parameter = true;
@@ -134,7 +133,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                 }), // 获取Forge版本
                 Task.Run(async () =>
                 {
-                    OptifineVersions = await OptifineInstaller.EnumerableOptifineAsync(CurrentInstanceVersion.Id).ToListAsync();
+                    OptifineVersions = await OptifineInstaller.EnumerableOptifineAsync(CurrentInstanceVersion?.Id).ToListAsync();
                     if (OptifineVersions.Any())
                     {
                         ModloaderViews[2].parameter = true;
@@ -150,7 +149,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
                 }), // 获取Fabric版本
                 Task.Run(async () =>
                 {
-                    QuiltVersions = await QuiltInstaller.EnumerableQuiltAsync(CurrentInstanceVersion.Id).ToListAsync();
+                    QuiltVersions = await QuiltInstaller.EnumerableQuiltAsync(CurrentInstanceVersion?.Id).ToListAsync();
                     if (QuiltVersions.Any())
                     {
                         ModloaderViews[4].parameter = true;

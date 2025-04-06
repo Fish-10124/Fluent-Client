@@ -18,14 +18,14 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Button x:ConnectionId='3' Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton"                        Width="250" Height="60" Style="{StaticResource AccentButtonStyle}">
+            <Button x:ConnectionId='3' Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton"                        Width="250" Height="60"                                                                                                            Style="{StaticResource AccentButtonStyle}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <TextBlock HorizontalAlignment="Center" Grid.Row="0" Text="Launch" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
-                    <TextBlock x:ConnectionId='6' HorizontalAlignment="Center" Grid.Row="1"                                                   Style="{StaticResource SettingsCardDescriptionTextStyle}" Foreground="White"/>
+                    <TextBlock x:ConnectionId='6' HorizontalAlignment="Center" Grid.Row="1"                                                                                                   Style="{StaticResource SettingsCardDescriptionTextStyle}" Foreground="White"/>
                 </Grid>
             </Button>
 
@@ -36,7 +36,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:ConnectionId='4' Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance"                                    />
-                <Button x:ConnectionId='5' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"/>
+                <Button x:ConnectionId='5' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"                                                                                                                                               />
             </Grid>
 
 

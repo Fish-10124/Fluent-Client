@@ -35,6 +35,10 @@ namespace Fluent_Launcher.Assets.Pages
     /// </summary>
     public sealed partial class Page_Home : Page
     {
+
+        private MinecraftEntry? Minecraft;
+        private MinecraftParser? MinecraftParser;
+
         public Page_Home()
         {
             this.InitializeComponent();
@@ -43,8 +47,26 @@ namespace Fluent_Launcher.Assets.Pages
             {
                 await SetupAsync();
             };
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            MinecraftParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+
+            try
+            {
+                Minecraft = MinecraftParser.GetMinecraft(GlobalVar.CurrentInstanceId);
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Minecraft = null;
+                GlobalVar.CurrentInstanceId = "";
+            }
             
         }
+
         private async Task SetupAsync()
         {
             if (!GlobalVar.Javas.Any())
@@ -57,20 +79,14 @@ namespace Fluent_Launcher.Assets.Pages
 
         private void myButton_Click(object sender, RoutedEventArgs e)
         {
-
             Launch();
-
         }
 
         public async void Launch()
         {
-            var minecraftParser = new MinecraftParser(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
-
             var account = new OfflineAuthenticator().Authenticate("Player");
-            var minecraft = minecraftParser.GetMinecraft(GlobalVar.CurrentInstanceId);
-            MinecraftRunner runner = new(GlobalVar.LaunchConfig, minecraftParser);
-
-            var process = await runner.RunAsync(minecraft);
+            MinecraftRunner runner = new(GlobalVar.LaunchConfig, MinecraftParser);
+            var process = await runner.RunAsync(Minecraft);
 
             // Êä³ö
             process.Started += (_, _) =>
@@ -90,6 +106,14 @@ namespace Fluent_Launcher.Assets.Pages
             GlobalVar.BreadcrumbItems.Clear();
             GlobalVar.BreadcrumbItems.Add(new("SelectInstance", "Select Instance"));
             Frame.Navigate(typeof(Page_SelectInstance));
+        }
+
+        private void Button_InstanceOption_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalVar.BreadcrumbItems.Clear();
+            GlobalVar.BreadcrumbItems.Add(new("InstanceOptions", "Instance Options"));
+            var instanceTagInfos = Utils.InstanceEntryToTagInfos(Minecraft ?? throw new NullReferenceException("Minecraft was null!"));
+            Frame.Navigate(typeof(Page_InstanceOption), instanceTagInfos);
         }
     }
 }

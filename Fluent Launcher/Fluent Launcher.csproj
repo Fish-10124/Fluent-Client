@@ -17,6 +17,7 @@
     <Content Remove="Assets\Class\Enums.cs" />
     <Content Remove="Assets\Class\GlobalVar.cs" />
     <Content Remove="Assets\Class\Type.cs" />
+    <Content Remove="Assets\Class\Utils.cs" />
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml" />
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />

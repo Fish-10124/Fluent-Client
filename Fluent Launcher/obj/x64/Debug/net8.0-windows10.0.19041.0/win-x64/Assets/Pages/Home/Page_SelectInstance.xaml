@@ -18,7 +18,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <ListView x:ConnectionId='2' Grid.Column="0"                                  SelectedIndex="0">
+            <ListView x:ConnectionId='2' x:Name="ListView_InstanceFolders" Grid.Column="0"                                  SelectedIndex="0"                                                             >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="0, 10, 16, 10">
@@ -33,7 +33,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView x:ConnectionId='3' Grid.Column="1"                                         SelectionMode="None">
+            <ListView x:ConnectionId='3' Grid.Column="1"                                                         SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate                                    >
                         <Grid x:ConnectionId='5' Padding="0, 0, 0, 5">

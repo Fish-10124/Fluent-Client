@@ -18,7 +18,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <ListView Grid.Column="0" ItemsSource="{x:Bind RootPaths}" SelectedIndex="0">
+            <ListView x:Name="ListView_InstanceFolders" Grid.Column="0" ItemsSource="{x:Bind RootPaths}" SelectedIndex="0" SelectionChanged="ListView_InstanceFolders_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="0, 10, 16, 10">
@@ -33,7 +33,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView Grid.Column="1" ItemsSource="{x:Bind InstancesDetails}" SelectionMode="None">
+            <ListView Grid.Column="1" ItemsSource="{x:Bind class:GlobalVar.InstancesDetails}" SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="class:InstancesDeatils">
                         <Grid Padding="0, 0, 0, 5">

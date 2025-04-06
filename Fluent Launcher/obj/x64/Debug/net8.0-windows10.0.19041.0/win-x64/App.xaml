@@ -70,6 +70,8 @@
 
             <class:VisibilityConverter x:Key="VisibilityConverter"/>
             <class:TextWrappingConverter x:Key="TextWrappingConverter"/>
+            <class:InstanceIdConverter x:Key="InstanceIdConverter"/>
+            <class:InstanceEnableConverter x:Key="InstanceEnableConverter"/>
 
         </ResourceDictionary>
         

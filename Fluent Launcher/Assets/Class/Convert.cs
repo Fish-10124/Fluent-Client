@@ -39,4 +39,30 @@ namespace Fluent_Launcher.Assets.Class
             throw new NotImplementedException();
         }
     }
+
+    public partial class InstanceIdConverter : IValueConverter
+    {
+        public object Convert(object value, System.Type targetType, object parameter, string language)
+        {
+            return value as string == "" ? "None instance here!" : value;
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public partial class InstanceEnableConverter : IValueConverter
+    {
+        public object Convert(object value, System.Type targetType, object parameter, string language)
+        {
+            return value as string != "";
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

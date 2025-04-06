@@ -33,7 +33,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
     public sealed partial class Page_SelectInstance : Page
     {
         private ObservableCollection<RootPathListShow> RootPaths = [];
-        public ObservableCollection<InstancesDeatils> InstancesDetails = [];
+        private MinecraftParser McParser;
 
         public Page_SelectInstance()
         {
@@ -46,39 +46,27 @@ namespace Fluent_Launcher.Assets.Pages.Home
             }
 
             // 解析 Minecraft 实例
-            var mcParser = new MinecraftParser(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
-            var instances = mcParser.GetMinecrafts();
+            McParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+            var instances = McParser.GetMinecrafts();
+
+            ListView_InstanceFolders.SelectedIndex = GlobalVar.CurrentRootPathIndex;
 
             // 遍历 Minecraft 实例
+            ForEachInstances(instances);
+            
+        }
+
+        private void ForEachInstances(List<MinecraftEntry> instances)
+        {
+            GlobalVar.InstancesDetails.Clear();
+
             foreach (var instance in instances)
             {
-                List<string> descriptions = [instance.Version.VersionId, instance.Version.Type.ToString()];
-                BitmapImage headerIcon;
-                InstanceType type;
-
-                if (instance.IsVanilla)
-                {
-                    // 原版 Minecraft 图标和类型
-                    headerIcon = GetVanillaIcon(instance.Version.Type);
-                    type = InstanceType.Normal;
-                }
-                else
-                {
-                    // 模组 Minecraft 图标和类型
-                    var modInstance = instance as ModifiedMinecraftEntry ?? throw new Exception("Instance parse failed!");
-                    IList<ModLoaderInfo> modLoaders = modInstance.ModLoaders.ToList();
-
-                    foreach (var modLoader in modLoaders)
-                    {
-                        descriptions.Add($"{modLoader.Type} {modLoader.Version}");
-                    }
-
-                    headerIcon = GetModLoaderIcon(modLoaders.First().Type);
-                    type = InstanceType.Modified;
-                }
+                var instanceTagInfos = Utils.InstanceEntryToTagInfos(instance);
 
                 // 检查该类型的 InstancesDetails 是否已存在
-                var existingDetails = InstancesDetails.FirstOrDefault(item => item.Type == type);
+                var type = instanceTagInfos.parameter as InstanceType? ?? throw new Exception("Instance type parse faild!");
+                var existingDetails = GlobalVar.InstancesDetails.FirstOrDefault(item => item.Type == type);
 
                 if (existingDetails == null)
                 {
@@ -89,52 +77,18 @@ namespace Fluent_Launcher.Assets.Pages.Home
                         SettingsCardInfos = new ObservableCollection<SettingsCardTagDescriptionInfos>()
                     };
 
-                    InstancesDetails.Add(newDetails);
+                    GlobalVar.InstancesDetails.Add(newDetails);
                     existingDetails = newDetails; // 更新引用以便后续操作
                 }
 
                 // 获取实例的索引
-                var index = InstancesDetails.IndexOf(existingDetails);
+                var index = GlobalVar.InstancesDetails.IndexOf(existingDetails);
 
                 // 往 SettingsCardInfos 中添加内容
-                var instanceDetails = new SettingsCardTagDescriptionInfos
-                {
-                    Header = instance.Id,
-                    Description = descriptions,
-                    HeaderIcon = headerIcon,
-                    Tag = index.ToString() // 将索引值设置为 Tag
-                };
-                existingDetails.SettingsCardInfos?.Add(instanceDetails);
+                instanceTagInfos.Tag = index.ToString();
+                var instanceDetails = instanceTagInfos;
+                existingDetails.SettingsCardInfos?.Add(instanceTagInfos);
             }
-
-            // 获取原版 Minecraft 图标
-            BitmapImage GetVanillaIcon(MinecraftVersionType type) =>
-                type switch
-                {
-                    MinecraftVersionType.Release => Icons.Grass_Block,
-                    MinecraftVersionType.PreRelease => Icons.Crafting_Table,
-                    MinecraftVersionType.Snapshot => Icons.Crafting_Table,
-                    MinecraftVersionType.OldBeta => Icons.Dirt_Path,
-                    MinecraftVersionType.OldAlpha => Icons.Dirt_Path,
-                    MinecraftVersionType.Unknown => Icons.Furnace,
-                    _ => throw new NotImplementedException()
-                };
-
-            // 获取模组加载器图标
-            BitmapImage GetModLoaderIcon(ModLoaderType type) =>
-                type switch
-                {
-                    ModLoaderType.Any => Icons.Furnace,
-                    ModLoaderType.Forge => Icons.Forge_Icon,
-                    ModLoaderType.Cauldron => Icons.Furnace,
-                    ModLoaderType.LiteLoader => Icons.LiteLoader_Icon,
-                    ModLoaderType.Fabric => Icons.Fabric_Icon,
-                    ModLoaderType.Quilt => Icons.Quilt_Icon,
-                    ModLoaderType.NeoForge => Icons.NeoForge_Icon,
-                    ModLoaderType.OptiFine => Icons.OptiFine_Icon,
-                    ModLoaderType.Unknown => Icons.Furnace,
-                    _ => throw new NotImplementedException()
-                };
         }
 
         private void ListView_Instances_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -168,5 +122,16 @@ namespace Fluent_Launcher.Assets.Pages.Home
 
         }
 
+        private void ListView_InstanceFolders_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var listView = sender as ListView;
+            var selectedPath = listView?.SelectedItem as RootPathListShow;
+
+            // 解析 Minecraft 实例
+            GlobalVar.CurrentRootPathIndex = listView?.SelectedIndex ?? throw new Exception("Index parse faild!");
+            McParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+            var instances = McParser.GetMinecrafts();
+            ForEachInstances(instances);
+        }
     }
 }
