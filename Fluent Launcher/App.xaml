@@ -51,6 +51,7 @@
             <Thickness x:Key="PageGridMargin">40, 50, 10, 0</Thickness>
             <x:Double x:Key="PageMaxWidth">1000</x:Double>
             <x:Double x:Key="BorderModloaderMinHeight">100</x:Double>
+            <x:Double x:Key="GridTitleGapHeight">60</x:Double>
             <Color x:Key="DefaultElementBackgroundColor">White</Color>
 
             <Style TargetType="Grid" x:Key="SettingsCardHeaderGridStyle">

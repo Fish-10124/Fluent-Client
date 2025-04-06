@@ -290,23 +290,23 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             _typeNameTable[60] = "Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption";
             _typeNameTable[61] = "Fluent_Launcher.Assets.Pages.Download.Page_InstancesList";
             _typeNameTable[62] = "Fluent_Launcher.Assets.Pages.Page_Home";
-            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.Expander";
-            _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
-            _typeNameTable[65] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
-            _typeNameTable[68] = "CommunityToolkit.WinUI.FontIconExtension";
-            _typeNameTable[69] = "CommunityToolkit.WinUI.TextIconExtension";
-            _typeNameTable[70] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[71] = "Microsoft.UI.Xaml.Media.FontFamily";
-            _typeNameTable[72] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[73] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[74] = "Microsoft.UI.Xaml.Media.Brush";
-            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.RadioButtons";
-            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.LinedFlowLayout";
-            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch";
-            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification";
-            _typeNameTable[79] = "Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption";
+            _typeNameTable[63] = "CommunityToolkit.WinUI.FontIconExtension";
+            _typeNameTable[64] = "CommunityToolkit.WinUI.TextIconExtension";
+            _typeNameTable[65] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.Media.FontFamily";
+            _typeNameTable[67] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[68] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[69] = "Microsoft.UI.Xaml.Media.Brush";
+            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.RadioButtons";
+            _typeNameTable[71] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.LinedFlowLayout";
+            _typeNameTable[73] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch";
+            _typeNameTable[74] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification";
+            _typeNameTable[75] = "Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption";
+            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.Expander";
+            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
+            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
             _typeNameTable[80] = "Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance";
             _typeNameTable[81] = "Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop";
             _typeNameTable[82] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
@@ -394,23 +394,23 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             _typeTable[60] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption);
             _typeTable[61] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstancesList);
             _typeTable[62] = typeof(global::Fluent_Launcher.Assets.Pages.Page_Home);
-            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
-            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
-            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
-            _typeTable[68] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
-            _typeTable[69] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
-            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
-            _typeTable[72] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[73] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[74] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
-            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons);
-            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout);
-            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch);
-            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification);
-            _typeTable[79] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption);
+            _typeTable[63] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
+            _typeTable[64] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
+            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
+            _typeTable[67] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[68] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
+            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons);
+            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout);
+            _typeTable[73] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch);
+            _typeTable[74] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification);
+            _typeTable[75] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption);
+            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
+            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
+            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
             _typeTable[80] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance);
             _typeTable[81] = typeof(global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop);
             _typeTable[82] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
@@ -484,11 +484,11 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
         private object Activate_60_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption(); }
         private object Activate_61_Page_InstancesList() { return new global::Fluent_Launcher.Assets.Pages.Download.Page_InstancesList(); }
         private object Activate_62_Page_Home() { return new global::Fluent_Launcher.Assets.Pages.Page_Home(); }
-        private object Activate_63_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
-        private object Activate_68_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
-        private object Activate_75_RadioButtons() { return new global::Microsoft.UI.Xaml.Controls.RadioButtons(); }
-        private object Activate_76_LinedFlowLayout() { return new global::Microsoft.UI.Xaml.Controls.LinedFlowLayout(); }
-        private object Activate_79_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption(); }
+        private object Activate_63_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
+        private object Activate_70_RadioButtons() { return new global::Microsoft.UI.Xaml.Controls.RadioButtons(); }
+        private object Activate_72_LinedFlowLayout() { return new global::Microsoft.UI.Xaml.Controls.LinedFlowLayout(); }
+        private object Activate_75_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption(); }
+        private object Activate_76_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
         private object Activate_80_Page_SelectInstance() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance(); }
         private object Activate_81_DesktopAcrylicBackdrop() { return new global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop(); }
         private object Activate_83_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
@@ -541,18 +541,18 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
         private void StaticInitializer_60_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption).TypeHandle);
         private void StaticInitializer_61_Page_InstancesList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstancesList).TypeHandle);
         private void StaticInitializer_62_Page_Home() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Page_Home).TypeHandle);
-        private void StaticInitializer_63_Expander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Expander).TypeHandle);
-        private void StaticInitializer_64_ExpandDirection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection).TypeHandle);
-        private void StaticInitializer_67_ExpanderTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings).TypeHandle);
-        private void StaticInitializer_68_FontIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.FontIconExtension).TypeHandle);
-        private void StaticInitializer_69_TextIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.TextIconExtension).TypeHandle);
-        private void StaticInitializer_72_FontWeight() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontWeight).TypeHandle);
-        private void StaticInitializer_73_FontStyle() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontStyle).TypeHandle);
-        private void StaticInitializer_75_RadioButtons() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons).TypeHandle);
-        private void StaticInitializer_76_LinedFlowLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout).TypeHandle);
-        private void StaticInitializer_77_LinedFlowLayoutItemsStretch() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch).TypeHandle);
-        private void StaticInitializer_78_LinedFlowLayoutItemsJustification() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification).TypeHandle);
-        private void StaticInitializer_79_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption).TypeHandle);
+        private void StaticInitializer_63_FontIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.FontIconExtension).TypeHandle);
+        private void StaticInitializer_64_TextIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.TextIconExtension).TypeHandle);
+        private void StaticInitializer_67_FontWeight() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontWeight).TypeHandle);
+        private void StaticInitializer_68_FontStyle() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontStyle).TypeHandle);
+        private void StaticInitializer_70_RadioButtons() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons).TypeHandle);
+        private void StaticInitializer_72_LinedFlowLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout).TypeHandle);
+        private void StaticInitializer_73_LinedFlowLayoutItemsStretch() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch).TypeHandle);
+        private void StaticInitializer_74_LinedFlowLayoutItemsJustification() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification).TypeHandle);
+        private void StaticInitializer_75_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption).TypeHandle);
+        private void StaticInitializer_76_Expander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Expander).TypeHandle);
+        private void StaticInitializer_77_ExpandDirection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection).TypeHandle);
+        private void StaticInitializer_79_ExpanderTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings).TypeHandle);
         private void StaticInitializer_80_Page_SelectInstance() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance).TypeHandle);
         private void StaticInitializer_81_DesktopAcrylicBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop).TypeHandle);
         private void StaticInitializer_83_NavigationView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationView).TypeHandle);
@@ -1108,55 +1108,19 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 63:   //  Microsoft.UI.Xaml.Controls.Expander
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_63_Expander;
-                userType.StaticInitializer = StaticInitializer_63_Expander;
-                userType.AddMemberName("IsExpanded");
-                userType.AddMemberName("Header");
-                userType.AddMemberName("ExpandDirection");
-                userType.AddMemberName("HeaderTemplate");
-                userType.AddMemberName("HeaderTemplateSelector");
-                userType.AddMemberName("TemplateSettings");
-                xamlType = userType;
-                break;
-
-            case 64:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_64_ExpandDirection;
-                userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
-                userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
-                xamlType = userType;
-                break;
-
-            case 65:   //  Microsoft.UI.Xaml.DataTemplate
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 66:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 67:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_67_ExpanderTemplateSettings;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 68:   //  CommunityToolkit.WinUI.FontIconExtension
+            case 63:   //  CommunityToolkit.WinUI.FontIconExtension
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
-                userType.Activator = Activate_68_FontIconExtension;
-                userType.StaticInitializer = StaticInitializer_68_FontIconExtension;
+                userType.Activator = Activate_63_FontIconExtension;
+                userType.StaticInitializer = StaticInitializer_63_FontIconExtension;
                 userType.AddMemberName("Glyph");
                 userType.AddMemberName("FontFamily");
                 userType.SetIsMarkupExtension();
                 xamlType = userType;
                 break;
 
-            case 69:   //  CommunityToolkit.WinUI.TextIconExtension
+            case 64:   //  CommunityToolkit.WinUI.TextIconExtension
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
-                userType.StaticInitializer = StaticInitializer_69_TextIconExtension;
+                userType.StaticInitializer = StaticInitializer_64_TextIconExtension;
                 userType.AddMemberName("FontSize");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("FontStyle");
@@ -1167,54 +1131,58 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 70:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
+            case 65:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 71:   //  Microsoft.UI.Xaml.Media.FontFamily
+            case 66:   //  Microsoft.UI.Xaml.Media.FontFamily
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 72:   //  Windows.UI.Text.FontWeight
+            case 67:   //  Windows.UI.Text.FontWeight
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_72_FontWeight;
+                userType.StaticInitializer = StaticInitializer_67_FontWeight;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 73:   //  Windows.UI.Text.FontStyle
+            case 68:   //  Windows.UI.Text.FontStyle
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_73_FontStyle;
+                userType.StaticInitializer = StaticInitializer_68_FontStyle;
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
                 userType.AddEnumValue("Italic", global::Windows.UI.Text.FontStyle.Italic);
                 xamlType = userType;
                 break;
 
-            case 74:   //  Microsoft.UI.Xaml.Media.Brush
+            case 69:   //  Microsoft.UI.Xaml.Media.Brush
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 75:   //  Microsoft.UI.Xaml.Controls.RadioButtons
+            case 70:   //  Microsoft.UI.Xaml.Controls.RadioButtons
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_75_RadioButtons;
-                userType.StaticInitializer = StaticInitializer_75_RadioButtons;
+                userType.Activator = Activate_70_RadioButtons;
+                userType.StaticInitializer = StaticInitializer_70_RadioButtons;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.RadioButtons.Items");
                 userType.AddMemberName("Items");
+                userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("Header");
                 userType.AddMemberName("HeaderTemplate");
                 userType.AddMemberName("ItemTemplate");
                 userType.AddMemberName("ItemsSource");
                 userType.AddMemberName("MaxColumns");
-                userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("SelectedItem");
                 xamlType = userType;
                 break;
 
-            case 76:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayout
+            case 71:   //  Microsoft.UI.Xaml.DataTemplate
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 72:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayout
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.VirtualizingLayout"));
-                userType.Activator = Activate_76_LinedFlowLayout;
-                userType.StaticInitializer = StaticInitializer_76_LinedFlowLayout;
+                userType.Activator = Activate_72_LinedFlowLayout;
+                userType.StaticInitializer = StaticInitializer_72_LinedFlowLayout;
                 userType.AddMemberName("ItemsStretch");
                 userType.AddMemberName("MinItemSpacing");
                 userType.AddMemberName("ActualLineHeight");
@@ -1226,17 +1194,17 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 77:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch
+            case 73:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_77_LinedFlowLayoutItemsStretch;
+                userType.StaticInitializer = StaticInitializer_73_LinedFlowLayoutItemsStretch;
                 userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch.None);
                 userType.AddEnumValue("Fill", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch.Fill);
                 xamlType = userType;
                 break;
 
-            case 78:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification
+            case 74:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_78_LinedFlowLayoutItemsJustification;
+                userType.StaticInitializer = StaticInitializer_74_LinedFlowLayoutItemsJustification;
                 userType.AddEnumValue("Start", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.Start);
                 userType.AddEnumValue("Center", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.Center);
                 userType.AddEnumValue("End", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.End);
@@ -1246,11 +1214,43 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 79:   //  Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption
+            case 75:   //  Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_79_Page_InstanceOption;
-                userType.StaticInitializer = StaticInitializer_79_Page_InstanceOption;
+                userType.Activator = Activate_75_Page_InstanceOption;
+                userType.StaticInitializer = StaticInitializer_75_Page_InstanceOption;
                 userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 76:   //  Microsoft.UI.Xaml.Controls.Expander
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
+                userType.Activator = Activate_76_Expander;
+                userType.StaticInitializer = StaticInitializer_76_Expander;
+                userType.AddMemberName("Header");
+                userType.AddMemberName("IsExpanded");
+                userType.AddMemberName("ExpandDirection");
+                userType.AddMemberName("HeaderTemplate");
+                userType.AddMemberName("HeaderTemplateSelector");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 77:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_77_ExpandDirection;
+                userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
+                userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
+                xamlType = userType;
+                break;
+
+            case 78:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 79:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_79_ExpanderTemplateSettings;
+                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
@@ -2302,280 +2302,280 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.IsActionIconVisible = (global::System.Boolean)Value;
         }
-        private object get_89_Expander_IsExpanded(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.IsExpanded;
-        }
-        private void set_89_Expander_IsExpanded(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.IsExpanded = (global::System.Boolean)Value;
-        }
-        private object get_90_Expander_Header(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.Header;
-        }
-        private void set_90_Expander_Header(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_91_Expander_ExpandDirection(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.ExpandDirection;
-        }
-        private void set_91_Expander_ExpandDirection(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.ExpandDirection = (global::Microsoft.UI.Xaml.Controls.ExpandDirection)Value;
-        }
-        private object get_92_Expander_HeaderTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.HeaderTemplate;
-        }
-        private void set_92_Expander_HeaderTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_93_Expander_HeaderTemplateSelector(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.HeaderTemplateSelector;
-        }
-        private void set_93_Expander_HeaderTemplateSelector(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.HeaderTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
-        }
-        private object get_94_Expander_TemplateSettings(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.TemplateSettings;
-        }
-        private object get_95_FontIconExtension_Glyph(object instance)
+        private object get_89_FontIconExtension_Glyph(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.Glyph;
         }
-        private void set_95_FontIconExtension_Glyph(object instance, object Value)
+        private void set_89_FontIconExtension_Glyph(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.Glyph = (global::System.String)Value;
         }
-        private object get_96_FontIconExtension_FontFamily(object instance)
+        private object get_90_FontIconExtension_FontFamily(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.FontFamily;
         }
-        private void set_96_FontIconExtension_FontFamily(object instance, object Value)
+        private void set_90_FontIconExtension_FontFamily(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_97_TextIconExtension_FontSize(object instance)
+        private object get_91_TextIconExtension_FontSize(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontSize;
         }
-        private void set_97_TextIconExtension_FontSize(object instance, object Value)
+        private void set_91_TextIconExtension_FontSize(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_98_TextIconExtension_FontWeight(object instance)
+        private object get_92_TextIconExtension_FontWeight(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontWeight;
         }
-        private void set_98_TextIconExtension_FontWeight(object instance, object Value)
+        private void set_92_TextIconExtension_FontWeight(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
         }
-        private object get_99_TextIconExtension_FontStyle(object instance)
+        private object get_93_TextIconExtension_FontStyle(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontStyle;
         }
-        private void set_99_TextIconExtension_FontStyle(object instance, object Value)
+        private void set_93_TextIconExtension_FontStyle(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_100_TextIconExtension_Foreground(object instance)
+        private object get_94_TextIconExtension_Foreground(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.Foreground;
         }
-        private void set_100_TextIconExtension_Foreground(object instance, object Value)
+        private void set_94_TextIconExtension_Foreground(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.Foreground = (global::Microsoft.UI.Xaml.Media.Brush)Value;
         }
-        private object get_101_TextIconExtension_IsTextScaleFactorEnabled(object instance)
+        private object get_95_TextIconExtension_IsTextScaleFactorEnabled(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.IsTextScaleFactorEnabled;
         }
-        private void set_101_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
+        private void set_95_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.IsTextScaleFactorEnabled = (global::System.Boolean)Value;
         }
-        private object get_102_TextIconExtension_MirroredWhenRightToLeft(object instance)
+        private object get_96_TextIconExtension_MirroredWhenRightToLeft(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.MirroredWhenRightToLeft;
         }
-        private void set_102_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
+        private void set_96_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.MirroredWhenRightToLeft = (global::System.Boolean)Value;
         }
-        private object get_103_RadioButtons_Items(object instance)
+        private object get_97_RadioButtons_Items(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.Items;
         }
-        private object get_104_RadioButtons_Header(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            return that.Header;
-        }
-        private void set_104_RadioButtons_Header(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_105_RadioButtons_HeaderTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            return that.HeaderTemplate;
-        }
-        private void set_105_RadioButtons_HeaderTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_106_RadioButtons_ItemTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            return that.ItemTemplate;
-        }
-        private void set_106_RadioButtons_ItemTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            that.ItemTemplate = (global::System.Object)Value;
-        }
-        private object get_107_RadioButtons_ItemsSource(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            return that.ItemsSource;
-        }
-        private void set_107_RadioButtons_ItemsSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            that.ItemsSource = (global::System.Object)Value;
-        }
-        private object get_108_RadioButtons_MaxColumns(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            return that.MaxColumns;
-        }
-        private void set_108_RadioButtons_MaxColumns(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
-            that.MaxColumns = (global::System.Int32)Value;
-        }
-        private object get_109_RadioButtons_SelectedIndex(object instance)
+        private object get_98_RadioButtons_SelectedIndex(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.SelectedIndex;
         }
-        private void set_109_RadioButtons_SelectedIndex(object instance, object Value)
+        private void set_98_RadioButtons_SelectedIndex(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.SelectedIndex = (global::System.Int32)Value;
         }
-        private object get_110_RadioButtons_SelectedItem(object instance)
+        private object get_99_RadioButtons_Header(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            return that.Header;
+        }
+        private void set_99_RadioButtons_Header(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_100_RadioButtons_HeaderTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_100_RadioButtons_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_101_RadioButtons_ItemTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            return that.ItemTemplate;
+        }
+        private void set_101_RadioButtons_ItemTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            that.ItemTemplate = (global::System.Object)Value;
+        }
+        private object get_102_RadioButtons_ItemsSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            return that.ItemsSource;
+        }
+        private void set_102_RadioButtons_ItemsSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            that.ItemsSource = (global::System.Object)Value;
+        }
+        private object get_103_RadioButtons_MaxColumns(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            return that.MaxColumns;
+        }
+        private void set_103_RadioButtons_MaxColumns(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
+            that.MaxColumns = (global::System.Int32)Value;
+        }
+        private object get_104_RadioButtons_SelectedItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.SelectedItem;
         }
-        private void set_110_RadioButtons_SelectedItem(object instance, object Value)
+        private void set_104_RadioButtons_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_111_LinedFlowLayout_ItemsStretch(object instance)
+        private object get_105_LinedFlowLayout_ItemsStretch(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.ItemsStretch;
         }
-        private void set_111_LinedFlowLayout_ItemsStretch(object instance, object Value)
+        private void set_105_LinedFlowLayout_ItemsStretch(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             that.ItemsStretch = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch)Value;
         }
-        private object get_112_LinedFlowLayout_MinItemSpacing(object instance)
+        private object get_106_LinedFlowLayout_MinItemSpacing(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.MinItemSpacing;
         }
-        private void set_112_LinedFlowLayout_MinItemSpacing(object instance, object Value)
+        private void set_106_LinedFlowLayout_MinItemSpacing(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             that.MinItemSpacing = (global::System.Double)Value;
         }
-        private object get_113_LinedFlowLayout_ActualLineHeight(object instance)
+        private object get_107_LinedFlowLayout_ActualLineHeight(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.ActualLineHeight;
         }
-        private object get_114_LinedFlowLayout_ItemsJustification(object instance)
+        private object get_108_LinedFlowLayout_ItemsJustification(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.ItemsJustification;
         }
-        private void set_114_LinedFlowLayout_ItemsJustification(object instance, object Value)
+        private void set_108_LinedFlowLayout_ItemsJustification(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             that.ItemsJustification = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification)Value;
         }
-        private object get_115_LinedFlowLayout_LineHeight(object instance)
+        private object get_109_LinedFlowLayout_LineHeight(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.LineHeight;
         }
-        private void set_115_LinedFlowLayout_LineHeight(object instance, object Value)
+        private void set_109_LinedFlowLayout_LineHeight(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             that.LineHeight = (global::System.Double)Value;
         }
-        private object get_116_LinedFlowLayout_LineSpacing(object instance)
+        private object get_110_LinedFlowLayout_LineSpacing(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.LineSpacing;
         }
-        private void set_116_LinedFlowLayout_LineSpacing(object instance, object Value)
+        private void set_110_LinedFlowLayout_LineSpacing(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             that.LineSpacing = (global::System.Double)Value;
         }
-        private object get_117_LinedFlowLayout_RequestedRangeLength(object instance)
+        private object get_111_LinedFlowLayout_RequestedRangeLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.RequestedRangeLength;
         }
-        private object get_118_LinedFlowLayout_RequestedRangeStartIndex(object instance)
+        private object get_112_LinedFlowLayout_RequestedRangeStartIndex(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
             return that.RequestedRangeStartIndex;
+        }
+        private object get_113_Expander_Header(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            return that.Header;
+        }
+        private void set_113_Expander_Header(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_114_Expander_IsExpanded(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            return that.IsExpanded;
+        }
+        private void set_114_Expander_IsExpanded(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            that.IsExpanded = (global::System.Boolean)Value;
+        }
+        private object get_115_Expander_ExpandDirection(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            return that.ExpandDirection;
+        }
+        private void set_115_Expander_ExpandDirection(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            that.ExpandDirection = (global::Microsoft.UI.Xaml.Controls.ExpandDirection)Value;
+        }
+        private object get_116_Expander_HeaderTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_116_Expander_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_117_Expander_HeaderTemplateSelector(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            return that.HeaderTemplateSelector;
+        }
+        private void set_117_Expander_HeaderTemplateSelector(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            that.HeaderTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
+        }
+        private object get_118_Expander_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
+            return that.TemplateSettings;
         }
         private object get_119_NavigationView_PaneDisplayMode(object instance)
         {
@@ -3690,203 +3690,203 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlMember.Getter = get_88_SettingsCard_IsActionIconVisible;
                 xamlMember.Setter = set_88_SettingsCard_IsActionIconVisible;
                 break;
-            case "Microsoft.UI.Xaml.Controls.Expander.IsExpanded":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_Expander_IsExpanded;
-                xamlMember.Setter = set_89_Expander_IsExpanded;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.Header":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_Expander_Header;
-                xamlMember.Setter = set_90_Expander_Header;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.ExpandDirection":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExpandDirection", "Microsoft.UI.Xaml.Controls.ExpandDirection");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_Expander_ExpandDirection;
-                xamlMember.Setter = set_91_Expander_ExpandDirection;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_Expander_HeaderTemplate;
-                xamlMember.Setter = set_92_Expander_HeaderTemplate;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplateSelector":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_Expander_HeaderTemplateSelector;
-                xamlMember.Setter = set_93_Expander_HeaderTemplateSelector;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.TemplateSettings":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings");
-                xamlMember.Getter = get_94_Expander_TemplateSettings;
-                xamlMember.SetIsReadOnly();
-                break;
             case "CommunityToolkit.WinUI.FontIconExtension.Glyph":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Glyph", "String");
-                xamlMember.Getter = get_95_FontIconExtension_Glyph;
-                xamlMember.Setter = set_95_FontIconExtension_Glyph;
+                xamlMember.Getter = get_89_FontIconExtension_Glyph;
+                xamlMember.Setter = set_89_FontIconExtension_Glyph;
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.FontFamily":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
-                xamlMember.Getter = get_96_FontIconExtension_FontFamily;
-                xamlMember.Setter = set_96_FontIconExtension_FontFamily;
+                xamlMember.Getter = get_90_FontIconExtension_FontFamily;
+                xamlMember.Setter = set_90_FontIconExtension_FontFamily;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontSize":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_97_TextIconExtension_FontSize;
-                xamlMember.Setter = set_97_TextIconExtension_FontSize;
+                xamlMember.Getter = get_91_TextIconExtension_FontSize;
+                xamlMember.Setter = set_91_TextIconExtension_FontSize;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontWeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
-                xamlMember.Getter = get_98_TextIconExtension_FontWeight;
-                xamlMember.Setter = set_98_TextIconExtension_FontWeight;
+                xamlMember.Getter = get_92_TextIconExtension_FontWeight;
+                xamlMember.Setter = set_92_TextIconExtension_FontWeight;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontStyle":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
-                xamlMember.Getter = get_99_TextIconExtension_FontStyle;
-                xamlMember.Setter = set_99_TextIconExtension_FontStyle;
+                xamlMember.Getter = get_93_TextIconExtension_FontStyle;
+                xamlMember.Setter = set_93_TextIconExtension_FontStyle;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.Foreground":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Foreground", "Microsoft.UI.Xaml.Media.Brush");
-                xamlMember.Getter = get_100_TextIconExtension_Foreground;
-                xamlMember.Setter = set_100_TextIconExtension_Foreground;
+                xamlMember.Getter = get_94_TextIconExtension_Foreground;
+                xamlMember.Setter = set_94_TextIconExtension_Foreground;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.IsTextScaleFactorEnabled":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsTextScaleFactorEnabled", "Boolean");
-                xamlMember.Getter = get_101_TextIconExtension_IsTextScaleFactorEnabled;
-                xamlMember.Setter = set_101_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Getter = get_95_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Setter = set_95_TextIconExtension_IsTextScaleFactorEnabled;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.MirroredWhenRightToLeft":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MirroredWhenRightToLeft", "Boolean");
-                xamlMember.Getter = get_102_TextIconExtension_MirroredWhenRightToLeft;
-                xamlMember.Setter = set_102_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Getter = get_96_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Setter = set_96_TextIconExtension_MirroredWhenRightToLeft;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.Items":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_RadioButtons_Items;
+                xamlMember.Getter = get_97_RadioButtons_Items;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.RadioButtons.Header":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_RadioButtons_Header;
-                xamlMember.Setter = set_104_RadioButtons_Header;
-                break;
-            case "Microsoft.UI.Xaml.Controls.RadioButtons.HeaderTemplate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_RadioButtons_HeaderTemplate;
-                xamlMember.Setter = set_105_RadioButtons_HeaderTemplate;
-                break;
-            case "Microsoft.UI.Xaml.Controls.RadioButtons.ItemTemplate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_RadioButtons_ItemTemplate;
-                xamlMember.Setter = set_106_RadioButtons_ItemTemplate;
-                break;
-            case "Microsoft.UI.Xaml.Controls.RadioButtons.ItemsSource":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_RadioButtons_ItemsSource;
-                xamlMember.Setter = set_107_RadioButtons_ItemsSource;
-                break;
-            case "Microsoft.UI.Xaml.Controls.RadioButtons.MaxColumns":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MaxColumns", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_RadioButtons_MaxColumns;
-                xamlMember.Setter = set_108_RadioButtons_MaxColumns;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.SelectedIndex":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_RadioButtons_SelectedIndex;
-                xamlMember.Setter = set_109_RadioButtons_SelectedIndex;
+                xamlMember.Getter = get_98_RadioButtons_SelectedIndex;
+                xamlMember.Setter = set_98_RadioButtons_SelectedIndex;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RadioButtons.Header":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_99_RadioButtons_Header;
+                xamlMember.Setter = set_99_RadioButtons_Header;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RadioButtons.HeaderTemplate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_100_RadioButtons_HeaderTemplate;
+                xamlMember.Setter = set_100_RadioButtons_HeaderTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RadioButtons.ItemTemplate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_101_RadioButtons_ItemTemplate;
+                xamlMember.Setter = set_101_RadioButtons_ItemTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RadioButtons.ItemsSource":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_102_RadioButtons_ItemsSource;
+                xamlMember.Setter = set_102_RadioButtons_ItemsSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RadioButtons.MaxColumns":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MaxColumns", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_103_RadioButtons_MaxColumns;
+                xamlMember.Setter = set_103_RadioButtons_MaxColumns;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.SelectedItem":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_RadioButtons_SelectedItem;
-                xamlMember.Setter = set_110_RadioButtons_SelectedItem;
+                xamlMember.Getter = get_104_RadioButtons_SelectedItem;
+                xamlMember.Setter = set_104_RadioButtons_SelectedItem;
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ItemsStretch":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsStretch", "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_LinedFlowLayout_ItemsStretch;
-                xamlMember.Setter = set_111_LinedFlowLayout_ItemsStretch;
+                xamlMember.Getter = get_105_LinedFlowLayout_ItemsStretch;
+                xamlMember.Setter = set_105_LinedFlowLayout_ItemsStretch;
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.MinItemSpacing":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinItemSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_LinedFlowLayout_MinItemSpacing;
-                xamlMember.Setter = set_112_LinedFlowLayout_MinItemSpacing;
+                xamlMember.Getter = get_106_LinedFlowLayout_MinItemSpacing;
+                xamlMember.Setter = set_106_LinedFlowLayout_MinItemSpacing;
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ActualLineHeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActualLineHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_LinedFlowLayout_ActualLineHeight;
+                xamlMember.Getter = get_107_LinedFlowLayout_ActualLineHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ItemsJustification":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsJustification", "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_LinedFlowLayout_ItemsJustification;
-                xamlMember.Setter = set_114_LinedFlowLayout_ItemsJustification;
+                xamlMember.Getter = get_108_LinedFlowLayout_ItemsJustification;
+                xamlMember.Setter = set_108_LinedFlowLayout_ItemsJustification;
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.LineHeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "LineHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_LinedFlowLayout_LineHeight;
-                xamlMember.Setter = set_115_LinedFlowLayout_LineHeight;
+                xamlMember.Getter = get_109_LinedFlowLayout_LineHeight;
+                xamlMember.Setter = set_109_LinedFlowLayout_LineHeight;
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.LineSpacing":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "LineSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_LinedFlowLayout_LineSpacing;
-                xamlMember.Setter = set_116_LinedFlowLayout_LineSpacing;
+                xamlMember.Getter = get_110_LinedFlowLayout_LineSpacing;
+                xamlMember.Setter = set_110_LinedFlowLayout_LineSpacing;
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.RequestedRangeLength":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "RequestedRangeLength", "Int32");
-                xamlMember.Getter = get_117_LinedFlowLayout_RequestedRangeLength;
+                xamlMember.Getter = get_111_LinedFlowLayout_RequestedRangeLength;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.RequestedRangeStartIndex":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "RequestedRangeStartIndex", "Int32");
-                xamlMember.Getter = get_118_LinedFlowLayout_RequestedRangeStartIndex;
+                xamlMember.Getter = get_112_LinedFlowLayout_RequestedRangeStartIndex;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.Expander.Header":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_113_Expander_Header;
+                xamlMember.Setter = set_113_Expander_Header;
+                break;
+            case "Microsoft.UI.Xaml.Controls.Expander.IsExpanded":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_114_Expander_IsExpanded;
+                xamlMember.Setter = set_114_Expander_IsExpanded;
+                break;
+            case "Microsoft.UI.Xaml.Controls.Expander.ExpandDirection":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExpandDirection", "Microsoft.UI.Xaml.Controls.ExpandDirection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_115_Expander_ExpandDirection;
+                xamlMember.Setter = set_115_Expander_ExpandDirection;
+                break;
+            case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_116_Expander_HeaderTemplate;
+                xamlMember.Setter = set_116_Expander_HeaderTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplateSelector":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_117_Expander_HeaderTemplateSelector;
+                xamlMember.Setter = set_117_Expander_HeaderTemplateSelector;
+                break;
+            case "Microsoft.UI.Xaml.Controls.Expander.TemplateSettings":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings");
+                xamlMember.Getter = get_118_Expander_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayMode":

@@ -45,7 +45,10 @@ namespace Fluent_Launcher.Assets.Class
         public static int CurrentRootPathIndex { get; set; } = Options?.CurrentRootPathIndex ?? DefaultCurrentRootPathIndex;
         public static string OptionsFolder { get; set; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FluentLauncherOptions");
 
-
+        // 检测设备中的Java
         public static IList<JavaEntry> Javas { get; set; } = [];
+
+        // 启动时的配置
+        public static LaunchConfig? LaunchConfig { get; set; }
     }
 }

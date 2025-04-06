@@ -68,14 +68,7 @@ namespace Fluent_Launcher.Assets.Pages
 
             var account = new OfflineAuthenticator().Authenticate("Player");
             var minecraft = minecraftParser.GetMinecraft(GlobalVar.CurrentInstanceId);
-            MinecraftRunner runner = new(new LaunchConfig
-            {
-                Account = account,
-                IsEnableIndependency = true,
-                JavaPath = minecraft.GetAppropriateJava(GlobalVar.Javas),
-                MinMemorySize = 1024,
-                MaxMemorySize = 6188
-            }, minecraftParser);
+            MinecraftRunner runner = new(GlobalVar.LaunchConfig, minecraftParser);
 
             var process = await runner.RunAsync(minecraft);
 
