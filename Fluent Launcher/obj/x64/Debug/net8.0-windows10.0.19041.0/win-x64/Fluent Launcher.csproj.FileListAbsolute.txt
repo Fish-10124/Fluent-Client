@@ -545,7 +545,6 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\De
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.AssemblyInfoInputs.cache
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.AssemblyInfo.cs
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.csproj.CoreCompileInputs.cache
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.sourcelink.json
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent L.1FEC0BD6.Up2Date
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\refint\Fluent Launcher.dll
