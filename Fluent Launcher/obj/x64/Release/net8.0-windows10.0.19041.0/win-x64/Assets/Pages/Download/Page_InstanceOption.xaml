@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent_Launcher.Assets.Pages.Download"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:globalVar="using:Fluent_Launcher.Assets.Class"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:ui="using:CommunityToolkit.WinUI"
+    xmlns:icons="using:Fluent_Launcher.Assets.Resources.Icons"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <ScrollView>
+            <Grid Margin="50, 0, 10, 0" MaxWidth="{StaticResource PageMaxWidth}">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+
+                    <controls:SettingsExpander x:ConnectionId='7' x:Name="SettingsCard_InstanceInfo" Padding="16, 8" IsExpanded="True">
+                        <controls:SettingsExpander.Header>
+                            <Grid x:ConnectionId='8' x:Name="Grid_InstanceDetail">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border Grid.Column="0" Style="{StaticResource LargeBorderImageStyle}">
+                                    <Border.Background>
+                                        <ImageBrush x:ConnectionId='11' x:Name="ImageBrush_InstanceIcon"/>
+                                    </Border.Background>
+                                </Border>
+
+                                <Grid Grid.Column="1" VerticalAlignment="Center" Margin="10, 0, 0, 0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock x:ConnectionId='9' x:Name="TextBlock_InstanceInfoTitle" Grid.Row="0" FontSize="14" FontWeight="SemiBold"/>
+
+                                    <TextBlock x:ConnectionId='10' x:Name="TextBlock_InstanceInfoDescription" Grid.Row="1" FontSize="12" Foreground="Gray"/>
+                                </Grid>
+                            </Grid>
+                        </controls:SettingsExpander.Header>
+
+                        <controls:SettingsExpander.Items>
+
+                            <controls:SettingsCard Header="Instance ID" Description="The ID of the versions directory. The ID can't be repeated.">
+                                <TextBox x:ConnectionId='13' x:Name="TextBox_InstanceId"/>
+                            </controls:SettingsCard>
+
+                            <controls:SettingsCard Header="Independent" Description="If enabled, the game will run at version directory.">
+                                <ToggleSwitch x:ConnectionId='12' x:Name="ToggleSwitch_Indepandent" IsOn="True"/>
+                            </controls:SettingsCard>
+
+                        </controls:SettingsExpander.Items>
+
+                        <Button Content="Install" Style="{ThemeResource AccentButtonStyle}" Grid.Column="2" HorizontalAlignment="Right"/>
+
+                    </controls:SettingsExpander>
+
+                </Grid>
+
+                <TextBlock Grid.Row="1" Text="Loaders" Margin="0, 10, 0, 10" Style="{StaticResource SettingsCardHeaderTextStyle}" VerticalAlignment="Bottom"/>
+
+                <Grid Grid.Row="2">
+                    <ItemsView x:ConnectionId='5' x:Name="ItemView_Modloaders" SelectionMode="Multiple">
+                        <ItemsView.Layout>
+                            <UniformGridLayout ItemsStretch="Fill" MinRowSpacing="5" MinColumnSpacing="5" MinItemWidth="200"/>
+                        </ItemsView.Layout>
+
+                        <ItemsView.ItemTemplate>
+                            <DataTemplate>
+                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding parameter}">
+                                    <Border Style="{StaticResource BaseBorderImageStyle}" Background="{StaticResource DefaultElementBackgroundColor}" BorderThickness="1" Padding="{StaticResource SettingsCardPadding}">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+
+                                            <Grid Grid.Row="0" HorizontalAlignment="Left">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Border Grid.Column="0" Style="{StaticResource SmallBorderImageStyle}">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding HeaderIcon}"/>
+                                                    </Border.Background>
+                                                </Border>
+
+                                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Grid.Row="0" Text="{Binding Header}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                                                </Grid>
+
+                                            </Grid>
+
+                                            <StackPanel Grid.Row="1" VerticalAlignment="Top">
+                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding parameter, Converter={StaticResource VisibilityConverter}}"/>
+                                                <TextBlock Text="{Binding Description}" Style="{StaticResource SettingsCardDescriptionTextStyle}" TextWrapping="{Binding parameter, Converter={StaticResource TextWrappingConverter}}"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </ItemContainer>
+                            </DataTemplate>
+                        </ItemsView.ItemTemplate>
+                    </ItemsView>
+                </Grid>
+
+                <TextBlock Grid.Row="3" Text="Pre-Install Mods" Margin="0, 10, 0, 10" Style="{StaticResource SettingsCardHeaderTextStyle}" VerticalAlignment="Bottom"/>
+
+                <Grid Grid.Row="4">
+                    <ItemsView x:ConnectionId='3' x:Name="ItemView_PreinstallMods" SelectionMode="Multiple">
+                        <ItemsView.Layout>
+                            <UniformGridLayout ItemsStretch="Fill" MinRowSpacing="5" MinColumnSpacing="5" MinItemWidth="200"/>
+                        </ItemsView.Layout>
+
+                        <ItemsView.ItemTemplate>
+                            <DataTemplate>
+                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding parameter}">
+                                    <Border Style="{StaticResource BaseBorderImageStyle}" Background="{StaticResource DefaultElementBackgroundColor}" BorderThickness="1" Padding="{StaticResource SettingsCardPadding}">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+
+                                            <Grid Grid.Row="0" HorizontalAlignment="Left">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Border Grid.Column="0" Style="{StaticResource SmallBorderImageStyle}">
+                                                    <Border.Background>
+                                                        <ImageBrush ImageSource="{Binding HeaderIcon}"/>
+                                                    </Border.Background>
+                                                </Border>
+
+                                                <Grid Grid.Column="1" Style="{StaticResource SettingsCardHeaderGridStyle}">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition/>
+                                                        <RowDefinition/>
+                                                    </Grid.RowDefinitions>
+                                                    <TextBlock Grid.Row="0" Text="{Binding Header}" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                                                </Grid>
+
+                                            </Grid>
+
+                                            <StackPanel Grid.Row="1" VerticalAlignment="Top">
+                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding parameter, Converter={StaticResource VisibilityConverter}}"/>
+                                                <TextBlock Text="{Binding Description}" Style="{StaticResource SettingsCardDescriptionTextStyle}" TextWrapping="{Binding parameter, Converter={StaticResource TextWrappingConverter}}"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </ItemContainer>
+                            </DataTemplate>
+                        </ItemsView.ItemTemplate>
+                    </ItemsView>
+                </Grid>
+            </Grid>
+        </ScrollView>
+
+        <ProgressBar x:ConnectionId='2' x:Name="ProgressBar" VerticalAlignment="Bottom" IsIndeterminate="True" ShowPaused="False" ShowError="False"/>
+    </Grid>
+</Page>
+

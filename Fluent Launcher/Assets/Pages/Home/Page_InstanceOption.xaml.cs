@@ -36,8 +36,8 @@ namespace Fluent_Launcher.Assets.Pages.Home
     /// </summary>
     public sealed partial class Page_InstanceOption : Page
     {
-        private static readonly MinecraftParser McParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
-        private readonly IniFile IniFile = new(Path.Combine(Path.GetDirectoryName(McParser.GetMinecraft(GlobalVar.CurrentInstanceId).ClientJarPath)!, "FLOptions.ini"));
+        private static readonly MinecraftParser McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
+        private readonly IniFile IniFile = new(Path.Combine(Path.GetDirectoryName(McParser.GetMinecraft(GlobalVar.Options.CurrentInstanceId).ClientJarPath)!, "FLOptions.ini"));
 
         public SettingsCardTagDescriptionInfos? InstanceDetails;
 
@@ -96,7 +96,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
             GlobalVar.IniOptions = new()
             {
                 InstanceDescription = GetNullableText(TextBox_Description.Text),
-                Independent = ToggleSwitch_Independent.IsOn,
+                Independency = ToggleSwitch_Independent.IsOn,
                 WindowTitle = GetNullableText(TextBox_WindowTitle.Text),
                 CustomInfomation = GetNullableText(TextBox_CustomInfomation.Text),
                 GameJava = string.IsNullOrEmpty(ComboBox_GameJava.Text) ? 0 : ComboBox_GameJava.SelectedIndex,
@@ -108,7 +108,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
             File.WriteAllText(IniFile.FilePath, string.Empty);
             // –¥≈‰÷√Œƒº˛
             WriteIni(InstanceOptions.Keys.InstanceDescription, GlobalVar.IniOptions?.InstanceDescription);
-            WriteIni(InstanceOptions.Keys.Independent, GlobalVar.IniOptions?.Independent);
+            WriteIni(InstanceOptions.Keys.Independent, GlobalVar.IniOptions?.Independency);
             WriteIni(InstanceOptions.Keys.WindowTitle, GlobalVar.IniOptions?.WindowTitle);
             WriteIni(InstanceOptions.Keys.CustomInfomation, GlobalVar.IniOptions?.CustomInfomation);
             WriteIni(InstanceOptions.Keys.GameJava, GlobalVar.IniOptions?.GameJava);

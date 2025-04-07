@@ -16,6 +16,7 @@ using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using MinecraftLaunch.Components.Parser;
 using MinecraftLaunch.Utilities;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -56,23 +57,27 @@ namespace Fluent_Launcher
             if (!File.Exists(OptionsFile) || fileInfo.Length == 0)
             {
                 // 如果没有配置文件
-                GlobalVar.Options = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex, GlobalVar.CurrentInstanceId);
+                GlobalVar.Options = new Options();
             }
             else
             {
                 // 读配置文件
                 var optionsContent = File.ReadAllText(OptionsFile);
-                GlobalVar.Options = JsonSerializer.Deserialize<Options>(optionsContent);
+                GlobalVar.Options = JsonSerializer.Deserialize<Options>(optionsContent) ?? throw new NullReferenceException("options file parse faild!");
             }
 
             NavigationView.SelectedItem = NavigationView.MenuItems[0];
             Frame_Content.Navigate(typeof(Page_Home));
-
         }
 
         private static void CreateDefaultOptionsFile()
         {
-            var option = new Options(GlobalVar.RootPaths, GlobalVar.CurrentRootPathIndex, GlobalVar.CurrentInstanceId);
+            var option = new Options(GlobalVar.Options.RootPaths, 
+                GlobalVar.Options.CurrentRootPathIndex, 
+                GlobalVar.Options.CurrentInstanceId, 
+                GlobalVar.Options.OfflinePlayers,
+                GlobalVar.Options.CurrentOfflinePlayer,
+                GlobalVar.Options.LoginType);
             string optionJson = JsonSerializer.Serialize(option, new JsonSerializerOptions
             {
                 WriteIndented = true

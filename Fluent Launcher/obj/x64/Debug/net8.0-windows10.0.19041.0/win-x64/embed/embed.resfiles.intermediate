@@ -4,5 +4,6 @@ Assets\Pages\Download\Page_InstanceOption.xbf
 Assets\Pages\Download\Page_InstancesList.xbf
 Assets\Pages\Home\Page_Home.xbf
 Assets\Pages\Home\Page_InstanceOption.xbf
+Assets\Pages\Home\Page_PlayerOptionsDialog.xbf
 Assets\Pages\Home\Page_SelectInstance.xbf
 MainWindow.xbf

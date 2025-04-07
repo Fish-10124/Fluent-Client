@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:ConnectionId='1'
+    x:Class="Fluent_Launcher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent_Launcher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:class="using:Fluent_Launcher.Assets.Class" 
+    mc:Ignorable="d"
+    Title="Fluent Launcher"
+                          >
+
+    <Window.SystemBackdrop>
+        <DesktopAcrylicBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid>
+
+        <NavigationView x:ConnectionId='2' x:Name="NavigationView"                                          PaneDisplayMode="LeftCompact">
+
+            <NavigationView.Resources>
+                <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent"/>
+                <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush" Color="Transparent"/>
+            </NavigationView.Resources>
+
+            <NavigationView.Header>
+                <Grid MaxWidth="1000" Margin="-25, 0, 0, 0">
+                    <BreadcrumbBar x:ConnectionId='3' x:Name="BreadcrumbBar_Header"                                                                                                      >
+                        <BreadcrumbBar.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10, 0, 10, 0">
+                                    <TextBlock Text="{Binding Value}" FontSize="30" FontWeight="SemiBold"/>
+                                </Grid>
+                            </DataTemplate>
+                        </BreadcrumbBar.ItemTemplate>
+                    </BreadcrumbBar>
+                </Grid>
+            </NavigationView.Header>
+            
+            <NavigationView.MenuItems>
+
+                <NavigationViewItem Content="Home" Icon="Home" Tag="Home"/>
+
+                <NavigationViewItem Content="Download" Icon="Download" Tag="Download" SelectsOnInvoked="False">
+                    <NavigationViewItem.MenuItems>
+
+                        <NavigationViewItem Content="Favorite" Icon="Favorite" Tag="Favorite"/>
+
+                        <NavigationViewItemHeader Content="Minecraft"/>
+
+                        <NavigationViewItem Content="Instances" Tag="Instances">
+                            <NavigationViewItem.Icon>
+                                <FontIcon Glyph="&#xF158;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem Content="Manual installation" Icon="Repair" Tag="Manual installation"/>
+
+                        <NavigationViewItemHeader Content="Community Resources"/>
+
+                        <NavigationViewItem Content="Mod" Tag="Mod">
+                            <NavigationViewItem.Icon>
+                                <FontIcon Glyph="&#xEA86;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem Content="Modpack" Tag="Modpack">
+                            <NavigationViewItem.Icon>
+                                <FontIcon Glyph="&#xE7B8;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem Content="Resourcepack" Tag="Resourcepack">
+                            <NavigationViewItem.Icon>
+                                <FontIcon Glyph="&#xF156;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                        <NavigationViewItem Content="Shaderpack" Tag="Shaderpack">
+                            <NavigationViewItem.Icon>
+                                <FontIcon Glyph="&#xF08C;"/>
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+
+                    </NavigationViewItem.MenuItems>
+                </NavigationViewItem>
+
+                <NavigationViewItem Content="More" Icon="More" Tag="More"/>
+
+            </NavigationView.MenuItems>
+
+            <Frame x:ConnectionId='5' x:Name="Frame_Content"                                    />
+
+        </NavigationView>
+        
+    </Grid>
+</Window>
+

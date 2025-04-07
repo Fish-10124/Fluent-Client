@@ -73,6 +73,8 @@
             <class:InstanceIdConverter x:Key="InstanceIdConverter"/>
             <class:InstanceEnableConverter x:Key="InstanceEnableConverter"/>
             <class:MBToGBConverter x:Key="MBToGBConverter"/>
+            <class:TextBoolConverter x:Key="TextBoolConverter"/>
+            <class:LoginTypeToIndexConverter x:Key="LoginTypeToIndexConverter"/>
 
         </ResourceDictionary>
         

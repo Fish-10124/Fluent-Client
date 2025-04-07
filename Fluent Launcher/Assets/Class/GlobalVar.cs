@@ -18,31 +18,13 @@ namespace Fluent_Launcher.Assets.Class
         public const string OptionsFile = "FLOptions.json";
         public const int DefaultCurrentRootPathIndex = 0;
         public const int AnimationDelay = 100;
+        public const string DefaultCurrentInstanceId = "";
+        public const int DefaultOfflinePlayerIndex = -1;
         public static readonly string DefaultRootPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft");
-
 
         public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [];
 
-        // 当前选择用于启动的实例
-        public static string CurrentInstanceId { get; set; } = "";
-
-        private static Options? _options = new([DefaultRootPath], DefaultCurrentRootPathIndex, CurrentInstanceId);
-        public static Options? Options
-        {
-            get => _options;
-            set
-            {
-                _options = value;
-                if (_options != null)
-                {
-                    RootPaths = _options.RootPath;
-                    CurrentRootPathIndex = _options.CurrentRootPathIndex;
-                    CurrentInstanceId = _options.CurrentInstanceId;
-                }
-            }
-        }
-        public static IList<string> RootPaths { get; set; } = Options?.RootPath ?? [];
-        public static int CurrentRootPathIndex { get; set; } = Options?.CurrentRootPathIndex ?? DefaultCurrentRootPathIndex;
+        public static Options Options { get; set; } = new();
         public static string OptionsFolder { get; set; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FluentLauncherOptions");
 
         public static ObservableCollection<InstancesDeatils> InstancesDetails { get; set; } = [];
@@ -51,9 +33,7 @@ namespace Fluent_Launcher.Assets.Class
         public static IList<JavaEntry> Javas { get; set; } = [];
 
         // 版本的配置文件，用于启动游戏时给予参数
-        public static InstanceOptions? IniOptions { get; set; }
+        public static InstanceOptions IniOptions { get; set; } = new();
 
-        // 启动时的配置
-        public static LaunchConfig? LaunchConfig { get; set; }
     }
 }

@@ -58,7 +58,9 @@ namespace Fluent_Launcher.Assets.Class
     {
         public object Convert(object value, System.Type targetType, object parameter, string language)
         {
-            return value as string != "";
+            var options = value as Options;
+            return options?.CurrentInstanceId != "" &&
+                !string.IsNullOrEmpty(options?.OfflinePlayers[options.CurrentOfflinePlayer].Key);
         }
 
         public object ConvertBack(object value, System.Type targetType, object parameter, string language)
@@ -72,6 +74,37 @@ namespace Fluent_Launcher.Assets.Class
         public object Convert(object value, System.Type targetType, object parameter, string language)
         {
             return (double)(int)value / 1024;
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public partial class TextBoolConverter : IValueConverter
+    {
+        public object Convert(object value, System.Type targetType, object parameter, string language)
+        {
+            return string.IsNullOrEmpty(value as string) ? false : true;
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public partial class LoginTypeToIndexConverter : IValueConverter
+    {
+        public object Convert(object value, System.Type targetType, object parameter, string language)
+        {
+            return (LoginType)value switch
+            {
+                LoginType.Online => 0,
+                LoginType.Offline => 1,
+                _ => throw new NotImplementedException()
+            };
         }
 
         public object ConvertBack(object value, System.Type targetType, object parameter, string language)

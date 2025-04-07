@@ -22,6 +22,8 @@
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml.cs" />
+    <Content Remove="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml" />
+    <Content Remove="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml.cs" />
     <Content Remove="Assets\Pages\Home\Page_SelectInstance.xaml" />
     <Content Remove="Assets\Pages\Home\Page_SelectInstance.xaml.cs" />
     <Content Remove="Assets\Pages\Page_Download.xaml.cs" />
@@ -36,6 +38,7 @@
   <ItemGroup>
     <None Remove="Assets\Pages\Download\Page_CoreOption.xaml" />
     <None Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />
+    <None Remove="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml" />
     <None Remove="Assets\Pages\Home\Page_SelectInstance.xaml" />
     <None Remove="Assets\Pages\Page_DownloadCore.xaml" />
     <None Remove="Assets\Pages\Page_DownloadMod.xaml" />
@@ -70,6 +73,11 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250310001" />
     <PackageReference Include="MinecraftLaunch" Version="4.0.0" />
     <PackageReference Include="System.Management" Version="9.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Assets\Pages\Download\Page_DownloadMod.xaml">
@@ -118,5 +126,16 @@
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <PackageCertificateThumbprint>24058D625A3C2E5E878F09DD57E6FCDB0D5A8CCD</PackageCertificateThumbprint>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Never</AppxBundle>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <AppxPackageDir>D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\AppPackages</AppxPackageDir>
   </PropertyGroup>
 </Project>

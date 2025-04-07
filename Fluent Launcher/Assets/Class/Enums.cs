@@ -15,4 +15,10 @@ namespace Fluent_Launcher.Assets.Class
         Modified,
         Normal
     }
+
+    public enum LoginType
+    {
+        Online,
+        Offline
+    }
 }

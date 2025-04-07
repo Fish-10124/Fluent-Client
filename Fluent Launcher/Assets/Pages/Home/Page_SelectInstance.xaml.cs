@@ -40,16 +40,16 @@ namespace Fluent_Launcher.Assets.Pages.Home
             this.InitializeComponent();
 
             // 初始化 RootPaths
-            foreach (var path in GlobalVar.RootPaths)
+            foreach (var path in GlobalVar.Options.RootPaths)
             {
                 RootPaths.Add(new(Path.GetFileName(path) ?? path, path));
             }
 
             // 解析 Minecraft 实例
-            McParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+            McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
             var instances = McParser.GetMinecrafts();
 
-            ListView_InstanceFolders.SelectedIndex = GlobalVar.CurrentRootPathIndex;
+            ListView_InstanceFolders.SelectedIndex = GlobalVar.Options.CurrentRootPathIndex;
 
             // 遍历 Minecraft 实例
             ForEachInstances(instances);
@@ -94,7 +94,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
         private void ListView_Instances_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var listView = sender as ListView;
-            GlobalVar.CurrentInstanceId = (listView?.SelectedItem as SettingsCardTagDescriptionInfos)?.Header ?? throw new NullReferenceException("InstanceId was null!");
+            GlobalVar.Options.CurrentInstanceId = (listView?.SelectedItem as SettingsCardTagDescriptionInfos)?.Header ?? throw new NullReferenceException("InstanceId was null!");
             Frame.Navigate(typeof(Page_Home));
         }
 
@@ -128,8 +128,8 @@ namespace Fluent_Launcher.Assets.Pages.Home
             var selectedPath = listView?.SelectedItem as RootPathListShow;
 
             // 解析 Minecraft 实例
-            GlobalVar.CurrentRootPathIndex = listView?.SelectedIndex ?? throw new Exception("Index parse faild!");
-            McParser = new(GlobalVar.RootPaths[GlobalVar.CurrentRootPathIndex]);
+            GlobalVar.Options.CurrentRootPathIndex = listView?.SelectedIndex ?? throw new Exception("Index parse faild!");
+            McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
             var instances = McParser.GetMinecrafts();
             ForEachInstances(instances);
         }

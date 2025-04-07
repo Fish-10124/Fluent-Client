@@ -107,7 +107,7 @@ namespace Fluent_Launcher.Assets.Class
             return new()
             {
                 InstanceDescription = options[0],
-                Independent = ParseNullableBool(options[1]) ?? true,
+                Independency = ParseNullableBool(options[1]) ?? true,
                 WindowTitle = options[2],
                 CustomInfomation = options[3],
                 GameJava = ParseNullableInt(options[4]) ?? 0,

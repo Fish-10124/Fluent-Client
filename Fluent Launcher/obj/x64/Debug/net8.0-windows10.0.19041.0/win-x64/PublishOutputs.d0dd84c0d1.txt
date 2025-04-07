@@ -218,7 +218,9 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\MinecraftLaunch.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\MinecraftLaunch.Base.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\NbtToolkit.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\System.CodeDom.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\System.Linq.Async.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\System.Management.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\WebView2Loader.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.WindowsAppRuntime.Bootstrap.dll

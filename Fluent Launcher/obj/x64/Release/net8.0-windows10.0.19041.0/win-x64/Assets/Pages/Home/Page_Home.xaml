@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page x:ConnectionId='1'
+    x:Class="Fluent_Launcher.Assets.Pages.Page_Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent_Launcher.Assets.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:class="using:Fluent_Launcher.Assets.Class"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0, 0, 50, 50">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+
+            <Pivot x:ConnectionId='4' x:Name="Pivot_LoginType" Grid.Row="0" MaxWidth="250"                                                                                                                                                                     >
+                <PivotItem Header="Online">
+                    <TextBlock Text="Online"/>
+                </PivotItem>
+                <PivotItem Header="Offline">
+                    <Grid VerticalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ComboBox x:ConnectionId='9' x:Name="ComboBox_Name" Grid.Column="0" IsEditable="True" HorizontalAlignment="Stretch" PlaceholderText="Name"                                          DisplayMemberPath="Key"                                                  >
+
+                            </ComboBox>
+
+                            <HyperlinkButton x:ConnectionId='10' x:Name="HyperlinkButton_OfflineAccountSettings" Grid.Column="1" HorizontalAlignment="Right" IsEnabled="{Binding ElementName=ComboBox_Name, Path=Text, Converter={StaticResource TextBoolConverter}}"                                                     >
+                                <FontIcon Glyph="&#xE713;" FontSize="16"/>
+                            </HyperlinkButton>
+                        </Grid>
+                    </Grid>
+                </PivotItem>
+            </Pivot>
+
+            <Grid Grid.Row="1" VerticalAlignment="Bottom">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button x:ConnectionId='5' Grid.Row="0" HorizontalAlignment="Center" x:Name="Button_Launch"                             Width="250" Height="60"                                                                                                                    Style="{StaticResource AccentButtonStyle}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock HorizontalAlignment="Center" Grid.Row="0" Text="Launch" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                        <TextBlock x:ConnectionId='8' HorizontalAlignment="Center" Grid.Row="1"                                                                                                           Style="{StaticResource SettingsCardDescriptionTextStyle}" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='6' Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance"                                    />
+                    <Button x:ConnectionId='7' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"                                                                                                                                                       />
+                </Grid>
+            </Grid>
+
+
+        </Grid>
+
+        <ProgressBar x:ConnectionId='2' x:Name="ProgressBar" IsIndeterminate="True" VerticalAlignment="Bottom" />
+
+        <InfoBar x:ConnectionId='3' x:Name="InfoBar_ErrorInfo" IsOpen="False" Severity="Error" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10, 0, 0, 10"/>
+    </Grid>
+    
+</Page>
+

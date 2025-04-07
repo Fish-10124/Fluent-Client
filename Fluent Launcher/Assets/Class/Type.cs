@@ -29,24 +29,38 @@ namespace Fluent_Launcher.Assets.Class
 
     public class Options
     {
-        public IList<string> RootPath { get; set; }
+        public IList<string> RootPaths { get; set; }
         public int CurrentRootPathIndex { get; set; }
         public string CurrentInstanceId { get; set; }
+        public IList<KeyValuePair<string, Guid>> OfflinePlayers { get; set; }
+        public int CurrentOfflinePlayer { get; set; }
+        public LoginType LoginType { get; set; }
 
         // 参数化构造函数
-        public Options(IList<string> rootPaths, int currentRootPathIndex, string currentInstanceId)
+        public Options(IList<string> rootPaths, 
+            int currentRootPathIndex, 
+            string currentInstanceId, 
+            IList<KeyValuePair<string, Guid>> offlinePlayers,
+            int currentOfflinePlayer,
+            LoginType loginWay)
         {
-            RootPath = rootPaths;
+            RootPaths = rootPaths;
             CurrentRootPathIndex = currentRootPathIndex;
             CurrentInstanceId = currentInstanceId;
+            OfflinePlayers = offlinePlayers;
+            CurrentOfflinePlayer = currentOfflinePlayer;
+            LoginType = loginWay;
         }
 
         // 默认构造函数
         public Options()
         {
-            RootPath = [];
-            CurrentRootPathIndex = 0;
-            CurrentInstanceId = "";
+            RootPaths = [GlobalVar.DefaultRootPath];
+            CurrentRootPathIndex = GlobalVar.DefaultCurrentRootPathIndex;
+            CurrentInstanceId = GlobalVar.DefaultCurrentInstanceId;
+            OfflinePlayers = [];
+            CurrentOfflinePlayer = -1;
+            LoginType = LoginType.Online;
         }
     }
 
@@ -79,7 +93,7 @@ namespace Fluent_Launcher.Assets.Class
         public const string IniSection = "InstanceOption";
 
         public string? InstanceDescription { get; set; }
-        public bool Independent { get; set; }
+        public bool Independency { get; set; }
         public string? WindowTitle { get; set; }
         public string? CustomInfomation { get; set; }
         public int GameJava { get; set; } // 代表GlobalVar.Javas[]的下标

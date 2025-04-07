@@ -77,7 +77,7 @@
                     </Grid>
 
                     <controls:SettingsCard Header="Independent" HeaderIcon="{ui:FontIcon Glyph=&#xF3B1;}">
-                        <ToggleSwitch x:Name="ToggleSwitch_Independent" IsOn="{x:Bind class:GlobalVar.IniOptions.Independent}"/>
+                        <ToggleSwitch x:Name="ToggleSwitch_Independent" IsOn="{x:Bind class:GlobalVar.IniOptions.Independency}"/>
                     </controls:SettingsCard>
 
                     <controls:SettingsCard Header="Window title" HeaderIcon="{ui:FontIcon Glyph=&#xE8AC;}">
