@@ -28,8 +28,6 @@ namespace Fluent_Launcher.Assets.Pages.Download
     public sealed partial class Page_InstancesList : Page
     {
         private static IList<SettingsCardInfos> FilteredInstances = [];
-
-        private int SelectedInstanceIndex;
         private IList<VersionManifestEntry> Instances = [];
         private IList<SettingsCardInfos> InstanceListToShow = [];
 
@@ -143,7 +141,7 @@ namespace Fluent_Launcher.Assets.Pages.Download
         {
             // clickedCard.Tag代表了列表的索引
             var clickedCard = sender as SettingsCard;
-            SelectedInstanceIndex = Convert.ToInt32(clickedCard?.Tag);
+            _ = int.TryParse(clickedCard?.Tag as string, out int SelectedInstanceIndex);
 
             // 准备动画
             var animationElement = clickedCard?.FindName("Grid_InstanceDetail") as Grid;

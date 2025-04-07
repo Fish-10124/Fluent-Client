@@ -1,5 +1,6 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Imaging;
+using MinecraftLaunch.Base.Models.Game;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,6 +60,31 @@ namespace Fluent_Launcher.Assets.Class
     {
         public IList<SettingsCardTagDescriptionInfos>? SettingsCardInfos { get; set; } = [];
         public InstanceType Type { get; set; }
+    }
+
+    // 在读取实例的ini文件时使用
+    public class InstanceOptions
+    {
+        public static class Keys
+        {
+            public const string InstanceDescription = "instancedescription",
+                            Independent = "independent",
+                            WindowTitle = "windowtitle",
+                            CustomInfomation = "custominfomation",
+                            GameJava = "gamejava",
+                            MemoryRadio = "memoryradio",
+                            MemoryCustomize = "memorycustomize";
+        }
+
+        public const string IniSection = "InstanceOption";
+
+        public string? InstanceDescription { get; set; }
+        public bool Independent { get; set; }
+        public string? WindowTitle { get; set; }
+        public string? CustomInfomation { get; set; }
+        public int GameJava { get; set; } // 代表GlobalVar.Javas[]的下标
+        public int MemoryRadio { get; set; }
+        public int MemoryCustomize { get; set; } // 单位是MB
     }
 
 }

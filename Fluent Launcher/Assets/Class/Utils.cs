@@ -4,10 +4,12 @@ using Microsoft.UI.Xaml.Media.Imaging;
 using MinecraftLaunch.Base.Enums;
 using MinecraftLaunch.Base.Models.Game;
 using MinecraftLaunch.Components.Parser;
+using MinecraftLaunch.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -83,5 +85,69 @@ namespace Fluent_Launcher.Assets.Class
                 _ => throw new NotImplementedException()
             };
 
+       // 读取实例的ini配置文件
+        public static InstanceOptions ReadInstanceOptions(IniFile iniFile)
+        {
+            List<string?> options = [
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.InstanceDescription),
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.Independent),
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.WindowTitle),
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.CustomInfomation),
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.GameJava),
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.MemoryRadio),
+                iniFile.Read(InstanceOptions.IniSection, InstanceOptions.Keys.MemoryCustomize)
+            ];
+
+            // 局部函数：解析可空整数值
+            int? ParseNullableInt(string? input) =>
+                input != null && int.TryParse(input, out var result) ? result : null;
+            bool? ParseNullableBool(string? input) =>
+                input != null && bool.TryParse(input, out var result) ? result : null;
+
+            return new()
+            {
+                InstanceDescription = options[0],
+                Independent = ParseNullableBool(options[1]) ?? true,
+                WindowTitle = options[2],
+                CustomInfomation = options[3],
+                GameJava = ParseNullableInt(options[4]) ?? 0,
+                MemoryRadio = ParseNullableInt(options[5]) ?? 0,
+                MemoryCustomize = ParseNullableInt(options[6]) ?? 3 * 1024
+            };
+        }
+    }
+
+    public class IniFile
+    {
+        public string FilePath { get; }
+
+        public IniFile(string filePath)
+        {
+            this.FilePath = filePath;
+        }
+
+        [DllImport("kernel32", CharSet = CharSet.Unicode)]
+        private static extern long WritePrivateProfileString(string section, string key, string value, string filePath);
+
+        [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
+        private static extern int GetPrivateProfileString(string section, string key, string? defaultValue, StringBuilder returnValue, int size, string filePath);
+
+        public void Write(string section, string key, string value)
+        {
+            _ = WritePrivateProfileString(section, key, value, FilePath);
+        }
+
+        public string? Read(string section, string key)
+        {
+            var returnValue = new StringBuilder(255);
+            int length = GetPrivateProfileString(section, key, null, returnValue, returnValue.Capacity, FilePath);
+
+            if (length == 0 && returnValue.ToString() == "")
+            {
+                return null; // 键不存在
+            }
+
+            return returnValue.ToString();
+        }
     }
 }

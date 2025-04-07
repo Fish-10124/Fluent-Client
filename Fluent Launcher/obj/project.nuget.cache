@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5thKVuZiaZY=",
+  "dgSpecHash": "S1ABoZRvjwM=",
   "success": true,
   "projectFilePath": "D:\\Fish_work\\CSProjects\\Fluent Launcher\\Fluent-Client\\Fluent Launcher\\Fluent Launcher.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,9 @@
     "C:\\Users\\yukou\\.nuget\\packages\\minecraftlaunch\\4.0.0\\minecraftlaunch.4.0.0.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\minecraftlaunch.base\\1.0.8\\minecraftlaunch.base.1.0.8.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\nbttoolkit\\0.1.2-beta\\nbttoolkit.0.1.2-beta.nupkg.sha512",
+    "C:\\Users\\yukou\\.nuget\\packages\\system.codedom\\9.0.3\\system.codedom.9.0.3.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\system.linq.async\\6.0.1\\system.linq.async.6.0.1.nupkg.sha512",
+    "C:\\Users\\yukou\\.nuget\\packages\\system.management\\9.0.3\\system.management.9.0.3.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.13\\microsoft.netcore.app.runtime.win-x86.8.0.13.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
     "C:\\Users\\yukou\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.13\\microsoft.aspnetcore.app.runtime.win-x86.8.0.13.nupkg.sha512",

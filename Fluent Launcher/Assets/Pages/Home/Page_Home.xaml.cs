@@ -37,7 +37,7 @@ namespace Fluent_Launcher.Assets.Pages
     {
 
         private MinecraftEntry? Minecraft;
-        private MinecraftParser? MinecraftParser;
+        private static MinecraftParser? MinecraftParser;
 
         public Page_Home()
         {
@@ -77,8 +77,20 @@ namespace Fluent_Launcher.Assets.Pages
             ProgressBar.Visibility = Visibility.Collapsed;
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Launch_Click(object sender, RoutedEventArgs e)
         {
+            string nameText = ComboBox_Name.Text;
+            if (string.IsNullOrEmpty(nameText))
+            {
+                TeachingTip_NullName.Subtitle = "Name can't be empty!";
+                TeachingTip_NullName.IsOpen = true;
+                return;
+            }
+            if (nameText.Trim().Length == 0)
+            {
+                TeachingTip_NullName.Subtitle = "Is't spaces? What are you doing?";
+                TeachingTip_NullName.IsOpen = true;
+            }
             Launch();
         }
 

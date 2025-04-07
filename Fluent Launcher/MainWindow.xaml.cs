@@ -52,10 +52,6 @@ namespace Fluent_Launcher
                 this.AppWindow.Resize(new Windows.Graphics.SizeInt32((int)width, (int)height));
             }
 
-            NavigationView.SelectedItem = NavigationView.MenuItems[0];
-            Frame_Content.Navigate(typeof(Page_Home));
-
-            // 读配置文件
             FileInfo fileInfo = new(OptionsFile);
             if (!File.Exists(OptionsFile) || fileInfo.Length == 0)
             {
@@ -64,10 +60,14 @@ namespace Fluent_Launcher
             }
             else
             {
+                // 读配置文件
                 var optionsContent = File.ReadAllText(OptionsFile);
                 GlobalVar.Options = JsonSerializer.Deserialize<Options>(optionsContent);
             }
-                
+
+            NavigationView.SelectedItem = NavigationView.MenuItems[0];
+            Frame_Content.Navigate(typeof(Page_Home));
+
         }
 
         private static void CreateDefaultOptionsFile()
@@ -128,6 +128,8 @@ namespace Fluent_Launcher
 
         private void Window_Closed(object sender, WindowEventArgs args)
         {
+            Frame_Content.Navigate(typeof(Page_Home));
+
             var bounds = this.Bounds;
             SaveWindowState((int)bounds.Width, (int)bounds.Height);
 

@@ -340,6 +340,22 @@
           "lib/net8.0/NbtToolkit.dll": {}
         }
       },
+      "System.CodeDom/9.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "System.Linq.Async/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -353,6 +369,31 @@
         "runtime": {
           "lib/net6.0/System.Linq.Async.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "System.Management/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       }
@@ -655,6 +696,22 @@
           "lib/net8.0/NbtToolkit.dll": {}
         }
       },
+      "System.CodeDom/9.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "System.Linq.Async/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -669,6 +726,25 @@
           "lib/net6.0/System.Linq.Async.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Management/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       }
     },
@@ -970,6 +1046,22 @@
           "lib/net8.0/NbtToolkit.dll": {}
         }
       },
+      "System.CodeDom/9.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "System.Linq.Async/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -984,6 +1076,25 @@
           "lib/net6.0/System.Linq.Async.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Management/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       }
     },
@@ -1285,6 +1396,22 @@
           "lib/net8.0/NbtToolkit.dll": {}
         }
       },
+      "System.CodeDom/9.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
       "System.Linq.Async/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -1299,6 +1426,25 @@
           "lib/net6.0/System.Linq.Async.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Management/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       }
     }
@@ -2389,6 +2535,34 @@
         "nbttoolkit.nuspec"
       ]
     },
+    "System.CodeDom/9.0.3": {
+      "sha512": "KeFk4+is5IB3FCjFmPjtFYaTSYhFA/l6ZOeWBQo6CVVQchpvl6vv+3kPPfNttkEoA/Gq78FsJFMu4Eej/ln44Q==",
+      "type": "package",
+      "path": "system.codedom/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.CodeDom.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "lib/net462/System.CodeDom.dll",
+        "lib/net462/System.CodeDom.xml",
+        "lib/net8.0/System.CodeDom.dll",
+        "lib/net8.0/System.CodeDom.xml",
+        "lib/net9.0/System.CodeDom.dll",
+        "lib/net9.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.9.0.3.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Linq.Async/6.0.1": {
       "sha512": "0YhHcaroWpQ9UCot3Pizah7ryAzQhNvobLMSxeDIGmnXfkQn8u5owvpOH0K6EVB+z9L7u6Cc4W17Br/+jyttEQ==",
       "type": "package",
@@ -2416,6 +2590,35 @@
         "system.linq.async.6.0.1.nupkg.sha512",
         "system.linq.async.nuspec"
       ]
+    },
+    "System.Management/9.0.3": {
+      "sha512": "Wsb47+pRN1xnCxKOXcj+80FZ5OYQK2Dr8nnS8CHS1LVB+MXdzyK90sEmDYs/ux+btrxpE1N56FZo5rDbzpd1HA==",
+      "type": "package",
+      "path": "system.management/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net462/_._",
+        "lib/net8.0/System.Management.dll",
+        "lib/net8.0/System.Management.xml",
+        "lib/net9.0/System.Management.dll",
+        "lib/net9.0/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net8.0/System.Management.dll",
+        "runtimes/win/lib/net8.0/System.Management.xml",
+        "runtimes/win/lib/net9.0/System.Management.dll",
+        "runtimes/win/lib/net9.0/System.Management.xml",
+        "system.management.9.0.3.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -2423,7 +2626,8 @@
       "CommunityToolkit.WinUI.Controls.SettingsControls >= 8.0.240109",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.26100.1742",
       "Microsoft.WindowsAppSDK >= 1.7.250310001",
-      "MinecraftLaunch >= 4.0.0"
+      "MinecraftLaunch >= 4.0.0",
+      "System.Management >= 9.0.3"
     ]
   },
   "packageFolders": {
@@ -2491,6 +2695,10 @@
           "MinecraftLaunch": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "System.Management": {
+            "target": "Package",
+            "version": "[9.0.3, )"
           }
         },
         "imports": [

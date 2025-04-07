@@ -2,6 +2,7 @@
 using Microsoft.UI.Xaml.Data;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,6 +59,19 @@ namespace Fluent_Launcher.Assets.Class
         public object Convert(object value, System.Type targetType, object parameter, string language)
         {
             return value as string != "";
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public partial class MBToGBConverter : IValueConverter
+    {
+        public object Convert(object value, System.Type targetType, object parameter, string language)
+        {
+            return (double)(int)value / 1024;
         }
 
         public object ConvertBack(object value, System.Type targetType, object parameter, string language)

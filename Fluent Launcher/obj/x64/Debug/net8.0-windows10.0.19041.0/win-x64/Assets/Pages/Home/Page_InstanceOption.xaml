@@ -8,7 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:controls="using:CommunityToolkit.WinUI.Controls" 
     xmlns:class="using:Fluent_Launcher.Assets.Class"
-    xmlns:ui="using:CommunityToolkit.WinUI"
+    xmlns:ui="using:CommunityToolkit.WinUI" 
+    xmlns:game="using:MinecraftLaunch.Base.Models.Game"
     mc:Ignorable="d"
     Background="Transparent">
 
@@ -19,7 +20,7 @@
                     <controls:SettingsExpander IsExpanded="True" Padding="{StaticResource SettingsCardPadding}" Margin="{StaticResource StackLayoutMargin}">
 
                         <controls:SettingsExpander.Header>
-                            <Grid x:ConnectionId='3' x:Name="Grid_InstanceDetails">
+                            <Grid x:ConnectionId='11' x:Name="Grid_InstanceDetails">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
@@ -27,7 +28,7 @@
 
                                 <Border Grid.Column="0" Style="{StaticResource LargeBorderImageStyle}">
                                     <Border.Background>
-                                        <ImageBrush x:ConnectionId='7'                                                  />
+                                        <ImageBrush x:ConnectionId='15'                                                  />
                                     </Border.Background>
                                 </Border>
 
@@ -37,9 +38,9 @@
                                         <RowDefinition/>
                                     </Grid.RowDefinitions>
 
-                                    <TextBlock x:ConnectionId='4' Grid.Row="0"                                        Style="{StaticResource SettingsCardHeaderTextStyle}" Margin="0, 0, 0, 2"/>
+                                    <TextBlock x:ConnectionId='12' Grid.Row="0"                                        Style="{StaticResource SettingsCardHeaderTextStyle}" Margin="0, 0, 0, 2"/>
 
-                                    <ItemsView x:ConnectionId='5' Grid.Row="1" SelectionMode="None" IsEnabled="False"                                                   >
+                                    <ItemsView x:ConnectionId='13' Grid.Row="1" SelectionMode="None" IsEnabled="False"                                                   >
                                         <ItemsView.ItemTemplate>
                                             <DataTemplate>
                                                 <ItemContainer>
@@ -61,11 +62,11 @@
 
                         <controls:SettingsExpander.Items>
                             <controls:SettingsCard Header="Version ID" HeaderIcon="{ui:FontIcon Glyph=&#xE8AC;}">
-                                <TextBox x:ConnectionId='8'                                                   MinWidth="300"/>
+                                <TextBox x:ConnectionId='17'                                                   MinWidth="300"/>
                             </controls:SettingsCard>
 
                             <controls:SettingsCard Header="Version Description" HeaderIcon="{ui:FontIcon Glyph=&#xE946;}">
-                                <TextBox PlaceholderText="Default" MinWidth="300"/>
+                                <TextBox x:ConnectionId='16' x:Name="TextBox_Description" PlaceholderText="Default" MinWidth="300"                                                               />
                             </controls:SettingsCard>
                         </controls:SettingsExpander.Items>
 
@@ -76,19 +77,25 @@
                     </Grid>
 
                     <controls:SettingsCard Header="Independent" HeaderIcon="{ui:FontIcon Glyph=&#xF3B1;}">
-                        <ToggleSwitch/>
+                        <ToggleSwitch x:ConnectionId='10' x:Name="ToggleSwitch_Independent"                                                       />
                     </controls:SettingsCard>
 
                     <controls:SettingsCard Header="Window title" HeaderIcon="{ui:FontIcon Glyph=&#xE8AC;}">
-                        <TextBox PlaceholderText="Follow global settings" MinWidth="300"/>
+                        <TextBox x:ConnectionId='9' x:Name="TextBox_WindowTitle" PlaceholderText="Follow global settings" MinWidth="300"                                                       />
                     </controls:SettingsCard>
 
                     <controls:SettingsCard Header="Custom information" HeaderIcon="{ui:FontIcon Glyph=&#xE946;}">
-                        <TextBox PlaceholderText="Follow global settings" MinWidth="300"/>
+                        <TextBox x:ConnectionId='8' x:Name="TextBox_CustomInfomation" PlaceholderText="Follow global settings" MinWidth="300"                                                            />
                     </controls:SettingsCard>
 
                     <controls:SettingsCard Header="Game java" HeaderIcon="{ui:FontIcon Glyph=&#xEC32;}">
-                        <ComboBox MinWidth="300"/>
+                        <ComboBox x:ConnectionId='5' x:Name="ComboBox_GameJava" MinWidth="300"                                                                                                          >
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate                            >
+                                    <TextBlock x:ConnectionId='7'                           />
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
                     </controls:SettingsCard>
 
                     <Expander IsExpanded="True" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="{StaticResource DefaultElementBackgroundColor}">
@@ -110,14 +117,13 @@
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
 
-                                <RadioButtons Grid.Column="0">
+                                <RadioButtons x:ConnectionId='2' x:Name="RadioButtons_Memory" Grid.Column="0"                                                                >
                                     <RadioButton Grid.Row="0" Content="Follow global"/>
                                     <RadioButton Grid.Row="1" Content="Auto"/>
-                                    <RadioButton x:ConnectionId='2' Grid.Row="2" x:Name="RadioButton_CustomMemory" Content="Customize"/>
+                                    <RadioButton x:ConnectionId='4' Grid.Row="2" x:Name="RadioButton_CustomMemory" Content="Customize"/>
                                 </RadioButtons>
-                                <Slider VerticalAlignment="Bottom" Grid.Column="1" StepFrequency="0.5" IsEnabled="{Binding ElementName=RadioButton_CustomMemory, Path=IsChecked}"/>
+                                <Slider x:ConnectionId='3' x:Name="Slider_Memory" VerticalAlignment="Bottom" Grid.Column="1" StepFrequency="0.5"                                                                                                         IsEnabled="{Binding ElementName=RadioButton_CustomMemory, Path=IsChecked}"/>
                             </Grid>
-                            
                             
                         </Grid>
 

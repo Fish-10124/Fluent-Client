@@ -50,6 +50,9 @@ namespace Fluent_Launcher.Assets.Class
         // 检测设备中的Java
         public static IList<JavaEntry> Javas { get; set; } = [];
 
+        // 版本的配置文件，用于启动游戏时给予参数
+        public static InstanceOptions? IniOptions { get; set; }
+
         // 启动时的配置
         public static LaunchConfig? LaunchConfig { get; set; }
     }

@@ -11,32 +11,73 @@
     Background="Transparent">
 
     <Grid>
-
-        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0, 0, 50, 50">
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0, 0, 50, 50">
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
                 <RowDefinition/>
+                <RowDefinition Height="150"/>
             </Grid.RowDefinitions>
 
-            <Button x:ConnectionId='3' Grid.Row="0" HorizontalAlignment="Center" x:Name="myButton"                        Width="250" Height="60"                                                                                                            Style="{StaticResource AccentButtonStyle}">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock HorizontalAlignment="Center" Grid.Row="0" Text="Launch" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
-                    <TextBlock x:ConnectionId='6' HorizontalAlignment="Center" Grid.Row="1"                                                                                                   Style="{StaticResource SettingsCardDescriptionTextStyle}" Foreground="White"/>
+            <Pivot Grid.Row="0" MaxWidth="250">
+                <PivotItem Header="Online">
+                    <TextBlock Text="Online"/>
+                </PivotItem>
+                <PivotItem Header="Offline">
+                    <Grid VerticalAlignment="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <ComboBox x:ConnectionId='7' x:Name="ComboBox_Name" Grid.Column="0" IsEditable="True" HorizontalAlignment="Stretch" PlaceholderText="Name">
+
+                            </ComboBox>
+
+                            <TeachingTip x:ConnectionId='8' x:Name="TeachingTip_NullName" Title="Wronged player name">
+                                <TeachingTip.IconSource>
+                                    <FontIconSource Glyph="&#xEA39;" Foreground="Red"/>
+                                </TeachingTip.IconSource>
+                            </TeachingTip>
+
+                            <HyperlinkButton x:ConnectionId='9' x:Name="HyperlinkButton_OfflineAccountSettings" Grid.Column="1" HorizontalAlignment="Right">
+                                <FontIcon Glyph="&#xE713;" FontSize="16"/>
+                            </HyperlinkButton>
+                        </Grid>
+                    </Grid>
+                </PivotItem>
+            </Pivot>
+
+            <Grid Grid.Row="1" VerticalAlignment="Bottom">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Button x:ConnectionId='3' Grid.Row="0" HorizontalAlignment="Center" x:Name="Button_Launch"                             Width="250" Height="60"                                                                                                            Style="{StaticResource AccentButtonStyle}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock HorizontalAlignment="Center" Grid.Row="0" Text="Launch" Style="{StaticResource SettingsCardHeaderTextStyle}"/>
+                        <TextBlock x:ConnectionId='6' HorizontalAlignment="Center" Grid.Row="1"                                                                                                   Style="{StaticResource SettingsCardDescriptionTextStyle}" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:ConnectionId='4' Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance"                                    />
+                    <Button x:ConnectionId='5' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"                                                                                                                                               />
                 </Grid>
-            </Button>
-
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <Button x:ConnectionId='4' Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance"                                    />
-                <Button x:ConnectionId='5' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"                                                                                                                                               />
             </Grid>
 
 

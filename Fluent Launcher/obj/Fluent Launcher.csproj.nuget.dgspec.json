@@ -65,6 +65,10 @@
             "MinecraftLaunch": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [
