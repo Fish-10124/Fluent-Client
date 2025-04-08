@@ -39,7 +39,7 @@ namespace Fluent_Launcher.Assets.Pages
     {
 
         private MinecraftEntry? Minecraft;
-        private static MinecraftParser? MinecraftParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
+        private static MinecraftParser? MinecraftParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].Path);
         private static LaunchConfig? LaunchConfig;
         private IniFile? IniFile;
 
@@ -62,11 +62,17 @@ namespace Fluent_Launcher.Assets.Pages
 
             ComboBox_Name.SelectedIndex = GlobalVar.Options.CurrentOfflinePlayer;
 
-            MinecraftParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
+            MinecraftParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].Path);
+
+            if (string.IsNullOrEmpty(GlobalVar.Options.CurrentInstanceId))
+            {
+                GlobalVar.Options.CurrentInstanceId = GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].LatestInstanceId;
+            }
 
             try
             {
                 Minecraft = MinecraftParser.GetMinecraft(GlobalVar.Options.CurrentInstanceId);
+
                 // ∂¡»°≈‰÷√
                 IniFile = new(Path.Combine(Path.GetDirectoryName(Minecraft?.ClientJarPath)!, "FLOptions.ini"));
                 GlobalVar.IniOptions = Utils.ReadInstanceOptions(IniFile);

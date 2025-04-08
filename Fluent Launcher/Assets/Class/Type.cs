@@ -3,6 +3,7 @@ using Microsoft.UI.Xaml.Media.Imaging;
 using MinecraftLaunch.Base.Models.Game;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace Fluent_Launcher.Assets.Class
 
     public class Options
     {
-        public IList<string> RootPaths { get; set; }
+        public IList<RootPath> RootPaths { get; set; }
         public int CurrentRootPathIndex { get; set; }
         public string CurrentInstanceId { get; set; }
         public IList<KeyValuePair<string, Guid>> OfflinePlayers { get; set; }
@@ -37,7 +38,7 @@ namespace Fluent_Launcher.Assets.Class
         public LoginType LoginType { get; set; }
 
         // 参数化构造函数
-        public Options(IList<string> rootPaths, 
+        public Options(IList<RootPath> rootPaths, 
             int currentRootPathIndex, 
             string currentInstanceId, 
             IList<KeyValuePair<string, Guid>> offlinePlayers,
@@ -55,13 +56,19 @@ namespace Fluent_Launcher.Assets.Class
         // 默认构造函数
         public Options()
         {
-            RootPaths = [GlobalVar.DefaultRootPath];
+            RootPaths = GlobalVar.DefaultRootPath;
             CurrentRootPathIndex = GlobalVar.DefaultCurrentRootPathIndex;
-            CurrentInstanceId = GlobalVar.DefaultCurrentInstanceId;
+            CurrentInstanceId = GlobalVar.DefaultInstanceId;
             OfflinePlayers = [];
             CurrentOfflinePlayer = -1;
             LoginType = LoginType.Online;
         }
+    }
+
+    public class RootPath(string path, string latestInstanceId)
+    {
+        public string Path { get; set; } = path;
+        public string LatestInstanceId { get; set; } = latestInstanceId;
     }
 
     public class RootPathListShow(string folderName, string folderPath)

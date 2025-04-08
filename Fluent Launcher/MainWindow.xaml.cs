@@ -54,16 +54,17 @@ namespace Fluent_Launcher
             }
 
             FileInfo fileInfo = new(OptionsFile);
-            if (!File.Exists(OptionsFile) || fileInfo.Length == 0)
-            {
-                // 如果没有配置文件
-                GlobalVar.Options = new Options();
-            }
-            else
+
+            try
             {
                 // 读配置文件
                 var optionsContent = File.ReadAllText(OptionsFile);
                 GlobalVar.Options = JsonSerializer.Deserialize<Options>(optionsContent) ?? throw new NullReferenceException("options file parse faild!");
+            }
+            catch(Exception)
+            {
+                // 出现任何错误, 例如文件不存在, JSON格式不正确等, 都创建一个新的配置文件
+                GlobalVar.Options = new Options();
             }
 
             NavigationView.SelectedItem = NavigationView.MenuItems[0];
@@ -72,13 +73,7 @@ namespace Fluent_Launcher
 
         private static void CreateDefaultOptionsFile()
         {
-            var option = new Options(GlobalVar.Options.RootPaths, 
-                GlobalVar.Options.CurrentRootPathIndex, 
-                GlobalVar.Options.CurrentInstanceId, 
-                GlobalVar.Options.OfflinePlayers,
-                GlobalVar.Options.CurrentOfflinePlayer,
-                GlobalVar.Options.LoginType);
-            string optionJson = JsonSerializer.Serialize(option, new JsonSerializerOptions
+            string optionJson = JsonSerializer.Serialize(GlobalVar.Options, new JsonSerializerOptions
             {
                 WriteIndented = true
             });

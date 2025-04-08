@@ -36,7 +36,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
     /// </summary>
     public sealed partial class Page_InstanceOption : Page
     {
-        private static readonly MinecraftParser McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
+        private static readonly MinecraftParser McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].Path);
         private readonly IniFile IniFile = new(Path.Combine(Path.GetDirectoryName(McParser.GetMinecraft(GlobalVar.Options.CurrentInstanceId).ClientJarPath)!, "FLOptions.ini"));
 
         public SettingsCardTagDescriptionInfos? InstanceDetails;
@@ -88,8 +88,6 @@ namespace Fluent_Launcher.Assets.Pages.Home
         // 导航到别的页面的时候写配置文件
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            base.OnNavigatedFrom(e);
-
             // 设置配置
             static string? GetNullableText(string text) => string.IsNullOrEmpty(text) ? null : text;
 
@@ -114,6 +112,8 @@ namespace Fluent_Launcher.Assets.Pages.Home
             WriteIni(InstanceOptions.Keys.GameJava, GlobalVar.IniOptions?.GameJava);
             WriteIni(InstanceOptions.Keys.MemoryRadio, GlobalVar.IniOptions?.MemoryRadio);
             WriteIni(InstanceOptions.Keys.MemoryCustomize, GlobalVar.IniOptions?.MemoryCustomize);
+
+            base.OnNavigatedFrom(e);
         }
 
         // 如果值为空，就不写

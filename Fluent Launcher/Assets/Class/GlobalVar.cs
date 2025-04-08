@@ -18,9 +18,12 @@ namespace Fluent_Launcher.Assets.Class
         public const string OptionsFile = "FLOptions.json";
         public const int DefaultCurrentRootPathIndex = 0;
         public const int AnimationDelay = 100;
-        public const string DefaultCurrentInstanceId = "";
+        public const string DefaultInstanceId = "";
         public const int DefaultOfflinePlayerIndex = -1;
-        public static readonly string DefaultRootPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft");
+        public static readonly List<RootPath> DefaultRootPath = 
+            [
+                new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"), "")
+            ];
 
         public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [];
 
@@ -35,5 +38,7 @@ namespace Fluent_Launcher.Assets.Class
         // 版本的配置文件，用于启动游戏时给予参数
         public static InstanceOptions IniOptions { get; set; } = new();
 
+        // 每个文件夹下最后一次启动的实例
+        public static IList<string> LatestInstanceId { get; set; } = [];
     }
 }

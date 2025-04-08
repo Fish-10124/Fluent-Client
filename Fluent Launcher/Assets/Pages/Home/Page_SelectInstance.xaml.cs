@@ -42,11 +42,11 @@ namespace Fluent_Launcher.Assets.Pages.Home
             // 初始化 RootPaths
             foreach (var path in GlobalVar.Options.RootPaths)
             {
-                RootPaths.Add(new(Path.GetFileName(path) ?? path, path));
+                RootPaths.Add(new(Path.GetFileName(path.Path), path.Path));
             }
 
             // 解析 Minecraft 实例
-            McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
+            McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].Path);
             var instances = McParser.GetMinecrafts();
 
             ListView_InstanceFolders.SelectedIndex = GlobalVar.Options.CurrentRootPathIndex;
@@ -95,6 +95,9 @@ namespace Fluent_Launcher.Assets.Pages.Home
         {
             var listView = sender as ListView;
             GlobalVar.Options.CurrentInstanceId = (listView?.SelectedItem as SettingsCardTagDescriptionInfos)?.Header ?? throw new NullReferenceException("InstanceId was null!");
+            
+            // 在导航到其它页面之前, 设置最后一次选择的版本
+            GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].LatestInstanceId = GlobalVar.Options.CurrentInstanceId;
             Frame.Navigate(typeof(Page_Home));
         }
 
@@ -117,6 +120,9 @@ namespace Fluent_Launcher.Assets.Pages.Home
                 GlobalVar.BreadcrumbItems.Clear();
                 GlobalVar.BreadcrumbItems.Add(new("InstanceOptions", "Instance Options"));
 
+                // 在导航到其它页面之前, 设置最后一次选择的版本
+                GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].LatestInstanceId = instancesDetails?.Header!;
+
                 Frame.Navigate(typeof(Page_InstanceOption), instancesDetails);
             }
 
@@ -129,9 +135,15 @@ namespace Fluent_Launcher.Assets.Pages.Home
 
             // 解析 Minecraft 实例
             GlobalVar.Options.CurrentRootPathIndex = listView?.SelectedIndex ?? throw new Exception("Index parse faild!");
-            McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex]);
+            McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].Path);
             var instances = McParser.GetMinecrafts();
             ForEachInstances(instances);
+
+            var latestInstanceId = GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].LatestInstanceId;
+            if (string.IsNullOrEmpty(latestInstanceId))
+            {
+                GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].LatestInstanceId = instances.Count == 0 ? "" : instances[0].Id;
+            }
         }
     }
 }

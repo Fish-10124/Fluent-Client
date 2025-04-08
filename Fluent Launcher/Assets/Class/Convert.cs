@@ -59,8 +59,16 @@ namespace Fluent_Launcher.Assets.Class
         public object Convert(object value, System.Type targetType, object parameter, string language)
         {
             var options = value as Options;
-            return options?.CurrentInstanceId != "" &&
-                !string.IsNullOrEmpty(options?.OfflinePlayers[options.CurrentOfflinePlayer].Key);
+            bool isEmptyPlayerName = false, isEmptyInstance = false;
+            if (options?.CurrentOfflinePlayer != -1)
+            {
+                isEmptyPlayerName = !string.IsNullOrEmpty(options?.OfflinePlayers[options.CurrentOfflinePlayer].Key);
+            }
+            if (string.IsNullOrEmpty(options?.CurrentInstanceId) && string.IsNullOrEmpty(options?.RootPaths[options.CurrentRootPathIndex].LatestInstanceId))
+            {
+                isEmptyInstance = true;
+            }
+            return !isEmptyInstance && !isEmptyPlayerName;
         }
 
         public object ConvertBack(object value, System.Type targetType, object parameter, string language)

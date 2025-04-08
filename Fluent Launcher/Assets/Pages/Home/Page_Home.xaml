@@ -70,10 +70,9 @@
                     </Grid.ColumnDefinitions>
 
                     <Button Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance" Click="Button_SelectInstance_Click"/>
-                    <Button Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option" IsEnabled="{x:Bind class:GlobalVar.Options.CurrentInstanceId, Converter={StaticResource InstanceEnableConverter}}" Click="Button_InstanceOption_Click"/>
+                    <Button Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option" IsEnabled="{Binding ElementName=Button_Launch, Path=IsEnabled}" Click="Button_InstanceOption_Click"/>
                 </Grid>
             </Grid>
-
 
         </Grid>
 
