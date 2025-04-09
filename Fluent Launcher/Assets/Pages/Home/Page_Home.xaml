@@ -34,8 +34,8 @@
                                 <ColumnDefinition Width="40"/>
                             </Grid.ColumnDefinitions>
 
-                            <ComboBox x:Name="ComboBox_Name" Grid.Column="0" IsEditable="True" HorizontalAlignment="Stretch" PlaceholderText="Name" ItemsSource="{x:Bind OfflinePlayerList}" DisplayMemberPath="Key" SelectionChanged="ComboBox_Name_SelectionChanged">
-
+                            <ComboBox x:Name="ComboBox_Name" Grid.Column="0" IsEditable="True" HorizontalAlignment="Stretch" PlaceholderText="Name" ItemsSource="{x:Bind OfflinePlayerList}" DisplayMemberPath="Name" SelectionChanged="ComboBox_Name_SelectionChanged">
+                                
                             </ComboBox>
 
                             <HyperlinkButton x:Name="HyperlinkButton_OfflineAccountSettings" Grid.Column="1" HorizontalAlignment="Right" IsEnabled="{Binding ElementName=ComboBox_Name, Path=Text, Converter={StaticResource TextBoolConverter}}" Click="HyperlinkButton_OfflineAccountSettings_Click">

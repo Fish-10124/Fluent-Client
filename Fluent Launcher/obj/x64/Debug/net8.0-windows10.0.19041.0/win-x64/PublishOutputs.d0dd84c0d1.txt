@@ -181,7 +181,7 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\hostfxr.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\hostpolicy.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\mscordaccore.dll
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\mscordaccore_amd64_amd64_8.0.1325.6609.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\mscordaccore_amd64_amd64_8.0.1525.16413.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\mscordbi.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\mscorrc.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Debug\net8.0-windows10.0.19041.0\win-x64\publish\msquic.dll

@@ -230,7 +230,6 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Re
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\hostfxr.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\hostpolicy.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordaccore.dll
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_8.0.1325.6609.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordbi.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscorrc.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\msquic.dll
@@ -304,3 +303,4 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Re
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\MultipleQualifiersPerDimensionFound.txt
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\Fluent Launcher.genpublishdeps.cache
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\obj\x64\Release\net8.0-windows10.0.19041.0\win-x64\ProjectArchitectures.txt
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\x64\Release\net8.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_8.0.1525.16413.dll

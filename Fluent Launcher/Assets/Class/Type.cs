@@ -33,7 +33,7 @@ namespace Fluent_Launcher.Assets.Class
         public IList<RootPath> RootPaths { get; set; }
         public int CurrentRootPathIndex { get; set; }
         public string CurrentInstanceId { get; set; }
-        public IList<KeyValuePair<string, Guid>> OfflinePlayers { get; set; }
+        public IList<OfflinePlayer> OfflinePlayers { get; set; }
         public int CurrentOfflinePlayer { get; set; }
         public LoginType LoginType { get; set; }
 
@@ -41,7 +41,7 @@ namespace Fluent_Launcher.Assets.Class
         public Options(IList<RootPath> rootPaths, 
             int currentRootPathIndex, 
             string currentInstanceId, 
-            IList<KeyValuePair<string, Guid>> offlinePlayers,
+            IList<OfflinePlayer> offlinePlayers,
             int currentOfflinePlayer,
             LoginType loginWay)
         {
@@ -63,6 +63,12 @@ namespace Fluent_Launcher.Assets.Class
             CurrentOfflinePlayer = -1;
             LoginType = LoginType.Online;
         }
+    }
+
+    public class OfflinePlayer(string name, Guid uuid)
+    {
+        public string Name { get; set; } = name;
+        public Guid Uuid { get; set; } = uuid;
     }
 
     public class RootPath(string path, string latestInstanceId)

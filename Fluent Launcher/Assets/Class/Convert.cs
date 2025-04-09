@@ -62,7 +62,7 @@ namespace Fluent_Launcher.Assets.Class
             bool isEmptyPlayerName = false, isEmptyInstance = false;
             if (options?.CurrentOfflinePlayer != -1)
             {
-                isEmptyPlayerName = !string.IsNullOrEmpty(options?.OfflinePlayers[options.CurrentOfflinePlayer].Key);
+                isEmptyPlayerName = string.IsNullOrEmpty(options?.OfflinePlayers[options.CurrentOfflinePlayer].Name);
             }
             if (string.IsNullOrEmpty(options?.CurrentInstanceId) && string.IsNullOrEmpty(options?.RootPaths[options.CurrentRootPathIndex].LatestInstanceId))
             {
@@ -94,7 +94,7 @@ namespace Fluent_Launcher.Assets.Class
     {
         public object Convert(object value, System.Type targetType, object parameter, string language)
         {
-            return string.IsNullOrEmpty(value as string) ? false : true;
+            return !string.IsNullOrEmpty(value as string);
         }
 
         public object ConvertBack(object value, System.Type targetType, object parameter, string language)

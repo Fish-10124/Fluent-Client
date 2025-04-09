@@ -43,7 +43,7 @@ namespace Fluent_Launcher.Assets.Pages
         private static LaunchConfig? LaunchConfig;
         private IniFile? IniFile;
 
-        public ObservableCollection<KeyValuePair<string, Guid>> OfflinePlayerList = new(GlobalVar.Options.OfflinePlayers);
+        public ObservableCollection<OfflinePlayer> OfflinePlayerList = [.. GlobalVar.Options.OfflinePlayers];
         public bool IsLaunchable = false;
 
         public Page_Home()
@@ -121,7 +121,7 @@ namespace Fluent_Launcher.Assets.Pages
         public async void Launch()
         {
             var account = new OfflineAuthenticator().Authenticate(ComboBox_Name.Text, 
-                GlobalVar.Options.OfflinePlayers[GlobalVar.Options.CurrentOfflinePlayer].Value);
+                GlobalVar.Options.OfflinePlayers[GlobalVar.Options.CurrentOfflinePlayer].Uuid);
             LaunchConfig = new()
             {
                 Account = account,
@@ -186,7 +186,7 @@ namespace Fluent_Launcher.Assets.Pages
             AddOfflineName();
 
             int currentPlayerIndex = GlobalVar.Options.CurrentOfflinePlayer;
-            contentPage.Init(ComboBox_Name.Text, GlobalVar.Options.OfflinePlayers[currentPlayerIndex].Value);
+            contentPage.Init(ComboBox_Name.Text, GlobalVar.Options.OfflinePlayers[currentPlayerIndex].Uuid);
 
             // 显示ContentDialog
             var result = await dialog.ShowAsync();
@@ -222,14 +222,15 @@ namespace Fluent_Launcher.Assets.Pages
                     return;
                 }
 
-                var newProfile = new KeyValuePair<string, Guid>(playerName, playerUUID);
-                OfflinePlayerList.RemoveAt(currentPlayerIndex);
-                OfflinePlayerList.Insert(currentPlayerIndex, newProfile);
-                GlobalVar.Options.OfflinePlayers[currentPlayerIndex] = newProfile;
+                var newProfile = new OfflinePlayer(playerName, playerUUID);
+                OfflinePlayerList[currentPlayerIndex].Name = playerName;
+                OfflinePlayerList[currentPlayerIndex].Uuid = playerUUID;
+                GlobalVar.Options.OfflinePlayers[currentPlayerIndex].Name = playerName;
+                GlobalVar.Options.OfflinePlayers[currentPlayerIndex].Uuid = playerUUID;
             }
           
             GlobalVar.Options.CurrentOfflinePlayer = currentPlayerIndex;
-            ComboBox_Name.SelectedIndex = GlobalVar.Options.CurrentOfflinePlayer;
+            ComboBox_Name.SelectedIndex = currentPlayerIndex;
             
         }
 
@@ -241,12 +242,12 @@ namespace Fluent_Launcher.Assets.Pages
                 return;
             }
 
-            var foundItem = GlobalVar.Options.OfflinePlayers.FirstOrDefault(pair => pair.Key == name);
-            if (foundItem.Equals(default(KeyValuePair<string, Guid>)))
+            var foundItem = GlobalVar.Options.OfflinePlayers.FirstOrDefault(pair => pair.Name == name);
+            if (foundItem == null)
             {
                 // 在所有离线玩家中没有当前的玩家名，说明这是一个新的玩家
                 // 需要被添加到列表中
-                var player = new KeyValuePair<string, Guid>(name, Guid.NewGuid());
+                var player = new OfflinePlayer(name, Guid.NewGuid());
                 GlobalVar.Options.OfflinePlayers.Add(player);
                 OfflinePlayerList.Add(player);
 

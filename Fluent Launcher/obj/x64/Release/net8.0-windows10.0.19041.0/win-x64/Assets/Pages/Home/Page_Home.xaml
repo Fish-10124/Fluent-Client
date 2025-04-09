@@ -52,7 +52,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Button x:ConnectionId='5' Grid.Row="0" HorizontalAlignment="Center" x:Name="Button_Launch"                             Width="250" Height="60"                                                                                                                    Style="{StaticResource AccentButtonStyle}">
+                <Button x:ConnectionId='5' Grid.Row="0" HorizontalAlignment="Center" x:Name="Button_Launch"                             Width="250" Height="60"                                                                                                  Style="{StaticResource AccentButtonStyle}">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -70,10 +70,9 @@
                     </Grid.ColumnDefinitions>
 
                     <Button x:ConnectionId='6' Grid.Column="0" x:Name="Button_SelectInstance" Content="Select Instance"                                    />
-                    <Button x:ConnectionId='7' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option"                                                                                                                                                       />
+                    <Button x:ConnectionId='7' Grid.Column="1" x:Name="Button_InstanceOption" Content="Instance Option" IsEnabled="{Binding ElementName=Button_Launch, Path=IsEnabled}"                                    />
                 </Grid>
             </Grid>
-
 
         </Grid>
 
