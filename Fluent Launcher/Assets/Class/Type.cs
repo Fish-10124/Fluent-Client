@@ -14,18 +14,19 @@ namespace Fluent_Launcher.Assets.Class
     {
     }
 
-    public class SettingsCardTagDescriptionInfos : SettingsCardInfos
+    public class SettingsCardTagDescriptionInfos(string? header, IList<string>? description = null, BitmapImage? headerIcon = null, string? tag = null, object? parameter = null)
+        : SettingsCardInfos(header, null, headerIcon, tag, parameter)
     {
-        public new IList<string>? Description { get; set; }
+        public new IList<string>? Description { get; set; } = description;
     }
 
-    public class SettingsCardInfos
+    public class SettingsCardInfos(string? header, string? description = null, BitmapImage? headerIcon = null, string? tag = null, object? parameter = null)
     {
-        public string? Header { get; set; }
-        public string? Description { get; set; }
-        public BitmapImage? HeaderIcon { get; set; }
-        public string? Tag { get; set; }
-        public object? parameter { get; set; } // 自定义参数
+        public string? Header { get; set; } = header;
+        public string? Description { get; set; } = description;
+        public BitmapImage? HeaderIcon { get; set; } = headerIcon;
+        public string? Tag { get; set; } = tag;
+        public object? parameter { get; set; } = parameter; // 自定义参数
     }
 
     public class Options
@@ -83,10 +84,10 @@ namespace Fluent_Launcher.Assets.Class
         public string FolderPath { get; set; } = folderPath;
     }
 
-    public class InstancesDeatils
+    public class InstancesDeatils(IList<SettingsCardTagDescriptionInfos>? settingsCardInfos, InstanceType type)
     {
-        public IList<SettingsCardTagDescriptionInfos>? SettingsCardInfos { get; set; } = [];
-        public InstanceType Type { get; set; }
+        public IList<SettingsCardTagDescriptionInfos>? SettingsCardInfos { get; set; } = settingsCardInfos;
+        public InstanceType Type { get; set; } = type;
     }
 
     // 在读取实例的ini文件时使用
@@ -112,6 +113,16 @@ namespace Fluent_Launcher.Assets.Class
         public int GameJava { get; set; } // 代表GlobalVar.Javas[]的下标
         public int MemoryRadio { get; set; }
         public int MemoryCustomize { get; set; } // 单位是MB
+    }
+
+    public class ModListShow(string name, string summary, List<string> categories, string downloadCount, string latestUpdate, BitmapImage icon)
+    {
+        public string Name { get; set; } = name;
+        public string Summary { get; set; } = summary;
+        public List<string> Categories { get; set; } = categories;
+        public string DownloadCount { get; set; } = downloadCount;
+        public string LatestUpdate { get; set; } = latestUpdate;
+        public BitmapImage Icon { get; set; } = icon;
     }
 
 }

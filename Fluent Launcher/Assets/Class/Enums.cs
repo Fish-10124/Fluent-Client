@@ -6,14 +6,19 @@ using System.Threading.Tasks;
 
 namespace Fluent_Launcher.Assets.Class
 {
-    internal class Enums
+    public enum InstancesType
     {
+        Modified,
+        Normal
     }
 
     public enum InstanceType
     {
-        Modified,
-        Normal
+       release,
+       snapshot,
+       old_alpha,
+       old_beta,
+       aprilfool
     }
 
     public enum LoginType

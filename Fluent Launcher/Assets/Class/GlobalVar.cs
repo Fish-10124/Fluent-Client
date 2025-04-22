@@ -20,6 +20,11 @@ namespace Fluent_Launcher.Assets.Class
         public const int AnimationDelay = 100;
         public const string DefaultInstanceId = "";
         public const int DefaultOfflinePlayerIndex = -1;
+
+        public const string CfApiKey = "$2a$10$VGFy23o3WipEqFXpGyd67.OfYA13D/9NUym2jGnp3hznXKCmcHala";
+        public const int CfMcGameId = 432;
+        public const int CfModClassId = 6, CfModPackClassId = 4471;
+
         public static readonly List<RootPath> DefaultRootPath = 
             [
                 new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"), "")

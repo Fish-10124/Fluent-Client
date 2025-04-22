@@ -38,6 +38,8 @@ namespace Fluent_Launcher
 
         private static readonly string OptionsFile = Path.Join(GlobalVar.OptionsFolder, GlobalVar.OptionsFile);
 
+        private static List<NavigationViewItem> HistoryNavigationViewItem = [];
+
         public MainWindow()
         {
             this.InitializeComponent();
@@ -53,8 +55,6 @@ namespace Fluent_Launcher
                 this.AppWindow.Resize(new Windows.Graphics.SizeInt32((int)width, (int)height));
             }
 
-            FileInfo fileInfo = new(OptionsFile);
-
             try
             {
                 // 读配置文件
@@ -69,6 +69,8 @@ namespace Fluent_Launcher
 
             NavigationView.SelectedItem = NavigationView.MenuItems[0];
             Frame_Content.Navigate(typeof(Page_Home));
+
+            HistoryNavigationViewItem = [ NavigationView.SelectedItem as NavigationViewItem ];
         }
 
         private static void CreateDefaultOptionsFile()
@@ -80,30 +82,6 @@ namespace Fluent_Launcher
 
             File.WriteAllText(OptionsFile, optionJson);
             
-        }
-
-        private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
-        {
-            if (args.IsSettingsInvoked)
-            {
-                //Frame_Content.Navigate(typeof(Page_Settings));
-            }
-            else
-            {
-                var invokedItem = args.InvokedItemContainer as NavigationViewItem;
-
-                if (invokedItem == null || !invokedItem.SelectsOnInvoked) return;
-
-                NavigateFrame(invokedItem.Tag switch
-                {
-                    "Home" => typeof(Page_Home),
-                    "Instances" => typeof(Page_InstancesList),
-                    "Mod" => typeof(Page_DownloadMod),
-                    _ => typeof(Page_Home)
-                }, new(invokedItem.Tag.ToString() ?? "",
-                invokedItem.Content.ToString() == "Home" ? // 如果在主页，就不显示标题
-                "" : invokedItem.Content.ToString() ?? ""));
-            }
         }
 
         public void NavigateFrame(Type pageType, KeyValuePair<string, string> breadcrumbBarHeader)
@@ -159,5 +137,57 @@ namespace Fluent_Launcher
             }
         }
 
+        private void NavigationView_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
+        {
+            Frame_Content.GoBack();
+            ChangeNavigationItem(true, HistoryNavigationViewItem[^2]);
+            HistoryNavigationViewItem.RemoveAt(HistoryNavigationViewItem.Count - 1);
+            if (HistoryNavigationViewItem.Count <= 1)
+            {
+                NavigationView.IsBackEnabled = false;
+            }
+        }
+
+        private void ChangeNavigationItem(bool isBack, NavigationViewItem args)
+        {
+
+            if (args.Content.ToString() == "settings")
+            {
+                // Frame_Content.Navigate(typeof(Page_Settings));
+            }
+            else
+            {
+                if (args == null || !args.SelectsOnInvoked) return;
+
+                NavigateFrame(args.Tag switch
+                {
+                    "Home" => typeof(Page_Home),
+                    "Instances" => typeof(Page_InstancesList),
+                    "Mod" => typeof(Page_DownloadMod),
+                    _ => typeof(Page_Home)
+                }, new(args.Tag.ToString() ?? "",
+                args.Content.ToString() == "Home" ? // 如果在主页，就不显示标题
+                "" : args.Content.ToString() ?? ""));
+            }
+
+            if (!isBack)
+            {
+                NavigationView.IsBackEnabled = true;
+            }
+            else
+            {
+                NavigationView.SelectedItem = HistoryNavigationViewItem[^2];
+            }
+        }
+
+        private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            if ((args.InvokedItemContainer as NavigationViewItem)!.SelectsOnInvoked)
+            {
+                var navigationItem = args.InvokedItemContainer as NavigationViewItem;
+                HistoryNavigationViewItem.Add(navigationItem!);
+                ChangeNavigationItem(false, navigationItem!);
+            }
+        }
     }
 }

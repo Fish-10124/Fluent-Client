@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Fluent_Launcher.Assets.Class
 {
-    class Utils
+    public static class Utils
     {
 
         // 如果需要获取版本类型，可以使用返回值的parameter属性
@@ -23,13 +23,13 @@ namespace Fluent_Launcher.Assets.Class
         {
             List<string> descriptions = [instance.Version.VersionId, instance.Version.Type.ToString()];
             BitmapImage headerIcon;
-            InstanceType type;
+            InstancesType type;
 
             if (instance.IsVanilla)
             {
                 // 原版 Minecraft 图标和类型
                 headerIcon = GetVanillaIcon(instance.Version.Type);
-                type = InstanceType.Normal;
+                type = InstancesType.Normal;
             }
             else
             {
@@ -43,16 +43,10 @@ namespace Fluent_Launcher.Assets.Class
                 }
 
                 headerIcon = GetModLoaderIcon(modLoaders.First().Type);
-                type = InstanceType.Modified;
+                type = InstancesType.Modified;
             }
 
-            return new SettingsCardTagDescriptionInfos()
-            {
-                Header = instance.Id,
-                Description = descriptions,
-                HeaderIcon = headerIcon,
-                parameter = type
-            };
+            return new SettingsCardTagDescriptionInfos(header: instance.Id, description: descriptions, headerIcon: headerIcon, parameter: type);
 
         }
 
@@ -114,6 +108,100 @@ namespace Fluent_Launcher.Assets.Class
                 MemoryRadio = ParseNullableInt(options[5]) ?? 0,
                 MemoryCustomize = ParseNullableInt(options[6]) ?? 3 * 1024
             };
+        }
+        
+    }
+
+    public static class Convert
+    {
+        private static readonly Dictionary<InstanceType, string> InstanceTypePairs = new()
+        {
+            { InstanceType.release, "Release" },
+            { InstanceType.snapshot, "Snapshot" },
+            { InstanceType.old_alpha, "Historical α" },
+            { InstanceType.old_beta, "Historical β" },
+            { InstanceType.aprilfool, "April Fool" }
+        };
+
+        private static readonly Dictionary<string, string> CfModTypePairs = new()
+        {
+            { "map-information", "Map and Infomation" },
+            { "armor-weapons-tools", "Armor, Tools, and Weapons" },
+            { "library-api", "API and Library" },
+            { "adventure-rpg", "Adventure and RPG" },
+            { "technology-processing", "Processing" },
+            { "utility-qol", "utility & QoL" },
+            { "education", "Education" },
+            { "mc-miscellaneous", "Miscellaneous" },
+            { "server-utility", "Server Utility" },
+            { "technology", "Technology" },
+            { "mc-food", "Food" },
+            { "world-gen", "World Gen" },
+            { "storage", "Storage" },
+            { "create", "Create" },
+            { "world-mobs", "Mobs" },
+            { "skyblock", "Skyblock" },
+            { "mc-creator", "MCreator" },
+            { "cosmetic", "Cosmetic" },
+            { "kubejs", "KubeJS" },
+            { "redstone", "Redstone" },
+            { "performance", "Performance" },
+            { "technology-player-transport", "Player Transport" },
+            { "world-biomes", "Biomes" },
+            { "world-ores-resources", "Ores and Resources" },
+            { "technology-item-fluid-energy-transport", "Energy, Fluid, and Item Transport" },
+            { "addons-buildcraft", "Buildcraft" },
+            { "addons-thaumcraft", "Thaumcraft" },
+            { "world-structures", "Structures" },
+            { "mc-addons", "Addons" },
+            { "addons-tinkers-construct", "Thinker's Construct" },
+            { "blood-magic", "Blood Magic" },
+            { "bug-fixes", "Bug Fixes" },
+            { "addons-industrialcraft", "Industrial Craft" },
+            { "galacticraft", "Galacticraft" },
+            { "technology-farming", "Farming" },
+            { "magic", "Magic" },
+            { "technology-automation", "Automation" },
+            { "applied-energistics-2", "Applied Energistics 2" },
+            { "twitch-integration", "Twitch Integration" },
+            { "crafttweaker", "CraftTweaker" },
+            { "integrated-dynamics", "Integrated Dynamics" },
+            { "addons-thermalexpansion", "Thermal Expansion" },
+            { "world-dimensions", "Dimensions" },
+            { "technology-energy", "Energy" },
+            { "twilight-forest", "Twilight Forest" },
+            { "technology-genetics", "Genetics" },
+            { "addons-forestry", "Forestry" }
+        };
+
+        // 将Mc版本类型转换显示为对应语言
+        public static string? ConvertInstanceType(string instanceType)
+        {
+            var type = (InstanceType)Enum.Parse(typeof(InstanceType), instanceType);
+            InstanceTypePairs.TryGetValue(type, out string? value);
+            return value;
+        }
+
+        // 将Mc版本类型转换为对应的图标
+        public static BitmapImage? ConvertInstanceIcon(string instanceType)
+        {
+            var type = (InstanceType)Enum.Parse(typeof(InstanceType), instanceType);
+            return type switch
+            {
+                InstanceType.release => Icons.Grass_Block,
+                InstanceType.snapshot => Icons.Crafting_Table,
+                InstanceType.old_alpha => Icons.Dirt_Path,
+                InstanceType.old_beta => Icons.Dirt_Path,
+                InstanceType.aprilfool => Icons.Furnace,
+                _ => null
+            };
+        }
+
+        // 将Cf的模组类型转换显示为对应语言
+        public static string? ConvertCfModType(string modType)
+        {
+            CfModTypePairs.TryGetValue(modType, out string? value);
+            return value;
         }
     }
 

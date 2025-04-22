@@ -50,42 +50,18 @@ namespace Fluent_Launcher.Assets.Pages.Download
 
             foreach (var (item, i) in Instances.Select((item, i) => (item, i)))
             {
+                var type = item.ReleaseTime.Month == 4 && item.ReleaseTime.Day == 1 ? "aprilfool" : item.Type;
 
                 // 转换版本类型
-                string instanceType = item.ReleaseTime.Month == 4 && item.ReleaseTime.Day == 1 ? "April Fool" : item.Type switch
-                {
-                    "release" => "Release",
-                    "snapshot" => "Snapshot",
-                    "old_alpha" => "Historical α",
-                    "old_beta" => "Historical β",
-                    _ => throw new NotImplementedException()
-                };
+                string instanceType = Class.Convert.ConvertInstanceType(type)!;
 
-                InstanceListToShow.Add(new SettingsCardInfos
-                {
-                    Header = item.Id,
-                    Description = $"{instanceType}  {item.ReleaseTime.ToString("d", CultureInfo.CurrentCulture)} {item.ReleaseTime.ToString("t", CultureInfo.CurrentCulture)}",
-                    HeaderIcon = instanceType switch
-                    {
-                        "Release" => Icons.Grass_Block,
-                        "Snapshot" => Icons.Crafting_Table,
-                        "Historical α" => Icons.Dirt_Path,
-                        "Historical β" => Icons.Dirt_Path,
-                        "April Fool" => Icons.Furnace,
-                        _ => throw new NotImplementedException()
-                    },
-                    Tag = i.ToString()
-                });
+                InstanceListToShow.Add(new SettingsCardInfos(header: item.Id,
+                    description: $"{instanceType}  {item.ReleaseTime.ToString("d", CultureInfo.CurrentCulture)} {item.ReleaseTime.ToString("t", CultureInfo.CurrentCulture)}",
+                    headerIcon: Class.Convert.ConvertInstanceIcon(type), tag: i.ToString()));
 
             }
 
-            FilteredInstances = InstanceListToShow.Select(item => new SettingsCardInfos
-            {
-                Header = item.Header,
-                Description = item.Description,
-                HeaderIcon = item.HeaderIcon,
-                Tag = item.Tag
-            }).ToList();
+            FilteredInstances = [.. InstanceListToShow.Select(item => new SettingsCardInfos(header: item.Header, description: item.Description, headerIcon: item.HeaderIcon, tag: item.Tag))];
 
             // 更新ListView
             ListView_Instances.ItemsSource = null;

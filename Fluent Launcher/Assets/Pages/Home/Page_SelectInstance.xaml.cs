@@ -71,11 +71,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
                 if (existingDetails == null)
                 {
                     // 如果不存在该类型，则创建并添加新实例
-                    var newDetails = new InstancesDeatils
-                    {
-                        Type = type,
-                        SettingsCardInfos = new ObservableCollection<SettingsCardTagDescriptionInfos>()
-                    };
+                    var newDetails = new InstancesDeatils(new ObservableCollection<SettingsCardTagDescriptionInfos>(), type);
 
                     GlobalVar.InstancesDetails.Add(newDetails);
                     existingDetails = newDetails; // 更新引用以便后续操作

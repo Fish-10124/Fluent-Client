@@ -36,59 +36,17 @@ namespace Fluent_Launcher.Assets.Pages.Download
         // parameter属性表示是否有这个加载器
         private IList<SettingsCardInfos> ModloaderViews =
         [
-            new()
-            {
-                Header = "NeoForge",
-                Description = "Mod loader, a branch of Forge.",
-                HeaderIcon = Icons.NeoForge_Icon,
-                parameter = false
-            }, // NeoForge
-            new()
-            {
-                Header = "Forge",
-                Description = "Mod loader, used to load Forge mods.",
-                HeaderIcon = Icons.Forge_Icon,
-                parameter = false
-            }, // Forge
-            new()
-            {
-                Header = "Optifine",
-                Description = "HD fix, installed as a mod when installed with other loaders.",
-                HeaderIcon = Icons.OptiFine_Icon,
-                parameter = false
-            }, // Optifine
-            new()
-            {
-                Header = "Fabric",
-                Description = "Mod loader, used to load Fabric mods.",
-                HeaderIcon = Icons.Fabric_Icon,
-                parameter = false
-            }, // Fabric
-            new()
-            {
-                Header = "Quilt",
-                Description = "Mod loader, a branch of Fabric.",
-                HeaderIcon = Icons.Quilt_Icon,
-                parameter = false
-            } // Quilt
+            new(header: "NeoForge", description: "Mod loader, a branch of Forge.", headerIcon: Icons.NeoForge_Icon, parameter: false), // NeoForge
+            new(header: "Forge", description: "Mod loader, used to load Forge mods.", headerIcon: Icons.Forge_Icon, parameter: false), // Forge
+            new(header: "Optifine", description: "HD fix, installed as a mod when installed with other loaders.", headerIcon: Icons.OptiFine_Icon, parameter: false), // Optifine
+            new(header: "Fabric", description: "Mod loader, used to load Fabric mods.", headerIcon: Icons.Fabric_Icon, parameter: false), // Fabric
+            new(header: "Quilt", description: "Mod loader, a branch of Fabric.", headerIcon: Icons.Quilt_Icon, parameter: false) // Quilt
         ];
         private IList<SettingsCardInfos> PreinstallModViews = [
-            new()
-            {
-                Header = "Fabric API"
-            }, // Fabric API
-            new()
-            {
-                Header = "Quilted Fabric API (QFAPI)"
-            }, // QFAPI
-            new()
-            {
-                Header = "Sodium"
-            }, // Sodium
-            new()
-            {
-                Header = "Iris Shaders"
-            } // Iris
+            new(header: "Fabric API"), // Fabric API
+            new(header: "Quilted Fabric API (QFAPI)"), // QFAPI
+            new(header: "Sodium"), // Sodium
+            new(header: "Iris Shaders") // Iris
         ];
 
         private IList<ForgeInstallEntry> NeoforgeVersions = [];

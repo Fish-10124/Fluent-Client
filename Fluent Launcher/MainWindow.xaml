@@ -17,7 +17,7 @@
 
     <Grid>
 
-        <NavigationView x:Name="NavigationView" ItemInvoked="NavigationView_ItemInvoked" PaneDisplayMode="LeftCompact">
+        <NavigationView x:Name="NavigationView" ItemInvoked="NavigationView_ItemInvoked" PaneDisplayMode="LeftCompact" BackRequested="NavigationView_BackRequested">
 
             <NavigationView.Resources>
                 <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent"/>
@@ -40,7 +40,7 @@
             
             <NavigationView.MenuItems>
 
-                <NavigationViewItem Content="Home" Icon="Home" Tag="Home"/>
+                <NavigationViewItem x:Name="NavigationViewItem_Home" Content="Home" Icon="Home" Tag="Home"/>
 
                 <NavigationViewItem Content="Download" Icon="Download" Tag="Download" SelectsOnInvoked="False">
                     <NavigationViewItem.MenuItems>

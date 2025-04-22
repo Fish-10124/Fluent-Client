@@ -17,7 +17,7 @@
 
     <Grid>
 
-        <NavigationView x:ConnectionId='2' x:Name="NavigationView"                                          PaneDisplayMode="LeftCompact">
+        <NavigationView x:ConnectionId='2' x:Name="NavigationView"                                          PaneDisplayMode="LeftCompact"                                             >
 
             <NavigationView.Resources>
                 <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent"/>
@@ -40,7 +40,7 @@
             
             <NavigationView.MenuItems>
 
-                <NavigationViewItem Content="Home" Icon="Home" Tag="Home"/>
+                <NavigationViewItem x:ConnectionId='5' x:Name="NavigationViewItem_Home" Content="Home" Icon="Home" Tag="Home"/>
 
                 <NavigationViewItem Content="Download" Icon="Download" Tag="Download" SelectsOnInvoked="False">
                     <NavigationViewItem.MenuItems>
@@ -90,7 +90,7 @@
 
             </NavigationView.MenuItems>
 
-            <Frame x:ConnectionId='5' x:Name="Frame_Content"                                    />
+            <Frame x:ConnectionId='6' x:Name="Frame_Content"                                    />
 
         </NavigationView>
         
