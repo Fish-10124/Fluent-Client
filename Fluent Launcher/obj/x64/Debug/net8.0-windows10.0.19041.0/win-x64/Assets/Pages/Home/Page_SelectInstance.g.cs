@@ -472,7 +472,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
                     }
                 }
             }
-            private void Update_Type(global::Fluent_Launcher.Assets.Class.InstanceType obj, int phase)
+            private void Update_Type(global::Fluent_Launcher.Assets.Class.InstancesType obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED )) != 0)
                 {

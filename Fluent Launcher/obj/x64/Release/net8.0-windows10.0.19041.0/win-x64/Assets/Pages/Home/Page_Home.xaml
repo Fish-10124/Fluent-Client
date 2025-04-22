@@ -34,8 +34,8 @@
                                 <ColumnDefinition Width="40"/>
                             </Grid.ColumnDefinitions>
 
-                            <ComboBox x:ConnectionId='9' x:Name="ComboBox_Name" Grid.Column="0" IsEditable="True" HorizontalAlignment="Stretch" PlaceholderText="Name"                                          DisplayMemberPath="Key"                                                  >
-
+                            <ComboBox x:ConnectionId='9' x:Name="ComboBox_Name" Grid.Column="0" IsEditable="True" HorizontalAlignment="Stretch" PlaceholderText="Name"                                          DisplayMemberPath="Name"                                                  >
+                                
                             </ComboBox>
 
                             <HyperlinkButton x:ConnectionId='10' x:Name="HyperlinkButton_OfflineAccountSettings" Grid.Column="1" HorizontalAlignment="Right" IsEnabled="{Binding ElementName=ComboBox_Name, Path=Text, Converter={StaticResource TextBoolConverter}}"                                                     >

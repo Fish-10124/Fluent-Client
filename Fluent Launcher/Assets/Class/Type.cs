@@ -84,10 +84,10 @@ namespace Fluent_Launcher.Assets.Class
         public string FolderPath { get; set; } = folderPath;
     }
 
-    public class InstancesDeatils(IList<SettingsCardTagDescriptionInfos>? settingsCardInfos, InstanceType type)
+    public class InstancesDeatils(IList<SettingsCardTagDescriptionInfos>? settingsCardInfos, InstancesType type)
     {
         public IList<SettingsCardTagDescriptionInfos>? SettingsCardInfos { get; set; } = settingsCardInfos;
-        public InstanceType Type { get; set; } = type;
+        public InstancesType Type { get; set; } = type;
     }
 
     // 在读取实例的ini文件时使用

@@ -65,7 +65,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
                 var instanceTagInfos = Utils.InstanceEntryToTagInfos(instance);
 
                 // 检查该类型的 InstancesDetails 是否已存在
-                var type = instanceTagInfos.parameter as InstanceType? ?? throw new Exception("Instance type parse faild!");
+                var type = (InstancesType)instanceTagInfos.parameter!;
                 var existingDetails = GlobalVar.InstancesDetails.FirstOrDefault(item => item.Type == type);
 
                 if (existingDetails == null)

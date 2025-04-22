@@ -35,7 +35,7 @@ namespace Fluent_Launcher.Assets.Class
             {
                 // 模组 Minecraft 图标和类型
                 var modInstance = instance as ModifiedMinecraftEntry ?? throw new Exception("Instance parse failed!");
-                IList<ModLoaderInfo> modLoaders = modInstance.ModLoaders.ToList();
+                IList<ModLoaderInfo> modLoaders = [.. modInstance.ModLoaders];
 
                 foreach (var modLoader in modLoaders)
                 {

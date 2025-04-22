@@ -26,14 +26,28 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Releas
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\CommunityToolkit.WinUI.Extensions.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\CommunityToolkit.WinUI.Helpers.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\CommunityToolkit.WinUI.Triggers.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\CurseForge.APIClient.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Flurl.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Flurl.Http.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.DependencyInjection.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Diagnostics.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Http.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Logging.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Options.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Extensions.Primitives.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.InteractiveExperiences.Projection.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.WinUI.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\MinecraftLaunch.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\MinecraftLaunch.Base.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.DiagnosticSource.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.IO.Pipelines.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Linq.Async.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Management.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Encodings.Web.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Json.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Fluent Launcher.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Win32.Registry.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.Concurrent.dll
@@ -43,7 +57,7 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Releas
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Collections.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.Primitives.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.ComponentModel.TypeConverter.dll
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.DiagnosticSource.dll
+D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Console.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.Process.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Diagnostics.StackTrace.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Formats.Asn1.dll
@@ -71,8 +85,6 @@ D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Releas
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Claims.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Cryptography.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Security.Principal.Windows.dll
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Encodings.Web.dll
-D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.Json.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Text.RegularExpressions.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\System.Threading.Channels.dll
 D:\Fish_work\CSProjects\Fluent Launcher\Fluent-Client\Fluent Launcher\bin\Release\net8.0-windows10.0.19041.0\win-x64\publish\Microsoft.Windows.SDK.NET.dll
