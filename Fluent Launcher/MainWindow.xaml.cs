@@ -40,6 +40,13 @@ namespace Fluent_Launcher
 
         private static List<NavigationViewItem> HistoryNavigationViewItem = [];
 
+        private static readonly Dictionary<string, KeyValuePair<string, System.Type>> NavigationTagPagePairs = new()
+        {
+            {"Home", new("Home", typeof(Page_Home))},
+            {"Instances", new("Instances", typeof(Page_InstancesList))},
+            {"Mod", new("Mod", typeof(Page_DownloadMod))}
+        };
+
         public MainWindow()
         {
             this.InitializeComponent();
@@ -159,34 +166,43 @@ namespace Fluent_Launcher
             {
                 if (args == null || !args.SelectsOnInvoked) return;
 
-                NavigateFrame(args.Tag switch
-                {
-                    "Home" => typeof(Page_Home),
-                    "Instances" => typeof(Page_InstancesList),
-                    "Mod" => typeof(Page_DownloadMod),
-                    _ => typeof(Page_Home)
-                }, new(args.Tag.ToString() ?? "",
-                args.Content.ToString() == "Home" ? // 如果在主页，就不显示标题
-                "" : args.Content.ToString() ?? ""));
+                NavigationTagPagePairs.TryGetValue(args.Tag.ToString()!, out var page);
+                NavigateFrame(page.Value, new(args.Tag.ToString()!, page.Key));
             }
 
-            if (!isBack)
+            if (isBack)
             {
-                NavigationView.IsBackEnabled = true;
+                NavigationView.ItemInvoked -= NavigationView_ItemInvoked;
+                NavigationView.SelectedItem = args;
+                NavigationView.ItemInvoked += NavigationView_ItemInvoked;
             }
             else
             {
-                NavigationView.SelectedItem = HistoryNavigationViewItem[^2];
+                NavigationView.IsBackEnabled = true;
             }
         }
 
         private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
-            if ((args.InvokedItemContainer as NavigationViewItem)!.SelectsOnInvoked)
+            NavigationViewItem navigationItem = (args.InvokedItemContainer as NavigationViewItem)!;
+
+            if (navigationItem.SelectsOnInvoked)
             {
-                var navigationItem = args.InvokedItemContainer as NavigationViewItem;
-                HistoryNavigationViewItem.Add(navigationItem!);
-                ChangeNavigationItem(false, navigationItem!);
+                NavigationTagPagePairs.TryGetValue(navigationItem.Tag.ToString()!, out var page);
+                if (Frame_Content.CurrentSourcePageType.Equals(page.Value))
+                {
+                    return;
+                }
+
+                if (navigationItem.Equals(HistoryNavigationViewItem[^1]))
+                {
+                    ChangeNavigationItem(true, navigationItem!);
+                }
+                else
+                {
+                    HistoryNavigationViewItem.Add(navigationItem!);
+                    ChangeNavigationItem(false, navigationItem!);
+                }
             }
         }
     }

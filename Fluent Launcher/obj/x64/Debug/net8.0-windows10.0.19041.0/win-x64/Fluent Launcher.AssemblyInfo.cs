@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fluent Launcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b30908541a295e59c53dd525f23f8e9b61f87fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db464d7570370066f704c9e09654df3c0965976e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fluent Launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fluent Launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

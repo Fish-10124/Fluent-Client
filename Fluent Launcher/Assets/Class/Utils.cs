@@ -1,4 +1,6 @@
 ﻿using Fluent_Launcher.Assets.Class;
+using Fluent_Launcher.Assets.Pages.Download;
+using Fluent_Launcher.Assets.Pages;
 using Fluent_Launcher.Assets.Resources.Icons;
 using Microsoft.UI.Xaml.Media.Imaging;
 using MinecraftLaunch.Base.Enums;
