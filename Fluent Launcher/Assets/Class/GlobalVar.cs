@@ -1,10 +1,12 @@
 ﻿using CommunityToolkit.WinUI.Controls;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media.Imaging;
 using MinecraftLaunch.Base.Models.Game;
 using MinecraftLaunch.Base.Models.Network;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -24,6 +26,8 @@ namespace Fluent_Launcher.Assets.Class
         public const string CfApiKey = "$2a$10$VGFy23o3WipEqFXpGyd67.OfYA13D/9NUym2jGnp3hznXKCmcHala";
         public const int CfMcGameId = 432;
         public const int CfModClassId = 6, CfModPackClassId = 4471;
+
+        public static Window CurrentWindow { get; set; }
 
         public static readonly List<RootPath> DefaultRootPath = 
             [

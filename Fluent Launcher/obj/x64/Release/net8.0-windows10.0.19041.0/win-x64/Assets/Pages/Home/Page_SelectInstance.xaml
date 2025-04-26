@@ -12,7 +12,7 @@
     Background="Transparent">
 
     <Grid>
-        <Grid Margin="{StaticResource PageGridMargin}" MaxWidth="{StaticResource PageMaxWidth}">
+        <Grid Margin="{StaticResource PageGridMargin}" MaxWidth="{StaticResource PageMaxWidth}" Padding="{StaticResource PagePadding}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
@@ -31,9 +31,22 @@
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+
+                <ListView.Footer>
+                    <HyperlinkButton x:ConnectionId='17' x:Name="HyperlinkButton_SelectFolder" HorizontalAlignment="Left"                                           >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <FontIcon Grid.Column="0" Glyph="&#xE710;" FontSize="15"/>
+                            <TextBlock Margin="3, 0, 0, 0" Grid.Column="1" Text="Add a local folder"/>
+                        </Grid>
+                    </HyperlinkButton>
+                </ListView.Footer>
             </ListView>
 
-            <ListView x:ConnectionId='3' Grid.Column="1"                                                         SelectionMode="None">
+            <ListView x:ConnectionId='3' Grid.Column="1"                                                         SelectionMode="None" Padding="{StaticResource PagePadding}">
                 <ListView.ItemTemplate>
                     <DataTemplate                                    >
                         <Grid x:ConnectionId='5' Padding="0, 0, 0, 5">

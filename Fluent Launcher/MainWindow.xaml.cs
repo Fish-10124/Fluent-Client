@@ -51,8 +51,8 @@ namespace Fluent_Launcher
         {
             this.InitializeComponent();
 
-            Window window = this;
-            window.ExtendsContentIntoTitleBar = true;
+            GlobalVar.CurrentWindow = this;
+            GlobalVar.CurrentWindow.ExtendsContentIntoTitleBar = true;
 
             // »Ö¸´´°¿Ú¿í¸ß
             var localSettings = ApplicationData.Current.LocalSettings;

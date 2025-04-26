@@ -9,6 +9,7 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml.Shapes;
 using MinecraftLaunch.Base.Enums;
 using MinecraftLaunch.Base.Models.Game;
 using MinecraftLaunch.Components.Parser;
@@ -19,8 +20,12 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Pickers;
+using Path = System.IO.Path;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -56,7 +61,7 @@ namespace Fluent_Launcher.Assets.Pages.Home
             
         }
 
-        private void ForEachInstances(List<MinecraftEntry> instances)
+        private static void ForEachInstances(List<MinecraftEntry> instances)
         {
             GlobalVar.InstancesDetails.Clear();
 
@@ -126,11 +131,10 @@ namespace Fluent_Launcher.Assets.Pages.Home
 
         private void ListView_InstanceFolders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var listView = sender as ListView;
-            var selectedPath = listView?.SelectedItem as RootPathListShow;
+            ListView listView = (sender as ListView)!;
 
             // ½âÎö Minecraft ÊµÀý
-            GlobalVar.Options.CurrentRootPathIndex = listView?.SelectedIndex ?? throw new Exception("Index parse faild!");
+            GlobalVar.Options.CurrentRootPathIndex = listView.SelectedIndex;
             McParser = new(GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].Path);
             var instances = McParser.GetMinecrafts();
             ForEachInstances(instances);
@@ -140,6 +144,36 @@ namespace Fluent_Launcher.Assets.Pages.Home
             {
                 GlobalVar.Options.RootPaths[GlobalVar.Options.CurrentRootPathIndex].LatestInstanceId = instances.Count == 0 ? "" : instances[0].Id;
             }
+        }
+
+        private async void HyperlinkButton_SelectFolder_Click(object sender, RoutedEventArgs e)
+        {
+            HyperlinkButton button = (sender as HyperlinkButton)!;
+            button.IsEnabled = false;
+
+            var folderPicker = new FolderPicker();
+            var hWnd = WinRT.Interop.WindowNative.GetWindowHandle(GlobalVar.CurrentWindow);
+            WinRT.Interop.InitializeWithWindow.Initialize(folderPicker, hWnd);
+
+            folderPicker.SuggestedStartLocation = PickerLocationId.Desktop;
+            folderPicker.FileTypeFilter.Add("*");
+
+            StorageFolder folder = await folderPicker.PickSingleFolderAsync();
+
+            button.IsEnabled = true;
+
+            if (folder == null)
+            {
+                return;
+            }
+
+            if (GlobalVar.Options.RootPaths.Any(item => item.Path.Equals(folder.Path)))
+            {
+                return;
+            } 
+
+            GlobalVar.Options.RootPaths.Add(new(folder.Path, ""));
+            RootPaths.Add(new(folder.Name, folder.Path));
         }
     }
 }
