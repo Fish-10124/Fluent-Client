@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsBase"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fluent_Launcher.Assets.Pages.Download.Mods"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:uc="using:Fluent_Launcher.Assets.UserControls"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Padding="{StaticResource PageGridMargin}">
+            <uc:UC_BreadcrumbBar x:Name="BreadcrumbBar_Title" Frame="{x:Bind Frame_Content}"/>
+        </Grid>
+
+        <Frame Grid.Row="1" x:Name="Frame_Content" Navigated="Frame_Content_Navigated"/>
+    </Grid>
+</Page>

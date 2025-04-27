@@ -10,19 +10,25 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Pages\Download\Mods\Page_ModsOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Pages\Download\Mods\Page_ModsBase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\UserControls\UC_BreadcrumbBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Pages\Download\Instances\Page_InstancesBase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Assets\Pages\Home\Page_InstanceOption.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Assets\Pages\Home\Page_SelectInstance.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Assets\Pages\Download\Page_DownloadMod.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Assets\Pages\Download\Page_InstanceOption.xaml">
       <SubType>Designer</SubType>
     </Page>
     <None Update="MainWindow.xaml">

@@ -24,20 +24,6 @@
                 <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush" Color="Transparent"/>
             </NavigationView.Resources>
 
-            <NavigationView.Header>
-                <Grid MaxWidth="1000" Margin="-25, 0, 0, 0">
-                    <BreadcrumbBar x:Name="BreadcrumbBar_Header" ItemsSource="{x:Bind class:GlobalVar.BreadcrumbItems}" ItemClicked="BreadcrumbBar_Header_ItemClicked">
-                        <BreadcrumbBar.ItemTemplate>
-                            <DataTemplate>
-                                <Grid Padding="10, 0, 10, 0">
-                                    <TextBlock Text="{Binding Value}" FontSize="30" FontWeight="SemiBold"/>
-                                </Grid>
-                            </DataTemplate>
-                        </BreadcrumbBar.ItemTemplate>
-                    </BreadcrumbBar>
-                </Grid>
-            </NavigationView.Header>
-            
             <NavigationView.MenuItems>
 
                 <NavigationViewItem x:Name="NavigationViewItem_Home" Content="Home" Icon="Home" Tag="Home"/>

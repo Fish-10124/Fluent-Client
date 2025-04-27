@@ -18,14 +18,24 @@
     <Content Remove="Assets\Class\GlobalVar.cs" />
     <Content Remove="Assets\Class\Type.cs" />
     <Content Remove="Assets\Class\Utils.cs" />
+    <Content Remove="Assets\Pages\Download\Instances\Page_InstancesBase.xaml" />
+    <Content Remove="Assets\Pages\Download\Instances\Page_InstancesBase.xaml.cs" />
+    <Content Remove="Assets\Pages\Download\Mods\Page_ModsBase.xaml" />
+    <Content Remove="Assets\Pages\Download\Mods\Page_ModsBase.xaml.cs" />
+    <Content Remove="Assets\Pages\Download\Mods\Page_ModsOptions.xaml" />
+    <Content Remove="Assets\Pages\Download\Mods\Page_ModsOptions.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml" />
     <Content Remove="Assets\Pages\Download\Page_CoreOption.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />
     <Content Remove="Assets\Pages\Download\Page_DownloadMod.xaml.cs" />
+    <Content Remove="Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xaml" />
+    <Content Remove="Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xaml.cs" />
     <Content Remove="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml" />
     <Content Remove="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml.cs" />
     <Content Remove="Assets\Pages\Home\Page_SelectInstance.xaml" />
     <Content Remove="Assets\Pages\Home\Page_SelectInstance.xaml.cs" />
+    <Content Remove="Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xaml" />
+    <Content Remove="Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xaml.cs" />
     <Content Remove="Assets\Pages\Page_Download.xaml.cs" />
     <Content Remove="Assets\Pages\Page_DownloadCore.xaml" />
     <Content Remove="Assets\Pages\Page_DownloadCore.xaml.cs" />
@@ -34,15 +44,23 @@
     <Content Remove="Assets\Pages\Page_Home.xaml" />
     <Content Remove="Assets\Pages\Page_Home.xaml.cs" />
     <Content Remove="Assets\Resources\Icons\Icons.cs" />
+    <Content Remove="Assets\UserControls\UC_BreadcrumbBar.xaml" />
+    <Content Remove="Assets\UserControls\UC_BreadcrumbBar.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Assets\Pages\Download\Instances\Page_InstancesBase.xaml" />
+    <None Remove="Assets\Pages\Download\Mods\Page_ModsBase.xaml" />
+    <None Remove="Assets\Pages\Download\Mods\Page_ModsOptions.xaml" />
     <None Remove="Assets\Pages\Download\Page_CoreOption.xaml" />
     <None Remove="Assets\Pages\Download\Page_DownloadMod.xaml" />
+    <None Remove="Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xaml" />
     <None Remove="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml" />
     <None Remove="Assets\Pages\Home\Page_SelectInstance.xaml" />
+    <None Remove="Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xaml" />
     <None Remove="Assets\Pages\Page_DownloadCore.xaml" />
     <None Remove="Assets\Pages\Page_DownloadMod.xaml" />
     <None Remove="Assets\Pages\Page_Home.xaml" />
+    <None Remove="Assets\UserControls\UC_BreadcrumbBar.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -76,6 +94,16 @@
     <PackageReference Include="System.Management" Version="9.0.3" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Assets\Pages\Download\Mods\Page_ModsOptions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Pages\Download\Mods\Page_ModsBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,6 +135,26 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Assets\Pages\Home\Page_SelectInstance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Pages\Download\Instances\Page_InstancesBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\UserControls\UC_BreadcrumbBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

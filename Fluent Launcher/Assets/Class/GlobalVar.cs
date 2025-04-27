@@ -34,8 +34,6 @@ namespace Fluent_Launcher.Assets.Class
                 new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"), "")
             ];
 
-        public static ObservableCollection<KeyValuePair<string, string>> BreadcrumbItems { get; set; } = [];
-
         public static Options Options { get; set; } = new();
         public static string OptionsFolder { get; set; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FluentLauncherOptions");
 

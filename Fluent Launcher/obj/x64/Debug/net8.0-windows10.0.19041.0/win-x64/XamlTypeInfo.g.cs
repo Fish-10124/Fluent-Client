@@ -226,7 +226,7 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[113];
+            _typeNameTable = new string[125];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -236,112 +236,124 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             _typeNameTable[6] = "Double";
             _typeNameTable[7] = "Windows.UI.Color";
             _typeNameTable[8] = "Byte";
-            _typeNameTable[9] = "Fluent_Launcher.Assets.Class.VisibilityConverter";
-            _typeNameTable[10] = "Fluent_Launcher.Assets.Class.TextWrappingConverter";
-            _typeNameTable[11] = "Fluent_Launcher.Assets.Class.InstanceIdConverter";
-            _typeNameTable[12] = "Fluent_Launcher.Assets.Class.InstanceEnableConverter";
-            _typeNameTable[13] = "Fluent_Launcher.Assets.Class.MBToGBConverter";
-            _typeNameTable[14] = "Fluent_Launcher.Assets.Class.TextBoolConverter";
-            _typeNameTable[15] = "Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter";
-            _typeNameTable[16] = "CommunityToolkit.WinUI.Controls.SettingsCard";
-            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
-            _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[20] = "String";
-            _typeNameTable[21] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
-            _typeNameTable[22] = "System.Enum";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.ItemsView";
-            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.IElementFactory";
-            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.Layout";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[29] = "Int32";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.ScrollView";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[33] = "System.Collections.Generic.IReadOnlyList`1<Object>";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.Primitives.IScrollController";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.ItemContainer";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.LinedFlowLayout";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.VirtualizingLayout";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch";
-            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation";
-            _typeNameTable[41] = "Fluent_Launcher.Assets.Pages.Download.Page_DownloadMod";
-            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[44] = "Microsoft.UI.Xaml.Visibility";
-            _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
-            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
-            _typeNameTable[47] = "Microsoft.UI.Composition.CompositionPropertySet";
-            _typeNameTable[48] = "Microsoft.UI.Composition.CompositionObject";
-            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
-            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
-            _typeNameTable[51] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
-            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
-            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.FrameworkElement";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
-            _typeNameTable[56] = "Single";
-            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.ProgressBar";
-            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
-            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
-            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.UniformGridLayout";
-            _typeNameTable[62] = "Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch";
-            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification";
-            _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.Orientation";
-            _typeNameTable[65] = "CommunityToolkit.WinUI.Controls.SettingsExpander";
-            _typeNameTable[66] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[68] = "Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption";
-            _typeNameTable[69] = "Fluent_Launcher.Assets.Pages.Download.Page_InstancesList";
-            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.InfoBar";
-            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
-            _typeNameTable[72] = "System.Windows.Input.ICommand";
-            _typeNameTable[73] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[74] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
-            _typeNameTable[77] = "Fluent_Launcher.Assets.Pages.Page_Home";
-            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.Expander";
-            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
-            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[81] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
-            _typeNameTable[82] = "CommunityToolkit.WinUI.FontIconExtension";
-            _typeNameTable[83] = "CommunityToolkit.WinUI.TextIconExtension";
-            _typeNameTable[84] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[85] = "Microsoft.UI.Xaml.Media.FontFamily";
-            _typeNameTable[86] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[87] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[88] = "Microsoft.UI.Xaml.Media.Brush";
-            _typeNameTable[89] = "Microsoft.UI.Xaml.Controls.RadioButtons";
-            _typeNameTable[90] = "Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption";
-            _typeNameTable[91] = "Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog";
-            _typeNameTable[92] = "Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance";
-            _typeNameTable[93] = "Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop";
-            _typeNameTable[94] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
-            _typeNameTable[95] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[96] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[97] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[98] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[99] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[100] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[101] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[102] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[103] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[104] = "Microsoft.UI.Xaml.Controls.BreadcrumbBar";
-            _typeNameTable[105] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[106] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[107] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[108] = "Microsoft.UI.Xaml.Controls.NavigationViewItemHeader";
-            _typeNameTable[109] = "Fluent_Launcher.MainWindow";
-            _typeNameTable[110] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[111] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[112] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[13] = "Fluent_Launcher.Assets.Class.VisibilityConverter";
+            _typeNameTable[14] = "Fluent_Launcher.Assets.Class.TextWrappingConverter";
+            _typeNameTable[15] = "Fluent_Launcher.Assets.Class.InstanceIdConverter";
+            _typeNameTable[16] = "Fluent_Launcher.Assets.Class.InstanceEnableConverter";
+            _typeNameTable[17] = "Fluent_Launcher.Assets.Class.MBToGBConverter";
+            _typeNameTable[18] = "Fluent_Launcher.Assets.Class.TextBoolConverter";
+            _typeNameTable[19] = "Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.ScrollView";
+            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Visibility";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
+            _typeNameTable[25] = "System.Enum";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
+            _typeNameTable[27] = "Microsoft.UI.Composition.CompositionPropertySet";
+            _typeNameTable[28] = "Microsoft.UI.Composition.CompositionObject";
+            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
+            _typeNameTable[36] = "Single";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.ItemsView";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode";
+            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.Layout";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.IElementFactory";
+            _typeNameTable[42] = "Int32";
+            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider";
+            _typeNameTable[44] = "System.Collections.Generic.IReadOnlyList`1<Object>";
+            _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.Primitives.IScrollController";
+            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.UniformGridLayout";
+            _typeNameTable[47] = "Microsoft.UI.Xaml.Controls.VirtualizingLayout";
+            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch";
+            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification";
+            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.Orientation";
+            _typeNameTable[51] = "Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.ItemContainer";
+            _typeNameTable[53] = "CommunityToolkit.WinUI.Controls.SettingsExpander";
+            _typeNameTable[54] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[57] = "CommunityToolkit.WinUI.Controls.SettingsCard";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[60] = "String";
+            _typeNameTable[61] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
+            _typeNameTable[62] = "Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstanceOption";
+            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[65] = "Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.Frame";
+            _typeNameTable[67] = "System.Collections.ObjectModel.ObservableCollection`1<System.Collections.Generic.KeyValuePair`2<System.Type, String>>";
+            _typeNameTable[68] = "System.Collections.ObjectModel.Collection`1<System.Collections.Generic.KeyValuePair`2<System.Type, String>>";
+            _typeNameTable[69] = "System.Collections.Generic.KeyValuePair`2<System.Type, String>";
+            _typeNameTable[70] = "System.Type";
+            _typeNameTable[71] = "System.Reflection.MemberInfo";
+            _typeNameTable[72] = "Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesBase";
+            _typeNameTable[73] = "Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesList";
+            _typeNameTable[74] = "Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsBase";
+            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.LinedFlowLayout";
+            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch";
+            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification";
+            _typeNameTable[78] = "Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsList";
+            _typeNameTable[79] = "Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsOptions";
+            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.Expander";
+            _typeNameTable[81] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
+            _typeNameTable[82] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[83] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[84] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
+            _typeNameTable[85] = "CommunityToolkit.WinUI.FontIconExtension";
+            _typeNameTable[86] = "CommunityToolkit.WinUI.TextIconExtension";
+            _typeNameTable[87] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[88] = "Microsoft.UI.Xaml.Media.FontFamily";
+            _typeNameTable[89] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[90] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[91] = "Microsoft.UI.Xaml.Media.Brush";
+            _typeNameTable[92] = "Microsoft.UI.Xaml.Controls.RadioButtons";
+            _typeNameTable[93] = "Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOption";
+            _typeNameTable[94] = "Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOptionBase";
+            _typeNameTable[95] = "Microsoft.UI.Xaml.Controls.InfoBar";
+            _typeNameTable[96] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
+            _typeNameTable[97] = "System.Windows.Input.ICommand";
+            _typeNameTable[98] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[99] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[100] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
+            _typeNameTable[101] = "Fluent_Launcher.Assets.Pages.Home.Page_Home";
+            _typeNameTable[102] = "Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog";
+            _typeNameTable[103] = "Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstance";
+            _typeNameTable[104] = "Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstanceBase";
+            _typeNameTable[105] = "Microsoft.UI.Xaml.Controls.BreadcrumbBar";
+            _typeNameTable[106] = "Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop";
+            _typeNameTable[107] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
+            _typeNameTable[108] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[109] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[110] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[111] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[112] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[113] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[114] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[115] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[116] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[117] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[118] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[119] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[120] = "Microsoft.UI.Xaml.Controls.NavigationViewItemHeader";
+            _typeNameTable[121] = "Fluent_Launcher.MainWindow";
+            _typeNameTable[122] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[123] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[124] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[113];
+            _typeTable = new global::System.Type[125];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -351,110 +363,122 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             _typeTable[6] = typeof(global::System.Double);
             _typeTable[7] = typeof(global::Windows.UI.Color);
             _typeTable[8] = typeof(global::System.Byte);
-            _typeTable[9] = typeof(global::Fluent_Launcher.Assets.Class.VisibilityConverter);
-            _typeTable[10] = typeof(global::Fluent_Launcher.Assets.Class.TextWrappingConverter);
-            _typeTable[11] = typeof(global::Fluent_Launcher.Assets.Class.InstanceIdConverter);
-            _typeTable[12] = typeof(global::Fluent_Launcher.Assets.Class.InstanceEnableConverter);
-            _typeTable[13] = typeof(global::Fluent_Launcher.Assets.Class.MBToGBConverter);
-            _typeTable[14] = typeof(global::Fluent_Launcher.Assets.Class.TextBoolConverter);
-            _typeTable[15] = typeof(global::Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter);
-            _typeTable[16] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
-            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
-            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[20] = typeof(global::System.String);
-            _typeTable[21] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
-            _typeTable[22] = typeof(global::System.Enum);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.ItemsView);
-            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.IElementFactory);
-            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.Layout);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[29] = typeof(global::System.Int32);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[33] = typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Object>);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.ItemContainer);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.VirtualizingLayout);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch);
-            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation);
-            _typeTable[41] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_DownloadMod);
-            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Visibility);
-            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
-            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
-            _typeTable[47] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
-            _typeTable[48] = typeof(global::Microsoft.UI.Composition.CompositionObject);
-            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
-            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
-            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
-            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
-            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
-            _typeTable[56] = typeof(global::System.Single);
-            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
-            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
-            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
-            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayout);
-            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch);
-            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification);
-            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.Orientation);
-            _typeTable[65] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsExpander);
-            _typeTable[66] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[68] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption);
-            _typeTable[69] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstancesList);
-            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
-            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
-            _typeTable[72] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[73] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[74] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
-            _typeTable[77] = typeof(global::Fluent_Launcher.Assets.Pages.Page_Home);
-            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
-            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
-            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[81] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
-            _typeTable[82] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
-            _typeTable[83] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
-            _typeTable[84] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[85] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
-            _typeTable[86] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[87] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[88] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
-            _typeTable[89] = typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons);
-            _typeTable[90] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption);
-            _typeTable[91] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog);
-            _typeTable[92] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance);
-            _typeTable[93] = typeof(global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop);
-            _typeTable[94] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
-            _typeTable[95] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[96] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[97] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[98] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[99] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[100] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[101] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[102] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[103] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[104] = typeof(global::Microsoft.UI.Xaml.Controls.BreadcrumbBar);
-            _typeTable[105] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[106] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[107] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[108] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemHeader);
-            _typeTable[109] = typeof(global::Fluent_Launcher.MainWindow);
-            _typeTable[110] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[111] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[112] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
+            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[13] = typeof(global::Fluent_Launcher.Assets.Class.VisibilityConverter);
+            _typeTable[14] = typeof(global::Fluent_Launcher.Assets.Class.TextWrappingConverter);
+            _typeTable[15] = typeof(global::Fluent_Launcher.Assets.Class.InstanceIdConverter);
+            _typeTable[16] = typeof(global::Fluent_Launcher.Assets.Class.InstanceEnableConverter);
+            _typeTable[17] = typeof(global::Fluent_Launcher.Assets.Class.MBToGBConverter);
+            _typeTable[18] = typeof(global::Fluent_Launcher.Assets.Class.TextBoolConverter);
+            _typeTable[19] = typeof(global::Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
+            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Visibility);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
+            _typeTable[25] = typeof(global::System.Enum);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
+            _typeTable[27] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
+            _typeTable[28] = typeof(global::Microsoft.UI.Composition.CompositionObject);
+            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
+            _typeTable[36] = typeof(global::System.Single);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.ItemsView);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode);
+            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.Layout);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.IElementFactory);
+            _typeTable[42] = typeof(global::System.Int32);
+            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider);
+            _typeTable[44] = typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Object>);
+            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController);
+            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayout);
+            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Controls.VirtualizingLayout);
+            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch);
+            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification);
+            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.Orientation);
+            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.ItemContainer);
+            _typeTable[53] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsExpander);
+            _typeTable[54] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[57] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[60] = typeof(global::System.String);
+            _typeTable[61] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
+            _typeTable[62] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstanceOption);
+            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[65] = typeof(global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.Frame);
+            _typeTable[67] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>);
+            _typeTable[68] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>);
+            _typeTable[69] = typeof(global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>);
+            _typeTable[70] = typeof(global::System.Type);
+            _typeTable[71] = typeof(global::System.Reflection.MemberInfo);
+            _typeTable[72] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesBase);
+            _typeTable[73] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesList);
+            _typeTable[74] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsBase);
+            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout);
+            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch);
+            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification);
+            _typeTable[78] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsList);
+            _typeTable[79] = typeof(global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsOptions);
+            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
+            _typeTable[81] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
+            _typeTable[82] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[83] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[84] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
+            _typeTable[85] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
+            _typeTable[86] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
+            _typeTable[87] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[88] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
+            _typeTable[89] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[90] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[91] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
+            _typeTable[92] = typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons);
+            _typeTable[93] = typeof(global::Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOption);
+            _typeTable[94] = typeof(global::Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOptionBase);
+            _typeTable[95] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
+            _typeTable[96] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
+            _typeTable[97] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[98] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[99] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[100] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
+            _typeTable[101] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_Home);
+            _typeTable[102] = typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog);
+            _typeTable[103] = typeof(global::Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstance);
+            _typeTable[104] = typeof(global::Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstanceBase);
+            _typeTable[105] = typeof(global::Microsoft.UI.Xaml.Controls.BreadcrumbBar);
+            _typeTable[106] = typeof(global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop);
+            _typeTable[107] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
+            _typeTable[108] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[109] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[110] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[111] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[112] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[113] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[114] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[115] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[116] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[117] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[118] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[119] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[120] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemHeader);
+            _typeTable[121] = typeof(global::Fluent_Launcher.MainWindow);
+            _typeTable[122] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[123] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[124] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -490,127 +514,146 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_9_VisibilityConverter() { return new global::Fluent_Launcher.Assets.Class.VisibilityConverter(); }
-        private object Activate_10_TextWrappingConverter() { return new global::Fluent_Launcher.Assets.Class.TextWrappingConverter(); }
-        private object Activate_11_InstanceIdConverter() { return new global::Fluent_Launcher.Assets.Class.InstanceIdConverter(); }
-        private object Activate_12_InstanceEnableConverter() { return new global::Fluent_Launcher.Assets.Class.InstanceEnableConverter(); }
-        private object Activate_13_MBToGBConverter() { return new global::Fluent_Launcher.Assets.Class.MBToGBConverter(); }
-        private object Activate_14_TextBoolConverter() { return new global::Fluent_Launcher.Assets.Class.TextBoolConverter(); }
-        private object Activate_15_LoginTypeToIndexConverter() { return new global::Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter(); }
-        private object Activate_16_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
-        private object Activate_23_ItemsView() { return new global::Microsoft.UI.Xaml.Controls.ItemsView(); }
-        private object Activate_30_ItemCollectionTransitionProvider() { return new global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider(); }
-        private object Activate_31_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
-        private object Activate_35_ItemContainer() { return new global::Microsoft.UI.Xaml.Controls.ItemContainer(); }
-        private object Activate_36_LinedFlowLayout() { return new global::Microsoft.UI.Xaml.Controls.LinedFlowLayout(); }
-        private object Activate_37_VirtualizingLayout() { return new global::Microsoft.UI.Xaml.Controls.VirtualizingLayout(); }
-        private object Activate_41_Page_DownloadMod() { return new global::Fluent_Launcher.Assets.Pages.Download.Page_DownloadMod(); }
-        private object Activate_53_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
-        private object Activate_58_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
-        private object Activate_61_UniformGridLayout() { return new global::Microsoft.UI.Xaml.Controls.UniformGridLayout(); }
-        private object Activate_65_SettingsExpander() { return new global::CommunityToolkit.WinUI.Controls.SettingsExpander(); }
-        private object Activate_68_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption(); }
-        private object Activate_69_Page_InstancesList() { return new global::Fluent_Launcher.Assets.Pages.Download.Page_InstancesList(); }
-        private object Activate_70_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
-        private object Activate_76_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
-        private object Activate_77_Page_Home() { return new global::Fluent_Launcher.Assets.Pages.Page_Home(); }
-        private object Activate_78_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
-        private object Activate_82_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
-        private object Activate_89_RadioButtons() { return new global::Microsoft.UI.Xaml.Controls.RadioButtons(); }
-        private object Activate_90_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption(); }
-        private object Activate_91_Page_PlayerOptionsDialog() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog(); }
-        private object Activate_92_Page_SelectInstance() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance(); }
-        private object Activate_93_DesktopAcrylicBackdrop() { return new global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop(); }
-        private object Activate_95_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_103_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_104_BreadcrumbBar() { return new global::Microsoft.UI.Xaml.Controls.BreadcrumbBar(); }
-        private object Activate_105_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_107_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_108_NavigationViewItemHeader() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItemHeader(); }
-        private object Activate_109_MainWindow() { return new global::Fluent_Launcher.MainWindow(); }
-        private object Activate_111_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_9_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
+        private object Activate_13_VisibilityConverter() { return new global::Fluent_Launcher.Assets.Class.VisibilityConverter(); }
+        private object Activate_14_TextWrappingConverter() { return new global::Fluent_Launcher.Assets.Class.TextWrappingConverter(); }
+        private object Activate_15_InstanceIdConverter() { return new global::Fluent_Launcher.Assets.Class.InstanceIdConverter(); }
+        private object Activate_16_InstanceEnableConverter() { return new global::Fluent_Launcher.Assets.Class.InstanceEnableConverter(); }
+        private object Activate_17_MBToGBConverter() { return new global::Fluent_Launcher.Assets.Class.MBToGBConverter(); }
+        private object Activate_18_TextBoolConverter() { return new global::Fluent_Launcher.Assets.Class.TextBoolConverter(); }
+        private object Activate_19_LoginTypeToIndexConverter() { return new global::Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter(); }
+        private object Activate_20_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
+        private object Activate_33_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
+        private object Activate_38_ItemsView() { return new global::Microsoft.UI.Xaml.Controls.ItemsView(); }
+        private object Activate_43_ItemCollectionTransitionProvider() { return new global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider(); }
+        private object Activate_46_UniformGridLayout() { return new global::Microsoft.UI.Xaml.Controls.UniformGridLayout(); }
+        private object Activate_47_VirtualizingLayout() { return new global::Microsoft.UI.Xaml.Controls.VirtualizingLayout(); }
+        private object Activate_52_ItemContainer() { return new global::Microsoft.UI.Xaml.Controls.ItemContainer(); }
+        private object Activate_53_SettingsExpander() { return new global::CommunityToolkit.WinUI.Controls.SettingsExpander(); }
+        private object Activate_57_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
+        private object Activate_62_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstanceOption(); }
+        private object Activate_65_UC_BreadcrumbBar() { return new global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar(); }
+        private object Activate_67_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>(); }
+        private object Activate_68_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>(); }
+        private object Activate_72_Page_InstancesBase() { return new global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesBase(); }
+        private object Activate_73_Page_InstancesList() { return new global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesList(); }
+        private object Activate_74_Page_ModsBase() { return new global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsBase(); }
+        private object Activate_75_LinedFlowLayout() { return new global::Microsoft.UI.Xaml.Controls.LinedFlowLayout(); }
+        private object Activate_78_Page_ModsList() { return new global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsList(); }
+        private object Activate_79_Page_ModsOptions() { return new global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsOptions(); }
+        private object Activate_80_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
+        private object Activate_85_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
+        private object Activate_92_RadioButtons() { return new global::Microsoft.UI.Xaml.Controls.RadioButtons(); }
+        private object Activate_93_Page_InstanceOption() { return new global::Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOption(); }
+        private object Activate_94_Page_InstanceOptionBase() { return new global::Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOptionBase(); }
+        private object Activate_95_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
+        private object Activate_100_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
+        private object Activate_101_Page_Home() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_Home(); }
+        private object Activate_102_Page_PlayerOptionsDialog() { return new global::Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog(); }
+        private object Activate_103_Page_SelectInstance() { return new global::Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstance(); }
+        private object Activate_104_Page_SelectInstanceBase() { return new global::Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstanceBase(); }
+        private object Activate_105_BreadcrumbBar() { return new global::Microsoft.UI.Xaml.Controls.BreadcrumbBar(); }
+        private object Activate_106_DesktopAcrylicBackdrop() { return new global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop(); }
+        private object Activate_108_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_116_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_117_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_119_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_120_NavigationViewItemHeader() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItemHeader(); }
+        private object Activate_121_MainWindow() { return new global::Fluent_Launcher.MainWindow(); }
+        private object Activate_123_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_Thickness() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Thickness).TypeHandle);
         private void StaticInitializer_5_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
         private void StaticInitializer_7_Color() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Color).TypeHandle);
         private void StaticInitializer_8_Byte() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Byte).TypeHandle);
-        private void StaticInitializer_9_VisibilityConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.VisibilityConverter).TypeHandle);
-        private void StaticInitializer_10_TextWrappingConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.TextWrappingConverter).TypeHandle);
-        private void StaticInitializer_11_InstanceIdConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.InstanceIdConverter).TypeHandle);
-        private void StaticInitializer_12_InstanceEnableConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.InstanceEnableConverter).TypeHandle);
-        private void StaticInitializer_13_MBToGBConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.MBToGBConverter).TypeHandle);
-        private void StaticInitializer_14_TextBoolConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.TextBoolConverter).TypeHandle);
-        private void StaticInitializer_15_LoginTypeToIndexConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter).TypeHandle);
-        private void StaticInitializer_16_SettingsCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard).TypeHandle);
-        private void StaticInitializer_21_ContentAlignment() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment).TypeHandle);
-        private void StaticInitializer_22_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
-        private void StaticInitializer_23_ItemsView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemsView).TypeHandle);
-        private void StaticInitializer_25_ItemsViewSelectionMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode).TypeHandle);
-        private void StaticInitializer_27_Layout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Layout).TypeHandle);
-        private void StaticInitializer_30_ItemCollectionTransitionProvider() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider).TypeHandle);
-        private void StaticInitializer_31_ScrollView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollView).TypeHandle);
-        private void StaticInitializer_33_IReadOnlyList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Object>).TypeHandle);
-        private void StaticInitializer_34_IScrollController() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController).TypeHandle);
-        private void StaticInitializer_35_ItemContainer() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemContainer).TypeHandle);
-        private void StaticInitializer_36_LinedFlowLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout).TypeHandle);
-        private void StaticInitializer_37_VirtualizingLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.VirtualizingLayout).TypeHandle);
-        private void StaticInitializer_38_LinedFlowLayoutItemsStretch() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch).TypeHandle);
-        private void StaticInitializer_39_LinedFlowLayoutItemsJustification() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification).TypeHandle);
-        private void StaticInitializer_40_IndexBasedLayoutOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation).TypeHandle);
-        private void StaticInitializer_41_Page_DownloadMod() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_DownloadMod).TypeHandle);
-        private void StaticInitializer_45_ScrollingScrollMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode).TypeHandle);
-        private void StaticInitializer_46_ScrollingContentOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation).TypeHandle);
-        private void StaticInitializer_47_CompositionPropertySet() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionPropertySet).TypeHandle);
-        private void StaticInitializer_48_CompositionObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionObject).TypeHandle);
-        private void StaticInitializer_49_ScrollingScrollBarVisibility() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility).TypeHandle);
-        private void StaticInitializer_50_ScrollingChainMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode).TypeHandle);
-        private void StaticInitializer_51_ScrollingRailMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode).TypeHandle);
-        private void StaticInitializer_52_ScrollingInputKinds() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds).TypeHandle);
-        private void StaticInitializer_53_ScrollPresenter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter).TypeHandle);
-        private void StaticInitializer_55_ScrollingInteractionState() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState).TypeHandle);
-        private void StaticInitializer_57_ScrollingZoomMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode).TypeHandle);
-        private void StaticInitializer_58_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
-        private void StaticInitializer_60_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
-        private void StaticInitializer_61_UniformGridLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayout).TypeHandle);
-        private void StaticInitializer_62_UniformGridLayoutItemsStretch() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch).TypeHandle);
-        private void StaticInitializer_63_UniformGridLayoutItemsJustification() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification).TypeHandle);
-        private void StaticInitializer_65_SettingsExpander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.SettingsExpander).TypeHandle);
-        private void StaticInitializer_66_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
-        private void StaticInitializer_68_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption).TypeHandle);
-        private void StaticInitializer_69_Page_InstancesList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Page_InstancesList).TypeHandle);
-        private void StaticInitializer_70_InfoBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBar).TypeHandle);
-        private void StaticInitializer_71_InfoBarSeverity() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity).TypeHandle);
-        private void StaticInitializer_72_ICommand() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Windows.Input.ICommand).TypeHandle);
-        private void StaticInitializer_76_InfoBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings).TypeHandle);
-        private void StaticInitializer_77_Page_Home() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Page_Home).TypeHandle);
-        private void StaticInitializer_78_Expander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Expander).TypeHandle);
-        private void StaticInitializer_79_ExpandDirection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection).TypeHandle);
-        private void StaticInitializer_81_ExpanderTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings).TypeHandle);
-        private void StaticInitializer_82_FontIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.FontIconExtension).TypeHandle);
-        private void StaticInitializer_83_TextIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.TextIconExtension).TypeHandle);
-        private void StaticInitializer_86_FontWeight() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontWeight).TypeHandle);
-        private void StaticInitializer_87_FontStyle() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontStyle).TypeHandle);
-        private void StaticInitializer_89_RadioButtons() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons).TypeHandle);
-        private void StaticInitializer_90_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption).TypeHandle);
-        private void StaticInitializer_91_Page_PlayerOptionsDialog() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog).TypeHandle);
-        private void StaticInitializer_92_Page_SelectInstance() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance).TypeHandle);
-        private void StaticInitializer_93_DesktopAcrylicBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop).TypeHandle);
-        private void StaticInitializer_95_NavigationView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationView).TypeHandle);
-        private void StaticInitializer_96_NavigationViewPaneDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode).TypeHandle);
-        private void StaticInitializer_98_NavigationViewDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode).TypeHandle);
-        private void StaticInitializer_99_NavigationViewBackButtonVisible() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible).TypeHandle);
-        private void StaticInitializer_100_NavigationViewOverflowLabelMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode).TypeHandle);
-        private void StaticInitializer_101_NavigationViewSelectionFollowsFocus() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus).TypeHandle);
-        private void StaticInitializer_102_NavigationViewShoulderNavigationEnabled() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled).TypeHandle);
-        private void StaticInitializer_103_NavigationViewTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings).TypeHandle);
-        private void StaticInitializer_104_BreadcrumbBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.BreadcrumbBar).TypeHandle);
-        private void StaticInitializer_105_NavigationViewItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem).TypeHandle);
-        private void StaticInitializer_106_NavigationViewItemBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase).TypeHandle);
-        private void StaticInitializer_107_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
-        private void StaticInitializer_108_NavigationViewItemHeader() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemHeader).TypeHandle);
-        private void StaticInitializer_109_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.MainWindow).TypeHandle);
-        private void StaticInitializer_111_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_112_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_9_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
+        private void StaticInitializer_11_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
+        private void StaticInitializer_13_VisibilityConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.VisibilityConverter).TypeHandle);
+        private void StaticInitializer_14_TextWrappingConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.TextWrappingConverter).TypeHandle);
+        private void StaticInitializer_15_InstanceIdConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.InstanceIdConverter).TypeHandle);
+        private void StaticInitializer_16_InstanceEnableConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.InstanceEnableConverter).TypeHandle);
+        private void StaticInitializer_17_MBToGBConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.MBToGBConverter).TypeHandle);
+        private void StaticInitializer_18_TextBoolConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.TextBoolConverter).TypeHandle);
+        private void StaticInitializer_19_LoginTypeToIndexConverter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter).TypeHandle);
+        private void StaticInitializer_20_ScrollView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollView).TypeHandle);
+        private void StaticInitializer_24_ScrollingScrollMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode).TypeHandle);
+        private void StaticInitializer_25_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
+        private void StaticInitializer_26_ScrollingContentOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation).TypeHandle);
+        private void StaticInitializer_27_CompositionPropertySet() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionPropertySet).TypeHandle);
+        private void StaticInitializer_28_CompositionObject() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.CompositionObject).TypeHandle);
+        private void StaticInitializer_29_ScrollingScrollBarVisibility() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility).TypeHandle);
+        private void StaticInitializer_30_ScrollingChainMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode).TypeHandle);
+        private void StaticInitializer_31_ScrollingRailMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode).TypeHandle);
+        private void StaticInitializer_32_ScrollingInputKinds() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds).TypeHandle);
+        private void StaticInitializer_33_ScrollPresenter() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter).TypeHandle);
+        private void StaticInitializer_35_ScrollingInteractionState() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState).TypeHandle);
+        private void StaticInitializer_37_ScrollingZoomMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode).TypeHandle);
+        private void StaticInitializer_38_ItemsView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemsView).TypeHandle);
+        private void StaticInitializer_39_ItemsViewSelectionMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode).TypeHandle);
+        private void StaticInitializer_40_Layout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Layout).TypeHandle);
+        private void StaticInitializer_43_ItemCollectionTransitionProvider() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider).TypeHandle);
+        private void StaticInitializer_44_IReadOnlyList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IReadOnlyList<global::System.Object>).TypeHandle);
+        private void StaticInitializer_45_IScrollController() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController).TypeHandle);
+        private void StaticInitializer_46_UniformGridLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayout).TypeHandle);
+        private void StaticInitializer_47_VirtualizingLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.VirtualizingLayout).TypeHandle);
+        private void StaticInitializer_48_UniformGridLayoutItemsStretch() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch).TypeHandle);
+        private void StaticInitializer_49_UniformGridLayoutItemsJustification() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification).TypeHandle);
+        private void StaticInitializer_51_IndexBasedLayoutOrientation() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation).TypeHandle);
+        private void StaticInitializer_52_ItemContainer() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ItemContainer).TypeHandle);
+        private void StaticInitializer_53_SettingsExpander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.SettingsExpander).TypeHandle);
+        private void StaticInitializer_54_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::System.Object>).TypeHandle);
+        private void StaticInitializer_57_SettingsCard() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard).TypeHandle);
+        private void StaticInitializer_61_ContentAlignment() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment).TypeHandle);
+        private void StaticInitializer_62_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstanceOption).TypeHandle);
+        private void StaticInitializer_65_UC_BreadcrumbBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar).TypeHandle);
+        private void StaticInitializer_67_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>).TypeHandle);
+        private void StaticInitializer_68_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>).TypeHandle);
+        private void StaticInitializer_69_KeyValuePair() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>).TypeHandle);
+        private void StaticInitializer_70_Type() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Type).TypeHandle);
+        private void StaticInitializer_71_MemberInfo() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Reflection.MemberInfo).TypeHandle);
+        private void StaticInitializer_72_Page_InstancesBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesBase).TypeHandle);
+        private void StaticInitializer_73_Page_InstancesList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesList).TypeHandle);
+        private void StaticInitializer_74_Page_ModsBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsBase).TypeHandle);
+        private void StaticInitializer_75_LinedFlowLayout() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayout).TypeHandle);
+        private void StaticInitializer_76_LinedFlowLayoutItemsStretch() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch).TypeHandle);
+        private void StaticInitializer_77_LinedFlowLayoutItemsJustification() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification).TypeHandle);
+        private void StaticInitializer_78_Page_ModsList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsList).TypeHandle);
+        private void StaticInitializer_79_Page_ModsOptions() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsOptions).TypeHandle);
+        private void StaticInitializer_80_Expander() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.Expander).TypeHandle);
+        private void StaticInitializer_81_ExpandDirection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection).TypeHandle);
+        private void StaticInitializer_84_ExpanderTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings).TypeHandle);
+        private void StaticInitializer_85_FontIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.FontIconExtension).TypeHandle);
+        private void StaticInitializer_86_TextIconExtension() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::CommunityToolkit.WinUI.TextIconExtension).TypeHandle);
+        private void StaticInitializer_89_FontWeight() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontWeight).TypeHandle);
+        private void StaticInitializer_90_FontStyle() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.UI.Text.FontStyle).TypeHandle);
+        private void StaticInitializer_92_RadioButtons() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.RadioButtons).TypeHandle);
+        private void StaticInitializer_93_Page_InstanceOption() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOption).TypeHandle);
+        private void StaticInitializer_94_Page_InstanceOptionBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOptionBase).TypeHandle);
+        private void StaticInitializer_95_InfoBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBar).TypeHandle);
+        private void StaticInitializer_96_InfoBarSeverity() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity).TypeHandle);
+        private void StaticInitializer_97_ICommand() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Windows.Input.ICommand).TypeHandle);
+        private void StaticInitializer_100_InfoBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings).TypeHandle);
+        private void StaticInitializer_101_Page_Home() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_Home).TypeHandle);
+        private void StaticInitializer_102_Page_PlayerOptionsDialog() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog).TypeHandle);
+        private void StaticInitializer_103_Page_SelectInstance() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstance).TypeHandle);
+        private void StaticInitializer_104_Page_SelectInstanceBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstanceBase).TypeHandle);
+        private void StaticInitializer_105_BreadcrumbBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.BreadcrumbBar).TypeHandle);
+        private void StaticInitializer_106_DesktopAcrylicBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop).TypeHandle);
+        private void StaticInitializer_108_NavigationView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationView).TypeHandle);
+        private void StaticInitializer_109_NavigationViewPaneDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode).TypeHandle);
+        private void StaticInitializer_111_NavigationViewDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode).TypeHandle);
+        private void StaticInitializer_112_NavigationViewBackButtonVisible() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible).TypeHandle);
+        private void StaticInitializer_113_NavigationViewOverflowLabelMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode).TypeHandle);
+        private void StaticInitializer_114_NavigationViewSelectionFollowsFocus() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus).TypeHandle);
+        private void StaticInitializer_115_NavigationViewShoulderNavigationEnabled() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled).TypeHandle);
+        private void StaticInitializer_116_NavigationViewTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings).TypeHandle);
+        private void StaticInitializer_117_NavigationViewItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem).TypeHandle);
+        private void StaticInitializer_118_NavigationViewItemBase() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase).TypeHandle);
+        private void StaticInitializer_119_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
+        private void StaticInitializer_120_NavigationViewItemHeader() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemHeader).TypeHandle);
+        private void StaticInitializer_121_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Fluent_Launcher.MainWindow).TypeHandle);
+        private void StaticInitializer_123_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_124_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -618,13 +661,25 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_66_IList(object instance, object item)
+        private void VectorAdd_54_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_112_IList(object instance, object item)
+        private void VectorAdd_67_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>)instance;
+            var newItem = (global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_68_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>>)instance;
+            var newItem = (global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_124_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -699,170 +754,92 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Fluent_Launcher.Assets.Class.VisibilityConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_VisibilityConverter;
-                userType.StaticInitializer = StaticInitializer_9_VisibilityConverter;
-                userType.SetIsLocalType();
+            case 9:   //  Microsoft.UI.Xaml.Controls.ProgressBar
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.RangeBase"));
+                userType.Activator = Activate_9_ProgressBar;
+                userType.StaticInitializer = StaticInitializer_9_ProgressBar;
+                userType.AddMemberName("IsIndeterminate");
+                userType.AddMemberName("ShowPaused");
+                userType.AddMemberName("ShowError");
+                userType.AddMemberName("TemplateSettings");
                 xamlType = userType;
                 break;
 
-            case 10:   //  Fluent_Launcher.Assets.Class.TextWrappingConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_10_TextWrappingConverter;
-                userType.StaticInitializer = StaticInitializer_10_TextWrappingConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 11:   //  Fluent_Launcher.Assets.Class.InstanceIdConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_InstanceIdConverter;
-                userType.StaticInitializer = StaticInitializer_11_InstanceIdConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 12:   //  Fluent_Launcher.Assets.Class.InstanceEnableConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_12_InstanceEnableConverter;
-                userType.StaticInitializer = StaticInitializer_12_InstanceEnableConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 13:   //  Fluent_Launcher.Assets.Class.MBToGBConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_MBToGBConverter;
-                userType.StaticInitializer = StaticInitializer_13_MBToGBConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  Fluent_Launcher.Assets.Class.TextBoolConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_14_TextBoolConverter;
-                userType.StaticInitializer = StaticInitializer_14_TextBoolConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 15:   //  Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_15_LoginTypeToIndexConverter;
-                userType.StaticInitializer = StaticInitializer_15_LoginTypeToIndexConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  CommunityToolkit.WinUI.Controls.SettingsCard
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
-                userType.Activator = Activate_16_SettingsCard;
-                userType.StaticInitializer = StaticInitializer_16_SettingsCard;
-                userType.AddMemberName("IsClickEnabled");
-                userType.AddMemberName("Header");
-                userType.AddMemberName("Description");
-                userType.AddMemberName("HeaderIcon");
-                userType.AddMemberName("ActionIcon");
-                userType.AddMemberName("ActionIconToolTip");
-                userType.AddMemberName("ContentAlignment");
-                userType.AddMemberName("IsActionIconVisible");
-                xamlType = userType;
-                break;
-
-            case 17:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+            case 10:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  Microsoft.UI.Xaml.Controls.ContentControl
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 19:   //  Microsoft.UI.Xaml.Controls.IconElement
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 20:   //  String
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 21:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_21_ContentAlignment;
-                userType.AddEnumValue("Right", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Right);
-                userType.AddEnumValue("Left", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Left);
-                userType.AddEnumValue("Vertical", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Vertical);
-                xamlType = userType;
-                break;
-
-            case 22:   //  System.Enum
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_22_Enum;
-                xamlType = userType;
-                break;
-
-            case 23:   //  Microsoft.UI.Xaml.Controls.ItemsView
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_23_ItemsView;
-                userType.StaticInitializer = StaticInitializer_23_ItemsView;
-                userType.AddMemberName("ItemsSource");
-                userType.AddMemberName("SelectionMode");
-                userType.AddMemberName("ItemTemplate");
-                userType.AddMemberName("Layout");
-                userType.AddMemberName("CurrentItemIndex");
-                userType.AddMemberName("IsItemInvokedEnabled");
-                userType.AddMemberName("ItemTransitionProvider");
-                userType.AddMemberName("ScrollView");
-                userType.AddMemberName("SelectedItem");
-                userType.AddMemberName("SelectedItems");
-                userType.AddMemberName("VerticalScrollController");
-                xamlType = userType;
-                break;
-
-            case 24:   //  Microsoft.UI.Xaml.Controls.Control
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 25:   //  Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_25_ItemsViewSelectionMode;
-                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.None);
-                userType.AddEnumValue("Single", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.Single);
-                userType.AddEnumValue("Multiple", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.Multiple);
-                userType.AddEnumValue("Extended", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.Extended);
-                xamlType = userType;
-                break;
-
-            case 26:   //  Microsoft.UI.Xaml.IElementFactory
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 27:   //  Microsoft.UI.Xaml.Controls.Layout
+            case 11:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_27_Layout;
-                userType.AddMemberName("IndexBasedLayoutOrientation");
-                xamlType = userType;
-                break;
-
-            case 28:   //  Microsoft.UI.Xaml.DependencyObject
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 29:   //  Int32
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 30:   //  Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_30_ItemCollectionTransitionProvider;
+                userType.StaticInitializer = StaticInitializer_11_ProgressBarTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.ScrollView
+            case 12:   //  Microsoft.UI.Xaml.DependencyObject
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Fluent_Launcher.Assets.Class.VisibilityConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_13_VisibilityConverter;
+                userType.StaticInitializer = StaticInitializer_13_VisibilityConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Fluent_Launcher.Assets.Class.TextWrappingConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_14_TextWrappingConverter;
+                userType.StaticInitializer = StaticInitializer_14_TextWrappingConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Fluent_Launcher.Assets.Class.InstanceIdConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_15_InstanceIdConverter;
+                userType.StaticInitializer = StaticInitializer_15_InstanceIdConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Fluent_Launcher.Assets.Class.InstanceEnableConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_16_InstanceEnableConverter;
+                userType.StaticInitializer = StaticInitializer_16_InstanceEnableConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Fluent_Launcher.Assets.Class.MBToGBConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_17_MBToGBConverter;
+                userType.StaticInitializer = StaticInitializer_17_MBToGBConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  Fluent_Launcher.Assets.Class.TextBoolConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_18_TextBoolConverter;
+                userType.StaticInitializer = StaticInitializer_18_TextBoolConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  Fluent_Launcher.Assets.Class.LoginTypeToIndexConverter
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_19_LoginTypeToIndexConverter;
+                userType.StaticInitializer = StaticInitializer_19_LoginTypeToIndexConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Microsoft.UI.Xaml.Controls.ScrollView
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_31_ScrollView;
-                userType.StaticInitializer = StaticInitializer_31_ScrollView;
+                userType.Activator = Activate_20_ScrollView;
+                userType.StaticInitializer = StaticInitializer_20_ScrollView;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ScrollView.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("ComputedHorizontalScrollBarVisibility");
@@ -901,117 +878,36 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.UIElement
+            case 21:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  System.Collections.Generic.IReadOnlyList`1<Object>
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_33_IReadOnlyList;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 34:   //  Microsoft.UI.Xaml.Controls.Primitives.IScrollController
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_34_IScrollController;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 35:   //  Microsoft.UI.Xaml.Controls.ItemContainer
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_35_ItemContainer;
-                userType.StaticInitializer = StaticInitializer_35_ItemContainer;
-                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ItemContainer.Child");
-                userType.AddMemberName("Child");
-                userType.AddMemberName("IsSelected");
-                xamlType = userType;
-                break;
-
-            case 36:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayout
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.VirtualizingLayout"));
-                userType.Activator = Activate_36_LinedFlowLayout;
-                userType.StaticInitializer = StaticInitializer_36_LinedFlowLayout;
-                userType.AddMemberName("ItemsStretch");
-                userType.AddMemberName("MinItemSpacing");
-                userType.AddMemberName("ActualLineHeight");
-                userType.AddMemberName("ItemsJustification");
-                userType.AddMemberName("LineHeight");
-                userType.AddMemberName("LineSpacing");
-                userType.AddMemberName("RequestedRangeLength");
-                userType.AddMemberName("RequestedRangeStartIndex");
-                xamlType = userType;
-                break;
-
-            case 37:   //  Microsoft.UI.Xaml.Controls.VirtualizingLayout
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Layout"));
-                userType.Activator = Activate_37_VirtualizingLayout;
-                userType.StaticInitializer = StaticInitializer_37_VirtualizingLayout;
-                xamlType = userType;
-                break;
-
-            case 38:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_38_LinedFlowLayoutItemsStretch;
-                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch.None);
-                userType.AddEnumValue("Fill", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch.Fill);
-                xamlType = userType;
-                break;
-
-            case 39:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_39_LinedFlowLayoutItemsJustification;
-                userType.AddEnumValue("Start", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.Start);
-                userType.AddEnumValue("Center", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.Center);
-                userType.AddEnumValue("End", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.End);
-                userType.AddEnumValue("SpaceAround", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.SpaceAround);
-                userType.AddEnumValue("SpaceBetween", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.SpaceBetween);
-                userType.AddEnumValue("SpaceEvenly", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.SpaceEvenly);
-                xamlType = userType;
-                break;
-
-            case 40:   //  Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_40_IndexBasedLayoutOrientation;
-                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation.None);
-                userType.AddEnumValue("TopToBottom", global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation.TopToBottom);
-                userType.AddEnumValue("LeftToRight", global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation.LeftToRight);
-                xamlType = userType;
-                break;
-
-            case 41:   //  Fluent_Launcher.Assets.Pages.Download.Page_DownloadMod
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_41_Page_DownloadMod;
-                userType.StaticInitializer = StaticInitializer_41_Page_DownloadMod;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 42:   //  Microsoft.UI.Xaml.Controls.Page
+            case 22:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 43:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 23:   //  Microsoft.UI.Xaml.Visibility
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  Microsoft.UI.Xaml.Visibility
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 45:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
+            case 24:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_45_ScrollingScrollMode;
+                userType.StaticInitializer = StaticInitializer_24_ScrollingScrollMode;
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Enabled);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Disabled);
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Auto);
                 xamlType = userType;
                 break;
 
-            case 46:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
+            case 25:   //  System.Enum
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.StaticInitializer = StaticInitializer_25_Enum;
+                xamlType = userType;
+                break;
+
+            case 26:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_46_ScrollingContentOrientation;
+                userType.StaticInitializer = StaticInitializer_26_ScrollingContentOrientation;
                 userType.AddEnumValue("Vertical", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Vertical);
                 userType.AddEnumValue("Horizontal", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Horizontal);
                 userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.None);
@@ -1019,48 +915,48 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 47:   //  Microsoft.UI.Composition.CompositionPropertySet
+            case 27:   //  Microsoft.UI.Composition.CompositionPropertySet
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Composition.CompositionObject"));
-                userType.StaticInitializer = StaticInitializer_47_CompositionPropertySet;
+                userType.StaticInitializer = StaticInitializer_27_CompositionPropertySet;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 48:   //  Microsoft.UI.Composition.CompositionObject
+            case 28:   //  Microsoft.UI.Composition.CompositionObject
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_48_CompositionObject;
+                userType.StaticInitializer = StaticInitializer_28_CompositionObject;
                 xamlType = userType;
                 break;
 
-            case 49:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
+            case 29:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_49_ScrollingScrollBarVisibility;
+                userType.StaticInitializer = StaticInitializer_29_ScrollingScrollBarVisibility;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Auto);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Visible);
                 userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Hidden);
                 xamlType = userType;
                 break;
 
-            case 50:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
+            case 30:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_50_ScrollingChainMode;
+                userType.StaticInitializer = StaticInitializer_30_ScrollingChainMode;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Auto);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Always);
                 userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Never);
                 xamlType = userType;
                 break;
 
-            case 51:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
+            case 31:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_51_ScrollingRailMode;
+                userType.StaticInitializer = StaticInitializer_31_ScrollingRailMode;
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Enabled);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Disabled);
                 xamlType = userType;
                 break;
 
-            case 52:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
+            case 32:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_52_ScrollingInputKinds;
+                userType.StaticInitializer = StaticInitializer_32_ScrollingInputKinds;
                 userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.None);
                 userType.AddEnumValue("Touch", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Touch);
                 userType.AddEnumValue("Pen", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Pen);
@@ -1071,22 +967,22 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 53:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+            case 33:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.FrameworkElement"));
-                userType.StaticInitializer = StaticInitializer_53_ScrollPresenter;
+                userType.StaticInitializer = StaticInitializer_33_ScrollPresenter;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content");
                 userType.AddMemberName("Content");
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.FrameworkElement
+            case 34:   //  Microsoft.UI.Xaml.FrameworkElement
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
+            case 35:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_55_ScrollingInteractionState;
+                userType.StaticInitializer = StaticInitializer_35_ScrollingInteractionState;
                 userType.AddEnumValue("Idle", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Idle);
                 userType.AddEnumValue("Interaction", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Interaction);
                 userType.AddEnumValue("Inertia", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Inertia);
@@ -1094,44 +990,86 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 56:   //  Single
+            case 36:   //  Single
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 57:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
+            case 37:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_57_ScrollingZoomMode;
+                userType.StaticInitializer = StaticInitializer_37_ScrollingZoomMode;
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Enabled);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Disabled);
                 xamlType = userType;
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.Controls.ProgressBar
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.RangeBase"));
-                userType.Activator = Activate_58_ProgressBar;
-                userType.StaticInitializer = StaticInitializer_58_ProgressBar;
-                userType.AddMemberName("IsIndeterminate");
-                userType.AddMemberName("ShowPaused");
-                userType.AddMemberName("ShowError");
-                userType.AddMemberName("TemplateSettings");
+            case 38:   //  Microsoft.UI.Xaml.Controls.ItemsView
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_38_ItemsView;
+                userType.StaticInitializer = StaticInitializer_38_ItemsView;
+                userType.AddMemberName("SelectionMode");
+                userType.AddMemberName("Layout");
+                userType.AddMemberName("ItemTemplate");
+                userType.AddMemberName("CurrentItemIndex");
+                userType.AddMemberName("IsItemInvokedEnabled");
+                userType.AddMemberName("ItemTransitionProvider");
+                userType.AddMemberName("ItemsSource");
+                userType.AddMemberName("ScrollView");
+                userType.AddMemberName("SelectedItem");
+                userType.AddMemberName("SelectedItems");
+                userType.AddMemberName("VerticalScrollController");
                 xamlType = userType;
                 break;
 
-            case 59:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
+            case 39:   //  Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_39_ItemsViewSelectionMode;
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.None);
+                userType.AddEnumValue("Single", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.Single);
+                userType.AddEnumValue("Multiple", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.Multiple);
+                userType.AddEnumValue("Extended", global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode.Extended);
+                xamlType = userType;
+                break;
+
+            case 40:   //  Microsoft.UI.Xaml.Controls.Layout
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_40_Layout;
+                userType.AddMemberName("IndexBasedLayoutOrientation");
+                xamlType = userType;
+                break;
+
+            case 41:   //  Microsoft.UI.Xaml.IElementFactory
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 60:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_60_ProgressBarTemplateSettings;
+            case 42:   //  Int32
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 43:   //  Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_43_ItemCollectionTransitionProvider;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 61:   //  Microsoft.UI.Xaml.Controls.UniformGridLayout
+            case 44:   //  System.Collections.Generic.IReadOnlyList`1<Object>
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.StaticInitializer = StaticInitializer_44_IReadOnlyList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 45:   //  Microsoft.UI.Xaml.Controls.Primitives.IScrollController
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.StaticInitializer = StaticInitializer_45_IScrollController;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 46:   //  Microsoft.UI.Xaml.Controls.UniformGridLayout
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.VirtualizingLayout"));
-                userType.Activator = Activate_61_UniformGridLayout;
-                userType.StaticInitializer = StaticInitializer_61_UniformGridLayout;
+                userType.Activator = Activate_46_UniformGridLayout;
+                userType.StaticInitializer = StaticInitializer_46_UniformGridLayout;
                 userType.AddMemberName("ItemsStretch");
                 userType.AddMemberName("MinRowSpacing");
                 userType.AddMemberName("MinColumnSpacing");
@@ -1143,18 +1081,25 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 62:   //  Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch
+            case 47:   //  Microsoft.UI.Xaml.Controls.VirtualizingLayout
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Layout"));
+                userType.Activator = Activate_47_VirtualizingLayout;
+                userType.StaticInitializer = StaticInitializer_47_VirtualizingLayout;
+                xamlType = userType;
+                break;
+
+            case 48:   //  Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_62_UniformGridLayoutItemsStretch;
+                userType.StaticInitializer = StaticInitializer_48_UniformGridLayoutItemsStretch;
                 userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch.None);
                 userType.AddEnumValue("Fill", global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch.Fill);
                 userType.AddEnumValue("Uniform", global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch.Uniform);
                 xamlType = userType;
                 break;
 
-            case 63:   //  Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification
+            case 49:   //  Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_63_UniformGridLayoutItemsJustification;
+                userType.StaticInitializer = StaticInitializer_49_UniformGridLayoutItemsJustification;
                 userType.AddEnumValue("Start", global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification.Start);
                 userType.AddEnumValue("Center", global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification.Center);
                 userType.AddEnumValue("End", global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification.End);
@@ -1164,14 +1109,33 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 64:   //  Microsoft.UI.Xaml.Controls.Orientation
+            case 50:   //  Microsoft.UI.Xaml.Controls.Orientation
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 65:   //  CommunityToolkit.WinUI.Controls.SettingsExpander
+            case 51:   //  Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_51_IndexBasedLayoutOrientation;
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation.None);
+                userType.AddEnumValue("TopToBottom", global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation.TopToBottom);
+                userType.AddEnumValue("LeftToRight", global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation.LeftToRight);
+                xamlType = userType;
+                break;
+
+            case 52:   //  Microsoft.UI.Xaml.Controls.ItemContainer
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_65_SettingsExpander;
-                userType.StaticInitializer = StaticInitializer_65_SettingsExpander;
+                userType.Activator = Activate_52_ItemContainer;
+                userType.StaticInitializer = StaticInitializer_52_ItemContainer;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ItemContainer.Child");
+                userType.AddMemberName("Child");
+                userType.AddMemberName("IsSelected");
+                xamlType = userType;
+                break;
+
+            case 53:   //  CommunityToolkit.WinUI.Controls.SettingsExpander
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_53_SettingsExpander;
+                userType.StaticInitializer = StaticInitializer_53_SettingsExpander;
                 userType.SetContentPropertyName("CommunityToolkit.WinUI.Controls.SettingsExpander.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("IsExpanded");
@@ -1187,38 +1151,324 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 66:   //  System.Collections.Generic.IList`1<Object>
+            case 54:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_66_IList;
-                userType.CollectionAdd = VectorAdd_66_IList;
+                userType.StaticInitializer = StaticInitializer_54_IList;
+                userType.CollectionAdd = VectorAdd_54_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 67:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 55:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 68:   //  Fluent_Launcher.Assets.Pages.Download.Page_InstanceOption
+            case 56:   //  Microsoft.UI.Xaml.Controls.IconElement
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 57:   //  CommunityToolkit.WinUI.Controls.SettingsCard
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
+                userType.Activator = Activate_57_SettingsCard;
+                userType.StaticInitializer = StaticInitializer_57_SettingsCard;
+                userType.AddMemberName("Header");
+                userType.AddMemberName("Description");
+                userType.AddMemberName("HeaderIcon");
+                userType.AddMemberName("ActionIcon");
+                userType.AddMemberName("ActionIconToolTip");
+                userType.AddMemberName("IsClickEnabled");
+                userType.AddMemberName("ContentAlignment");
+                userType.AddMemberName("IsActionIconVisible");
+                xamlType = userType;
+                break;
+
+            case 58:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 59:   //  Microsoft.UI.Xaml.Controls.ContentControl
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 60:   //  String
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 61:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_61_ContentAlignment;
+                userType.AddEnumValue("Right", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Right);
+                userType.AddEnumValue("Left", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Left);
+                userType.AddEnumValue("Vertical", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Vertical);
+                xamlType = userType;
+                break;
+
+            case 62:   //  Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstanceOption
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_68_Page_InstanceOption;
-                userType.StaticInitializer = StaticInitializer_68_Page_InstanceOption;
+                userType.Activator = Activate_62_Page_InstanceOption;
+                userType.StaticInitializer = StaticInitializer_62_Page_InstanceOption;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 69:   //  Fluent_Launcher.Assets.Pages.Download.Page_InstancesList
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_69_Page_InstancesList;
-                userType.StaticInitializer = StaticInitializer_69_Page_InstancesList;
+            case 63:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 64:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 65:   //  Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_65_UC_BreadcrumbBar;
+                userType.StaticInitializer = StaticInitializer_65_UC_BreadcrumbBar;
+                userType.AddMemberName("Frame");
+                userType.AddMemberName("Items");
+                userType.AddMemberName("CanGoBack");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Microsoft.UI.Xaml.Controls.InfoBar
+            case 66:   //  Microsoft.UI.Xaml.Controls.Frame
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 67:   //  System.Collections.ObjectModel.ObservableCollection`1<System.Collections.Generic.KeyValuePair`2<System.Type, String>>
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<System.Collections.Generic.KeyValuePair`2<System.Type, String>>"));
+                userType.StaticInitializer = StaticInitializer_67_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_67_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 68:   //  System.Collections.ObjectModel.Collection`1<System.Collections.Generic.KeyValuePair`2<System.Type, String>>
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_68_Collection;
+                userType.StaticInitializer = StaticInitializer_68_Collection;
+                userType.CollectionAdd = VectorAdd_68_Collection;
+                xamlType = userType;
+                break;
+
+            case 69:   //  System.Collections.Generic.KeyValuePair`2<System.Type, String>
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.StaticInitializer = StaticInitializer_69_KeyValuePair;
+                userType.AddMemberName("Key");
+                userType.AddMemberName("Value");
+                xamlType = userType;
+                break;
+
+            case 70:   //  System.Type
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Reflection.MemberInfo"));
+                userType.StaticInitializer = StaticInitializer_70_Type;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 71:   //  System.Reflection.MemberInfo
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_71_MemberInfo;
+                xamlType = userType;
+                break;
+
+            case 72:   //  Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesBase
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_72_Page_InstancesBase;
+                userType.StaticInitializer = StaticInitializer_72_Page_InstancesBase;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 73:   //  Fluent_Launcher.Assets.Pages.Download.Instances.Page_InstancesList
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_73_Page_InstancesList;
+                userType.StaticInitializer = StaticInitializer_73_Page_InstancesList;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 74:   //  Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsBase
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_74_Page_ModsBase;
+                userType.StaticInitializer = StaticInitializer_74_Page_ModsBase;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 75:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayout
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.VirtualizingLayout"));
+                userType.Activator = Activate_75_LinedFlowLayout;
+                userType.StaticInitializer = StaticInitializer_75_LinedFlowLayout;
+                userType.AddMemberName("ItemsStretch");
+                userType.AddMemberName("MinItemSpacing");
+                userType.AddMemberName("ActualLineHeight");
+                userType.AddMemberName("ItemsJustification");
+                userType.AddMemberName("LineHeight");
+                userType.AddMemberName("LineSpacing");
+                userType.AddMemberName("RequestedRangeLength");
+                userType.AddMemberName("RequestedRangeStartIndex");
+                xamlType = userType;
+                break;
+
+            case 76:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_76_LinedFlowLayoutItemsStretch;
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch.None);
+                userType.AddEnumValue("Fill", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch.Fill);
+                xamlType = userType;
+                break;
+
+            case 77:   //  Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_77_LinedFlowLayoutItemsJustification;
+                userType.AddEnumValue("Start", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.Start);
+                userType.AddEnumValue("Center", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.Center);
+                userType.AddEnumValue("End", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.End);
+                userType.AddEnumValue("SpaceAround", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.SpaceAround);
+                userType.AddEnumValue("SpaceBetween", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.SpaceBetween);
+                userType.AddEnumValue("SpaceEvenly", global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification.SpaceEvenly);
+                xamlType = userType;
+                break;
+
+            case 78:   //  Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsList
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_78_Page_ModsList;
+                userType.StaticInitializer = StaticInitializer_78_Page_ModsList;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 79:   //  Fluent_Launcher.Assets.Pages.Download.Mods.Page_ModsOptions
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_79_Page_ModsOptions;
+                userType.StaticInitializer = StaticInitializer_79_Page_ModsOptions;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 80:   //  Microsoft.UI.Xaml.Controls.Expander
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
+                userType.Activator = Activate_80_Expander;
+                userType.StaticInitializer = StaticInitializer_80_Expander;
+                userType.AddMemberName("IsExpanded");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("ExpandDirection");
+                userType.AddMemberName("HeaderTemplate");
+                userType.AddMemberName("HeaderTemplateSelector");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 81:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_81_ExpandDirection;
+                userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
+                userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
+                xamlType = userType;
+                break;
+
+            case 82:   //  Microsoft.UI.Xaml.DataTemplate
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 83:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 84:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_84_ExpanderTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 85:   //  CommunityToolkit.WinUI.FontIconExtension
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
+                userType.Activator = Activate_85_FontIconExtension;
+                userType.StaticInitializer = StaticInitializer_85_FontIconExtension;
+                userType.AddMemberName("Glyph");
+                userType.AddMemberName("FontFamily");
+                userType.SetIsMarkupExtension();
+                xamlType = userType;
+                break;
+
+            case 86:   //  CommunityToolkit.WinUI.TextIconExtension
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
+                userType.StaticInitializer = StaticInitializer_86_TextIconExtension;
+                userType.AddMemberName("FontSize");
+                userType.AddMemberName("FontWeight");
+                userType.AddMemberName("FontStyle");
+                userType.AddMemberName("Foreground");
+                userType.AddMemberName("IsTextScaleFactorEnabled");
+                userType.AddMemberName("MirroredWhenRightToLeft");
+                userType.SetIsMarkupExtension();
+                xamlType = userType;
+                break;
+
+            case 87:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 88:   //  Microsoft.UI.Xaml.Media.FontFamily
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 89:   //  Windows.UI.Text.FontWeight
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.StaticInitializer = StaticInitializer_89_FontWeight;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 90:   //  Windows.UI.Text.FontStyle
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.StaticInitializer = StaticInitializer_90_FontStyle;
+                userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
+                userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
+                userType.AddEnumValue("Italic", global::Windows.UI.Text.FontStyle.Italic);
+                xamlType = userType;
+                break;
+
+            case 91:   //  Microsoft.UI.Xaml.Media.Brush
+                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 92:   //  Microsoft.UI.Xaml.Controls.RadioButtons
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_70_InfoBar;
-                userType.StaticInitializer = StaticInitializer_70_InfoBar;
+                userType.Activator = Activate_92_RadioButtons;
+                userType.StaticInitializer = StaticInitializer_92_RadioButtons;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.RadioButtons.Items");
+                userType.AddMemberName("Items");
+                userType.AddMemberName("SelectedIndex");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("HeaderTemplate");
+                userType.AddMemberName("ItemTemplate");
+                userType.AddMemberName("ItemsSource");
+                userType.AddMemberName("MaxColumns");
+                userType.AddMemberName("SelectedItem");
+                xamlType = userType;
+                break;
+
+            case 93:   //  Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOption
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_93_Page_InstanceOption;
+                userType.StaticInitializer = StaticInitializer_93_Page_InstanceOption;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 94:   //  Fluent_Launcher.Assets.Pages.Home.InstanceOption.Page_InstanceOptionBase
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_94_Page_InstanceOptionBase;
+                userType.StaticInitializer = StaticInitializer_94_Page_InstanceOptionBase;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 95:   //  Microsoft.UI.Xaml.Controls.InfoBar
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_95_InfoBar;
+                userType.StaticInitializer = StaticInitializer_95_InfoBar;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.InfoBar.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("IsOpen");
@@ -1237,9 +1487,9 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 71:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
+            case 96:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_71_InfoBarSeverity;
+                userType.StaticInitializer = StaticInitializer_96_InfoBarSeverity;
                 userType.AddEnumValue("Informational", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational);
                 userType.AddEnumValue("Success", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success);
                 userType.AddEnumValue("Warning", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning);
@@ -1247,180 +1497,85 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 72:   //  System.Windows.Input.ICommand
+            case 97:   //  System.Windows.Input.ICommand
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_72_ICommand;
+                userType.StaticInitializer = StaticInitializer_97_ICommand;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 73:   //  Microsoft.UI.Xaml.Style
+            case 98:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 74:   //  Microsoft.UI.Xaml.DataTemplate
+            case 99:   //  Microsoft.UI.Xaml.Controls.IconSource
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 75:   //  Microsoft.UI.Xaml.Controls.IconSource
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 76:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
+            case 100:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_76_InfoBarTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_100_InfoBarTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 77:   //  Fluent_Launcher.Assets.Pages.Page_Home
+            case 101:   //  Fluent_Launcher.Assets.Pages.Home.Page_Home
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_77_Page_Home;
-                userType.StaticInitializer = StaticInitializer_77_Page_Home;
+                userType.Activator = Activate_101_Page_Home;
+                userType.StaticInitializer = StaticInitializer_101_Page_Home;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Microsoft.UI.Xaml.Controls.Expander
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_78_Expander;
-                userType.StaticInitializer = StaticInitializer_78_Expander;
-                userType.AddMemberName("IsExpanded");
-                userType.AddMemberName("Header");
-                userType.AddMemberName("ExpandDirection");
-                userType.AddMemberName("HeaderTemplate");
-                userType.AddMemberName("HeaderTemplateSelector");
-                userType.AddMemberName("TemplateSettings");
+            case 102:   //  Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_102_Page_PlayerOptionsDialog;
+                userType.StaticInitializer = StaticInitializer_102_Page_PlayerOptionsDialog;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 79:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_79_ExpandDirection;
-                userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
-                userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
+            case 103:   //  Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstance
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_103_Page_SelectInstance;
+                userType.StaticInitializer = StaticInitializer_103_Page_SelectInstance;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 81:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_81_ExpanderTemplateSettings;
-                userType.SetIsReturnTypeStub();
+            case 104:   //  Fluent_Launcher.Assets.Pages.Home.SelectInstance.Page_SelectInstanceBase
+                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_104_Page_SelectInstanceBase;
+                userType.StaticInitializer = StaticInitializer_104_Page_SelectInstanceBase;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  CommunityToolkit.WinUI.FontIconExtension
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
-                userType.Activator = Activate_82_FontIconExtension;
-                userType.StaticInitializer = StaticInitializer_82_FontIconExtension;
-                userType.AddMemberName("Glyph");
-                userType.AddMemberName("FontFamily");
-                userType.SetIsMarkupExtension();
-                xamlType = userType;
-                break;
-
-            case 83:   //  CommunityToolkit.WinUI.TextIconExtension
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
-                userType.StaticInitializer = StaticInitializer_83_TextIconExtension;
-                userType.AddMemberName("FontSize");
-                userType.AddMemberName("FontWeight");
-                userType.AddMemberName("FontStyle");
-                userType.AddMemberName("Foreground");
-                userType.AddMemberName("IsTextScaleFactorEnabled");
-                userType.AddMemberName("MirroredWhenRightToLeft");
-                userType.SetIsMarkupExtension();
-                xamlType = userType;
-                break;
-
-            case 84:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 85:   //  Microsoft.UI.Xaml.Media.FontFamily
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 86:   //  Windows.UI.Text.FontWeight
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_86_FontWeight;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 87:   //  Windows.UI.Text.FontStyle
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_87_FontStyle;
-                userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
-                userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
-                userType.AddEnumValue("Italic", global::Windows.UI.Text.FontStyle.Italic);
-                xamlType = userType;
-                break;
-
-            case 88:   //  Microsoft.UI.Xaml.Media.Brush
-                xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 89:   //  Microsoft.UI.Xaml.Controls.RadioButtons
+            case 105:   //  Microsoft.UI.Xaml.Controls.BreadcrumbBar
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_89_RadioButtons;
-                userType.StaticInitializer = StaticInitializer_89_RadioButtons;
-                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.RadioButtons.Items");
-                userType.AddMemberName("Items");
-                userType.AddMemberName("SelectedIndex");
-                userType.AddMemberName("Header");
-                userType.AddMemberName("HeaderTemplate");
-                userType.AddMemberName("ItemTemplate");
+                userType.Activator = Activate_105_BreadcrumbBar;
+                userType.StaticInitializer = StaticInitializer_105_BreadcrumbBar;
                 userType.AddMemberName("ItemsSource");
-                userType.AddMemberName("MaxColumns");
-                userType.AddMemberName("SelectedItem");
+                userType.AddMemberName("ItemTemplate");
                 xamlType = userType;
                 break;
 
-            case 90:   //  Fluent_Launcher.Assets.Pages.Home.Page_InstanceOption
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_90_Page_InstanceOption;
-                userType.StaticInitializer = StaticInitializer_90_Page_InstanceOption;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 91:   //  Fluent_Launcher.Assets.Pages.Home.Page_PlayerOptionsDialog
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_91_Page_PlayerOptionsDialog;
-                userType.StaticInitializer = StaticInitializer_91_Page_PlayerOptionsDialog;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 92:   //  Fluent_Launcher.Assets.Pages.Home.Page_SelectInstance
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_92_Page_SelectInstance;
-                userType.StaticInitializer = StaticInitializer_92_Page_SelectInstance;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 93:   //  Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop
+            case 106:   //  Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Media.SystemBackdrop"));
-                userType.Activator = Activate_93_DesktopAcrylicBackdrop;
-                userType.StaticInitializer = StaticInitializer_93_DesktopAcrylicBackdrop;
+                userType.Activator = Activate_106_DesktopAcrylicBackdrop;
+                userType.StaticInitializer = StaticInitializer_106_DesktopAcrylicBackdrop;
                 xamlType = userType;
                 break;
 
-            case 94:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
+            case 107:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 95:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 108:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_95_NavigationView;
-                userType.StaticInitializer = StaticInitializer_95_NavigationView;
+                userType.Activator = Activate_108_NavigationView;
+                userType.StaticInitializer = StaticInitializer_108_NavigationView;
                 userType.AddMemberName("PaneDisplayMode");
-                userType.AddMemberName("Header");
                 userType.AddMemberName("MenuItems");
                 userType.AddMemberName("AlwaysShowHeader");
                 userType.AddMemberName("AutoSuggestBox");
@@ -1431,6 +1586,7 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 userType.AddMemberName("ExpandedModeThresholdWidth");
                 userType.AddMemberName("FooterMenuItems");
                 userType.AddMemberName("FooterMenuItemsSource");
+                userType.AddMemberName("Header");
                 userType.AddMemberName("HeaderTemplate");
                 userType.AddMemberName("IsBackButtonVisible");
                 userType.AddMemberName("IsBackEnabled");
@@ -1459,9 +1615,9 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 96:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 109:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_96_NavigationViewPaneDisplayMode;
+                userType.StaticInitializer = StaticInitializer_109_NavigationViewPaneDisplayMode;
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
                 userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Top);
@@ -1470,73 +1626,64 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 97:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 110:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 98:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 111:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_98_NavigationViewDisplayMode;
+                userType.StaticInitializer = StaticInitializer_111_NavigationViewDisplayMode;
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
                 userType.AddEnumValue("Expanded", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Expanded);
                 xamlType = userType;
                 break;
 
-            case 99:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 112:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_99_NavigationViewBackButtonVisible;
+                userType.StaticInitializer = StaticInitializer_112_NavigationViewBackButtonVisible;
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Auto);
                 xamlType = userType;
                 break;
 
-            case 100:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 113:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_100_NavigationViewOverflowLabelMode;
+                userType.StaticInitializer = StaticInitializer_113_NavigationViewOverflowLabelMode;
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 101:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 114:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_101_NavigationViewSelectionFollowsFocus;
+                userType.StaticInitializer = StaticInitializer_114_NavigationViewSelectionFollowsFocus;
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 102:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 115:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_102_NavigationViewShoulderNavigationEnabled;
+                userType.StaticInitializer = StaticInitializer_115_NavigationViewShoulderNavigationEnabled;
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
                 userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Never);
                 xamlType = userType;
                 break;
 
-            case 103:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 116:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.StaticInitializer = StaticInitializer_103_NavigationViewTemplateSettings;
+                userType.StaticInitializer = StaticInitializer_116_NavigationViewTemplateSettings;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 104:   //  Microsoft.UI.Xaml.Controls.BreadcrumbBar
-                userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_104_BreadcrumbBar;
-                userType.StaticInitializer = StaticInitializer_104_BreadcrumbBar;
-                userType.AddMemberName("ItemsSource");
-                userType.AddMemberName("ItemTemplate");
-                xamlType = userType;
-                break;
-
-            case 105:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 117:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_105_NavigationViewItem;
-                userType.StaticInitializer = StaticInitializer_105_NavigationViewItem;
+                userType.Activator = Activate_117_NavigationViewItem;
+                userType.StaticInitializer = StaticInitializer_117_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("SelectsOnInvoked");
                 userType.AddMemberName("MenuItems");
@@ -1549,43 +1696,43 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 106:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 118:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.StaticInitializer = StaticInitializer_106_NavigationViewItemBase;
+                userType.StaticInitializer = StaticInitializer_118_NavigationViewItemBase;
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 107:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 119:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.StaticInitializer = StaticInitializer_107_InfoBadge;
+                userType.StaticInitializer = StaticInitializer_119_InfoBadge;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 108:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemHeader
+            case 120:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemHeader
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_108_NavigationViewItemHeader;
-                userType.StaticInitializer = StaticInitializer_108_NavigationViewItemHeader;
+                userType.Activator = Activate_120_NavigationViewItemHeader;
+                userType.StaticInitializer = StaticInitializer_120_NavigationViewItemHeader;
                 xamlType = userType;
                 break;
 
-            case 109:   //  Fluent_Launcher.MainWindow
+            case 121:   //  Fluent_Launcher.MainWindow
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_109_MainWindow;
-                userType.StaticInitializer = StaticInitializer_109_MainWindow;
+                userType.Activator = Activate_121_MainWindow;
+                userType.StaticInitializer = StaticInitializer_121_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 110:   //  Microsoft.UI.Xaml.Window
+            case 122:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 111:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 123:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_111_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_111_TreeViewNode;
+                userType.Activator = Activate_123_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_123_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -1597,10 +1744,10 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 112:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 124:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_112_IList;
-                userType.CollectionAdd = VectorAdd_112_IList;
+                userType.StaticInitializer = StaticInitializer_124_IList;
+                userType.CollectionAdd = VectorAdd_124_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -1755,1602 +1902,1632 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
             var that = (global::Windows.UI.Color)instance;
             that.B = (global::System.Byte)Value;
         }
-        private object get_9_SettingsCard_IsClickEnabled(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.IsClickEnabled;
-        }
-        private void set_9_SettingsCard_IsClickEnabled(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.IsClickEnabled = (global::System.Boolean)Value;
-        }
-        private object get_10_SettingsCard_Header(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.Header;
-        }
-        private void set_10_SettingsCard_Header(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_11_SettingsCard_Description(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.Description;
-        }
-        private void set_11_SettingsCard_Description(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.Description = (global::System.Object)Value;
-        }
-        private object get_12_SettingsCard_HeaderIcon(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.HeaderIcon;
-        }
-        private void set_12_SettingsCard_HeaderIcon(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
-        }
-        private object get_13_SettingsCard_ActionIcon(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.ActionIcon;
-        }
-        private void set_13_SettingsCard_ActionIcon(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.ActionIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
-        }
-        private object get_14_SettingsCard_ActionIconToolTip(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.ActionIconToolTip;
-        }
-        private void set_14_SettingsCard_ActionIconToolTip(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.ActionIconToolTip = (global::System.String)Value;
-        }
-        private object get_15_SettingsCard_ContentAlignment(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.ContentAlignment;
-        }
-        private void set_15_SettingsCard_ContentAlignment(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.ContentAlignment = (global::CommunityToolkit.WinUI.Controls.ContentAlignment)Value;
-        }
-        private object get_16_SettingsCard_IsActionIconVisible(object instance)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.IsActionIconVisible;
-        }
-        private void set_16_SettingsCard_IsActionIconVisible(object instance, object Value)
-        {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.IsActionIconVisible = (global::System.Boolean)Value;
-        }
-        private object get_17_ItemsView_ItemsSource(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.ItemsSource;
-        }
-        private void set_17_ItemsView_ItemsSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.ItemsSource = (global::System.Object)Value;
-        }
-        private object get_18_ItemsView_SelectionMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.SelectionMode;
-        }
-        private void set_18_ItemsView_SelectionMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.SelectionMode = (global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode)Value;
-        }
-        private object get_19_ItemsView_ItemTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.ItemTemplate;
-        }
-        private void set_19_ItemsView_ItemTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.ItemTemplate = (global::Microsoft.UI.Xaml.IElementFactory)Value;
-        }
-        private object get_20_ItemsView_Layout(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.Layout;
-        }
-        private void set_20_ItemsView_Layout(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.Layout = (global::Microsoft.UI.Xaml.Controls.Layout)Value;
-        }
-        private object get_21_ItemsView_CurrentItemIndex(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.CurrentItemIndex;
-        }
-        private object get_22_ItemsView_IsItemInvokedEnabled(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.IsItemInvokedEnabled;
-        }
-        private void set_22_ItemsView_IsItemInvokedEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.IsItemInvokedEnabled = (global::System.Boolean)Value;
-        }
-        private object get_23_ItemsView_ItemTransitionProvider(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.ItemTransitionProvider;
-        }
-        private void set_23_ItemsView_ItemTransitionProvider(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.ItemTransitionProvider = (global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider)Value;
-        }
-        private object get_24_ItemsView_ScrollView(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.ScrollView;
-        }
-        private object get_25_ScrollView_Content(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.Content;
-        }
-        private void set_25_ScrollView_Content(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_26_ItemsView_SelectedItem(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.SelectedItem;
-        }
-        private object get_27_ItemsView_SelectedItems(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.SelectedItems;
-        }
-        private object get_28_ItemsView_VerticalScrollController(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            return that.VerticalScrollController;
-        }
-        private void set_28_ItemsView_VerticalScrollController(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
-            that.VerticalScrollController = (global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController)Value;
-        }
-        private object get_29_ItemContainer_Child(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
-            return that.Child;
-        }
-        private void set_29_ItemContainer_Child(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
-            that.Child = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_30_ItemContainer_IsSelected(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
-            return that.IsSelected;
-        }
-        private void set_30_ItemContainer_IsSelected(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
-            that.IsSelected = (global::System.Boolean)Value;
-        }
-        private object get_31_LinedFlowLayout_ItemsStretch(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.ItemsStretch;
-        }
-        private void set_31_LinedFlowLayout_ItemsStretch(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            that.ItemsStretch = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch)Value;
-        }
-        private object get_32_LinedFlowLayout_MinItemSpacing(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.MinItemSpacing;
-        }
-        private void set_32_LinedFlowLayout_MinItemSpacing(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            that.MinItemSpacing = (global::System.Double)Value;
-        }
-        private object get_33_LinedFlowLayout_ActualLineHeight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.ActualLineHeight;
-        }
-        private object get_34_LinedFlowLayout_ItemsJustification(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.ItemsJustification;
-        }
-        private void set_34_LinedFlowLayout_ItemsJustification(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            that.ItemsJustification = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification)Value;
-        }
-        private object get_35_LinedFlowLayout_LineHeight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.LineHeight;
-        }
-        private void set_35_LinedFlowLayout_LineHeight(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            that.LineHeight = (global::System.Double)Value;
-        }
-        private object get_36_LinedFlowLayout_LineSpacing(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.LineSpacing;
-        }
-        private void set_36_LinedFlowLayout_LineSpacing(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            that.LineSpacing = (global::System.Double)Value;
-        }
-        private object get_37_LinedFlowLayout_RequestedRangeLength(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.RequestedRangeLength;
-        }
-        private object get_38_LinedFlowLayout_RequestedRangeStartIndex(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
-            return that.RequestedRangeStartIndex;
-        }
-        private object get_39_Layout_IndexBasedLayoutOrientation(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Layout)instance;
-            return that.IndexBasedLayoutOrientation;
-        }
-        private object get_40_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ComputedHorizontalScrollBarVisibility;
-        }
-        private object get_41_ScrollView_ComputedHorizontalScrollMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ComputedHorizontalScrollMode;
-        }
-        private object get_42_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ComputedVerticalScrollBarVisibility;
-        }
-        private object get_43_ScrollView_ComputedVerticalScrollMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ComputedVerticalScrollMode;
-        }
-        private object get_44_ScrollView_ContentOrientation(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ContentOrientation;
-        }
-        private void set_44_ScrollView_ContentOrientation(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.ContentOrientation = (global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation)Value;
-        }
-        private object get_45_ScrollView_CurrentAnchor(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.CurrentAnchor;
-        }
-        private object get_46_ScrollView_ExpressionAnimationSources(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ExpressionAnimationSources;
-        }
-        private object get_47_ScrollView_ExtentHeight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ExtentHeight;
-        }
-        private object get_48_ScrollView_ExtentWidth(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ExtentWidth;
-        }
-        private object get_49_ScrollView_HorizontalAnchorRatio(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.HorizontalAnchorRatio;
-        }
-        private void set_49_ScrollView_HorizontalAnchorRatio(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.HorizontalAnchorRatio = (global::System.Double)Value;
-        }
-        private object get_50_ScrollView_HorizontalOffset(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.HorizontalOffset;
-        }
-        private object get_51_ScrollView_HorizontalScrollBarVisibility(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.HorizontalScrollBarVisibility;
-        }
-        private void set_51_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.HorizontalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
-        }
-        private object get_52_ScrollView_HorizontalScrollChainMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.HorizontalScrollChainMode;
-        }
-        private void set_52_ScrollView_HorizontalScrollChainMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.HorizontalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
-        }
-        private object get_53_ScrollView_HorizontalScrollMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.HorizontalScrollMode;
-        }
-        private void set_53_ScrollView_HorizontalScrollMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.HorizontalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
-        }
-        private object get_54_ScrollView_HorizontalScrollRailMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.HorizontalScrollRailMode;
-        }
-        private void set_54_ScrollView_HorizontalScrollRailMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.HorizontalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
-        }
-        private object get_55_ScrollView_IgnoredInputKinds(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.IgnoredInputKinds;
-        }
-        private void set_55_ScrollView_IgnoredInputKinds(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.IgnoredInputKinds = (global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds)Value;
-        }
-        private object get_56_ScrollView_MaxZoomFactor(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.MaxZoomFactor;
-        }
-        private void set_56_ScrollView_MaxZoomFactor(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.MaxZoomFactor = (global::System.Double)Value;
-        }
-        private object get_57_ScrollView_MinZoomFactor(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.MinZoomFactor;
-        }
-        private void set_57_ScrollView_MinZoomFactor(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.MinZoomFactor = (global::System.Double)Value;
-        }
-        private object get_58_ScrollView_ScrollPresenter(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ScrollPresenter;
-        }
-        private object get_59_ScrollPresenter_Content(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
-            return that.Content;
-        }
-        private void set_59_ScrollPresenter_Content(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
-            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_60_ScrollView_ScrollableHeight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ScrollableHeight;
-        }
-        private object get_61_ScrollView_ScrollableWidth(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ScrollableWidth;
-        }
-        private object get_62_ScrollView_State(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.State;
-        }
-        private object get_63_ScrollView_VerticalAnchorRatio(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.VerticalAnchorRatio;
-        }
-        private void set_63_ScrollView_VerticalAnchorRatio(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.VerticalAnchorRatio = (global::System.Double)Value;
-        }
-        private object get_64_ScrollView_VerticalOffset(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.VerticalOffset;
-        }
-        private object get_65_ScrollView_VerticalScrollBarVisibility(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.VerticalScrollBarVisibility;
-        }
-        private void set_65_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.VerticalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
-        }
-        private object get_66_ScrollView_VerticalScrollChainMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.VerticalScrollChainMode;
-        }
-        private void set_66_ScrollView_VerticalScrollChainMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.VerticalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
-        }
-        private object get_67_ScrollView_VerticalScrollMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.VerticalScrollMode;
-        }
-        private void set_67_ScrollView_VerticalScrollMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.VerticalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
-        }
-        private object get_68_ScrollView_VerticalScrollRailMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.VerticalScrollRailMode;
-        }
-        private void set_68_ScrollView_VerticalScrollRailMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.VerticalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
-        }
-        private object get_69_ScrollView_ViewportHeight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ViewportHeight;
-        }
-        private object get_70_ScrollView_ViewportWidth(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ViewportWidth;
-        }
-        private object get_71_ScrollView_ZoomChainMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ZoomChainMode;
-        }
-        private void set_71_ScrollView_ZoomChainMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.ZoomChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
-        }
-        private object get_72_ScrollView_ZoomFactor(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ZoomFactor;
-        }
-        private object get_73_ScrollView_ZoomMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            return that.ZoomMode;
-        }
-        private void set_73_ScrollView_ZoomMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
-            that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
-        }
-        private object get_74_ProgressBar_IsIndeterminate(object instance)
+        private object get_9_ProgressBar_IsIndeterminate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.IsIndeterminate;
         }
-        private void set_74_ProgressBar_IsIndeterminate(object instance, object Value)
+        private void set_9_ProgressBar_IsIndeterminate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             that.IsIndeterminate = (global::System.Boolean)Value;
         }
-        private object get_75_ProgressBar_ShowPaused(object instance)
+        private object get_10_ProgressBar_ShowPaused(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.ShowPaused;
         }
-        private void set_75_ProgressBar_ShowPaused(object instance, object Value)
+        private void set_10_ProgressBar_ShowPaused(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             that.ShowPaused = (global::System.Boolean)Value;
         }
-        private object get_76_ProgressBar_ShowError(object instance)
+        private object get_11_ProgressBar_ShowError(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.ShowError;
         }
-        private void set_76_ProgressBar_ShowError(object instance, object Value)
+        private void set_11_ProgressBar_ShowError(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             that.ShowError = (global::System.Boolean)Value;
         }
-        private object get_77_ProgressBar_TemplateSettings(object instance)
+        private object get_12_ProgressBar_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.TemplateSettings;
         }
-        private object get_78_UniformGridLayout_ItemsStretch(object instance)
+        private object get_13_ScrollView_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.Content;
+        }
+        private void set_13_ScrollView_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_14_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollBarVisibility;
+        }
+        private object get_15_ScrollView_ComputedHorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollMode;
+        }
+        private object get_16_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollBarVisibility;
+        }
+        private object get_17_ScrollView_ComputedVerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollMode;
+        }
+        private object get_18_ScrollView_ContentOrientation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ContentOrientation;
+        }
+        private void set_18_ScrollView_ContentOrientation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ContentOrientation = (global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation)Value;
+        }
+        private object get_19_ScrollView_CurrentAnchor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.CurrentAnchor;
+        }
+        private object get_20_ScrollView_ExpressionAnimationSources(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExpressionAnimationSources;
+        }
+        private object get_21_ScrollView_ExtentHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentHeight;
+        }
+        private object get_22_ScrollView_ExtentWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentWidth;
+        }
+        private object get_23_ScrollView_HorizontalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalAnchorRatio;
+        }
+        private void set_23_ScrollView_HorizontalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_24_ScrollView_HorizontalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalOffset;
+        }
+        private object get_25_ScrollView_HorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollBarVisibility;
+        }
+        private void set_25_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_26_ScrollView_HorizontalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollChainMode;
+        }
+        private void set_26_ScrollView_HorizontalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_27_ScrollView_HorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollMode;
+        }
+        private void set_27_ScrollView_HorizontalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_28_ScrollView_HorizontalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollRailMode;
+        }
+        private void set_28_ScrollView_HorizontalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_29_ScrollView_IgnoredInputKinds(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.IgnoredInputKinds;
+        }
+        private void set_29_ScrollView_IgnoredInputKinds(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.IgnoredInputKinds = (global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds)Value;
+        }
+        private object get_30_ScrollView_MaxZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MaxZoomFactor;
+        }
+        private void set_30_ScrollView_MaxZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MaxZoomFactor = (global::System.Double)Value;
+        }
+        private object get_31_ScrollView_MinZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MinZoomFactor;
+        }
+        private void set_31_ScrollView_MinZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MinZoomFactor = (global::System.Double)Value;
+        }
+        private object get_32_ScrollView_ScrollPresenter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollPresenter;
+        }
+        private object get_33_ScrollPresenter_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            return that.Content;
+        }
+        private void set_33_ScrollPresenter_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_34_ScrollView_ScrollableHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableHeight;
+        }
+        private object get_35_ScrollView_ScrollableWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableWidth;
+        }
+        private object get_36_ScrollView_State(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.State;
+        }
+        private object get_37_ScrollView_VerticalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalAnchorRatio;
+        }
+        private void set_37_ScrollView_VerticalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_38_ScrollView_VerticalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalOffset;
+        }
+        private object get_39_ScrollView_VerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollBarVisibility;
+        }
+        private void set_39_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_40_ScrollView_VerticalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollChainMode;
+        }
+        private void set_40_ScrollView_VerticalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_41_ScrollView_VerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollMode;
+        }
+        private void set_41_ScrollView_VerticalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_42_ScrollView_VerticalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollRailMode;
+        }
+        private void set_42_ScrollView_VerticalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_43_ScrollView_ViewportHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportHeight;
+        }
+        private object get_44_ScrollView_ViewportWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportWidth;
+        }
+        private object get_45_ScrollView_ZoomChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomChainMode;
+        }
+        private void set_45_ScrollView_ZoomChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_46_ScrollView_ZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomFactor;
+        }
+        private object get_47_ScrollView_ZoomMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomMode;
+        }
+        private void set_47_ScrollView_ZoomMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
+        }
+        private object get_48_ItemsView_SelectionMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.SelectionMode;
+        }
+        private void set_48_ItemsView_SelectionMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.SelectionMode = (global::Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode)Value;
+        }
+        private object get_49_ItemsView_Layout(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.Layout;
+        }
+        private void set_49_ItemsView_Layout(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.Layout = (global::Microsoft.UI.Xaml.Controls.Layout)Value;
+        }
+        private object get_50_ItemsView_ItemTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.ItemTemplate;
+        }
+        private void set_50_ItemsView_ItemTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.ItemTemplate = (global::Microsoft.UI.Xaml.IElementFactory)Value;
+        }
+        private object get_51_ItemsView_CurrentItemIndex(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.CurrentItemIndex;
+        }
+        private object get_52_ItemsView_IsItemInvokedEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.IsItemInvokedEnabled;
+        }
+        private void set_52_ItemsView_IsItemInvokedEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.IsItemInvokedEnabled = (global::System.Boolean)Value;
+        }
+        private object get_53_ItemsView_ItemTransitionProvider(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.ItemTransitionProvider;
+        }
+        private void set_53_ItemsView_ItemTransitionProvider(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.ItemTransitionProvider = (global::Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider)Value;
+        }
+        private object get_54_ItemsView_ItemsSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.ItemsSource;
+        }
+        private void set_54_ItemsView_ItemsSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.ItemsSource = (global::System.Object)Value;
+        }
+        private object get_55_ItemsView_ScrollView(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.ScrollView;
+        }
+        private object get_56_ItemsView_SelectedItem(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.SelectedItem;
+        }
+        private object get_57_ItemsView_SelectedItems(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.SelectedItems;
+        }
+        private object get_58_ItemsView_VerticalScrollController(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            return that.VerticalScrollController;
+        }
+        private void set_58_ItemsView_VerticalScrollController(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemsView)instance;
+            that.VerticalScrollController = (global::Microsoft.UI.Xaml.Controls.Primitives.IScrollController)Value;
+        }
+        private object get_59_UniformGridLayout_ItemsStretch(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.ItemsStretch;
         }
-        private void set_78_UniformGridLayout_ItemsStretch(object instance, object Value)
+        private void set_59_UniformGridLayout_ItemsStretch(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.ItemsStretch = (global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch)Value;
         }
-        private object get_79_UniformGridLayout_MinRowSpacing(object instance)
+        private object get_60_UniformGridLayout_MinRowSpacing(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.MinRowSpacing;
         }
-        private void set_79_UniformGridLayout_MinRowSpacing(object instance, object Value)
+        private void set_60_UniformGridLayout_MinRowSpacing(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.MinRowSpacing = (global::System.Double)Value;
         }
-        private object get_80_UniformGridLayout_MinColumnSpacing(object instance)
+        private object get_61_UniformGridLayout_MinColumnSpacing(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.MinColumnSpacing;
         }
-        private void set_80_UniformGridLayout_MinColumnSpacing(object instance, object Value)
+        private void set_61_UniformGridLayout_MinColumnSpacing(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.MinColumnSpacing = (global::System.Double)Value;
         }
-        private object get_81_UniformGridLayout_MinItemWidth(object instance)
+        private object get_62_UniformGridLayout_MinItemWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.MinItemWidth;
         }
-        private void set_81_UniformGridLayout_MinItemWidth(object instance, object Value)
+        private void set_62_UniformGridLayout_MinItemWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.MinItemWidth = (global::System.Double)Value;
         }
-        private object get_82_UniformGridLayout_ItemsJustification(object instance)
+        private object get_63_UniformGridLayout_ItemsJustification(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.ItemsJustification;
         }
-        private void set_82_UniformGridLayout_ItemsJustification(object instance, object Value)
+        private void set_63_UniformGridLayout_ItemsJustification(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.ItemsJustification = (global::Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification)Value;
         }
-        private object get_83_UniformGridLayout_MaximumRowsOrColumns(object instance)
+        private object get_64_UniformGridLayout_MaximumRowsOrColumns(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.MaximumRowsOrColumns;
         }
-        private void set_83_UniformGridLayout_MaximumRowsOrColumns(object instance, object Value)
+        private void set_64_UniformGridLayout_MaximumRowsOrColumns(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.MaximumRowsOrColumns = (global::System.Int32)Value;
         }
-        private object get_84_UniformGridLayout_MinItemHeight(object instance)
+        private object get_65_UniformGridLayout_MinItemHeight(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.MinItemHeight;
         }
-        private void set_84_UniformGridLayout_MinItemHeight(object instance, object Value)
+        private void set_65_UniformGridLayout_MinItemHeight(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.MinItemHeight = (global::System.Double)Value;
         }
-        private object get_85_UniformGridLayout_Orientation(object instance)
+        private object get_66_UniformGridLayout_Orientation(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             return that.Orientation;
         }
-        private void set_85_UniformGridLayout_Orientation(object instance, object Value)
+        private void set_66_UniformGridLayout_Orientation(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.UniformGridLayout)instance;
             that.Orientation = (global::Microsoft.UI.Xaml.Controls.Orientation)Value;
         }
-        private object get_86_SettingsExpander_Content(object instance)
+        private object get_67_Layout_IndexBasedLayoutOrientation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Layout)instance;
+            return that.IndexBasedLayoutOrientation;
+        }
+        private object get_68_ItemContainer_Child(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
+            return that.Child;
+        }
+        private void set_68_ItemContainer_Child(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
+            that.Child = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_69_ItemContainer_IsSelected(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
+            return that.IsSelected;
+        }
+        private void set_69_ItemContainer_IsSelected(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ItemContainer)instance;
+            that.IsSelected = (global::System.Boolean)Value;
+        }
+        private object get_70_SettingsExpander_Content(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.Content;
         }
-        private void set_86_SettingsExpander_Content(object instance, object Value)
+        private void set_70_SettingsExpander_Content(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_87_SettingsExpander_IsExpanded(object instance)
+        private object get_71_SettingsExpander_IsExpanded(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.IsExpanded;
         }
-        private void set_87_SettingsExpander_IsExpanded(object instance, object Value)
+        private void set_71_SettingsExpander_IsExpanded(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_88_SettingsExpander_Header(object instance)
+        private object get_72_SettingsExpander_Header(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.Header;
         }
-        private void set_88_SettingsExpander_Header(object instance, object Value)
+        private void set_72_SettingsExpander_Header(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_89_SettingsExpander_Items(object instance)
+        private object get_73_SettingsExpander_Items(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.Items;
         }
-        private void set_89_SettingsExpander_Items(object instance, object Value)
+        private void set_73_SettingsExpander_Items(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.Items = (global::System.Collections.Generic.IList<global::System.Object>)Value;
         }
-        private object get_90_SettingsExpander_ItemsSource(object instance)
+        private object get_74_SettingsExpander_ItemsSource(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.ItemsSource;
         }
-        private void set_90_SettingsExpander_ItemsSource(object instance, object Value)
+        private void set_74_SettingsExpander_ItemsSource(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.ItemsSource = (global::System.Object)Value;
         }
-        private object get_91_SettingsExpander_ItemTemplate(object instance)
+        private object get_75_SettingsExpander_ItemTemplate(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.ItemTemplate;
         }
-        private void set_91_SettingsExpander_ItemTemplate(object instance, object Value)
+        private void set_75_SettingsExpander_ItemTemplate(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.ItemTemplate = (global::System.Object)Value;
         }
-        private object get_92_SettingsExpander_ItemContainerStyleSelector(object instance)
+        private object get_76_SettingsExpander_ItemContainerStyleSelector(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.ItemContainerStyleSelector;
         }
-        private void set_92_SettingsExpander_ItemContainerStyleSelector(object instance, object Value)
+        private void set_76_SettingsExpander_ItemContainerStyleSelector(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.ItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
         }
-        private object get_93_SettingsExpander_Description(object instance)
+        private object get_77_SettingsExpander_Description(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.Description;
         }
-        private void set_93_SettingsExpander_Description(object instance, object Value)
+        private void set_77_SettingsExpander_Description(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.Description = (global::System.Object)Value;
         }
-        private object get_94_SettingsExpander_HeaderIcon(object instance)
+        private object get_78_SettingsExpander_HeaderIcon(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.HeaderIcon;
         }
-        private void set_94_SettingsExpander_HeaderIcon(object instance, object Value)
+        private void set_78_SettingsExpander_HeaderIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_95_SettingsExpander_ItemsHeader(object instance)
+        private object get_79_SettingsExpander_ItemsHeader(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.ItemsHeader;
         }
-        private void set_95_SettingsExpander_ItemsHeader(object instance, object Value)
+        private void set_79_SettingsExpander_ItemsHeader(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.ItemsHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_96_SettingsExpander_ItemsFooter(object instance)
+        private object get_80_SettingsExpander_ItemsFooter(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             return that.ItemsFooter;
         }
-        private void set_96_SettingsExpander_ItemsFooter(object instance, object Value)
+        private void set_80_SettingsExpander_ItemsFooter(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
             that.ItemsFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_97_InfoBar_Content(object instance)
+        private object get_81_SettingsCard_Header(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.Content;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.Header;
         }
-        private void set_97_InfoBar_Content(object instance, object Value)
+        private void set_81_SettingsCard_Header(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.Content = (global::System.Object)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.Header = (global::System.Object)Value;
         }
-        private object get_98_InfoBar_IsOpen(object instance)
+        private object get_82_SettingsCard_Description(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.IsOpen;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.Description;
         }
-        private void set_98_InfoBar_IsOpen(object instance, object Value)
+        private void set_82_SettingsCard_Description(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.IsOpen = (global::System.Boolean)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.Description = (global::System.Object)Value;
         }
-        private object get_99_InfoBar_Severity(object instance)
+        private object get_83_SettingsCard_HeaderIcon(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.Severity;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.HeaderIcon;
         }
-        private void set_99_InfoBar_Severity(object instance, object Value)
+        private void set_83_SettingsCard_HeaderIcon(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.Severity = (global::Microsoft.UI.Xaml.Controls.InfoBarSeverity)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_100_InfoBar_ActionButton(object instance)
+        private object get_84_SettingsCard_ActionIcon(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.ActionButton;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.ActionIcon;
         }
-        private void set_100_InfoBar_ActionButton(object instance, object Value)
+        private void set_84_SettingsCard_ActionIcon(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.ActionButton = (global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.ActionIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_101_InfoBar_CloseButtonCommand(object instance)
+        private object get_85_SettingsCard_ActionIconToolTip(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.CloseButtonCommand;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.ActionIconToolTip;
         }
-        private void set_101_InfoBar_CloseButtonCommand(object instance, object Value)
+        private void set_85_SettingsCard_ActionIconToolTip(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.CloseButtonCommand = (global::System.Windows.Input.ICommand)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.ActionIconToolTip = (global::System.String)Value;
         }
-        private object get_102_InfoBar_CloseButtonCommandParameter(object instance)
+        private object get_86_SettingsCard_IsClickEnabled(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.CloseButtonCommandParameter;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.IsClickEnabled;
         }
-        private void set_102_InfoBar_CloseButtonCommandParameter(object instance, object Value)
+        private void set_86_SettingsCard_IsClickEnabled(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.CloseButtonCommandParameter = (global::System.Object)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.IsClickEnabled = (global::System.Boolean)Value;
         }
-        private object get_103_InfoBar_CloseButtonStyle(object instance)
+        private object get_87_SettingsCard_ContentAlignment(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.CloseButtonStyle;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.ContentAlignment;
         }
-        private void set_103_InfoBar_CloseButtonStyle(object instance, object Value)
+        private void set_87_SettingsCard_ContentAlignment(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.CloseButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.ContentAlignment = (global::CommunityToolkit.WinUI.Controls.ContentAlignment)Value;
         }
-        private object get_104_InfoBar_ContentTemplate(object instance)
+        private object get_88_SettingsCard_IsActionIconVisible(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.ContentTemplate;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.IsActionIconVisible;
         }
-        private void set_104_InfoBar_ContentTemplate(object instance, object Value)
+        private void set_88_SettingsCard_IsActionIconVisible(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.ContentTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.IsActionIconVisible = (global::System.Boolean)Value;
         }
-        private object get_105_InfoBar_IconSource(object instance)
+        private object get_89_UC_BreadcrumbBar_Frame(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.IconSource;
+            var that = (global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar)instance;
+            return that.Frame;
         }
-        private void set_105_InfoBar_IconSource(object instance, object Value)
+        private void set_89_UC_BreadcrumbBar_Frame(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
+            var that = (global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar)instance;
+            that.Frame = (global::Microsoft.UI.Xaml.Controls.Frame)Value;
         }
-        private object get_106_InfoBar_IsClosable(object instance)
+        private object get_90_UC_BreadcrumbBar_Items(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.IsClosable;
+            var that = (global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar)instance;
+            return that.Items;
         }
-        private void set_106_InfoBar_IsClosable(object instance, object Value)
+        private object get_91_KeyValuePair_Key(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.IsClosable = (global::System.Boolean)Value;
+            var that = (global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>)instance;
+            return that.Key;
         }
-        private object get_107_InfoBar_IsIconVisible(object instance)
+        private object get_92_KeyValuePair_Value(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.IsIconVisible;
+            var that = (global::System.Collections.Generic.KeyValuePair<global::System.Type, global::System.String>)instance;
+            return that.Value;
         }
-        private void set_107_InfoBar_IsIconVisible(object instance, object Value)
+        private object get_93_UC_BreadcrumbBar_CanGoBack(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.IsIconVisible = (global::System.Boolean)Value;
+            var that = (global::Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar)instance;
+            return that.CanGoBack;
         }
-        private object get_108_InfoBar_Message(object instance)
+        private object get_94_LinedFlowLayout_ItemsStretch(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.Message;
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.ItemsStretch;
         }
-        private void set_108_InfoBar_Message(object instance, object Value)
+        private void set_94_LinedFlowLayout_ItemsStretch(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.Message = (global::System.String)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            that.ItemsStretch = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch)Value;
         }
-        private object get_109_InfoBar_TemplateSettings(object instance)
+        private object get_95_LinedFlowLayout_MinItemSpacing(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.TemplateSettings;
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.MinItemSpacing;
         }
-        private object get_110_InfoBar_Title(object instance)
+        private void set_95_LinedFlowLayout_MinItemSpacing(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            return that.Title;
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            that.MinItemSpacing = (global::System.Double)Value;
         }
-        private void set_110_InfoBar_Title(object instance, object Value)
+        private object get_96_LinedFlowLayout_ActualLineHeight(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
-            that.Title = (global::System.String)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.ActualLineHeight;
         }
-        private object get_111_Expander_IsExpanded(object instance)
+        private object get_97_LinedFlowLayout_ItemsJustification(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.ItemsJustification;
+        }
+        private void set_97_LinedFlowLayout_ItemsJustification(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            that.ItemsJustification = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification)Value;
+        }
+        private object get_98_LinedFlowLayout_LineHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.LineHeight;
+        }
+        private void set_98_LinedFlowLayout_LineHeight(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            that.LineHeight = (global::System.Double)Value;
+        }
+        private object get_99_LinedFlowLayout_LineSpacing(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.LineSpacing;
+        }
+        private void set_99_LinedFlowLayout_LineSpacing(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            that.LineSpacing = (global::System.Double)Value;
+        }
+        private object get_100_LinedFlowLayout_RequestedRangeLength(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.RequestedRangeLength;
+        }
+        private object get_101_LinedFlowLayout_RequestedRangeStartIndex(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.LinedFlowLayout)instance;
+            return that.RequestedRangeStartIndex;
+        }
+        private object get_102_Expander_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             return that.IsExpanded;
         }
-        private void set_111_Expander_IsExpanded(object instance, object Value)
+        private void set_102_Expander_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_112_Expander_Header(object instance)
+        private object get_103_Expander_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             return that.Header;
         }
-        private void set_112_Expander_Header(object instance, object Value)
+        private void set_103_Expander_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_113_Expander_ExpandDirection(object instance)
+        private object get_104_Expander_ExpandDirection(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             return that.ExpandDirection;
         }
-        private void set_113_Expander_ExpandDirection(object instance, object Value)
+        private void set_104_Expander_ExpandDirection(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             that.ExpandDirection = (global::Microsoft.UI.Xaml.Controls.ExpandDirection)Value;
         }
-        private object get_114_Expander_HeaderTemplate(object instance)
+        private object get_105_Expander_HeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             return that.HeaderTemplate;
         }
-        private void set_114_Expander_HeaderTemplate(object instance, object Value)
+        private void set_105_Expander_HeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_115_Expander_HeaderTemplateSelector(object instance)
+        private object get_106_Expander_HeaderTemplateSelector(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             return that.HeaderTemplateSelector;
         }
-        private void set_115_Expander_HeaderTemplateSelector(object instance, object Value)
+        private void set_106_Expander_HeaderTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             that.HeaderTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_116_Expander_TemplateSettings(object instance)
+        private object get_107_Expander_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
             return that.TemplateSettings;
         }
-        private object get_117_FontIconExtension_Glyph(object instance)
+        private object get_108_FontIconExtension_Glyph(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.Glyph;
         }
-        private void set_117_FontIconExtension_Glyph(object instance, object Value)
+        private void set_108_FontIconExtension_Glyph(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.Glyph = (global::System.String)Value;
         }
-        private object get_118_FontIconExtension_FontFamily(object instance)
+        private object get_109_FontIconExtension_FontFamily(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.FontFamily;
         }
-        private void set_118_FontIconExtension_FontFamily(object instance, object Value)
+        private void set_109_FontIconExtension_FontFamily(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_119_TextIconExtension_FontSize(object instance)
+        private object get_110_TextIconExtension_FontSize(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontSize;
         }
-        private void set_119_TextIconExtension_FontSize(object instance, object Value)
+        private void set_110_TextIconExtension_FontSize(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_120_TextIconExtension_FontWeight(object instance)
+        private object get_111_TextIconExtension_FontWeight(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontWeight;
         }
-        private void set_120_TextIconExtension_FontWeight(object instance, object Value)
+        private void set_111_TextIconExtension_FontWeight(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
         }
-        private object get_121_TextIconExtension_FontStyle(object instance)
+        private object get_112_TextIconExtension_FontStyle(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontStyle;
         }
-        private void set_121_TextIconExtension_FontStyle(object instance, object Value)
+        private void set_112_TextIconExtension_FontStyle(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_122_TextIconExtension_Foreground(object instance)
+        private object get_113_TextIconExtension_Foreground(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.Foreground;
         }
-        private void set_122_TextIconExtension_Foreground(object instance, object Value)
+        private void set_113_TextIconExtension_Foreground(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.Foreground = (global::Microsoft.UI.Xaml.Media.Brush)Value;
         }
-        private object get_123_TextIconExtension_IsTextScaleFactorEnabled(object instance)
+        private object get_114_TextIconExtension_IsTextScaleFactorEnabled(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.IsTextScaleFactorEnabled;
         }
-        private void set_123_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
+        private void set_114_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.IsTextScaleFactorEnabled = (global::System.Boolean)Value;
         }
-        private object get_124_TextIconExtension_MirroredWhenRightToLeft(object instance)
+        private object get_115_TextIconExtension_MirroredWhenRightToLeft(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.MirroredWhenRightToLeft;
         }
-        private void set_124_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
+        private void set_115_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.MirroredWhenRightToLeft = (global::System.Boolean)Value;
         }
-        private object get_125_RadioButtons_Items(object instance)
+        private object get_116_RadioButtons_Items(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.Items;
         }
-        private object get_126_RadioButtons_SelectedIndex(object instance)
+        private object get_117_RadioButtons_SelectedIndex(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.SelectedIndex;
         }
-        private void set_126_RadioButtons_SelectedIndex(object instance, object Value)
+        private void set_117_RadioButtons_SelectedIndex(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.SelectedIndex = (global::System.Int32)Value;
         }
-        private object get_127_RadioButtons_Header(object instance)
+        private object get_118_RadioButtons_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.Header;
         }
-        private void set_127_RadioButtons_Header(object instance, object Value)
+        private void set_118_RadioButtons_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_128_RadioButtons_HeaderTemplate(object instance)
+        private object get_119_RadioButtons_HeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.HeaderTemplate;
         }
-        private void set_128_RadioButtons_HeaderTemplate(object instance, object Value)
+        private void set_119_RadioButtons_HeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_129_RadioButtons_ItemTemplate(object instance)
+        private object get_120_RadioButtons_ItemTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.ItemTemplate;
         }
-        private void set_129_RadioButtons_ItemTemplate(object instance, object Value)
+        private void set_120_RadioButtons_ItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.ItemTemplate = (global::System.Object)Value;
         }
-        private object get_130_RadioButtons_ItemsSource(object instance)
+        private object get_121_RadioButtons_ItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.ItemsSource;
         }
-        private void set_130_RadioButtons_ItemsSource(object instance, object Value)
+        private void set_121_RadioButtons_ItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.ItemsSource = (global::System.Object)Value;
         }
-        private object get_131_RadioButtons_MaxColumns(object instance)
+        private object get_122_RadioButtons_MaxColumns(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.MaxColumns;
         }
-        private void set_131_RadioButtons_MaxColumns(object instance, object Value)
+        private void set_122_RadioButtons_MaxColumns(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.MaxColumns = (global::System.Int32)Value;
         }
-        private object get_132_RadioButtons_SelectedItem(object instance)
+        private object get_123_RadioButtons_SelectedItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             return that.SelectedItem;
         }
-        private void set_132_RadioButtons_SelectedItem(object instance, object Value)
+        private void set_123_RadioButtons_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.RadioButtons)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_133_NavigationView_PaneDisplayMode(object instance)
+        private object get_124_InfoBar_Content(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.PaneDisplayMode;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Content;
         }
-        private void set_133_NavigationView_PaneDisplayMode(object instance, object Value)
+        private void set_124_InfoBar_Content(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.PaneDisplayMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Content = (global::System.Object)Value;
         }
-        private object get_134_NavigationView_Header(object instance)
+        private object get_125_InfoBar_IsOpen(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.Header;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsOpen;
         }
-        private void set_134_NavigationView_Header(object instance, object Value)
+        private void set_125_InfoBar_IsOpen(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.Header = (global::System.Object)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsOpen = (global::System.Boolean)Value;
         }
-        private object get_135_NavigationView_MenuItems(object instance)
+        private object get_126_InfoBar_Severity(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItems;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Severity;
         }
-        private object get_136_NavigationView_AlwaysShowHeader(object instance)
+        private void set_126_InfoBar_Severity(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.AlwaysShowHeader;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Severity = (global::Microsoft.UI.Xaml.Controls.InfoBarSeverity)Value;
         }
-        private void set_136_NavigationView_AlwaysShowHeader(object instance, object Value)
+        private object get_127_InfoBar_ActionButton(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.AlwaysShowHeader = (global::System.Boolean)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.ActionButton;
         }
-        private object get_137_NavigationView_AutoSuggestBox(object instance)
+        private void set_127_InfoBar_ActionButton(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.AutoSuggestBox;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.ActionButton = (global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase)Value;
         }
-        private void set_137_NavigationView_AutoSuggestBox(object instance, object Value)
+        private object get_128_InfoBar_CloseButtonCommand(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonCommand;
         }
-        private object get_138_NavigationView_CompactModeThresholdWidth(object instance)
+        private void set_128_InfoBar_CloseButtonCommand(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.CompactModeThresholdWidth;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonCommand = (global::System.Windows.Input.ICommand)Value;
         }
-        private void set_138_NavigationView_CompactModeThresholdWidth(object instance, object Value)
+        private object get_129_InfoBar_CloseButtonCommandParameter(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.CompactModeThresholdWidth = (global::System.Double)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonCommandParameter;
         }
-        private object get_139_NavigationView_CompactPaneLength(object instance)
+        private void set_129_InfoBar_CloseButtonCommandParameter(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.CompactPaneLength;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonCommandParameter = (global::System.Object)Value;
         }
-        private void set_139_NavigationView_CompactPaneLength(object instance, object Value)
+        private object get_130_InfoBar_CloseButtonStyle(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.CompactPaneLength = (global::System.Double)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonStyle;
         }
-        private object get_140_NavigationView_ContentOverlay(object instance)
+        private void set_130_InfoBar_CloseButtonStyle(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.ContentOverlay;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
         }
-        private void set_140_NavigationView_ContentOverlay(object instance, object Value)
+        private object get_131_InfoBar_ContentTemplate(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.ContentTemplate;
         }
-        private object get_141_NavigationView_DisplayMode(object instance)
+        private void set_131_InfoBar_ContentTemplate(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.DisplayMode;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.ContentTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_142_NavigationView_ExpandedModeThresholdWidth(object instance)
+        private object get_132_InfoBar_IconSource(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.ExpandedModeThresholdWidth;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IconSource;
         }
-        private void set_142_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
+        private void set_132_InfoBar_IconSource(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.ExpandedModeThresholdWidth = (global::System.Double)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
         }
-        private object get_143_NavigationView_FooterMenuItems(object instance)
+        private object get_133_InfoBar_IsClosable(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.FooterMenuItems;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsClosable;
         }
-        private object get_144_NavigationView_FooterMenuItemsSource(object instance)
+        private void set_133_InfoBar_IsClosable(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.FooterMenuItemsSource;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsClosable = (global::System.Boolean)Value;
         }
-        private void set_144_NavigationView_FooterMenuItemsSource(object instance, object Value)
+        private object get_134_InfoBar_IsIconVisible(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.FooterMenuItemsSource = (global::System.Object)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsIconVisible;
         }
-        private object get_145_NavigationView_HeaderTemplate(object instance)
+        private void set_134_InfoBar_IsIconVisible(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.HeaderTemplate;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsIconVisible = (global::System.Boolean)Value;
         }
-        private void set_145_NavigationView_HeaderTemplate(object instance, object Value)
+        private object get_135_InfoBar_Message(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Message;
         }
-        private object get_146_NavigationView_IsBackButtonVisible(object instance)
+        private void set_135_InfoBar_Message(object instance, object Value)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsBackButtonVisible;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Message = (global::System.String)Value;
         }
-        private void set_146_NavigationView_IsBackButtonVisible(object instance, object Value)
+        private object get_136_InfoBar_TemplateSettings(object instance)
         {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsBackButtonVisible = (global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible)Value;
-        }
-        private object get_147_NavigationView_IsBackEnabled(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsBackEnabled;
-        }
-        private void set_147_NavigationView_IsBackEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsBackEnabled = (global::System.Boolean)Value;
-        }
-        private object get_148_NavigationView_IsPaneOpen(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsPaneOpen;
-        }
-        private void set_148_NavigationView_IsPaneOpen(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsPaneOpen = (global::System.Boolean)Value;
-        }
-        private object get_149_NavigationView_IsPaneToggleButtonVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsPaneToggleButtonVisible;
-        }
-        private void set_149_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
-        }
-        private object get_150_NavigationView_IsPaneVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsPaneVisible;
-        }
-        private void set_150_NavigationView_IsPaneVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsPaneVisible = (global::System.Boolean)Value;
-        }
-        private object get_151_NavigationView_IsSettingsVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsSettingsVisible;
-        }
-        private void set_151_NavigationView_IsSettingsVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsSettingsVisible = (global::System.Boolean)Value;
-        }
-        private object get_152_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsTitleBarAutoPaddingEnabled;
-        }
-        private void set_152_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsTitleBarAutoPaddingEnabled = (global::System.Boolean)Value;
-        }
-        private object get_153_NavigationView_MenuItemContainerStyle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItemContainerStyle;
-        }
-        private void set_153_NavigationView_MenuItemContainerStyle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.MenuItemContainerStyle = (global::Microsoft.UI.Xaml.Style)Value;
-        }
-        private object get_154_NavigationView_MenuItemContainerStyleSelector(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItemContainerStyleSelector;
-        }
-        private void set_154_NavigationView_MenuItemContainerStyleSelector(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.MenuItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
-        }
-        private object get_155_NavigationView_MenuItemTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItemTemplate;
-        }
-        private void set_155_NavigationView_MenuItemTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.MenuItemTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_156_NavigationView_MenuItemTemplateSelector(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItemTemplateSelector;
-        }
-        private void set_156_NavigationView_MenuItemTemplateSelector(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.MenuItemTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
-        }
-        private object get_157_NavigationView_MenuItemsSource(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItemsSource;
-        }
-        private void set_157_NavigationView_MenuItemsSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.MenuItemsSource = (global::System.Object)Value;
-        }
-        private object get_158_NavigationView_OpenPaneLength(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.OpenPaneLength;
-        }
-        private void set_158_NavigationView_OpenPaneLength(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.OpenPaneLength = (global::System.Double)Value;
-        }
-        private object get_159_NavigationView_OverflowLabelMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.OverflowLabelMode;
-        }
-        private void set_159_NavigationView_OverflowLabelMode(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.OverflowLabelMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode)Value;
-        }
-        private object get_160_NavigationView_PaneCustomContent(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.PaneCustomContent;
-        }
-        private void set_160_NavigationView_PaneCustomContent(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.PaneCustomContent = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_161_NavigationView_PaneFooter(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.PaneFooter;
-        }
-        private void set_161_NavigationView_PaneFooter(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.PaneFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_162_NavigationView_PaneHeader(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.PaneHeader;
-        }
-        private void set_162_NavigationView_PaneHeader(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.PaneHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_163_NavigationView_PaneTitle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.PaneTitle;
-        }
-        private void set_163_NavigationView_PaneTitle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.PaneTitle = (global::System.String)Value;
-        }
-        private object get_164_NavigationView_PaneToggleButtonStyle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.PaneToggleButtonStyle;
-        }
-        private void set_164_NavigationView_PaneToggleButtonStyle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.PaneToggleButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
-        }
-        private object get_165_NavigationView_SelectedItem(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.SelectedItem;
-        }
-        private void set_165_NavigationView_SelectedItem(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.SelectedItem = (global::System.Object)Value;
-        }
-        private object get_166_NavigationView_SelectionFollowsFocus(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.SelectionFollowsFocus;
-        }
-        private void set_166_NavigationView_SelectionFollowsFocus(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.SelectionFollowsFocus = (global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus)Value;
-        }
-        private object get_167_NavigationView_SettingsItem(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.SettingsItem;
-        }
-        private object get_168_NavigationView_ShoulderNavigationEnabled(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.ShoulderNavigationEnabled;
-        }
-        private void set_168_NavigationView_ShoulderNavigationEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.ShoulderNavigationEnabled = (global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled)Value;
-        }
-        private object get_169_NavigationView_TemplateSettings(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
             return that.TemplateSettings;
         }
-        private object get_170_BreadcrumbBar_ItemsSource(object instance)
+        private object get_137_InfoBar_Title(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Title;
+        }
+        private void set_137_InfoBar_Title(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_138_BreadcrumbBar_ItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.BreadcrumbBar)instance;
             return that.ItemsSource;
         }
-        private void set_170_BreadcrumbBar_ItemsSource(object instance, object Value)
+        private void set_138_BreadcrumbBar_ItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.BreadcrumbBar)instance;
             that.ItemsSource = (global::System.Object)Value;
         }
-        private object get_171_BreadcrumbBar_ItemTemplate(object instance)
+        private object get_139_BreadcrumbBar_ItemTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.BreadcrumbBar)instance;
             return that.ItemTemplate;
         }
-        private void set_171_BreadcrumbBar_ItemTemplate(object instance, object Value)
+        private void set_139_BreadcrumbBar_ItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.BreadcrumbBar)instance;
             that.ItemTemplate = (global::System.Object)Value;
         }
-        private object get_172_NavigationViewItem_Icon(object instance)
+        private object get_140_NavigationView_PaneDisplayMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.PaneDisplayMode;
+        }
+        private void set_140_NavigationView_PaneDisplayMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.PaneDisplayMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode)Value;
+        }
+        private object get_141_NavigationView_MenuItems(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItems;
+        }
+        private object get_142_NavigationView_AlwaysShowHeader(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.AlwaysShowHeader;
+        }
+        private void set_142_NavigationView_AlwaysShowHeader(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.AlwaysShowHeader = (global::System.Boolean)Value;
+        }
+        private object get_143_NavigationView_AutoSuggestBox(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.AutoSuggestBox;
+        }
+        private void set_143_NavigationView_AutoSuggestBox(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
+        }
+        private object get_144_NavigationView_CompactModeThresholdWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.CompactModeThresholdWidth;
+        }
+        private void set_144_NavigationView_CompactModeThresholdWidth(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.CompactModeThresholdWidth = (global::System.Double)Value;
+        }
+        private object get_145_NavigationView_CompactPaneLength(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.CompactPaneLength;
+        }
+        private void set_145_NavigationView_CompactPaneLength(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.CompactPaneLength = (global::System.Double)Value;
+        }
+        private object get_146_NavigationView_ContentOverlay(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.ContentOverlay;
+        }
+        private void set_146_NavigationView_ContentOverlay(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_147_NavigationView_DisplayMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.DisplayMode;
+        }
+        private object get_148_NavigationView_ExpandedModeThresholdWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.ExpandedModeThresholdWidth;
+        }
+        private void set_148_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.ExpandedModeThresholdWidth = (global::System.Double)Value;
+        }
+        private object get_149_NavigationView_FooterMenuItems(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.FooterMenuItems;
+        }
+        private object get_150_NavigationView_FooterMenuItemsSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.FooterMenuItemsSource;
+        }
+        private void set_150_NavigationView_FooterMenuItemsSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.FooterMenuItemsSource = (global::System.Object)Value;
+        }
+        private object get_151_NavigationView_Header(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.Header;
+        }
+        private void set_151_NavigationView_Header(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_152_NavigationView_HeaderTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_152_NavigationView_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_153_NavigationView_IsBackButtonVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsBackButtonVisible;
+        }
+        private void set_153_NavigationView_IsBackButtonVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsBackButtonVisible = (global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible)Value;
+        }
+        private object get_154_NavigationView_IsBackEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsBackEnabled;
+        }
+        private void set_154_NavigationView_IsBackEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsBackEnabled = (global::System.Boolean)Value;
+        }
+        private object get_155_NavigationView_IsPaneOpen(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsPaneOpen;
+        }
+        private void set_155_NavigationView_IsPaneOpen(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsPaneOpen = (global::System.Boolean)Value;
+        }
+        private object get_156_NavigationView_IsPaneToggleButtonVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsPaneToggleButtonVisible;
+        }
+        private void set_156_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
+        }
+        private object get_157_NavigationView_IsPaneVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsPaneVisible;
+        }
+        private void set_157_NavigationView_IsPaneVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsPaneVisible = (global::System.Boolean)Value;
+        }
+        private object get_158_NavigationView_IsSettingsVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsSettingsVisible;
+        }
+        private void set_158_NavigationView_IsSettingsVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsSettingsVisible = (global::System.Boolean)Value;
+        }
+        private object get_159_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsTitleBarAutoPaddingEnabled;
+        }
+        private void set_159_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsTitleBarAutoPaddingEnabled = (global::System.Boolean)Value;
+        }
+        private object get_160_NavigationView_MenuItemContainerStyle(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItemContainerStyle;
+        }
+        private void set_160_NavigationView_MenuItemContainerStyle(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.MenuItemContainerStyle = (global::Microsoft.UI.Xaml.Style)Value;
+        }
+        private object get_161_NavigationView_MenuItemContainerStyleSelector(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItemContainerStyleSelector;
+        }
+        private void set_161_NavigationView_MenuItemContainerStyleSelector(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.MenuItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
+        }
+        private object get_162_NavigationView_MenuItemTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItemTemplate;
+        }
+        private void set_162_NavigationView_MenuItemTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.MenuItemTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_163_NavigationView_MenuItemTemplateSelector(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItemTemplateSelector;
+        }
+        private void set_163_NavigationView_MenuItemTemplateSelector(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.MenuItemTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
+        }
+        private object get_164_NavigationView_MenuItemsSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItemsSource;
+        }
+        private void set_164_NavigationView_MenuItemsSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.MenuItemsSource = (global::System.Object)Value;
+        }
+        private object get_165_NavigationView_OpenPaneLength(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.OpenPaneLength;
+        }
+        private void set_165_NavigationView_OpenPaneLength(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.OpenPaneLength = (global::System.Double)Value;
+        }
+        private object get_166_NavigationView_OverflowLabelMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.OverflowLabelMode;
+        }
+        private void set_166_NavigationView_OverflowLabelMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.OverflowLabelMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode)Value;
+        }
+        private object get_167_NavigationView_PaneCustomContent(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.PaneCustomContent;
+        }
+        private void set_167_NavigationView_PaneCustomContent(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.PaneCustomContent = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_168_NavigationView_PaneFooter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.PaneFooter;
+        }
+        private void set_168_NavigationView_PaneFooter(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.PaneFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_169_NavigationView_PaneHeader(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.PaneHeader;
+        }
+        private void set_169_NavigationView_PaneHeader(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.PaneHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_170_NavigationView_PaneTitle(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.PaneTitle;
+        }
+        private void set_170_NavigationView_PaneTitle(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.PaneTitle = (global::System.String)Value;
+        }
+        private object get_171_NavigationView_PaneToggleButtonStyle(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.PaneToggleButtonStyle;
+        }
+        private void set_171_NavigationView_PaneToggleButtonStyle(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.PaneToggleButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
+        }
+        private object get_172_NavigationView_SelectedItem(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.SelectedItem;
+        }
+        private void set_172_NavigationView_SelectedItem(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.SelectedItem = (global::System.Object)Value;
+        }
+        private object get_173_NavigationView_SelectionFollowsFocus(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.SelectionFollowsFocus;
+        }
+        private void set_173_NavigationView_SelectionFollowsFocus(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.SelectionFollowsFocus = (global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus)Value;
+        }
+        private object get_174_NavigationView_SettingsItem(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.SettingsItem;
+        }
+        private object get_175_NavigationView_ShoulderNavigationEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.ShoulderNavigationEnabled;
+        }
+        private void set_175_NavigationView_ShoulderNavigationEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.ShoulderNavigationEnabled = (global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled)Value;
+        }
+        private object get_176_NavigationView_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.TemplateSettings;
+        }
+        private object get_177_NavigationViewItem_Icon(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.Icon;
         }
-        private void set_172_NavigationViewItem_Icon(object instance, object Value)
+        private void set_177_NavigationViewItem_Icon(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.Icon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_173_NavigationViewItem_SelectsOnInvoked(object instance)
+        private object get_178_NavigationViewItem_SelectsOnInvoked(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.SelectsOnInvoked;
         }
-        private void set_173_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
+        private void set_178_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.SelectsOnInvoked = (global::System.Boolean)Value;
         }
-        private object get_174_NavigationViewItem_MenuItems(object instance)
+        private object get_179_NavigationViewItem_MenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItems;
         }
-        private object get_175_NavigationViewItem_CompactPaneLength(object instance)
+        private object get_180_NavigationViewItem_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.CompactPaneLength;
         }
-        private object get_176_NavigationViewItem_HasUnrealizedChildren(object instance)
+        private object get_181_NavigationViewItem_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_176_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
+        private void set_181_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_177_NavigationViewItem_InfoBadge(object instance)
+        private object get_182_NavigationViewItem_InfoBadge(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.InfoBadge;
         }
-        private void set_177_NavigationViewItem_InfoBadge(object instance, object Value)
+        private void set_182_NavigationViewItem_InfoBadge(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.InfoBadge = (global::Microsoft.UI.Xaml.Controls.InfoBadge)Value;
         }
-        private object get_178_NavigationViewItem_IsChildSelected(object instance)
+        private object get_183_NavigationViewItem_IsChildSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsChildSelected;
         }
-        private void set_178_NavigationViewItem_IsChildSelected(object instance, object Value)
+        private void set_183_NavigationViewItem_IsChildSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsChildSelected = (global::System.Boolean)Value;
         }
-        private object get_179_NavigationViewItem_IsExpanded(object instance)
+        private object get_184_NavigationViewItem_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsExpanded;
         }
-        private void set_179_NavigationViewItem_IsExpanded(object instance, object Value)
+        private void set_184_NavigationViewItem_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_180_NavigationViewItem_MenuItemsSource(object instance)
+        private object get_185_NavigationViewItem_MenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItemsSource;
         }
-        private void set_180_NavigationViewItem_MenuItemsSource(object instance, object Value)
+        private void set_185_NavigationViewItem_MenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.MenuItemsSource = (global::System.Object)Value;
         }
-        private object get_181_NavigationViewItemBase_IsSelected(object instance)
+        private object get_186_NavigationViewItemBase_IsSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             return that.IsSelected;
         }
-        private void set_181_NavigationViewItemBase_IsSelected(object instance, object Value)
+        private void set_186_NavigationViewItemBase_IsSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_182_TreeViewNode_Children(object instance)
+        private object get_187_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_183_TreeViewNode_Content(object instance)
+        private object get_188_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_183_TreeViewNode_Content(object instance, object Value)
+        private void set_188_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_184_TreeViewNode_Depth(object instance)
+        private object get_189_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_185_TreeViewNode_HasChildren(object instance)
+        private object get_190_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_186_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_191_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_186_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_191_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_187_TreeViewNode_IsExpanded(object instance)
+        private object get_192_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_187_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_192_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_188_TreeViewNode_Parent(object instance)
+        private object get_193_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -3418,1235 +3595,1266 @@ namespace Fluent_Launcher.Fluent_Launcher_XamlTypeInfo
                 xamlMember.Getter = get_8_Color_B;
                 xamlMember.Setter = set_8_Color_B;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.IsClickEnabled":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsClickEnabled", "Boolean");
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.IsIndeterminate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_SettingsCard_IsClickEnabled;
-                xamlMember.Setter = set_9_SettingsCard_IsClickEnabled;
+                xamlMember.Getter = get_9_ProgressBar_IsIndeterminate;
+                xamlMember.Setter = set_9_ProgressBar_IsIndeterminate;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.Header":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowPaused":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ShowPaused", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_SettingsCard_Header;
-                xamlMember.Setter = set_10_SettingsCard_Header;
+                xamlMember.Getter = get_10_ProgressBar_ShowPaused;
+                xamlMember.Setter = set_10_ProgressBar_ShowPaused;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Description", "Object");
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowError":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ShowError", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_SettingsCard_Description;
-                xamlMember.Setter = set_11_SettingsCard_Description;
+                xamlMember.Getter = get_11_ProgressBar_ShowError;
+                xamlMember.Setter = set_11_ProgressBar_ShowError;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_SettingsCard_HeaderIcon;
-                xamlMember.Setter = set_12_SettingsCard_HeaderIcon;
-                break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIcon":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActionIcon", "Microsoft.UI.Xaml.Controls.IconElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_SettingsCard_ActionIcon;
-                xamlMember.Setter = set_13_SettingsCard_ActionIcon;
-                break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIconToolTip":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActionIconToolTip", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_SettingsCard_ActionIconToolTip;
-                xamlMember.Setter = set_14_SettingsCard_ActionIconToolTip;
-                break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.ContentAlignment":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ContentAlignment", "CommunityToolkit.WinUI.Controls.ContentAlignment");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_SettingsCard_ContentAlignment;
-                xamlMember.Setter = set_15_SettingsCard_ContentAlignment;
-                break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.IsActionIconVisible":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsActionIconVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_SettingsCard_IsActionIconVisible;
-                xamlMember.Setter = set_16_SettingsCard_IsActionIconVisible;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.ItemsSource":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_ItemsView_ItemsSource;
-                xamlMember.Setter = set_17_ItemsView_ItemsSource;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.SelectionMode":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectionMode", "Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_ItemsView_SelectionMode;
-                xamlMember.Setter = set_18_ItemsView_SelectionMode;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.ItemTemplate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Microsoft.UI.Xaml.IElementFactory");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_ItemsView_ItemTemplate;
-                xamlMember.Setter = set_19_ItemsView_ItemTemplate;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.Layout":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Layout", "Microsoft.UI.Xaml.Controls.Layout");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_ItemsView_Layout;
-                xamlMember.Setter = set_20_ItemsView_Layout;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.CurrentItemIndex":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CurrentItemIndex", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_ItemsView_CurrentItemIndex;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.IsItemInvokedEnabled":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsItemInvokedEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_ItemsView_IsItemInvokedEnabled;
-                xamlMember.Setter = set_22_ItemsView_IsItemInvokedEnabled;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.ItemTransitionProvider":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTransitionProvider", "Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_ItemsView_ItemTransitionProvider;
-                xamlMember.Setter = set_23_ItemsView_ItemTransitionProvider;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.ScrollView":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ScrollView", "Microsoft.UI.Xaml.Controls.ScrollView");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_ItemsView_ScrollView;
+            case "Microsoft.UI.Xaml.Controls.ProgressBar.TemplateSettings":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings");
+                xamlMember.Getter = get_12_ProgressBar_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.Content":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_ScrollView_Content;
-                xamlMember.Setter = set_25_ScrollView_Content;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.SelectedItem":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_ItemsView_SelectedItem;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.SelectedItems":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItems", "System.Collections.Generic.IReadOnlyList`1<Object>");
-                xamlMember.Getter = get_27_ItemsView_SelectedItems;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemsView.VerticalScrollController":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalScrollController", "Microsoft.UI.Xaml.Controls.Primitives.IScrollController");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_ItemsView_VerticalScrollController;
-                xamlMember.Setter = set_28_ItemsView_VerticalScrollController;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemContainer.Child":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemContainer");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Child", "Microsoft.UI.Xaml.UIElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_ItemContainer_Child;
-                xamlMember.Setter = set_29_ItemContainer_Child;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ItemContainer.IsSelected":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemContainer");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_ItemContainer_IsSelected;
-                xamlMember.Setter = set_30_ItemContainer_IsSelected;
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ItemsStretch":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsStretch", "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_LinedFlowLayout_ItemsStretch;
-                xamlMember.Setter = set_31_LinedFlowLayout_ItemsStretch;
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.MinItemSpacing":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinItemSpacing", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_LinedFlowLayout_MinItemSpacing;
-                xamlMember.Setter = set_32_LinedFlowLayout_MinItemSpacing;
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ActualLineHeight":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActualLineHeight", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_LinedFlowLayout_ActualLineHeight;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ItemsJustification":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsJustification", "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_LinedFlowLayout_ItemsJustification;
-                xamlMember.Setter = set_34_LinedFlowLayout_ItemsJustification;
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.LineHeight":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "LineHeight", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_LinedFlowLayout_LineHeight;
-                xamlMember.Setter = set_35_LinedFlowLayout_LineHeight;
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.LineSpacing":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "LineSpacing", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_LinedFlowLayout_LineSpacing;
-                xamlMember.Setter = set_36_LinedFlowLayout_LineSpacing;
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.RequestedRangeLength":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "RequestedRangeLength", "Int32");
-                xamlMember.Getter = get_37_LinedFlowLayout_RequestedRangeLength;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.RequestedRangeStartIndex":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "RequestedRangeStartIndex", "Int32");
-                xamlMember.Getter = get_38_LinedFlowLayout_RequestedRangeStartIndex;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.Layout.IndexBasedLayoutOrientation":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Layout");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IndexBasedLayoutOrientation", "Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation");
-                xamlMember.Getter = get_39_Layout_IndexBasedLayoutOrientation;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Getter = get_13_ScrollView_Content;
+                xamlMember.Setter = set_13_ScrollView_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollBarVisibility":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_ScrollView_ComputedHorizontalScrollBarVisibility;
+                xamlMember.Getter = get_14_ScrollView_ComputedHorizontalScrollBarVisibility;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_ScrollView_ComputedHorizontalScrollMode;
+                xamlMember.Getter = get_15_ScrollView_ComputedHorizontalScrollMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollBarVisibility":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_ScrollView_ComputedVerticalScrollBarVisibility;
+                xamlMember.Getter = get_16_ScrollView_ComputedVerticalScrollBarVisibility;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_ScrollView_ComputedVerticalScrollMode;
+                xamlMember.Getter = get_17_ScrollView_ComputedVerticalScrollMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ContentOrientation":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ContentOrientation", "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_44_ScrollView_ContentOrientation;
-                xamlMember.Setter = set_44_ScrollView_ContentOrientation;
+                xamlMember.Getter = get_18_ScrollView_ContentOrientation;
+                xamlMember.Setter = set_18_ScrollView_ContentOrientation;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.CurrentAnchor":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CurrentAnchor", "Microsoft.UI.Xaml.UIElement");
-                xamlMember.Getter = get_45_ScrollView_CurrentAnchor;
+                xamlMember.Getter = get_19_ScrollView_CurrentAnchor;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ExpressionAnimationSources":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExpressionAnimationSources", "Microsoft.UI.Composition.CompositionPropertySet");
-                xamlMember.Getter = get_46_ScrollView_ExpressionAnimationSources;
+                xamlMember.Getter = get_20_ScrollView_ExpressionAnimationSources;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentHeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExtentHeight", "Double");
-                xamlMember.Getter = get_47_ScrollView_ExtentHeight;
+                xamlMember.Getter = get_21_ScrollView_ExtentHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentWidth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExtentWidth", "Double");
-                xamlMember.Getter = get_48_ScrollView_ExtentWidth;
+                xamlMember.Getter = get_22_ScrollView_ExtentWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalAnchorRatio":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HorizontalAnchorRatio", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_ScrollView_HorizontalAnchorRatio;
-                xamlMember.Setter = set_49_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Getter = get_23_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Setter = set_23_ScrollView_HorizontalAnchorRatio;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalOffset":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
-                xamlMember.Getter = get_50_ScrollView_HorizontalOffset;
+                xamlMember.Getter = get_24_ScrollView_HorizontalOffset;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollBarVisibility":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_ScrollView_HorizontalScrollBarVisibility;
-                xamlMember.Setter = set_51_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Getter = get_25_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Setter = set_25_ScrollView_HorizontalScrollBarVisibility;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollChainMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HorizontalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_ScrollView_HorizontalScrollChainMode;
-                xamlMember.Setter = set_52_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Getter = get_26_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Setter = set_26_ScrollView_HorizontalScrollChainMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_ScrollView_HorizontalScrollMode;
-                xamlMember.Setter = set_53_ScrollView_HorizontalScrollMode;
+                xamlMember.Getter = get_27_ScrollView_HorizontalScrollMode;
+                xamlMember.Setter = set_27_ScrollView_HorizontalScrollMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollRailMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HorizontalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_ScrollView_HorizontalScrollRailMode;
-                xamlMember.Setter = set_54_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Getter = get_28_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Setter = set_28_ScrollView_HorizontalScrollRailMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.IgnoredInputKinds":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IgnoredInputKinds", "Microsoft.UI.Xaml.Controls.ScrollingInputKinds");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_55_ScrollView_IgnoredInputKinds;
-                xamlMember.Setter = set_55_ScrollView_IgnoredInputKinds;
+                xamlMember.Getter = get_29_ScrollView_IgnoredInputKinds;
+                xamlMember.Setter = set_29_ScrollView_IgnoredInputKinds;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.MaxZoomFactor":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MaxZoomFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_56_ScrollView_MaxZoomFactor;
-                xamlMember.Setter = set_56_ScrollView_MaxZoomFactor;
+                xamlMember.Getter = get_30_ScrollView_MaxZoomFactor;
+                xamlMember.Setter = set_30_ScrollView_MaxZoomFactor;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.MinZoomFactor":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinZoomFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_57_ScrollView_MinZoomFactor;
-                xamlMember.Setter = set_57_ScrollView_MinZoomFactor;
+                xamlMember.Getter = get_31_ScrollView_MinZoomFactor;
+                xamlMember.Setter = set_31_ScrollView_MinZoomFactor;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollPresenter":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ScrollPresenter", "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_58_ScrollView_ScrollPresenter;
+                xamlMember.Getter = get_32_ScrollView_ScrollPresenter;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_59_ScrollPresenter_Content;
-                xamlMember.Setter = set_59_ScrollPresenter_Content;
+                xamlMember.Getter = get_33_ScrollPresenter_Content;
+                xamlMember.Setter = set_33_ScrollPresenter_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableHeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ScrollableHeight", "Double");
-                xamlMember.Getter = get_60_ScrollView_ScrollableHeight;
+                xamlMember.Getter = get_34_ScrollView_ScrollableHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableWidth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ScrollableWidth", "Double");
-                xamlMember.Getter = get_61_ScrollView_ScrollableWidth;
+                xamlMember.Getter = get_35_ScrollView_ScrollableWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.State":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "State", "Microsoft.UI.Xaml.Controls.ScrollingInteractionState");
-                xamlMember.Getter = get_62_ScrollView_State;
+                xamlMember.Getter = get_36_ScrollView_State;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalAnchorRatio":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalAnchorRatio", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_ScrollView_VerticalAnchorRatio;
-                xamlMember.Setter = set_63_ScrollView_VerticalAnchorRatio;
+                xamlMember.Getter = get_37_ScrollView_VerticalAnchorRatio;
+                xamlMember.Setter = set_37_ScrollView_VerticalAnchorRatio;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalOffset":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
-                xamlMember.Getter = get_64_ScrollView_VerticalOffset;
+                xamlMember.Getter = get_38_ScrollView_VerticalOffset;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollBarVisibility":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_ScrollView_VerticalScrollBarVisibility;
-                xamlMember.Setter = set_65_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Getter = get_39_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Setter = set_39_ScrollView_VerticalScrollBarVisibility;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollChainMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_ScrollView_VerticalScrollChainMode;
-                xamlMember.Setter = set_66_ScrollView_VerticalScrollChainMode;
+                xamlMember.Getter = get_40_ScrollView_VerticalScrollChainMode;
+                xamlMember.Setter = set_40_ScrollView_VerticalScrollChainMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_ScrollView_VerticalScrollMode;
-                xamlMember.Setter = set_67_ScrollView_VerticalScrollMode;
+                xamlMember.Getter = get_41_ScrollView_VerticalScrollMode;
+                xamlMember.Setter = set_41_ScrollView_VerticalScrollMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollRailMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_ScrollView_VerticalScrollRailMode;
-                xamlMember.Setter = set_68_ScrollView_VerticalScrollRailMode;
+                xamlMember.Getter = get_42_ScrollView_VerticalScrollRailMode;
+                xamlMember.Setter = set_42_ScrollView_VerticalScrollRailMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportHeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ViewportHeight", "Double");
-                xamlMember.Getter = get_69_ScrollView_ViewportHeight;
+                xamlMember.Getter = get_43_ScrollView_ViewportHeight;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportWidth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ViewportWidth", "Double");
-                xamlMember.Getter = get_70_ScrollView_ViewportWidth;
+                xamlMember.Getter = get_44_ScrollView_ViewportWidth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomChainMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ZoomChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_ScrollView_ZoomChainMode;
-                xamlMember.Setter = set_71_ScrollView_ZoomChainMode;
+                xamlMember.Getter = get_45_ScrollView_ZoomChainMode;
+                xamlMember.Setter = set_45_ScrollView_ZoomChainMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomFactor":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ZoomFactor", "Single");
-                xamlMember.Getter = get_72_ScrollView_ZoomFactor;
+                xamlMember.Getter = get_46_ScrollView_ZoomFactor;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ZoomMode", "Microsoft.UI.Xaml.Controls.ScrollingZoomMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_ScrollView_ZoomMode;
-                xamlMember.Setter = set_73_ScrollView_ZoomMode;
+                xamlMember.Getter = get_47_ScrollView_ZoomMode;
+                xamlMember.Setter = set_47_ScrollView_ZoomMode;
                 break;
-            case "Microsoft.UI.Xaml.Controls.ProgressBar.IsIndeterminate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
+            case "Microsoft.UI.Xaml.Controls.ItemsView.SelectionMode":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectionMode", "Microsoft.UI.Xaml.Controls.ItemsViewSelectionMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_ProgressBar_IsIndeterminate;
-                xamlMember.Setter = set_74_ProgressBar_IsIndeterminate;
+                xamlMember.Getter = get_48_ItemsView_SelectionMode;
+                xamlMember.Setter = set_48_ItemsView_SelectionMode;
                 break;
-            case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowPaused":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ShowPaused", "Boolean");
+            case "Microsoft.UI.Xaml.Controls.ItemsView.Layout":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Layout", "Microsoft.UI.Xaml.Controls.Layout");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_75_ProgressBar_ShowPaused;
-                xamlMember.Setter = set_75_ProgressBar_ShowPaused;
+                xamlMember.Getter = get_49_ItemsView_Layout;
+                xamlMember.Setter = set_49_ItemsView_Layout;
                 break;
-            case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowError":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ShowError", "Boolean");
+            case "Microsoft.UI.Xaml.Controls.ItemsView.ItemTemplate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Microsoft.UI.Xaml.IElementFactory");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_ProgressBar_ShowError;
-                xamlMember.Setter = set_76_ProgressBar_ShowError;
+                xamlMember.Getter = get_50_ItemsView_ItemTemplate;
+                xamlMember.Setter = set_50_ItemsView_ItemTemplate;
                 break;
-            case "Microsoft.UI.Xaml.Controls.ProgressBar.TemplateSettings":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings");
-                xamlMember.Getter = get_77_ProgressBar_TemplateSettings;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.CurrentItemIndex":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CurrentItemIndex", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_51_ItemsView_CurrentItemIndex;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.IsItemInvokedEnabled":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsItemInvokedEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_52_ItemsView_IsItemInvokedEnabled;
+                xamlMember.Setter = set_52_ItemsView_IsItemInvokedEnabled;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.ItemTransitionProvider":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTransitionProvider", "Microsoft.UI.Xaml.Controls.ItemCollectionTransitionProvider");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_53_ItemsView_ItemTransitionProvider;
+                xamlMember.Setter = set_53_ItemsView_ItemTransitionProvider;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.ItemsSource":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_54_ItemsView_ItemsSource;
+                xamlMember.Setter = set_54_ItemsView_ItemsSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.ScrollView":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ScrollView", "Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_55_ItemsView_ScrollView;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.SelectedItem":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_56_ItemsView_SelectedItem;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.SelectedItems":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItems", "System.Collections.Generic.IReadOnlyList`1<Object>");
+                xamlMember.Getter = get_57_ItemsView_SelectedItems;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemsView.VerticalScrollController":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemsView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "VerticalScrollController", "Microsoft.UI.Xaml.Controls.Primitives.IScrollController");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_58_ItemsView_VerticalScrollController;
+                xamlMember.Setter = set_58_ItemsView_VerticalScrollController;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.ItemsStretch":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsStretch", "Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsStretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_UniformGridLayout_ItemsStretch;
-                xamlMember.Setter = set_78_UniformGridLayout_ItemsStretch;
+                xamlMember.Getter = get_59_UniformGridLayout_ItemsStretch;
+                xamlMember.Setter = set_59_UniformGridLayout_ItemsStretch;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.MinRowSpacing":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinRowSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_UniformGridLayout_MinRowSpacing;
-                xamlMember.Setter = set_79_UniformGridLayout_MinRowSpacing;
+                xamlMember.Getter = get_60_UniformGridLayout_MinRowSpacing;
+                xamlMember.Setter = set_60_UniformGridLayout_MinRowSpacing;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.MinColumnSpacing":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinColumnSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_UniformGridLayout_MinColumnSpacing;
-                xamlMember.Setter = set_80_UniformGridLayout_MinColumnSpacing;
+                xamlMember.Getter = get_61_UniformGridLayout_MinColumnSpacing;
+                xamlMember.Setter = set_61_UniformGridLayout_MinColumnSpacing;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.MinItemWidth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinItemWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_UniformGridLayout_MinItemWidth;
-                xamlMember.Setter = set_81_UniformGridLayout_MinItemWidth;
+                xamlMember.Getter = get_62_UniformGridLayout_MinItemWidth;
+                xamlMember.Setter = set_62_UniformGridLayout_MinItemWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.ItemsJustification":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsJustification", "Microsoft.UI.Xaml.Controls.UniformGridLayoutItemsJustification");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_82_UniformGridLayout_ItemsJustification;
-                xamlMember.Setter = set_82_UniformGridLayout_ItemsJustification;
+                xamlMember.Getter = get_63_UniformGridLayout_ItemsJustification;
+                xamlMember.Setter = set_63_UniformGridLayout_ItemsJustification;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.MaximumRowsOrColumns":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MaximumRowsOrColumns", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_UniformGridLayout_MaximumRowsOrColumns;
-                xamlMember.Setter = set_83_UniformGridLayout_MaximumRowsOrColumns;
+                xamlMember.Getter = get_64_UniformGridLayout_MaximumRowsOrColumns;
+                xamlMember.Setter = set_64_UniformGridLayout_MaximumRowsOrColumns;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.MinItemHeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinItemHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_UniformGridLayout_MinItemHeight;
-                xamlMember.Setter = set_84_UniformGridLayout_MinItemHeight;
+                xamlMember.Getter = get_65_UniformGridLayout_MinItemHeight;
+                xamlMember.Setter = set_65_UniformGridLayout_MinItemHeight;
                 break;
             case "Microsoft.UI.Xaml.Controls.UniformGridLayout.Orientation":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UniformGridLayout");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Orientation", "Microsoft.UI.Xaml.Controls.Orientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_UniformGridLayout_Orientation;
-                xamlMember.Setter = set_85_UniformGridLayout_Orientation;
+                xamlMember.Getter = get_66_UniformGridLayout_Orientation;
+                xamlMember.Setter = set_66_UniformGridLayout_Orientation;
+                break;
+            case "Microsoft.UI.Xaml.Controls.Layout.IndexBasedLayoutOrientation":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Layout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IndexBasedLayoutOrientation", "Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation");
+                xamlMember.Getter = get_67_Layout_IndexBasedLayoutOrientation;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemContainer.Child":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemContainer");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Child", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_68_ItemContainer_Child;
+                xamlMember.Setter = set_68_ItemContainer_Child;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ItemContainer.IsSelected":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ItemContainer");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_69_ItemContainer_IsSelected;
+                xamlMember.Setter = set_69_ItemContainer_IsSelected;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.Content":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_SettingsExpander_Content;
-                xamlMember.Setter = set_86_SettingsExpander_Content;
+                xamlMember.Getter = get_70_SettingsExpander_Content;
+                xamlMember.Setter = set_70_SettingsExpander_Content;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.IsExpanded":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_SettingsExpander_IsExpanded;
-                xamlMember.Setter = set_87_SettingsExpander_IsExpanded;
+                xamlMember.Getter = get_71_SettingsExpander_IsExpanded;
+                xamlMember.Setter = set_71_SettingsExpander_IsExpanded;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.Header":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_SettingsExpander_Header;
-                xamlMember.Setter = set_88_SettingsExpander_Header;
+                xamlMember.Getter = get_72_SettingsExpander_Header;
+                xamlMember.Setter = set_72_SettingsExpander_Header;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.Items":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_SettingsExpander_Items;
-                xamlMember.Setter = set_89_SettingsExpander_Items;
+                xamlMember.Getter = get_73_SettingsExpander_Items;
+                xamlMember.Setter = set_73_SettingsExpander_Items;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemsSource":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_SettingsExpander_ItemsSource;
-                xamlMember.Setter = set_90_SettingsExpander_ItemsSource;
+                xamlMember.Getter = get_74_SettingsExpander_ItemsSource;
+                xamlMember.Setter = set_74_SettingsExpander_ItemsSource;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemTemplate":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_SettingsExpander_ItemTemplate;
-                xamlMember.Setter = set_91_SettingsExpander_ItemTemplate;
+                xamlMember.Getter = get_75_SettingsExpander_ItemTemplate;
+                xamlMember.Setter = set_75_SettingsExpander_ItemTemplate;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemContainerStyleSelector":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_SettingsExpander_ItemContainerStyleSelector;
-                xamlMember.Setter = set_92_SettingsExpander_ItemContainerStyleSelector;
+                xamlMember.Getter = get_76_SettingsExpander_ItemContainerStyleSelector;
+                xamlMember.Setter = set_76_SettingsExpander_ItemContainerStyleSelector;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.Description":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_SettingsExpander_Description;
-                xamlMember.Setter = set_93_SettingsExpander_Description;
+                xamlMember.Getter = get_77_SettingsExpander_Description;
+                xamlMember.Setter = set_77_SettingsExpander_Description;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.HeaderIcon":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_SettingsExpander_HeaderIcon;
-                xamlMember.Setter = set_94_SettingsExpander_HeaderIcon;
+                xamlMember.Getter = get_78_SettingsExpander_HeaderIcon;
+                xamlMember.Setter = set_78_SettingsExpander_HeaderIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemsHeader":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_SettingsExpander_ItemsHeader;
-                xamlMember.Setter = set_95_SettingsExpander_ItemsHeader;
+                xamlMember.Getter = get_79_SettingsExpander_ItemsHeader;
+                xamlMember.Setter = set_79_SettingsExpander_ItemsHeader;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemsFooter":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsFooter", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_SettingsExpander_ItemsFooter;
-                xamlMember.Setter = set_96_SettingsExpander_ItemsFooter;
+                xamlMember.Getter = get_80_SettingsExpander_ItemsFooter;
+                xamlMember.Setter = set_80_SettingsExpander_ItemsFooter;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.Content":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Object");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.Header":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_97_InfoBar_Content;
-                xamlMember.Setter = set_97_InfoBar_Content;
+                xamlMember.Getter = get_81_SettingsCard_Header;
+                xamlMember.Setter = set_81_SettingsCard_Header;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.IsOpen":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_98_InfoBar_IsOpen;
-                xamlMember.Setter = set_98_InfoBar_IsOpen;
+                xamlMember.Getter = get_82_SettingsCard_Description;
+                xamlMember.Setter = set_82_SettingsCard_Description;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.Severity":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Severity", "Microsoft.UI.Xaml.Controls.InfoBarSeverity");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_99_InfoBar_Severity;
-                xamlMember.Setter = set_99_InfoBar_Severity;
+                xamlMember.Getter = get_83_SettingsCard_HeaderIcon;
+                xamlMember.Setter = set_83_SettingsCard_HeaderIcon;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.ActionButton":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActionButton", "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIcon":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActionIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_100_InfoBar_ActionButton;
-                xamlMember.Setter = set_100_InfoBar_ActionButton;
+                xamlMember.Getter = get_84_SettingsCard_ActionIcon;
+                xamlMember.Setter = set_84_SettingsCard_ActionIcon;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommand":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CloseButtonCommand", "System.Windows.Input.ICommand");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIconToolTip":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActionIconToolTip", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_InfoBar_CloseButtonCommand;
-                xamlMember.Setter = set_101_InfoBar_CloseButtonCommand;
+                xamlMember.Getter = get_85_SettingsCard_ActionIconToolTip;
+                xamlMember.Setter = set_85_SettingsCard_ActionIconToolTip;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommandParameter":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CloseButtonCommandParameter", "Object");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.IsClickEnabled":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsClickEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_102_InfoBar_CloseButtonCommandParameter;
-                xamlMember.Setter = set_102_InfoBar_CloseButtonCommandParameter;
+                xamlMember.Getter = get_86_SettingsCard_IsClickEnabled;
+                xamlMember.Setter = set_86_SettingsCard_IsClickEnabled;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonStyle":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CloseButtonStyle", "Microsoft.UI.Xaml.Style");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.ContentAlignment":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ContentAlignment", "CommunityToolkit.WinUI.Controls.ContentAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_InfoBar_CloseButtonStyle;
-                xamlMember.Setter = set_103_InfoBar_CloseButtonStyle;
+                xamlMember.Getter = get_87_SettingsCard_ContentAlignment;
+                xamlMember.Setter = set_87_SettingsCard_ContentAlignment;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.ContentTemplate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Microsoft.UI.Xaml.DataTemplate");
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.IsActionIconVisible":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsActionIconVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_InfoBar_ContentTemplate;
-                xamlMember.Setter = set_104_InfoBar_ContentTemplate;
+                xamlMember.Getter = get_88_SettingsCard_IsActionIconVisible;
+                xamlMember.Setter = set_88_SettingsCard_IsActionIconVisible;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.IconSource":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
+            case "Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar.Frame":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Frame", "Microsoft.UI.Xaml.Controls.Frame");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_InfoBar_IconSource;
-                xamlMember.Setter = set_105_InfoBar_IconSource;
+                xamlMember.Getter = get_89_UC_BreadcrumbBar_Frame;
+                xamlMember.Setter = set_89_UC_BreadcrumbBar_Frame;
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.IsClosable":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsClosable", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_InfoBar_IsClosable;
-                xamlMember.Setter = set_106_InfoBar_IsClosable;
-                break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.IsIconVisible":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsIconVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_InfoBar_IsIconVisible;
-                xamlMember.Setter = set_107_InfoBar_IsIconVisible;
-                break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.Message":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Message", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_InfoBar_Message;
-                xamlMember.Setter = set_108_InfoBar_Message;
-                break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.TemplateSettings":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_InfoBar_TemplateSettings;
+            case "Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar.Items":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.ObjectModel.ObservableCollection`1<System.Collections.Generic.KeyValuePair`2<System.Type, String>>");
+                xamlMember.Getter = get_90_UC_BreadcrumbBar_Items;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Microsoft.UI.Xaml.Controls.InfoBar.Title":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Title", "String");
+            case "System.Collections.Generic.KeyValuePair`2<System.Type, String>.Key":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Collections.Generic.KeyValuePair`2<System.Type, String>");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Key", "System.Type");
+                xamlMember.Getter = get_91_KeyValuePair_Key;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "System.Collections.Generic.KeyValuePair`2<System.Type, String>.Value":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("System.Collections.Generic.KeyValuePair`2<System.Type, String>");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Value", "String");
+                xamlMember.Getter = get_92_KeyValuePair_Value;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar.CanGoBack":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Fluent_Launcher.Assets.UserControls.UC_BreadcrumbBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CanGoBack", "Boolean");
+                xamlMember.Getter = get_93_UC_BreadcrumbBar_CanGoBack;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ItemsStretch":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsStretch", "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsStretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_InfoBar_Title;
-                xamlMember.Setter = set_110_InfoBar_Title;
+                xamlMember.Getter = get_94_LinedFlowLayout_ItemsStretch;
+                xamlMember.Setter = set_94_LinedFlowLayout_ItemsStretch;
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.MinItemSpacing":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MinItemSpacing", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_95_LinedFlowLayout_MinItemSpacing;
+                xamlMember.Setter = set_95_LinedFlowLayout_MinItemSpacing;
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ActualLineHeight":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActualLineHeight", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_96_LinedFlowLayout_ActualLineHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.ItemsJustification":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsJustification", "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_97_LinedFlowLayout_ItemsJustification;
+                xamlMember.Setter = set_97_LinedFlowLayout_ItemsJustification;
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.LineHeight":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "LineHeight", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_98_LinedFlowLayout_LineHeight;
+                xamlMember.Setter = set_98_LinedFlowLayout_LineHeight;
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.LineSpacing":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "LineSpacing", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_99_LinedFlowLayout_LineSpacing;
+                xamlMember.Setter = set_99_LinedFlowLayout_LineSpacing;
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.RequestedRangeLength":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "RequestedRangeLength", "Int32");
+                xamlMember.Getter = get_100_LinedFlowLayout_RequestedRangeLength;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.LinedFlowLayout.RequestedRangeStartIndex":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.LinedFlowLayout");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "RequestedRangeStartIndex", "Int32");
+                xamlMember.Getter = get_101_LinedFlowLayout_RequestedRangeStartIndex;
+                xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.Expander.IsExpanded":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_Expander_IsExpanded;
-                xamlMember.Setter = set_111_Expander_IsExpanded;
+                xamlMember.Getter = get_102_Expander_IsExpanded;
+                xamlMember.Setter = set_102_Expander_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.Expander.Header":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_Expander_Header;
-                xamlMember.Setter = set_112_Expander_Header;
+                xamlMember.Getter = get_103_Expander_Header;
+                xamlMember.Setter = set_103_Expander_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.Expander.ExpandDirection":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExpandDirection", "Microsoft.UI.Xaml.Controls.ExpandDirection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_Expander_ExpandDirection;
-                xamlMember.Setter = set_113_Expander_ExpandDirection;
+                xamlMember.Getter = get_104_Expander_ExpandDirection;
+                xamlMember.Setter = set_104_Expander_ExpandDirection;
                 break;
             case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplate":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_Expander_HeaderTemplate;
-                xamlMember.Setter = set_114_Expander_HeaderTemplate;
+                xamlMember.Getter = get_105_Expander_HeaderTemplate;
+                xamlMember.Setter = set_105_Expander_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplateSelector":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_Expander_HeaderTemplateSelector;
-                xamlMember.Setter = set_115_Expander_HeaderTemplateSelector;
+                xamlMember.Getter = get_106_Expander_HeaderTemplateSelector;
+                xamlMember.Setter = set_106_Expander_HeaderTemplateSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.Expander.TemplateSettings":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings");
-                xamlMember.Getter = get_116_Expander_TemplateSettings;
+                xamlMember.Getter = get_107_Expander_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.Glyph":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Glyph", "String");
-                xamlMember.Getter = get_117_FontIconExtension_Glyph;
-                xamlMember.Setter = set_117_FontIconExtension_Glyph;
+                xamlMember.Getter = get_108_FontIconExtension_Glyph;
+                xamlMember.Setter = set_108_FontIconExtension_Glyph;
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.FontFamily":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
-                xamlMember.Getter = get_118_FontIconExtension_FontFamily;
-                xamlMember.Setter = set_118_FontIconExtension_FontFamily;
+                xamlMember.Getter = get_109_FontIconExtension_FontFamily;
+                xamlMember.Setter = set_109_FontIconExtension_FontFamily;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontSize":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_119_TextIconExtension_FontSize;
-                xamlMember.Setter = set_119_TextIconExtension_FontSize;
+                xamlMember.Getter = get_110_TextIconExtension_FontSize;
+                xamlMember.Setter = set_110_TextIconExtension_FontSize;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontWeight":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
-                xamlMember.Getter = get_120_TextIconExtension_FontWeight;
-                xamlMember.Setter = set_120_TextIconExtension_FontWeight;
+                xamlMember.Getter = get_111_TextIconExtension_FontWeight;
+                xamlMember.Setter = set_111_TextIconExtension_FontWeight;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontStyle":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
-                xamlMember.Getter = get_121_TextIconExtension_FontStyle;
-                xamlMember.Setter = set_121_TextIconExtension_FontStyle;
+                xamlMember.Getter = get_112_TextIconExtension_FontStyle;
+                xamlMember.Setter = set_112_TextIconExtension_FontStyle;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.Foreground":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Foreground", "Microsoft.UI.Xaml.Media.Brush");
-                xamlMember.Getter = get_122_TextIconExtension_Foreground;
-                xamlMember.Setter = set_122_TextIconExtension_Foreground;
+                xamlMember.Getter = get_113_TextIconExtension_Foreground;
+                xamlMember.Setter = set_113_TextIconExtension_Foreground;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.IsTextScaleFactorEnabled":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsTextScaleFactorEnabled", "Boolean");
-                xamlMember.Getter = get_123_TextIconExtension_IsTextScaleFactorEnabled;
-                xamlMember.Setter = set_123_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Getter = get_114_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Setter = set_114_TextIconExtension_IsTextScaleFactorEnabled;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.MirroredWhenRightToLeft":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MirroredWhenRightToLeft", "Boolean");
-                xamlMember.Getter = get_124_TextIconExtension_MirroredWhenRightToLeft;
-                xamlMember.Setter = set_124_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Getter = get_115_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Setter = set_115_TextIconExtension_MirroredWhenRightToLeft;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.Items":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_125_RadioButtons_Items;
+                xamlMember.Getter = get_116_RadioButtons_Items;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.SelectedIndex":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_RadioButtons_SelectedIndex;
-                xamlMember.Setter = set_126_RadioButtons_SelectedIndex;
+                xamlMember.Getter = get_117_RadioButtons_SelectedIndex;
+                xamlMember.Setter = set_117_RadioButtons_SelectedIndex;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.Header":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_127_RadioButtons_Header;
-                xamlMember.Setter = set_127_RadioButtons_Header;
+                xamlMember.Getter = get_118_RadioButtons_Header;
+                xamlMember.Setter = set_118_RadioButtons_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.HeaderTemplate":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_128_RadioButtons_HeaderTemplate;
-                xamlMember.Setter = set_128_RadioButtons_HeaderTemplate;
+                xamlMember.Getter = get_119_RadioButtons_HeaderTemplate;
+                xamlMember.Setter = set_119_RadioButtons_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.ItemTemplate":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_129_RadioButtons_ItemTemplate;
-                xamlMember.Setter = set_129_RadioButtons_ItemTemplate;
+                xamlMember.Getter = get_120_RadioButtons_ItemTemplate;
+                xamlMember.Setter = set_120_RadioButtons_ItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.ItemsSource":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_130_RadioButtons_ItemsSource;
-                xamlMember.Setter = set_130_RadioButtons_ItemsSource;
+                xamlMember.Getter = get_121_RadioButtons_ItemsSource;
+                xamlMember.Setter = set_121_RadioButtons_ItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.MaxColumns":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MaxColumns", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_131_RadioButtons_MaxColumns;
-                xamlMember.Setter = set_131_RadioButtons_MaxColumns;
+                xamlMember.Getter = get_122_RadioButtons_MaxColumns;
+                xamlMember.Setter = set_122_RadioButtons_MaxColumns;
                 break;
             case "Microsoft.UI.Xaml.Controls.RadioButtons.SelectedItem":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RadioButtons");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_132_RadioButtons_SelectedItem;
-                xamlMember.Setter = set_132_RadioButtons_SelectedItem;
+                xamlMember.Getter = get_123_RadioButtons_SelectedItem;
+                xamlMember.Setter = set_123_RadioButtons_SelectedItem;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Content":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_124_InfoBar_Content;
+                xamlMember.Setter = set_124_InfoBar_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsOpen":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_125_InfoBar_IsOpen;
+                xamlMember.Setter = set_125_InfoBar_IsOpen;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Severity":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Severity", "Microsoft.UI.Xaml.Controls.InfoBarSeverity");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_126_InfoBar_Severity;
+                xamlMember.Setter = set_126_InfoBar_Severity;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.ActionButton":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ActionButton", "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_127_InfoBar_ActionButton;
+                xamlMember.Setter = set_127_InfoBar_ActionButton;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommand":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CloseButtonCommand", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_128_InfoBar_CloseButtonCommand;
+                xamlMember.Setter = set_128_InfoBar_CloseButtonCommand;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommandParameter":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CloseButtonCommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_129_InfoBar_CloseButtonCommandParameter;
+                xamlMember.Setter = set_129_InfoBar_CloseButtonCommandParameter;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonStyle":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CloseButtonStyle", "Microsoft.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_130_InfoBar_CloseButtonStyle;
+                xamlMember.Setter = set_130_InfoBar_CloseButtonStyle;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.ContentTemplate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_131_InfoBar_ContentTemplate;
+                xamlMember.Setter = set_131_InfoBar_ContentTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IconSource":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_132_InfoBar_IconSource;
+                xamlMember.Setter = set_132_InfoBar_IconSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsClosable":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsClosable", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_133_InfoBar_IsClosable;
+                xamlMember.Setter = set_133_InfoBar_IsClosable;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsIconVisible":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsIconVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_134_InfoBar_IsIconVisible;
+                xamlMember.Setter = set_134_InfoBar_IsIconVisible;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Message":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Message", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_135_InfoBar_Message;
+                xamlMember.Setter = set_135_InfoBar_Message;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.TemplateSettings":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_136_InfoBar_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Title":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_137_InfoBar_Title;
+                xamlMember.Setter = set_137_InfoBar_Title;
+                break;
+            case "Microsoft.UI.Xaml.Controls.BreadcrumbBar.ItemsSource":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.BreadcrumbBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_138_BreadcrumbBar_ItemsSource;
+                xamlMember.Setter = set_138_BreadcrumbBar_ItemsSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.BreadcrumbBar.ItemTemplate":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.BreadcrumbBar");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_139_BreadcrumbBar_ItemTemplate;
+                xamlMember.Setter = set_139_BreadcrumbBar_ItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "PaneDisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_133_NavigationView_PaneDisplayMode;
-                xamlMember.Setter = set_133_NavigationView_PaneDisplayMode;
-                break;
-            case "Microsoft.UI.Xaml.Controls.NavigationView.Header":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_134_NavigationView_Header;
-                xamlMember.Setter = set_134_NavigationView_Header;
+                xamlMember.Getter = get_140_NavigationView_PaneDisplayMode;
+                xamlMember.Setter = set_140_NavigationView_PaneDisplayMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItems":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_135_NavigationView_MenuItems;
+                xamlMember.Getter = get_141_NavigationView_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AlwaysShowHeader":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "AlwaysShowHeader", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_136_NavigationView_AlwaysShowHeader;
-                xamlMember.Setter = set_136_NavigationView_AlwaysShowHeader;
+                xamlMember.Getter = get_142_NavigationView_AlwaysShowHeader;
+                xamlMember.Setter = set_142_NavigationView_AlwaysShowHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AutoSuggestBox":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "AutoSuggestBox", "Microsoft.UI.Xaml.Controls.AutoSuggestBox");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_137_NavigationView_AutoSuggestBox;
-                xamlMember.Setter = set_137_NavigationView_AutoSuggestBox;
+                xamlMember.Getter = get_143_NavigationView_AutoSuggestBox;
+                xamlMember.Setter = set_143_NavigationView_AutoSuggestBox;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactModeThresholdWidth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CompactModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_138_NavigationView_CompactModeThresholdWidth;
-                xamlMember.Setter = set_138_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Getter = get_144_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Setter = set_144_NavigationView_CompactModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactPaneLength":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_139_NavigationView_CompactPaneLength;
-                xamlMember.Setter = set_139_NavigationView_CompactPaneLength;
+                xamlMember.Getter = get_145_NavigationView_CompactPaneLength;
+                xamlMember.Setter = set_145_NavigationView_CompactPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlay":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ContentOverlay", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_140_NavigationView_ContentOverlay;
-                xamlMember.Setter = set_140_NavigationView_ContentOverlay;
+                xamlMember.Getter = get_146_NavigationView_ContentOverlay;
+                xamlMember.Setter = set_146_NavigationView_ContentOverlay;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.DisplayMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "DisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_141_NavigationView_DisplayMode;
+                xamlMember.Getter = get_147_NavigationView_DisplayMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ExpandedModeThresholdWidth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ExpandedModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_142_NavigationView_ExpandedModeThresholdWidth;
-                xamlMember.Setter = set_142_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Getter = get_148_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Setter = set_148_NavigationView_ExpandedModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItems":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_143_NavigationView_FooterMenuItems;
+                xamlMember.Getter = get_149_NavigationView_FooterMenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItemsSource":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "FooterMenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_144_NavigationView_FooterMenuItemsSource;
-                xamlMember.Setter = set_144_NavigationView_FooterMenuItemsSource;
+                xamlMember.Getter = get_150_NavigationView_FooterMenuItemsSource;
+                xamlMember.Setter = set_150_NavigationView_FooterMenuItemsSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NavigationView.Header":
+                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_151_NavigationView_Header;
+                xamlMember.Setter = set_151_NavigationView_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.HeaderTemplate":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_145_NavigationView_HeaderTemplate;
-                xamlMember.Setter = set_145_NavigationView_HeaderTemplate;
+                xamlMember.Getter = get_152_NavigationView_HeaderTemplate;
+                xamlMember.Setter = set_152_NavigationView_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackButtonVisible":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsBackButtonVisible", "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_146_NavigationView_IsBackButtonVisible;
-                xamlMember.Setter = set_146_NavigationView_IsBackButtonVisible;
+                xamlMember.Getter = get_153_NavigationView_IsBackButtonVisible;
+                xamlMember.Setter = set_153_NavigationView_IsBackButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackEnabled":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsBackEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_147_NavigationView_IsBackEnabled;
-                xamlMember.Setter = set_147_NavigationView_IsBackEnabled;
+                xamlMember.Getter = get_154_NavigationView_IsBackEnabled;
+                xamlMember.Setter = set_154_NavigationView_IsBackEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneOpen":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_148_NavigationView_IsPaneOpen;
-                xamlMember.Setter = set_148_NavigationView_IsPaneOpen;
+                xamlMember.Getter = get_155_NavigationView_IsPaneOpen;
+                xamlMember.Setter = set_155_NavigationView_IsPaneOpen;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneToggleButtonVisible":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsPaneToggleButtonVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_149_NavigationView_IsPaneToggleButtonVisible;
-                xamlMember.Setter = set_149_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Getter = get_156_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Setter = set_156_NavigationView_IsPaneToggleButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneVisible":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsPaneVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_150_NavigationView_IsPaneVisible;
-                xamlMember.Setter = set_150_NavigationView_IsPaneVisible;
+                xamlMember.Getter = get_157_NavigationView_IsPaneVisible;
+                xamlMember.Setter = set_157_NavigationView_IsPaneVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsSettingsVisible":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsSettingsVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_151_NavigationView_IsSettingsVisible;
-                xamlMember.Setter = set_151_NavigationView_IsSettingsVisible;
+                xamlMember.Getter = get_158_NavigationView_IsSettingsVisible;
+                xamlMember.Setter = set_158_NavigationView_IsSettingsVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsTitleBarAutoPaddingEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_NavigationView_IsTitleBarAutoPaddingEnabled;
-                xamlMember.Setter = set_152_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Getter = get_159_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Setter = set_159_NavigationView_IsTitleBarAutoPaddingEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyle":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_153_NavigationView_MenuItemContainerStyle;
-                xamlMember.Setter = set_153_NavigationView_MenuItemContainerStyle;
+                xamlMember.Getter = get_160_NavigationView_MenuItemContainerStyle;
+                xamlMember.Setter = set_160_NavigationView_MenuItemContainerStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyleSelector":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_154_NavigationView_MenuItemContainerStyleSelector;
-                xamlMember.Setter = set_154_NavigationView_MenuItemContainerStyleSelector;
+                xamlMember.Getter = get_161_NavigationView_MenuItemContainerStyleSelector;
+                xamlMember.Setter = set_161_NavigationView_MenuItemContainerStyleSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplate":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItemTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_155_NavigationView_MenuItemTemplate;
-                xamlMember.Setter = set_155_NavigationView_MenuItemTemplate;
+                xamlMember.Getter = get_162_NavigationView_MenuItemTemplate;
+                xamlMember.Setter = set_162_NavigationView_MenuItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplateSelector":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItemTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_NavigationView_MenuItemTemplateSelector;
-                xamlMember.Setter = set_156_NavigationView_MenuItemTemplateSelector;
+                xamlMember.Getter = get_163_NavigationView_MenuItemTemplateSelector;
+                xamlMember.Setter = set_163_NavigationView_MenuItemTemplateSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemsSource":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_157_NavigationView_MenuItemsSource;
-                xamlMember.Setter = set_157_NavigationView_MenuItemsSource;
+                xamlMember.Getter = get_164_NavigationView_MenuItemsSource;
+                xamlMember.Setter = set_164_NavigationView_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OpenPaneLength":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_158_NavigationView_OpenPaneLength;
-                xamlMember.Setter = set_158_NavigationView_OpenPaneLength;
+                xamlMember.Getter = get_165_NavigationView_OpenPaneLength;
+                xamlMember.Setter = set_165_NavigationView_OpenPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelMode":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "OverflowLabelMode", "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_159_NavigationView_OverflowLabelMode;
-                xamlMember.Setter = set_159_NavigationView_OverflowLabelMode;
+                xamlMember.Getter = get_166_NavigationView_OverflowLabelMode;
+                xamlMember.Setter = set_166_NavigationView_OverflowLabelMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneCustomContent":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "PaneCustomContent", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_160_NavigationView_PaneCustomContent;
-                xamlMember.Setter = set_160_NavigationView_PaneCustomContent;
+                xamlMember.Getter = get_167_NavigationView_PaneCustomContent;
+                xamlMember.Setter = set_167_NavigationView_PaneCustomContent;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneFooter":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "PaneFooter", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_161_NavigationView_PaneFooter;
-                xamlMember.Setter = set_161_NavigationView_PaneFooter;
+                xamlMember.Getter = get_168_NavigationView_PaneFooter;
+                xamlMember.Setter = set_168_NavigationView_PaneFooter;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneHeader":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "PaneHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_162_NavigationView_PaneHeader;
-                xamlMember.Setter = set_162_NavigationView_PaneHeader;
+                xamlMember.Getter = get_169_NavigationView_PaneHeader;
+                xamlMember.Setter = set_169_NavigationView_PaneHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneTitle":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "PaneTitle", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_163_NavigationView_PaneTitle;
-                xamlMember.Setter = set_163_NavigationView_PaneTitle;
+                xamlMember.Getter = get_170_NavigationView_PaneTitle;
+                xamlMember.Setter = set_170_NavigationView_PaneTitle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneToggleButtonStyle":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "PaneToggleButtonStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_164_NavigationView_PaneToggleButtonStyle;
-                xamlMember.Setter = set_164_NavigationView_PaneToggleButtonStyle;
+                xamlMember.Getter = get_171_NavigationView_PaneToggleButtonStyle;
+                xamlMember.Setter = set_171_NavigationView_PaneToggleButtonStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectedItem":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_165_NavigationView_SelectedItem;
-                xamlMember.Setter = set_165_NavigationView_SelectedItem;
+                xamlMember.Getter = get_172_NavigationView_SelectedItem;
+                xamlMember.Setter = set_172_NavigationView_SelectedItem;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectionFollowsFocus":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectionFollowsFocus", "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_166_NavigationView_SelectionFollowsFocus;
-                xamlMember.Setter = set_166_NavigationView_SelectionFollowsFocus;
+                xamlMember.Getter = get_173_NavigationView_SelectionFollowsFocus;
+                xamlMember.Setter = set_173_NavigationView_SelectionFollowsFocus;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SettingsItem":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SettingsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_167_NavigationView_SettingsItem;
+                xamlMember.Getter = get_174_NavigationView_SettingsItem;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabled":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ShoulderNavigationEnabled", "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_168_NavigationView_ShoulderNavigationEnabled;
-                xamlMember.Setter = set_168_NavigationView_ShoulderNavigationEnabled;
+                xamlMember.Getter = get_175_NavigationView_ShoulderNavigationEnabled;
+                xamlMember.Setter = set_175_NavigationView_ShoulderNavigationEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.TemplateSettings":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_169_NavigationView_TemplateSettings;
+                xamlMember.Getter = get_176_NavigationView_TemplateSettings;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.UI.Xaml.Controls.BreadcrumbBar.ItemsSource":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.BreadcrumbBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_170_BreadcrumbBar_ItemsSource;
-                xamlMember.Setter = set_170_BreadcrumbBar_ItemsSource;
-                break;
-            case "Microsoft.UI.Xaml.Controls.BreadcrumbBar.ItemTemplate":
-                userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.BreadcrumbBar");
-                xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_171_BreadcrumbBar_ItemTemplate;
-                xamlMember.Setter = set_171_BreadcrumbBar_ItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.Icon":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Icon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_172_NavigationViewItem_Icon;
-                xamlMember.Setter = set_172_NavigationViewItem_Icon;
+                xamlMember.Getter = get_177_NavigationViewItem_Icon;
+                xamlMember.Setter = set_177_NavigationViewItem_Icon;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvoked":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "SelectsOnInvoked", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_173_NavigationViewItem_SelectsOnInvoked;
-                xamlMember.Setter = set_173_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Getter = get_178_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Setter = set_178_NavigationViewItem_SelectsOnInvoked;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItems":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_174_NavigationViewItem_MenuItems;
+                xamlMember.Getter = get_179_NavigationViewItem_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.CompactPaneLength":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_175_NavigationViewItem_CompactPaneLength;
+                xamlMember.Getter = get_180_NavigationViewItem_CompactPaneLength;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.HasUnrealizedChildren":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_176_NavigationViewItem_HasUnrealizedChildren;
-                xamlMember.Setter = set_176_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Getter = get_181_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Setter = set_181_NavigationViewItem_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.InfoBadge":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "InfoBadge", "Microsoft.UI.Xaml.Controls.InfoBadge");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_177_NavigationViewItem_InfoBadge;
-                xamlMember.Setter = set_177_NavigationViewItem_InfoBadge;
+                xamlMember.Getter = get_182_NavigationViewItem_InfoBadge;
+                xamlMember.Setter = set_182_NavigationViewItem_InfoBadge;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsChildSelected":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsChildSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_178_NavigationViewItem_IsChildSelected;
-                xamlMember.Setter = set_178_NavigationViewItem_IsChildSelected;
+                xamlMember.Getter = get_183_NavigationViewItem_IsChildSelected;
+                xamlMember.Setter = set_183_NavigationViewItem_IsChildSelected;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsExpanded":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_179_NavigationViewItem_IsExpanded;
-                xamlMember.Setter = set_179_NavigationViewItem_IsExpanded;
+                xamlMember.Getter = get_184_NavigationViewItem_IsExpanded;
+                xamlMember.Setter = set_184_NavigationViewItem_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItemsSource":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_180_NavigationViewItem_MenuItemsSource;
-                xamlMember.Setter = set_180_NavigationViewItem_MenuItemsSource;
+                xamlMember.Getter = get_185_NavigationViewItem_MenuItemsSource;
+                xamlMember.Setter = set_185_NavigationViewItem_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItemBase.IsSelected":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_181_NavigationViewItemBase_IsSelected;
-                xamlMember.Setter = set_181_NavigationViewItemBase_IsSelected;
+                xamlMember.Getter = get_186_NavigationViewItemBase_IsSelected;
+                xamlMember.Setter = set_186_NavigationViewItemBase_IsSelected;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_182_TreeViewNode_Children;
+                xamlMember.Getter = get_187_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_183_TreeViewNode_Content;
-                xamlMember.Setter = set_183_TreeViewNode_Content;
+                xamlMember.Getter = get_188_TreeViewNode_Content;
+                xamlMember.Setter = set_188_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_TreeViewNode_Depth;
+                xamlMember.Getter = get_189_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_185_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_190_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_186_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_186_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_191_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_191_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_187_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_187_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_192_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_192_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Fluent_Launcher.Fluent_Launcher_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_188_TreeViewNode_Parent;
+                xamlMember.Getter = get_193_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

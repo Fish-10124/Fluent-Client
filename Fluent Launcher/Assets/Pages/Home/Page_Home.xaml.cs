@@ -1,5 +1,7 @@
 using Fluent_Launcher.Assets.Class;
 using Fluent_Launcher.Assets.Pages.Home;
+using Fluent_Launcher.Assets.Pages.Home.InstanceOption;
+using Fluent_Launcher.Assets.Pages.Home.SelectInstance;
 using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -30,7 +32,7 @@ using Windows.Foundation.Collections;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Fluent_Launcher.Assets.Pages
+namespace Fluent_Launcher.Assets.Pages.Home
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -150,17 +152,13 @@ namespace Fluent_Launcher.Assets.Pages
 
         private void Button_SelectInstance_Click(object sender, RoutedEventArgs e)
         {
-            GlobalVar.BreadcrumbItems.Clear();
-            GlobalVar.BreadcrumbItems.Add(new("SelectInstance", "Select Instance"));
-            Frame.Navigate(typeof(Page_SelectInstance));
+            Frame.Navigate(typeof(Page_SelectInstanceBase));
         }
 
         private void Button_InstanceOption_Click(object sender, RoutedEventArgs e)
         {
-            GlobalVar.BreadcrumbItems.Clear();
-            GlobalVar.BreadcrumbItems.Add(new("InstanceOptions", "Instance Options"));
             var instanceTagInfos = Utils.InstanceEntryToTagInfos(Minecraft ?? throw new NullReferenceException("Minecraft was null!"));
-            Frame.Navigate(typeof(Page_InstanceOption), instanceTagInfos);
+            Frame.Navigate(typeof(Page_InstanceOptionBase), instanceTagInfos);
         }
 
         private void ComboBox_Name_SelectionChanged(object sender, SelectionChangedEventArgs e)

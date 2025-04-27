@@ -1,29 +1,16 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text.Json;
-using System.Threading;
 using Fluent_Launcher.Assets.Class;
-using Fluent_Launcher.Assets.Pages;
-using Fluent_Launcher.Assets.Pages.Download;
-using Flurl.Util;
-using Microsoft.UI;
-using Microsoft.UI.Windowing;
+using Fluent_Launcher.Assets.Pages.Home;
+using Fluent_Launcher.Assets.Pages.Download.Instances;
+using Fluent_Launcher.Assets.Pages.Download.Mods;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using MinecraftLaunch.Components.Parser;
-using MinecraftLaunch.Utilities;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Storage;
-using Windows.UI.ViewManagement;
-using WinRT;
-using Type = System.Type;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -43,8 +30,8 @@ namespace Fluent_Launcher
         private static readonly Dictionary<string, KeyValuePair<string, System.Type>> NavigationTagPagePairs = new()
         {
             {"Home", new("Home", typeof(Page_Home))},
-            {"Instances", new("Instances", typeof(Page_InstancesList))},
-            {"Mod", new("Mod", typeof(Page_DownloadMod))}
+            {"Instances", new("Instances", typeof(Page_InstancesBase))},
+            {"Mod", new("Mod", typeof(Page_ModsBase))}
         };
 
         public MainWindow()
@@ -91,14 +78,12 @@ namespace Fluent_Launcher
             
         }
 
-        public void NavigateFrame(Type pageType, KeyValuePair<string, string> breadcrumbBarHeader)
+        public void NavigateFrame(System.Type pageType, KeyValuePair<string, string> breadcrumbBarHeader)
         {
             if (pageType == null)
             {
                 return;
             }
-            GlobalVar.BreadcrumbItems.Clear();
-            GlobalVar.BreadcrumbItems.Add(breadcrumbBarHeader);
             Frame_Content.Navigate(pageType);
         }
 
@@ -134,14 +119,6 @@ namespace Fluent_Launcher
         private void Frame_Content_Navigated(object sender, Microsoft.UI.Xaml.Navigation.NavigationEventArgs e)
         {
             GC.Collect();
-        }
-
-        private void BreadcrumbBar_Header_ItemClicked(BreadcrumbBar sender, BreadcrumbBarItemClickedEventArgs args)
-        {
-            if (GlobalVar.BreadcrumbItems[args.Index].Key == "Instances")
-            {
-                NavigateFrame(typeof(Page_InstancesList), new("Instances", "Instances"));
-            }
         }
 
         private void NavigationView_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
