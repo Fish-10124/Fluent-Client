@@ -108,6 +108,43 @@
                     
                 </DataTemplate>
             </ListView.ItemTemplate>
+
+            <ListView.Footer>
+                <Grid x:Name="Grid_PageFooter" Padding="0, 10, 0, 20" Visibility="Collapsed">
+                    <Border Padding="10, 10, 10, 10" HorizontalAlignment="Center" Style="{StaticResource BaseBorderImageStyle}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                            </Grid.ColumnDefinitions>
+
+                            <HyperlinkButton x:Name="HyperlinkButton_First" Grid.Column="0" IsEnabled="{x:Bind CurrentPage, Mode=OneWay, Converter={StaticResource NumberToBoolConverter}}" Click="HyperlinkButton_PageChange_Click">
+                                <Grid>
+                                    <FontIcon Margin="-7, 0, 0, 0" Glyph="&#xE76B;"/>
+                                    <FontIcon Margin="7, 0, 0, 0" Glyph="&#xE76B;"/>
+                                </Grid>
+                            </HyperlinkButton>
+
+                            <HyperlinkButton x:Name="HyperlinkButton_Previous" Grid.Column="1" IsEnabled="{x:Bind CurrentPage, Mode=OneWay, Converter={StaticResource NumberToBoolConverter}}" Click="HyperlinkButton_PageChange_Click">
+                                <FontIcon Glyph="&#xE76B;"/>
+                            </HyperlinkButton>
+
+                            <Grid Grid.Column="2" Padding="0, 0, 7, 0">
+                                <Button HorizontalAlignment="Stretch" Background="Transparent">
+                                    <TextBlock Text="{x:Bind CurrentPage, Mode=OneWay}"/>
+                                </Button>
+                            </Grid>
+
+                            <HyperlinkButton x:Name="HyperlinkButton_Next" Grid.Column="3" Click="HyperlinkButton_PageChange_Click">
+                                <FontIcon Glyph="&#xE76C;"/>
+                            </HyperlinkButton>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </ListView.Footer>
         </ListView>
 
         <ProgressBar x:Name="ProgressBar"  Style="{StaticResource BottomProgressBarStyle}"/>

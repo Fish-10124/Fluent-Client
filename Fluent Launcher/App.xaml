@@ -84,6 +84,7 @@
             <class:TextBoolConverter x:Key="TextBoolConverter"/>
             <class:LoginTypeToIndexConverter x:Key="LoginTypeToIndexConverter"/>
             <class:ListCountToBoolConverter x:Key="ListCountToBoolConverter"/>
+            <class:NumberToBoolConverter x:Key="NumberToBoolConverter"/>
 
         </ResourceDictionary>
         

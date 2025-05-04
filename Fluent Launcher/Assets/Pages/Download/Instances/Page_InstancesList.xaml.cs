@@ -37,15 +37,14 @@ namespace Fluent_Launcher.Assets.Pages.Download.Instances
 
             HttpUtil.Initialize();
 
-            this.Loaded += async (s, args) =>
-            {
-                await GetInstancesAsync();
-            };
+            _ = GetInstancesAsync();
 
         }
 
         private async Task GetInstancesAsync()
         {
+            ProgressBar.Visibility = Visibility.Visible;
+
             Instances = await VanillaInstaller.EnumerableMinecraftAsync().ToListAsync();
 
             foreach (var (item, i) in Instances.Select((item, i) => (item, i)))

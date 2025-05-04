@@ -24,23 +24,9 @@
                 <SolidColorBrush x:Key="NavigationViewContentGridBorderBrush" Color="Transparent"/>
             </NavigationView.Resources>
 
-            <NavigationView.Header>
-                <Grid MaxWidth="1000" Margin="-25, 0, 0, 0">
-                    <BreadcrumbBar x:ConnectionId='3' x:Name="BreadcrumbBar_Header"                                                                                                      >
-                        <BreadcrumbBar.ItemTemplate>
-                            <DataTemplate>
-                                <Grid Padding="10, 0, 10, 0">
-                                    <TextBlock Text="{Binding Value}" FontSize="30" FontWeight="SemiBold"/>
-                                </Grid>
-                            </DataTemplate>
-                        </BreadcrumbBar.ItemTemplate>
-                    </BreadcrumbBar>
-                </Grid>
-            </NavigationView.Header>
-            
             <NavigationView.MenuItems>
 
-                <NavigationViewItem x:ConnectionId='5' x:Name="NavigationViewItem_Home" Content="Home" Icon="Home" Tag="Home"/>
+                <NavigationViewItem x:ConnectionId='3' x:Name="NavigationViewItem_Home" Content="Home" Icon="Home" Tag="Home"/>
 
                 <NavigationViewItem Content="Download" Icon="Download" Tag="Download" SelectsOnInvoked="False">
                     <NavigationViewItem.MenuItems>
@@ -90,7 +76,7 @@
 
             </NavigationView.MenuItems>
 
-            <Frame x:ConnectionId='6' x:Name="Frame_Content"                                    />
+            <Frame x:ConnectionId='4' x:Name="Frame_Content"                                    />
 
         </NavigationView>
         

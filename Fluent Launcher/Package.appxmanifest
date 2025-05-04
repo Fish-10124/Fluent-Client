@@ -10,7 +10,7 @@
   <Identity
     Name="71f9edb3-5404-4e76-80b3-0aaa580c7a15"
     Publisher="CN=Fish"
-    Version="1.4.0.0" />
+    Version="1.5.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="71f9edb3-5404-4e76-80b3-0aaa580c7a15" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

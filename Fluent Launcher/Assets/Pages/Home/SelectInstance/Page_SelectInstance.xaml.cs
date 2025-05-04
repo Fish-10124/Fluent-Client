@@ -28,7 +28,6 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
-using Path = System.IO.Path;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -52,7 +51,7 @@ namespace Fluent_Launcher.Assets.Pages.Home.SelectInstance
             // 初始化 RootPaths
             foreach (var path in GlobalVar.Options.RootPaths)
             {
-                RootPaths.Add(new(string.IsNullOrEmpty(path.FolderName) ? Path.GetFileName(path.Path) : path.FolderName, path.Path));
+                RootPaths.Add(new(string.IsNullOrEmpty(path.FolderName) ? System.IO.Path.GetFileName(path.Path) : path.FolderName, path.Path));
             }
 
             // 解析 Minecraft 实例

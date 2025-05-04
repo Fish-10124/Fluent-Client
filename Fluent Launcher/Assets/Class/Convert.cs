@@ -132,4 +132,17 @@ namespace Fluent_Launcher.Assets.Class
             throw new NotImplementedException();
         }
     }
+
+    public partial class NumberToBoolConverter : IValueConverter
+    {
+        public object Convert(object value, System.Type targetType, object parameter, string language)
+        {
+            return (int)value! > 1;
+        }
+
+        public object ConvertBack(object value, System.Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
