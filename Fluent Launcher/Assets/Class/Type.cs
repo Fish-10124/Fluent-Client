@@ -97,18 +97,7 @@ namespace Fluent_Launcher.Assets.Class
             }
         }
 
-        public object? Parameter
-        {
-            get => parameter;
-            set
-            {
-                if (parameter != value)
-                {
-                    parameter = value;
-                    OnPropertyChanged(nameof(Parameter));
-                }
-            }
-        }
+        public object? Parameter { get; set; } = parameter;
     }
 
     public class Options

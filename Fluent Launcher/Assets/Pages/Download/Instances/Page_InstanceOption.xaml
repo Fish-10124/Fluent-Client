@@ -81,7 +81,7 @@
 
                         <ItemsView.ItemTemplate>
                             <DataTemplate>
-                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding parameter}">
+                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding Parameter}">
                                     <Border Style="{StaticResource BaseBorderImageStyle}" Background="{StaticResource DefaultElementBackgroundColor}" BorderThickness="1" Padding="{StaticResource SettingsCardPadding}">
                                         <Grid>
                                             <Grid.RowDefinitions>
@@ -112,8 +112,8 @@
                                             </Grid>
 
                                             <StackPanel Grid.Row="1" VerticalAlignment="Top">
-                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding parameter, Converter={StaticResource VisibilityConverter}}"/>
-                                                <TextBlock Text="{Binding Description}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="{Binding parameter, Converter={StaticResource TextWrappingConverter}}"/>
+                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding Parameter, Converter={StaticResource VisibilityConverter}}"/>
+                                                <TextBlock Text="{Binding Description}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="{Binding Parameter, Converter={StaticResource TextWrappingConverter}}"/>
                                             </StackPanel>
                                         </Grid>
                                     </Border>
@@ -133,7 +133,7 @@
 
                         <ItemsView.ItemTemplate>
                             <DataTemplate>
-                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding parameter}">
+                                <ItemContainer x:Name="ItemContainer_Modloader" MinHeight="{StaticResource BorderModloaderMinHeight}" IsEnabled="{Binding Parameter}">
                                     <Border Style="{StaticResource BaseBorderImageStyle}" Background="{StaticResource DefaultElementBackgroundColor}" BorderThickness="1" Padding="{StaticResource SettingsCardPadding}">
                                         <Grid>
                                             <Grid.RowDefinitions>
@@ -164,8 +164,8 @@
                                             </Grid>
 
                                             <StackPanel Grid.Row="1" VerticalAlignment="Top">
-                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding parameter, Converter={StaticResource VisibilityConverter}}"/>
-                                                <TextBlock Text="{Binding Description}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="{Binding parameter, Converter={StaticResource TextWrappingConverter}}"/>
+                                                <TextBlock Text="Not support this loader" Foreground="Red" Visibility="{Binding Parameter, Converter={StaticResource VisibilityConverter}}"/>
+                                                <TextBlock Text="{Binding Description}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="{Binding Parameter, Converter={StaticResource TextWrappingConverter}}"/>
                                             </StackPanel>
                                         </Grid>
                                     </Border>
