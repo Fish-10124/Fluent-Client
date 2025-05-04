@@ -28,6 +28,36 @@
                             </Grid.RowDefinitions>
                             <TextBlock Grid.Row="0" Text="{Binding FolderName}" Style="{StaticResource BodyTextBlockStyle}"/>
                             <TextBlock Grid.Row="1" Text="{Binding FolderPath}" Style="{StaticResource CaptionTextBlockStyle}"/>
+
+                            <Grid.ContextFlyout>
+                                <MenuFlyout>
+
+                                    <MenuFlyoutItem x:Name="MenuFlyoutItem_Rename" Text="Rename" Click="MenuFlyoutItem_Click">
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE8AC;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                    <MenuFlyoutItem x:Name="MenuFlyoutItem_Open" Text="Open" Click="MenuFlyoutItem_Click">
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xED25;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                    <MenuFlyoutItem x:Name="MenuFlyoutItem_Refresh" Text="Refresh" Click="MenuFlyoutItem_Click">
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE72C;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                    <MenuFlyoutItem x:Name="MenuFlyoutItem_Delete" Text="Delete" Click="MenuFlyoutItem_Click" Loaded="MenuFlyoutItem_Delete_Loaded">
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE74D;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                </MenuFlyout>
+                            </Grid.ContextFlyout>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -46,7 +76,7 @@
                 </ListView.Footer>
             </ListView>
 
-            <ListView Grid.Column="1" ItemsSource="{x:Bind class:GlobalVar.InstancesDetails}" SelectionMode="None" Padding="{StaticResource PagePadding}">
+            <ListView Grid.Column="1" ItemsSource="{x:Bind InstancesDetails}" SelectionMode="None" Padding="{StaticResource PagePadding}">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="class:InstancesDeatils">
                         <Grid Padding="0, 0, 0, 5">

@@ -1,4 +1,6 @@
 App.xbf
+Assets\Dialogs\Page_FolderRenameDialog.xbf
+Assets\Dialogs\Page_PlayerOptionsDialog.xbf
 Assets\Pages\Download\Instances\Page_InstanceOption.xbf
 Assets\Pages\Download\Instances\Page_InstancesBase.xbf
 Assets\Pages\Download\Instances\Page_InstancesList.xbf
@@ -8,7 +10,6 @@ Assets\Pages\Download\Mods\Page_ModsOptions.xbf
 Assets\Pages\Home\InstanceOption\Page_InstanceOption.xbf
 Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xbf
 Assets\Pages\Home\Page_Home.xbf
-Assets\Pages\Home\Page_PlayerOptionsDialog.xbf
 Assets\Pages\Home\SelectInstance\Page_SelectInstance.xbf
 Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xbf
 Assets\UserControls\UC_BreadcrumbBar.xbf

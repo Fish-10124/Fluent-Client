@@ -48,7 +48,7 @@
 
             <Thickness x:Key="SettingsCardPadding">16, 0, 16, 0</Thickness>
             <Thickness x:Key="StackLayoutMargin">0, 0, 0, 10</Thickness>
-            <Thickness x:Key="PageGridMargin">36, 40, 36, 0</Thickness>
+            <Thickness x:Key="PageGridMargin">36, 40, 0, 0</Thickness>
             <Thickness x:Key="PagePadding">0, 0, 0, 20</Thickness>
             <x:Double x:Key="PageMaxWidth">1000</x:Double>
             <x:Double x:Key="BorderModloaderMinHeight">100</x:Double>
@@ -62,6 +62,10 @@
 
             <Style TargetType="TextBlock" x:Key="CaptionTextBlockStyle" BasedOn="{StaticResource CaptionTextBlockStyle}">
                 <Setter Property="Foreground" Value="Gray"/>
+                <Setter Property="TextWrapping" Value="NoWrap"/>
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="BodyTextBlockStyle" BasedOn="{StaticResource BodyTextBlockStyle}">
                 <Setter Property="TextWrapping" Value="NoWrap"/>
             </Style>
 
@@ -79,6 +83,7 @@
             <class:MBToGBConverter x:Key="MBToGBConverter"/>
             <class:TextBoolConverter x:Key="TextBoolConverter"/>
             <class:LoginTypeToIndexConverter x:Key="LoginTypeToIndexConverter"/>
+            <class:ListCountToBoolConverter x:Key="ListCountToBoolConverter"/>
 
         </ResourceDictionary>
         

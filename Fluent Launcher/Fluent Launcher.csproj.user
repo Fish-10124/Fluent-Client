@@ -10,6 +10,9 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Assets\Dialogs\Page_FolderRenameDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Assets\Pages\Home\SelectInstance\Page_SelectInstanceBase.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -26,9 +29,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Assets\Pages\Download\Instances\Page_InstancesBase.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Assets\Pages\Home\Page_PlayerOptionsDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <None Update="MainWindow.xaml">

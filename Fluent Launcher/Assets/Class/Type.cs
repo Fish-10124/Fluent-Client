@@ -4,6 +4,8 @@ using MinecraftLaunch.Base.Models.Game;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,19 +16,99 @@ namespace Fluent_Launcher.Assets.Class
     {
     }
 
-    public class SettingsCardTagDescriptionInfos(string? header, IList<string>? description = null, BitmapImage? headerIcon = null, string? tag = null, object? parameter = null)
-        : SettingsCardInfos(header, null, headerIcon, tag, parameter)
+    public abstract class ObservableObject : INotifyPropertyChanged
     {
-        public new IList<string>? Description { get; set; } = description;
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 
-    public class SettingsCardInfos(string? header, string? description = null, BitmapImage? headerIcon = null, string? tag = null, object? parameter = null)
+
+    public partial class SettingsCardTagDescriptionInfos(string? header, IList<string>? description = null, BitmapImage? headerIcon = null, string? tag = null, object? parameter = null) : SettingsCardInfos(header, null, headerIcon, tag, parameter)
     {
-        public string? Header { get; set; } = header;
-        public string? Description { get; set; } = description;
-        public BitmapImage? HeaderIcon { get; set; } = headerIcon;
-        public string? Tag { get; set; } = tag;
-        public object? parameter { get; set; } = parameter; // 自定义参数
+        public new IList<string>? Description
+        {
+            get => description;
+            set
+            {
+                if (description != value)
+                {
+                    description = value;
+                    OnPropertyChanged(nameof(Description));
+                }
+            }
+        }
+    }
+
+    public partial class SettingsCardInfos(string? header, string? description = null, BitmapImage? headerIcon = null, string? tag = null, object? parameter = null) : ObservableObject
+    {
+        public string? Header
+        {
+            get => header;
+            set
+            {
+                if (header != value)
+                {
+                    header = value;
+                    OnPropertyChanged(nameof(Header));
+                }
+            }
+        }
+
+        public string? Description
+        {
+            get => description;
+            set
+            {
+                if (description != value)
+                {
+                    description = value;
+                    OnPropertyChanged(nameof(Description));
+                }
+            }
+        }
+
+        public BitmapImage? HeaderIcon
+        {
+            get => headerIcon;
+            set
+            {
+                if (headerIcon != value)
+                {
+                    headerIcon = value;
+                    OnPropertyChanged(nameof(HeaderIcon));
+                }
+            }
+        }
+
+        public string? Tag
+        {
+            get => tag;
+            set
+            {
+                if (tag != value)
+                {
+                    tag = value;
+                    OnPropertyChanged(nameof(Tag));
+                }
+            }
+        }
+
+        public object? Parameter
+        {
+            get => parameter;
+            set
+            {
+                if (parameter != value)
+                {
+                    parameter = value;
+                    OnPropertyChanged(nameof(Parameter));
+                }
+            }
+        }
     }
 
     public class Options
@@ -72,16 +154,43 @@ namespace Fluent_Launcher.Assets.Class
         public Guid Uuid { get; set; } = uuid;
     }
 
-    public class RootPath(string path, string latestInstanceId)
+    // 如果folderName为null或空字符串, 则使用第一个参数的最后一个文件夹作为名称
+    public class RootPath(string path, string folderName = "", string latestInstanceId = "")
     {
         public string Path { get; set; } = path;
+        public string FolderName { get; set; } = string.IsNullOrEmpty(folderName) ? System.IO.Path.GetFileName(path) : folderName;
         public string LatestInstanceId { get; set; } = latestInstanceId;
     }
 
-    public class RootPathListShow(string folderName, string folderPath)
+    public partial class RootPathListShow(string folderName, string folderPath) : ObservableObject
     {
-        public string FolderName { get; set; } = folderName;
-        public string FolderPath { get; set; } = folderPath;
+        private string _folderName = folderName;
+        public string FolderName
+        {
+            get => _folderName;
+            set
+            {
+                if (_folderName != value)
+                {
+                    _folderName = value;
+                    OnPropertyChanged(nameof(FolderName));
+                }
+            }
+        }
+
+        private string _folderPath = folderPath;
+        public string FolderPath
+        {
+            get => _folderPath;
+            set
+            {
+                if (_folderPath != value)
+                {
+                    _folderPath = value;
+                    OnPropertyChanged(nameof(FolderPath));
+                }
+            }
+        }
     }
 
     public class InstancesDeatils(IList<SettingsCardTagDescriptionInfos>? settingsCardInfos, InstancesType type)
@@ -115,14 +224,85 @@ namespace Fluent_Launcher.Assets.Class
         public int MemoryCustomize { get; set; } // 单位是MB
     }
 
-    public class ModListShow(string name, string summary, List<string> categories, string downloadCount, string latestUpdate, BitmapImage icon)
+    public partial class ModListShow(string name, string summary, List<string> categories, string downloadCount, string latestUpdate, BitmapImage icon) : ObservableObject
     {
-        public string Name { get; set; } = name;
-        public string Summary { get; set; } = summary;
-        public List<string> Categories { get; set; } = categories;
-        public string DownloadCount { get; set; } = downloadCount;
-        public string LatestUpdate { get; set; } = latestUpdate;
-        public BitmapImage Icon { get; set; } = icon;
+        public string Name
+        {
+            get => name;
+            set
+            {
+                if (name != value)
+                {
+                    name = value;
+                    OnPropertyChanged(nameof(Name));
+                }
+            }
+        }
+
+        public string Summary
+        {
+            get => summary;
+            set
+            {
+                if (summary != value)
+                {
+                    summary = value;
+                    OnPropertyChanged(nameof(Summary));
+                }
+            }
+        }
+
+        public List<string> Categories
+        {
+            get => categories;
+            set
+            {
+                if (categories != value)
+                {
+                    categories = value;
+                    OnPropertyChanged(nameof(Categories));
+                }
+            }
+        }
+
+        public string DownloadCount
+        {
+            get => downloadCount;
+            set
+            {
+                if (downloadCount != value)
+                {
+                    downloadCount = value;
+                    OnPropertyChanged(nameof(DownloadCount));
+                }
+            }
+        }
+
+        public string LatestUpdate
+        {
+            get => latestUpdate;
+            set
+            {
+                if (latestUpdate != value)
+                {
+                    latestUpdate = value;
+                    OnPropertyChanged(nameof(LatestUpdate));
+                }
+            }
+        }
+
+        public BitmapImage Icon
+        {
+            get => icon;
+            set
+            {
+                if (icon != value)
+                {
+                    icon = value;
+                    OnPropertyChanged(nameof(Icon));
+                }
+            }
+        }
     }
 
 }

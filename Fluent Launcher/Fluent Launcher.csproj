@@ -18,6 +18,8 @@
     <Content Remove="Assets\Class\GlobalVar.cs" />
     <Content Remove="Assets\Class\Type.cs" />
     <Content Remove="Assets\Class\Utils.cs" />
+    <Content Remove="Assets\Dialogs\Page_FolderRenameDialog.xaml" />
+    <Content Remove="Assets\Dialogs\Page_FolderRenameDialog.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Instances\Page_InstancesBase.xaml" />
     <Content Remove="Assets\Pages\Download\Instances\Page_InstancesBase.xaml.cs" />
     <Content Remove="Assets\Pages\Download\Mods\Page_ModsBase.xaml" />
@@ -48,6 +50,7 @@
     <Content Remove="Assets\UserControls\UC_BreadcrumbBar.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Assets\Dialogs\Page_FolderRenameDialog.xaml" />
     <None Remove="Assets\Pages\Download\Instances\Page_InstancesBase.xaml" />
     <None Remove="Assets\Pages\Download\Mods\Page_ModsBase.xaml" />
     <None Remove="Assets\Pages\Download\Mods\Page_ModsOptions.xaml" />
@@ -155,6 +158,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Assets\Pages\Home\InstanceOption\Page_InstanceOptionBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\Dialogs\Page_FolderRenameDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

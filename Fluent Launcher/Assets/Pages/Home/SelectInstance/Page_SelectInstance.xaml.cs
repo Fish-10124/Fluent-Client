@@ -1,4 +1,5 @@
 using Fluent_Launcher.Assets.Class;
+using Fluent_Launcher.Assets.Dialogs;
 using Fluent_Launcher.Assets.Pages.Home.InstanceOption;
 using Fluent_Launcher.Assets.Resources.Icons;
 using Microsoft.UI.Xaml;
@@ -17,6 +18,7 @@ using MinecraftLaunch.Components.Parser;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
@@ -39,6 +41,8 @@ namespace Fluent_Launcher.Assets.Pages.Home.SelectInstance
     public sealed partial class Page_SelectInstance : Page
     {
         private ObservableCollection<RootPathListShow> RootPaths = [];
+        private ObservableCollection<InstancesDeatils> InstancesDetails = [];
+
         private MinecraftParser McParser;
 
         public Page_SelectInstance()
@@ -48,7 +52,7 @@ namespace Fluent_Launcher.Assets.Pages.Home.SelectInstance
             // 初始化 RootPaths
             foreach (var path in GlobalVar.Options.RootPaths)
             {
-                RootPaths.Add(new(Path.GetFileName(path.Path), path.Path));
+                RootPaths.Add(new(string.IsNullOrEmpty(path.FolderName) ? Path.GetFileName(path.Path) : path.FolderName, path.Path));
             }
 
             // 解析 Minecraft 实例
@@ -62,29 +66,29 @@ namespace Fluent_Launcher.Assets.Pages.Home.SelectInstance
             
         }
 
-        private static void ForEachInstances(List<MinecraftEntry> instances)
+        private void ForEachInstances(List<MinecraftEntry> instances)
         {
-            GlobalVar.InstancesDetails.Clear();
+            InstancesDetails.Clear();
 
             foreach (var instance in instances)
             {
                 var instanceTagInfos = Utils.InstanceEntryToTagInfos(instance);
 
                 // 检查该类型的 InstancesDetails 是否已存在
-                var type = (InstancesType)instanceTagInfos.parameter!;
-                var existingDetails = GlobalVar.InstancesDetails.FirstOrDefault(item => item.Type == type);
+                var type = (InstancesType)instanceTagInfos.Parameter!;
+                var existingDetails = InstancesDetails.FirstOrDefault(item => item.Type == type);
 
                 if (existingDetails == null)
                 {
                     // 如果不存在该类型，则创建并添加新实例
                     var newDetails = new InstancesDeatils(new ObservableCollection<SettingsCardTagDescriptionInfos>(), type);
 
-                    GlobalVar.InstancesDetails.Add(newDetails);
+                    InstancesDetails.Add(newDetails);
                     existingDetails = newDetails; // 更新引用以便后续操作
                 }
 
                 // 获取实例的索引
-                var index = GlobalVar.InstancesDetails.IndexOf(existingDetails);
+                var index = InstancesDetails.IndexOf(existingDetails);
 
                 // 往 SettingsCardInfos 中添加内容
                 instanceTagInfos.Tag = index.ToString();
@@ -170,8 +174,77 @@ namespace Fluent_Launcher.Assets.Pages.Home.SelectInstance
                 return;
             } 
 
-            GlobalVar.Options.RootPaths.Add(new(folder.Path, ""));
+            GlobalVar.Options.RootPaths.Add(new(folder.Path));
             RootPaths.Add(new(folder.Name, folder.Path));
+        }
+
+        private async void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem flyout = (sender as MenuFlyoutItem)!;
+            RootPathListShow listViewItem = (flyout!.DataContext as RootPathListShow)!;
+            var selectedItem = (ListView_InstanceFolders.SelectedItem as RootPathListShow)!;
+
+            switch (flyout.Name)
+            {
+                case "MenuFlyoutItem_Rename":
+                    var contentPage = new Page_FolderRenameDialog();
+                    var dialog = new ContentDialog()
+                    {
+                        Title = "Folder name options",
+                        PrimaryButtonText = "Confirm",
+                        DefaultButton = ContentDialogButton.Primary,
+                        IsSecondaryButtonEnabled = false,
+                        CloseButtonText = "Cancel",
+                        Content = contentPage,
+                        Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style,
+                        XamlRoot = this.XamlRoot
+                    };
+
+                    contentPage.Init(listViewItem.FolderName);
+
+                    // 显示ContentDialog
+                    var result = await dialog.ShowAsync();
+
+                    if (result == ContentDialogResult.Primary)
+                    {
+                        string newName = contentPage.GetName();
+                        GlobalVar.Options.RootPaths.FirstOrDefault(item => item.Path.Equals(listViewItem.FolderPath))!.FolderName = newName;
+                        RootPaths.FirstOrDefault(item => item.FolderPath.Equals(listViewItem.FolderPath))!.FolderName = newName;
+                    }
+                    
+                    break;
+
+                case "MenuFlyoutItem_Open":
+                    Process.Start("explorer.exe", $"\"{listViewItem.FolderPath}\"");
+                    break;
+
+                case "MenuFlyoutItem_Refresh":
+                    if (selectedItem.Equals(listViewItem))
+                    {
+                        InstancesDetails.Clear();
+                        ForEachInstances(McParser.GetMinecrafts());
+                    }
+                    break;
+
+                case "MenuFlyoutItem_Delete":
+                    if (listViewItem.FolderPath.Equals(selectedItem.FolderPath))
+                    {
+                        ListView_InstanceFolders.SelectedIndex = ListView_InstanceFolders.SelectedIndex == 0 ? 1 : 0;
+                    }
+
+                    var removePath = GlobalVar.Options.RootPaths.FirstOrDefault(item => item.Path.Equals(listViewItem.FolderPath))!;
+                    GlobalVar.Options.RootPaths.Remove(removePath);
+                    RootPaths.Remove(listViewItem);
+                    break;
+            }
+        }
+
+        private void MenuFlyoutItem_Delete_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (RootPaths.Count <= 1)
+            {
+                (sender as MenuFlyoutItem)!.IsEnabled = false;
+            }
         }
     }
 }

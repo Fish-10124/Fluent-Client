@@ -31,13 +31,11 @@ namespace Fluent_Launcher.Assets.Class
 
         public static readonly List<RootPath> DefaultRootPath = 
             [
-                new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"), "")
+                new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".minecraft"))
             ];
 
         public static Options Options { get; set; } = new();
         public static string OptionsFolder { get; set; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FluentLauncherOptions");
-
-        public static ObservableCollection<InstancesDeatils> InstancesDetails { get; set; } = [];
 
         // 检测设备中的Java
         public static IList<JavaEntry> Javas { get; set; } = [];

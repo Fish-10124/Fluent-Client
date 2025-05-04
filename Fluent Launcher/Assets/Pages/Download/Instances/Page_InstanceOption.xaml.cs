@@ -79,7 +79,7 @@ namespace Fluent_Launcher.Assets.Pages.Download.Instances
                     NeoforgeVersions = await ForgeInstaller.EnumerableForgeAsync(CurrentInstanceVersion?.Id, true).ToListAsync();
                     if (NeoforgeVersions.Any())
                     {
-                        ModloaderViews[0].parameter = true;
+                        ModloaderViews[0].Parameter = true;
                     }
                 }), // 获取NeoForge版本
                 Task.Run(async () =>
@@ -87,7 +87,7 @@ namespace Fluent_Launcher.Assets.Pages.Download.Instances
                     ForgeVersions = await ForgeInstaller.EnumerableForgeAsync(CurrentInstanceVersion?.Id, false).ToListAsync();
                     if (ForgeVersions.Any())
                     {
-                        ModloaderViews[1].parameter = true;
+                        ModloaderViews[1].Parameter = true;
                     }
                 }), // 获取Forge版本
                 Task.Run(async () =>
@@ -95,7 +95,7 @@ namespace Fluent_Launcher.Assets.Pages.Download.Instances
                     OptifineVersions = await OptifineInstaller.EnumerableOptifineAsync(CurrentInstanceVersion?.Id).ToListAsync();
                     if (OptifineVersions.Any())
                     {
-                        ModloaderViews[2].parameter = true;
+                        ModloaderViews[2].Parameter = true;
                     }
                 }), // 获取Optifine版本
                 Task.Run(async () =>
@@ -103,7 +103,7 @@ namespace Fluent_Launcher.Assets.Pages.Download.Instances
                     FabricVersions = await FabricInstaller.EnumerableFabricAsync(CurrentInstanceVersion?.Id).ToListAsync();
                     if (FabricVersions.Any())
                     {
-                        ModloaderViews[3].parameter = true;
+                        ModloaderViews[3].Parameter = true;
                     }
                 }), // 获取Fabric版本
                 Task.Run(async () =>
@@ -111,7 +111,7 @@ namespace Fluent_Launcher.Assets.Pages.Download.Instances
                     QuiltVersions = await QuiltInstaller.EnumerableQuiltAsync(CurrentInstanceVersion?.Id).ToListAsync();
                     if (QuiltVersions.Any())
                     {
-                        ModloaderViews[4].parameter = true;
+                        ModloaderViews[4].Parameter = true;
                     }
                 }), // 获取Quilt版本
             };

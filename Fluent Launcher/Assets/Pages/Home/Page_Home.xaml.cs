@@ -1,5 +1,5 @@
 using Fluent_Launcher.Assets.Class;
-using Fluent_Launcher.Assets.Pages.Home;
+using Fluent_Launcher.Assets.Dialogs;
 using Fluent_Launcher.Assets.Pages.Home.InstanceOption;
 using Fluent_Launcher.Assets.Pages.Home.SelectInstance;
 using Microsoft.UI.Dispatching;

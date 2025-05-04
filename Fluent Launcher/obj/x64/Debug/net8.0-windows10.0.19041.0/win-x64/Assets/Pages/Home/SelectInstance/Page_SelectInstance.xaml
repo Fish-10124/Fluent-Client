@@ -28,12 +28,42 @@
                             </Grid.RowDefinitions>
                             <TextBlock Grid.Row="0" Text="{Binding FolderName}" Style="{StaticResource BodyTextBlockStyle}"/>
                             <TextBlock Grid.Row="1" Text="{Binding FolderPath}" Style="{StaticResource CaptionTextBlockStyle}"/>
+
+                            <Grid.ContextFlyout>
+                                <MenuFlyout>
+
+                                    <MenuFlyoutItem x:ConnectionId='17' x:Name="MenuFlyoutItem_Rename" Text="Rename"                             >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE8AC;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                    <MenuFlyoutItem x:ConnectionId='18' x:Name="MenuFlyoutItem_Open" Text="Open"                             >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xED25;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                    <MenuFlyoutItem x:ConnectionId='19' x:Name="MenuFlyoutItem_Refresh" Text="Refresh"                             >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE72C;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                    <MenuFlyoutItem x:ConnectionId='20' x:Name="MenuFlyoutItem_Delete" Text="Delete"                                                                   >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xE74D;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+
+                                </MenuFlyout>
+                            </Grid.ContextFlyout>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
                 <ListView.Footer>
-                    <HyperlinkButton x:ConnectionId='17' x:Name="HyperlinkButton_SelectFolder" HorizontalAlignment="Left"                                           >
+                    <HyperlinkButton x:ConnectionId='21' x:Name="HyperlinkButton_SelectFolder" HorizontalAlignment="Left"                                           >
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
@@ -46,7 +76,7 @@
                 </ListView.Footer>
             </ListView>
 
-            <ListView x:ConnectionId='3' Grid.Column="1"                                                         SelectionMode="None" Padding="{StaticResource PagePadding}">
+            <ListView x:ConnectionId='3' Grid.Column="1"                                         SelectionMode="None" Padding="{StaticResource PagePadding}">
                 <ListView.ItemTemplate>
                     <DataTemplate                                    >
                         <Grid x:ConnectionId='5' Padding="0, 0, 0, 5">

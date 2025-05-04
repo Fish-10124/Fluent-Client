@@ -1,3 +1,5 @@
+Assets\Dialogs\Page_PlayerOptionsDialog.xaml
+Assets\Dialogs\Page_PlayerOptionsDialog.xaml.cs
 Assets\LockScreenLogo.scale-200.png
 Assets\Pages\Download\Instances\Page_InstanceOption.xaml
 Assets\Pages\Download\Instances\Page_InstanceOption.xaml.cs
